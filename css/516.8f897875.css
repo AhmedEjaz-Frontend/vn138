@@ -1323,7 +1323,7 @@
 }
 @font-face {
   font-family: Albertus;
-  src: url(/static/media/Albertus.a27389d6..ttf);
+  src: url(../static/media/Albertus.a27389d6..ttf);
 }
 #activity-roulette-wrapper.activity-roulette-wrapper.ta2prod {
   --wheel-border: url(./images/roulette_frame.webp);
@@ -1533,7 +1533,7 @@
 }
 @font-face {
   font-family: Albertus;
-  src: url(/static/media/Albertus.a27389d6..ttf);
+  src: url(../static/media/Albertus.a27389d6..ttf);
 }
 #activity-roulette-wrapper.activity-roulette-wrapper.ta7prod {
   --wheel-border: url(./images/roulette_frame.webp);
@@ -1914,7 +1914,7 @@
 }
 @font-face {
   font-family: Albertus;
-  src: url(/static/media/Albertus.a27389d6..ttf);
+  src: url(../static/media/Albertus.a27389d6..ttf);
 }
 #activity-roulette-wrapper.activity-roulette-wrapper.tb9prod {
   --wheel-border: url(./images/roulette_frame.webp);
@@ -2129,7 +2129,7 @@
 }
 @font-face {
   font-family: Albertus;
-  src: url(/static/media/Albertus.a27389d6..ttf);
+  src: url(../static/media/Albertus.a27389d6..ttf);
 }
 #activity-roulette-wrapper.activity-roulette-wrapper.tc7prod {
   --wheel-border: url(./images/roulette_frame.png);
@@ -2617,7 +2617,7 @@
 }
 @font-face {
   font-family: Albertus;
-  src: url(/static/media/Albertus.a27389d6..ttf);
+  src: url(../static/media/Albertus.a27389d6..ttf);
 }
 #activity-roulette-wrapper.activity-roulette-wrapper.x07prod {
   --wheel-border: url(./images/roulette_frame.png);
@@ -5387,7 +5387,7 @@
 }
 @font-face {
   font-family: Albertus;
-  src: url(/static/media/Albertus.a27389d6..ttf);
+  src: url(../static/media/Albertus.a27389d6..ttf);
 }
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta2prod,
 #reg-roulette-modal.reg-roulette-modal.ta2prod {
@@ -5745,7 +5745,7 @@
 }
 @font-face {
   font-family: Albertus;
-  src: url(/static/media/Albertus.a27389d6..ttf);
+  src: url(../static/media/Albertus.a27389d6..ttf);
 }
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta7prod,
 #reg-roulette-modal.reg-roulette-modal.ta7prod {
@@ -6351,7 +6351,7 @@
 }
 @font-face {
   font-family: Albertus;
-  src: url(/static/media/Albertus.a27389d6..ttf);
+  src: url(../static/media/Albertus.a27389d6..ttf);
 }
 #activity-roulette-wrapper-m.activity-roulette-wrapper.tb9prod,
 #reg-roulette-modal.reg-roulette-modal.tb9prod {
@@ -6709,7 +6709,7 @@
 }
 @font-face {
   font-family: Albertus;
-  src: url(/static/media/Albertus.a27389d6..ttf);
+  src: url(../static/media/Albertus.a27389d6..ttf);
 }
 #activity-roulette-wrapper-m.activity-roulette-wrapper.tc7prod,
 #reg-roulette-modal.reg-roulette-modal.tc7prod {
@@ -8663,7 +8663,7 @@
 }
 @font-face {
   font-family: Albertus;
-  src: url(/static/media/Albertus.a27389d6..ttf);
+  src: url(../static/media/Albertus.a27389d6..ttf);
 }
 #activity-roulette-wrapper-m.activity-roulette-wrapper.x07prod,
 #reg-roulette-modal.reg-roulette-modal.x07prod {

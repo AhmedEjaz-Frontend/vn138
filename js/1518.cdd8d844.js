@@ -1,1 +1,1823 @@
-"use strict";(self.webpackChunknogle_react_boilerplate=self.webpackChunknogle_react_boilerplate||[]).push([[1518],{145:(e,t,a)=>{var i=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0,i(a(96540));var n=i(a(6503)),r=function(e){if("function"==typeof WeakMap){var t=new WeakMap;new WeakMap}return function(e){if(e&&e.__esModule)return e;var a,i,n={__proto__:null,default:e};if(null===e||"object"!=typeof e&&"function"!=typeof e)return n;if(a=t){if(a.has(e))return a.get(e);a.set(e,n)}for(const t in e)"default"!==t&&{}.hasOwnProperty.call(e,t)&&((i=(a=Object.defineProperty)&&Object.getOwnPropertyDescriptor(e,t))&&(i.get||i.set)?a(n,t,i):n[t]=e[t]);return n}(e)}(a(60210)),l=a(3057),s=a(51628),o=a(83597),d=a(38839),c=a(93185),u=a(8087),m=a(74848);t.default=()=>{const{anytimeRebateState:e,setAnytimeRebateState:t,historyCardHeights:a,historyData:i,loadNextPage:f,itemRenderer:p,hasClaim:h,onAllClaim:y}=(0,r.default)({historyCardHeightsMethod:e=>152+(e.isLimited?20:0)}),{searchData:v,total:b,claimedModalData:g,detailModalData:j}=e;return(0,m.jsxs)("div",{className:"infinite-loader-wrapper anytime-rebate-history",children:[(0,m.jsxs)("div",{className:"rebate-top-info",children:[(0,m.jsx)(r.Tips,{}),h&&(0,m.jsx)("button",{className:"nrc-button btm-btn claim-all-btn",onClick:()=>y(u.claimTypeEnum.ANYTIME),children:s.i18n["notification.center.claim.at.once"]})]}),(0,m.jsx)("div",{className:"content-block",children:(0,m.jsx)(n.default,{limit:v.limit,itemSize:a,threshold:10,total:b,itemData:i,loadNextPage:f,itemRenderer:p,isFixedSizeList:!1})}),j&&j.length>0&&(0,m.jsx)("div",{className:"hover-container anytime-rebate-detail",children:(0,m.jsxs)("div",{className:"container",children:[(0,m.jsxs)("div",{className:"header",children:[(0,m.jsx)("h2",{className:"title-center",children:s.i18n["bet.detail"]}),(0,m.jsx)("i",{className:"mps-close",onClick:()=>t({detailModalData:{}})})]}),(0,m.jsx)("div",{className:"body",children:(0,m.jsxs)("div",{className:"nrc-table mock-table top10",children:[(0,m.jsxs)("div",{className:"table-header mock-table-header",children:[(0,m.jsx)("div",{style:d.styles.column,children:s.i18n["bet.game"]}),(0,m.jsx)("div",{style:d.styles.column,children:s.i18n["valid.bets"]}),(0,m.jsx)("div",{style:d.styles.column,children:s.i18n["rebate.amount"]})]}),j.map((e,t)=>{let{gameProviderName:a,gameName:i,validBet:n,rebateValue:r}=e;return(0,m.jsxs)("div",{className:"mock-table-row",children:[(0,m.jsx)("div",{style:d.styles.column,children:(0,m.jsxs)("div",{style:d.styles.textCenter,children:[(0,m.jsx)("div",{children:a}),(0,m.jsx)("div",{children:i})]})}),(0,m.jsx)("div",{style:d.styles.column,children:n}),(0,m.jsx)("div",{style:d.styles.column,children:r})]},`detailModalData${t}`)})]})})]})}),(g.id||g.claimCount)&&(0,m.jsx)(l.GiftModal,{onHandleClose:()=>t({claimedModalData:{}}),children:(0,m.jsxs)("div",{className:"message text-center",children:[g.id&&(0,m.jsxs)(m.Fragment,{children:[s.i18n["promo.claim.success"],(0,m.jsx)("div",{children:`${g.bonus} ${o.defaultCurrencyI18n}`})]}),g.claimCount&&(0,m.jsx)("div",{children:(0,c.i18nVariables)(s.i18n["notification.center.claim.success.msg"],{count:g.claimCount})})]})})]})}},6002:(e,t,a)=>{var i=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var n=i(a(83657));a(81521),t.default=n.default},6503:(e,t,a)=>{var i=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var n=i(a(37780));a(6732),t.default=n.default},6732:(e,t,a)=>{a.r(t)},8269:(e,t,a)=>{var i=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.default=function(){const e=(0,l.useDispatch)(),t=(0,l.useSelector)(e=>e.players.logined);return(0,r.useCallback)(a=>{if(m.includes(a)&&!t)return e((0,o.openErrorModal)(c.i18n["require.login"])),null;const i=function(e){if(!e||0!==e.indexOf("/"))return null;const t=new URL(`${location.origin}${e}`);if("/launchgame"!==t.pathname)return null;const a=n.default.parse(t.search.substr(1));return["distributorid","gameid","gameproviderid","producttypeid"].every(e=>!!a[e])?a:null}(a);if(i){if(!t)return window.location.href=`${window.location.origin}${u.paths.LOGIN}`,null;s.default.set("launchGameData",i);try{d.default.launchGame(i)}catch(e){}return u.paths.LAUNCHGAME}return a},[e,t])};var n=i(a(47186)),r=a(96540),l=a(67467),s=i(a(27179)),o=a(84707),d=i(a(36188)),c=a(51628),u=a(15062);const m=[u.paths.AFFILIATE,u.paths.MISSION,u.paths.FAVORITE_GAMES]},10975:(e,t,a)=>{var i=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"default",{enumerable:!0,get:function(){return n.default}});var n=i(a(96404))},28429:(e,t,a)=>{var i=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var n=i(a(145));a(95182),t.default=n.default},37780:(e,t,a)=>{var i=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var n=function(e){if("function"==typeof WeakMap){var t=new WeakMap;new WeakMap}return function(e){if(e&&e.__esModule)return e;var a,i,n={__proto__:null,default:e};if(null===e||"object"!=typeof e&&"function"!=typeof e)return n;if(a=t){if(a.has(e))return a.get(e);a.set(e,n)}for(const t in e)"default"!==t&&{}.hasOwnProperty.call(e,t)&&((i=(a=Object.defineProperty)&&Object.getOwnPropertyDescriptor(e,t))&&(i.get||i.set)?a(n,t,i):n[t]=e[t]);return n}(e)}(a(96540)),r=(i(a(5556)),i(a(2209)),a(9404)),l=i(a(72524)),s=i(a(83736)),o=i(a(15361)),d=a(85012),c=i(a(3199)),u=i(a(70713)),m=i(a(52622)),f=a(51628),p=i(a(73881)),h=a(74848);const y={init:!1,offset:0,isNextPageLoading:!1},v=e=>{const{itemData:t,total:a,limit:i,className:r,loadNextPage:m,itemRenderer:f,loadingRenderer:p,emptyRenderer:v,emptyText:b,emptyIcon:g,itemSize:j=0,isFixedSizeList:x,startToInit:M,...N}=e,[_,C]=(0,l.default)(y),R=(0,n.useRef)({}),O=a>_.offset+i,P=O?t.size+1:t.size,D=e=>!O||e<t.size,A=!x&&0===j.length&&0!==t.size,T=(e,a)=>{!_.isNextPageLoading&&O&&a>=t.size&&i&&C({isNextPageLoading:!0,offset:_.offset+i})},w=x?d.FixedSizeList:d.VariableSizeList,I=x?j:e=>j[e],S=()=>{m({offset:0,limit:i}).then(()=>{C({init:!0})})};(0,s.default)(()=>{S()}),(0,o.default)(()=>{M&&(C(y),S())},[M]),(0,o.default)(()=>{_.isNextPageLoading&&m({offset:_.offset,limit:i}).then(e=>{_.init&&e!==a?C({init:!1,offset:0}):C({init:!0,isNextPageLoading:!1})})},[_.offset]),(0,o.default)(()=>{var e;(null==R||null===(e=R.current)||void 0===e?void 0:e.resetAfterIndex)&&R.current.resetAfterIndex(0)},[j]);const k=e=>D(e.index)?f(e):p(e);return!_.init||A?(0,h.jsx)(u.default,{children:e=>{let{height:t,width:a}=e;return p({style:{height:t,width:a}})}}):(0,h.jsx)(u.default,{children:e=>{let{height:a,width:i}=e;return 0===P?v({height:a,width:i,emptyText:b,emptyIcon:g}):(0,h.jsx)(c.default,{...N,isItemLoaded:D,itemCount:P,loadMoreItems:T,children:e=>{let{onItemsRendered:n,ref:l}=e;return(0,h.jsx)(w,{className:r,itemCount:P,itemSize:I,itemData:t,onItemsRendered:n,ref:e=>{l(e),R.current=e},width:i,height:a,useIsScrolling:!0,children:k})}})}})};v.defaultProps={total:0,itemData:(0,r.List)(),itemRenderer:()=>{},loadingRenderer:e=>{let{style:t}=e;return(0,h.jsx)("div",{style:{...t,display:"flex",alignItems:"center"},children:(0,h.jsx)(m.default,{})})},emptyRenderer:e=>{let{width:t,height:a,emptyText:i,emptyIcon:n=p.default}=e;return(0,h.jsx)("div",{className:"infinite-loader-empty-list",style:{width:t,height:a,display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"},children:(0,h.jsx)("div",{className:"no-data-block",children:i||f.i18n["no.data"]})})},isFixedSizeList:!0,startToInit:!1},t.default=v},38839:(e,t,a)=>{var i=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.default=function(e){let{handleClose:t=()=>{}}=e;return(0,d.jsx)("div",{className:"hover-container",children:(0,d.jsxs)("div",{className:"container game-record",children:[(0,d.jsxs)("div",{className:"header",children:[(0,d.jsx)("h2",{className:"title-center",children:o.i18n["bet.detail"]}),(0,d.jsx)("i",{className:"mps-close",onClick:()=>t()})]}),(0,d.jsx)("div",{className:"body",children:(0,d.jsx)(n.default,{})})]})})},t.styles=t.stateRenderer=t.gamenameRenderer=t.formatTimeRenderer=void 0,i(a(96540));var n=i(a(52622)),r=a(93185),l=a(70913),s=a(8087),o=a(51628),d=a(74848);t.styles={column:{flex:1},textCenter:{textAlign:"center"}},t.formatTimeRenderer=e=>{let{columnData:t}=e;return(0,l.formatDateTime)(t)},t.gamenameRenderer=e=>{let{columnData:t}=e;return(0,r.getName)(t)},t.stateRenderer=e=>{let{columnData:t}=e;return s.gameHistoryStatusEnum[t]}},42383:(e,t,a)=>{Object.defineProperty(t,"__esModule",{value:!0}),t.notiTypeI18n=t.notiTypeEnum=t.notiRewardInfoTypeEnum=t.getRewardInfoType=void 0;var i=a(51628);const n=t.notiTypeEnum={all:"all",maintenance:"maintenance",normalMsg:"normalMsg",promos:"promos",personalMsg:"personalMsg",rewardInfo:"rewardInfo"},r=(t.notiTypeI18n={[n.all]:i.i18n.all,[n.maintenance]:i.i18n["maintenance.info"],[n.normalMsg]:i.i18n["notification.center.normal.message"],[n.promos]:i.i18n["notification.center.promos"],[n.personalMsg]:i.i18n["personal.message.list"],[n.rewardInfo]:i.i18n["profile.promo.title"]},t.notiRewardInfoTypeEnum={userPromos:"userPromos",anytimeRebate:"anytimeRebate",all:"all"});t.getRewardInfoType=e=>e.get("promoreqid")?r.userPromos:e.get("rebateId")?r.anytimeRebate:""},45424:(e,t,a)=>{var i=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var n=a(96540),r=i(a(9404));t.default=e=>{let{itemHeight:t=0,itemMargin:a=0,historyData:i=r.default.List(),setHistoryData:l=()=>{}}=e;const[s,o]=(0,n.useState)(()=>(new Date).getTime());return{onToggleCard:(e,t)=>{o((new Date).getTime());const a=i.setIn([e,"isOpen"],t);l({data:a,shouldAddState:!1})},historyCardHeights:(0,n.useMemo)(()=>i.toJS().map(e=>null!=e&&e.isOpen?t+a:t),[s,i])}}},57096:(e,t,a)=>{a.r(t)},60210:(e,t,a)=>{var i=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.default=t.Tips=void 0;var n=_(a(96540)),r=i(a(34059)),l=i(a(46942)),s=a(9404),o=i(a(96384)),d=a(67467),c=i(a(72524)),u=i(a(10975)),m=a(42383),f=_(a(95764)),p=a(76066),h=a(53719),y=a(83597),v=a(16510),b=a(70913),g=a(51628),j=a(93185),x=i(a(7541)),M=i(a(70585)),N=a(74848);function _(e,t){if("function"==typeof WeakMap)var a=new WeakMap,i=new WeakMap;return(_=function(e,t){if(!t&&e&&e.__esModule)return e;var n,r,l={__proto__:null,default:e};if(null===e||"object"!=typeof e&&"function"!=typeof e)return l;if(n=t?i:a){if(n.has(e))return n.get(e);n.set(e,l)}for(const t in e)"default"!==t&&{}.hasOwnProperty.call(e,t)&&((r=(n=Object.defineProperty)&&Object.getOwnPropertyDescriptor(e,t))&&(r.get||r.set)?n(l,t,r):l[t]=e[t]);return l})(e,t)}const C={offset:0,limit:15};t.Tips=()=>(0,N.jsxs)("div",{className:"tips",children:[(0,N.jsx)("i",{className:"icon-info"}),(0,j.i18nVariables)(g.i18n["data.range.tip.by.day"],{day:3})]}),t.default=function(){let{defaultSearchData:e=C,historyCardHeightsMethod:t}=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};const a=(0,r.default)(),[i,_]=(0,c.default)({searchData:e,total:0,claimedModalData:{},detailModalData:null}),R=(0,d.useDispatch)(),[O,P]=(0,M.default)(),D=(0,n.useRef)(0),A=(0,x.default)(h.claimAllPromosAndAnytimeRebate),T=(0,x.default)(f.getUserAnytimeRebateWithDetail),w=(0,x.default)(f.claimAnytimeRebate),I=(0,n.useCallback)(e=>{const t=e.get("recordDetails",[]).map(e=>{const{gameProviderId:t,gameName:i,validBet:n,rebateValue:r}=e.toJS();return{gameProviderName:a(t),gameName:i[g.currLocale],validBet:(0,v.formatMoney)(n),rebateValue:(0,v.formatMoney)(r)}});_({detailModalData:t})},[a,_]),S=(0,n.useCallback)(e=>{let{offset:t,limit:a,shouldUpdateSearchData:n=!0,forceUpdateState:r}=e;const l={...i.searchData,offset:t,limit:a};return T(l).then(e=>{const{data:t,total:a}=e;D.current=0;const s=t.map(e=>(e.claimed||(D.current+=1),e));return P({data:s,offset:l.offset,limit:l.limit,forceUpdateState:r}),_({searchData:n?l:i.searchData,total:a}),a}).catch(()=>{P((0,s.fromJS)({}))})},[T,P,_,i.searchData]),k=(0,n.useCallback)(e=>A({type:e}).then(e=>{let{claimCount:t}=e;_({claimedModalData:{claimCount:t}}),R((0,p.resetAnytimeRebateNoti)()),R((0,p.resetUserPromosNoti)()),D.current=0;const a=O.map(e=>e.set("claimed",!0));P({data:a,shouldAddState:!1})}),[R,A,O,P,_]),E=(0,n.useCallback)(e=>{let{rebateId:t,index:a}=e;w(t).then(e=>{const{bonus:i,waitClaim:n}=e,r=O.updateIn([a,"claimed"],()=>!0);n||R((0,p.resetAnytimeRebateNoti)()),R((0,h.refreshNotiCenterRewardInfo)(m.notiRewardInfoTypeEnum.anytimeRebate)),_({claimedModalData:{id:t,bonus:i}}),P({data:r,shouldAddState:!1})})},[w,O,P,_,R]),L=(0,n.useCallback)((e,t)=>(0,N.jsxs)("div",{className:"rebate-content",children:[(0,N.jsxs)("div",{className:"rebate-info",children:[(0,N.jsx)("div",{className:"date",children:(0,b.formatDateTime)(e.get("createTime"))}),e.get("isLimited")&&(0,N.jsx)("div",{className:"limit",children:g.i18n["receive.limit"]}),(0,N.jsx)("div",{className:"amount",children:(0,N.jsxs)("div",{className:"label",children:[(0,v.formatMoney)(e.get("totalRebateValue")),(0,N.jsx)("small",{children:y.defaultCurrencyI18n})]})}),(0,N.jsx)("div",{className:"title",children:(0,j.getName)(e.get("name"))})]}),(0,N.jsx)("div",{className:"rebate-func",children:(0,N.jsx)(o.default,{className:(0,l.default)("nrc-button claim-btn",{disabled:e.get("claimed")}),disabled:e.get("claimed"),onClick:()=>{E({rebateId:e.get("rebateId"),index:t})},children:e.get("claimed")?g.i18n["promo.status.claimed"]:g.i18n.claim})})]}),[E]),U=(0,n.useCallback)(e=>{let{index:t,data:a,style:i}=e;const n=a.get(t);return(0,N.jsx)("div",{style:i,children:(0,N.jsx)("div",{className:"anytime-rebate-card",children:(0,N.jsx)(u.default,{content:()=>L(n,t),onClick:()=>I(n)},t)},`history-${t}`)})},[L,I]),W=(0,n.useMemo)(()=>O.toJS().map(t),[O,t]);return{anytimeRebateState:i,setAnytimeRebateState:_,historyData:O,loadNextPage:S,itemRenderer:U,historyCardHeights:W,hasClaim:!!D.current,onAllClaim:k}}},60609:(e,t,a)=>{var i=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var n=function(e){if("function"==typeof WeakMap){var t=new WeakMap;new WeakMap}return function(e){if(e&&e.__esModule)return e;var a,i,n={__proto__:null,default:e};if(null===e||"object"!=typeof e&&"function"!=typeof e)return n;if(a=t){if(a.has(e))return a.get(e);a.set(e,n)}for(const t in e)"default"!==t&&{}.hasOwnProperty.call(e,t)&&((i=(a=Object.defineProperty)&&Object.getOwnPropertyDescriptor(e,t))&&(i.get||i.set)?a(n,t,i):n[t]=e[t]);return n}(e)}(a(96540)),r=i(a(7541)),l=i(a(45424)),s=i(a(70585)),o=i(a(46942)),d=a(9404),c=a(67467),u=i(a(72524)),m=i(a(10975)),f=i(a(6503)),p=a(3057),h=a(42383),y=i(a(80309)),v=i(a(2942)),b=a(76066),g=a(53719),j=a(83597),x=a(8087),M=a(70913),N=a(51628),_=a(93185),C=a(74848);t.default=()=>{const e=(0,c.useDispatch)(),t=(0,n.useRef)(0),a=(0,n.useRef)({}),[i,R]=(0,u.default)({searchData:{offset:0,limit:15},total:null,startToInit:!1,claimedModalData:{}}),[O,P]=(0,s.default)(),{onToggleCard:D,historyCardHeights:A}=(0,l.default)({itemHeight:140,itemMargin:20,historyData:O,setHistoryData:P}),T=(0,r.default)(g.claimAllPromosAndAnytimeRebate),w=(0,r.default)(g.getUserPromos),I=(0,r.default)(g.postClaim),S=(0,n.useCallback)(e=>{let{offset:n,limit:r,shouldUpdateSearchData:l=!0,forceUpdateState:s}=e;const o={...i.searchData,offset:n,limit:r};return w(o).then(e=>{var n;const r=(new Date).getTime(),d=null==e?void 0:e.total;t.current=t.current||0;const c=null==e||null===(n=e.data)||void 0===n?void 0:n.map(e=>(e.isOpen=!1,e.derivedstatus!==x.promoStatus.WAITFORCLAIM||a.current[e.promoreqid]||(a.current[e.promoreqid]=!0,t.current+=1),e.countdown?{...e,expireTime:r+1e3*e.countdown}:e));return P({data:c,offset:o.offset,limit:o.limit,forceUpdateState:s}),R({searchData:l?o:i.searchData,total:d,startToInit:!1}),d})},[i.searchData,w,P,R]),k=e=>{e>-1&&S({offset:e,limit:10,shouldUpdateSearchData:!1,forceUpdateState:!0})},E=(0,n.useCallback)(a=>T({type:a}).then(a=>{let{claimCount:i}=a;R({claimedModalData:{claimCount:i}}),t.current=0,e((0,g.refreshNotiCenterRewardInfo)(h.notiRewardInfoTypeEnum.userPromos)),e((0,b.resetUserPromosNoti)()),e((0,b.resetAnytimeRebateNoti)()),O.forEach((e,t)=>k(t))}),[e,T,k,O,R]),L=(a,i)=>{const{promoreqid:n,createdat:r,derivedstatus:l,bonus:s,expireTime:d,promotype:c,hideecdisplay:u}=a.toJS()||{},m=u&&l===x.promoStatus.WAITFORCLAIM&&c===x.promoTypeEnum.MANUAL_BONUS;return(0,C.jsxs)("div",{className:"promo-content",children:[(0,C.jsxs)("div",{className:"promo-info",children:[(0,C.jsxs)("div",{className:"date",children:[(0,C.jsx)("span",{children:(0,M.formatDateTime)(r)}),l===x.promoStatus.WAITFORCLAIM&&(0,C.jsxs)("span",{className:"timer",children:[(0,C.jsx)("span",{children:N.i18n["remaining.time"]}),(0,C.jsx)(v.default,{seconds:(d-(new Date).getTime())/1e3-1,onEnd:()=>{k(i)}})]})]}),!m&&(0,C.jsxs)("div",{className:"amount",children:[s,(0,C.jsx)("small",{children:j.defaultCurrencyI18n})]}),(0,C.jsx)("div",{className:"title",children:(0,_.getPromoHistoryPromoName)(a.toJS())})]}),(0,C.jsx)("div",{className:"promo-func",children:l===x.promoStatus.WAITFORCLAIM?(0,C.jsx)("button",{className:"nrc-button claim-btn",onClick:()=>{(a=>{let{promoreqid:i,index:n}=a;I(i).then(a=>{t.current-=1;const{bonus:r,waitClaim:l}=a;R({claimedModalData:{id:i,bonus:r}}),k(n),e((0,g.refreshNotiCenterRewardInfo)(h.notiRewardInfoTypeEnum.userPromos)),l||e((0,b.resetUserPromosNoti)())})})({promoreqid:n,index:i})},children:N.i18n.claim}):(0,C.jsx)("div",{className:(0,o.default)("status",{success:[x.promoStatus.APPROVED,x.promoStatus.CLAIMED].includes(l),failed:l===x.promoStatus.REJECT}),children:(0,C.jsx)("button",{className:"nrc-button claim-btn disabled",children:x.promoStatus[l]})})})]})};return(0,C.jsxs)("div",{className:"infinite-loader-wrapper",children:[!!t.current&&(0,C.jsx)("div",{className:"claim-all-wrapper",children:(0,C.jsx)("button",{className:"nrc-button btm-btn claim-all-btn",onClick:()=>E(x.claimTypeEnum.PROMO),children:N.i18n["notification.center.claim.at.once"]})}),(0,C.jsx)("div",{className:(0,o.default)("content-block",{"claim-all-padding":t.current}),children:(0,C.jsx)(f.default,{limit:i.searchData.limit,itemSize:A,threshold:10,total:i.total,itemData:O,isFixedSizeList:!1,loadNextPage:S,itemRenderer:e=>{let{index:t,data:a,style:i}=e;const n=a.get(t,(0,d.List)()),r=n.get("promotype"),l=n.get("promoreqid");return(0,C.jsx)("div",{style:i,children:(0,C.jsx)("div",{className:"promo-card",children:r===x.promoType.MANUALBONUS?(0,C.jsx)(m.default,{onToggleCard:e=>D(t,e),isOpen:n.get("isOpen"),content:()=>L(n,t),detailContent:()=>(e=>(0,C.jsx)("div",{children:(0,C.jsx)(y.default,{text:e.get("ecremarks"),tooltip:!0})}))(n)}):L(n,t)},`${l}-${t}`)})},startToInit:i.startToInit})}),(i.claimedModalData.id||i.claimedModalData.claimCount)&&(0,C.jsx)(p.GiftModal,{onHandleClose:()=>R({claimedModalData:{}}),children:(0,C.jsxs)("div",{className:"message text-center",children:[i.claimedModalData.id&&(0,C.jsxs)(C.Fragment,{children:[N.i18n["promo.claim.success"],(0,C.jsx)("div",{children:`${i.claimedModalData.bonus} ${j.defaultCurrencyI18n}`})]}),i.claimedModalData.claimCount&&(0,C.jsx)("div",{children:(0,_.i18nVariables)(N.i18n["notification.center.claim.success.msg"],{count:i.claimedModalData.claimCount})})]})})]})}},60686:(e,t,a)=>{var i=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0,i(a(96540));var n=a(67467),r=i(a(72524)),l=i(a(7541)),s=a(53719),o=a(76066),d=a(3057),c=a(93185),u=a(51628),m=a(74848);t.default=e=>{let{children:t,onRefresh:a}=e;const[i,f]=(0,r.default)({isClaimModalOpen:!1,count:null,data:{}}),p=(0,l.default)(s.claimAllPromosAndAnytimeRebate),h=(0,n.useDispatch)();return(0,m.jsxs)(m.Fragment,{children:[t(()=>{p().then(e=>{let{claimCount:t}=e;f({isClaimModalOpen:!0,count:t}),h((0,o.resetAnytimeRebateNoti)()),h((0,o.resetUserPromosNoti)())})}),i.isClaimModalOpen&&(0,m.jsx)(d.GiftModal,{onHandleClose:()=>{a(),f({isClaimModalOpen:!1,count:null})},children:(0,m.jsx)("div",{className:"message text-center",children:(0,m.jsx)("div",{children:(0,c.i18nVariables)(u.i18n["notification.center.claim.success.msg"],{count:i.count})})})})]})}},70585:(e,t,a)=>{Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var i=a(96540),n=a(9404);t.default=()=>{const[e,t]=(0,i.useState)((0,n.List)()),a=(0,i.useCallback)(a=>{let i,{data:r,offset:l,limit:s,shouldAddState:o=!0,forceUpdateState:d}=a;if(n.List.isList(r)?i=r:Array.isArray(r)&&(i=(0,n.fromJS)(r)),i)if((0!==l||d)&&o){let a=e;for(let e=0;e<s;e++){const t=e+l;i.has(e)&&(a=a.set(t,i.get(e)))}t(a)}else t(i)},[e]);return[e,a]}},72140:(e,t,a)=>{a.r(t)},80309:(e,t,a)=>{var i=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"default",{enumerable:!0,get:function(){return n.default}});var n=i(a(94320))},81521:(e,t,a)=>{a.r(t)},83657:(e,t,a)=>{var i=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var n=function(e){if("function"==typeof WeakMap){var t=new WeakMap;new WeakMap}return function(e){if(e&&e.__esModule)return e;var a,i,n={__proto__:null,default:e};if(null===e||"object"!=typeof e&&"function"!=typeof e)return n;if(a=t){if(a.has(e))return a.get(e);a.set(e,n)}for(const t in e)"default"!==t&&{}.hasOwnProperty.call(e,t)&&((i=(a=Object.defineProperty)&&Object.getOwnPropertyDescriptor(e,t))&&(i.get||i.set)?a(n,t,i):n[t]=e[t]);return n}(e)}(a(96540)),r=a(67467),l=a(51628),s=i(a(96384)),o=i(a(60609)),d=i(a(28429)),c=i(a(60686)),u=a(74848);const m={PROMO:"PROMO",ANYTIME_REBATE:"ANYTIME_REBATE"},f={[m.PROMO]:{title:l.i18n["profile.promo.title"],comp:o.default},[m.ANYTIME_REBATE]:{title:l.i18n["anytime.rebate"],comp:d.default}};t.default=e=>{let{onlyShowPromoInfo:t=!1,popup:a=!1}=e;const[i,l]=(0,n.useState)(Date.now()),d=(0,r.useSelector)(e=>e.dashboard.ecEnabledAnytimeRebateSettlement),[p,h]=(0,n.useState)(m.PROMO),y=(0,n.useMemo)(()=>f[p].comp,[p]),v=(0,n.useMemo)(()=>({[m.ANYTIME_REBATE]:d}),[d]),b=Object.keys(m).filter(e=>(!Object.prototype.hasOwnProperty.call(v,e)||v[e])&&e!==p);return(0,u.jsxs)("div",{className:"member-center-promo-history",children:[!t&&(0,u.jsxs)("div",{className:"title-wrapper",children:[(0,u.jsx)("div",{className:"title",children:f[p].title}),(0,u.jsx)("div",{className:"button-group",children:b.map((e,t)=>(0,u.jsx)(s.default,{onClick:()=>h(e),children:f[e].title},t))})]}),(0,u.jsx)(c.default,{onRefresh:()=>{l(Date.now())},children:e=>{const n=a?e:void 0;return t?(0,u.jsx)(o.default,{claimAtOnce:n},i):(0,u.jsx)(y,{claimAtOnce:n},i)}})]})}},94320:(e,t,a)=>{var i=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var n=function(e){if("function"==typeof WeakMap){var t=new WeakMap;new WeakMap}return function(e){if(e&&e.__esModule)return e;var a,i,n={__proto__:null,default:e};if(null===e||"object"!=typeof e&&"function"!=typeof e)return n;if(a=t){if(a.has(e))return a.get(e);a.set(e,n)}for(const t in e)"default"!==t&&{}.hasOwnProperty.call(e,t)&&((i=(a=Object.defineProperty)&&Object.getOwnPropertyDescriptor(e,t))&&(i.get||i.set)?a(n,t,i):n[t]=e[t]);return n}(e)}(a(96540)),r=i(a(46942)),l=a(38560),s=a(51628);a(72140);var o=a(74848);t.default=e=>{var t;let{text:a,tooltip:i=!0,isScrolling:d}=e;const c=(0,n.useRef)(),[u,m]=(0,n.useState)(!1),f=()=>!!a&&m(!u);(0,n.useEffect)(()=>{l.isMobile&&d&&u&&m(!1)},[d]);const p=((null===(t=c.current)||void 0===t?void 0:t.clientWidth)||400)-50;return(0,o.jsxs)("div",{ref:c,className:"ec-tooltip-remark-block",onMouseLeave:()=>u&&m(!1),children:[(0,o.jsx)("div",{style:{maxWidth:p},className:(0,r.default)("remark-tooltip",{show:u}),onMouseEnter:()=>!u&&m(!0),children:a}),(0,o.jsxs)("div",{className:(0,r.default)("remark-text",{"hide-multiple-lines":i}),children:[(0,o.jsxs)("span",{children:[s.i18n.remarks,": "]}),a]}),i&&(0,o.jsx)("div",{className:"more-place",onMouseEnter:()=>{!l.isMobile&&f()},onClick:e=>{e.stopPropagation(),l.isMobile&&f()},children:(0,o.jsx)("div",{className:"more-circle-btn"})})]})}},95182:(e,t,a)=>{a.r(t)},95764:(e,t,a)=>{var i=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.getUserAnytimeRebateWithDetail=t.getUserAnytimeRebate=t.claimAnytimeRebate=void 0;var n=i(a(32080)),r=a(68686),l=i(a(86663)),s=function(e){if("function"==typeof WeakMap){var t=new WeakMap;new WeakMap}return function(e){if(e&&e.__esModule)return e;var a,i,n={__proto__:null,default:e};if(null===e||"object"!=typeof e&&"function"!=typeof e)return n;if(a=t){if(a.has(e))return a.get(e);a.set(e,n)}for(const t in e)"default"!==t&&{}.hasOwnProperty.call(e,t)&&((i=(a=Object.defineProperty)&&Object.getOwnPropertyDescriptor(e,t))&&(i.get||i.set)?a(n,t,i):n[t]=e[t]);return n}(e)}(a(50974));t.getUserAnytimeRebate=e=>{const t=l.default.stringify(e);return(0,n.default)({url:`${r.baseURL}/anytimeRebate/record?${t}`,method:"GET"})},t.getUserAnytimeRebateWithDetail=e=>{const t=l.default.stringify(e);return(0,n.default)({url:`${r.baseURL}/anytimeRebate/record/detail?${t}`,method:"GET"})},t.claimAnytimeRebate=e=>({types:[s.PUT_CLAIM_ANYTIME_REBATE_REQ,s.PUT_CLAIM_ANYTIME_REBATE_SUCCESS,s.PUT_CLAIM_ANYTIME_REBATE_FAILURE],promiseType:"",promises:[()=>(0,n.default)({url:`${r.baseURL}/anytimeRebate/${e}`,method:"PUT"})]})},96404:(e,t,a)=>{var i=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var n=i(a(96540)),r=i(a(60781)),l=a(51628);a(57096);var s=a(74848);const o=e=>{let{content:t,detailContent:a,onToggleCard:i,isOpen:n,disableToggle:o,onClick:d}=e;const[c,u]=(0,r.default)(n),m=e=>{o||(u(e),i(e))};return(0,s.jsxs)("div",{className:"detail-card",children:[(0,s.jsx)("div",{className:"card-content",children:t()}),c?(0,s.jsx)("div",{className:"card-detail-content "+(o?"disabled":""),onClick:()=>{m(!1)},children:(0,s.jsx)("div",{className:"detail-item",children:a()})}):(0,s.jsx)("div",{className:"card-more-btn",onClick:()=>{d&&d(),i&&m(!0)},children:l.i18n["more.content"]})]})};o.defaultProps={content:()=>{},detailContent:()=>{},onToggleCard:()=>{},isOpen:!1,disableToggle:!1},t.default=n.default.memo(o)}}]);
+"use strict";
+(self.webpackChunknogle_react_boilerplate =
+  self.webpackChunknogle_react_boilerplate || []).push([
+  [1518],
+  {
+    145: (e, t, a) => {
+      var i = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = void 0),
+        i(a(96540));
+      var n = i(a(6503)),
+        r = (function (e) {
+          if ("function" == typeof WeakMap) {
+            var t = new WeakMap();
+            new WeakMap();
+          }
+          return (function (e) {
+            if (e && e.__esModule) return e;
+            var a,
+              i,
+              n = {
+                __proto__: null,
+                default: e,
+              };
+            if (null === e || ("object" != typeof e && "function" != typeof e))
+              return n;
+            if ((a = t)) {
+              if (a.has(e)) return a.get(e);
+              a.set(e, n);
+            }
+            for (const t in e)
+              "default" !== t &&
+                {}.hasOwnProperty.call(e, t) &&
+                ((i =
+                  (a = Object.defineProperty) &&
+                  Object.getOwnPropertyDescriptor(e, t)) &&
+                (i.get || i.set)
+                  ? a(n, t, i)
+                  : (n[t] = e[t]));
+            return n;
+          })(e);
+        })(a(60210)),
+        l = a(3057),
+        s = a(51628),
+        o = a(83597),
+        d = a(38839),
+        c = a(93185),
+        u = a(8087),
+        m = a(74848);
+      t.default = () => {
+        const {
+            anytimeRebateState: e,
+            setAnytimeRebateState: t,
+            historyCardHeights: a,
+            historyData: i,
+            loadNextPage: f,
+            itemRenderer: p,
+            hasClaim: h,
+            onAllClaim: y,
+          } = (0, r.default)({
+            historyCardHeightsMethod: (e) => 152 + (e.isLimited ? 20 : 0),
+          }),
+          {
+            searchData: v,
+            total: b,
+            claimedModalData: g,
+            detailModalData: j,
+          } = e;
+        return (0, m.jsxs)("div", {
+          className: "infinite-loader-wrapper anytime-rebate-history",
+          children: [
+            (0, m.jsxs)("div", {
+              className: "rebate-top-info",
+              children: [
+                (0, m.jsx)(r.Tips, {}),
+                h &&
+                  (0, m.jsx)("button", {
+                    className: "nrc-button btm-btn claim-all-btn",
+                    onClick: () => y(u.claimTypeEnum.ANYTIME),
+                    children: s.i18n["notification.center.claim.at.once"],
+                  }),
+              ],
+            }),
+            (0, m.jsx)("div", {
+              className: "content-block",
+              children: (0, m.jsx)(n.default, {
+                limit: v.limit,
+                itemSize: a,
+                threshold: 10,
+                total: b,
+                itemData: i,
+                loadNextPage: f,
+                itemRenderer: p,
+                isFixedSizeList: !1,
+              }),
+            }),
+            j &&
+              j.length > 0 &&
+              (0, m.jsx)("div", {
+                className: "hover-container anytime-rebate-detail",
+                children: (0, m.jsxs)("div", {
+                  className: "container",
+                  children: [
+                    (0, m.jsxs)("div", {
+                      className: "header",
+                      children: [
+                        (0, m.jsx)("h2", {
+                          className: "title-center",
+                          children: s.i18n["bet.detail"],
+                        }),
+                        (0, m.jsx)("i", {
+                          className: "mps-close",
+                          onClick: () =>
+                            t({
+                              detailModalData: {},
+                            }),
+                        }),
+                      ],
+                    }),
+                    (0, m.jsx)("div", {
+                      className: "body",
+                      children: (0, m.jsxs)("div", {
+                        className: "nrc-table mock-table top10",
+                        children: [
+                          (0, m.jsxs)("div", {
+                            className: "table-header mock-table-header",
+                            children: [
+                              (0, m.jsx)("div", {
+                                style: d.styles.column,
+                                children: s.i18n["bet.game"],
+                              }),
+                              (0, m.jsx)("div", {
+                                style: d.styles.column,
+                                children: s.i18n["valid.bets"],
+                              }),
+                              (0, m.jsx)("div", {
+                                style: d.styles.column,
+                                children: s.i18n["rebate.amount"],
+                              }),
+                            ],
+                          }),
+                          j.map((e, t) => {
+                            let {
+                              gameProviderName: a,
+                              gameName: i,
+                              validBet: n,
+                              rebateValue: r,
+                            } = e;
+                            return (0, m.jsxs)(
+                              "div",
+                              {
+                                className: "mock-table-row",
+                                children: [
+                                  (0, m.jsx)("div", {
+                                    style: d.styles.column,
+                                    children: (0, m.jsxs)("div", {
+                                      style: d.styles.textCenter,
+                                      children: [
+                                        (0, m.jsx)("div", {
+                                          children: a,
+                                        }),
+                                        (0, m.jsx)("div", {
+                                          children: i,
+                                        }),
+                                      ],
+                                    }),
+                                  }),
+                                  (0, m.jsx)("div", {
+                                    style: d.styles.column,
+                                    children: n,
+                                  }),
+                                  (0, m.jsx)("div", {
+                                    style: d.styles.column,
+                                    children: r,
+                                  }),
+                                ],
+                              },
+                              `detailModalData${t}`
+                            );
+                          }),
+                        ],
+                      }),
+                    }),
+                  ],
+                }),
+              }),
+            (g.id || g.claimCount) &&
+              (0, m.jsx)(l.GiftModal, {
+                onHandleClose: () =>
+                  t({
+                    claimedModalData: {},
+                  }),
+                children: (0, m.jsxs)("div", {
+                  className: "message text-center",
+                  children: [
+                    g.id &&
+                      (0, m.jsxs)(m.Fragment, {
+                        children: [
+                          s.i18n["promo.claim.success"],
+                          (0, m.jsx)("div", {
+                            children: `${g.bonus} ${o.defaultCurrencyI18n}`,
+                          }),
+                        ],
+                      }),
+                    g.claimCount &&
+                      (0, m.jsx)("div", {
+                        children: (0, c.i18nVariables)(
+                          s.i18n["notification.center.claim.success.msg"],
+                          {
+                            count: g.claimCount,
+                          }
+                        ),
+                      }),
+                  ],
+                }),
+              }),
+          ],
+        });
+      };
+    },
+    6002: (e, t, a) => {
+      var i = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = void 0);
+      var n = i(a(83657));
+      a(81521), (t.default = n.default);
+    },
+    6503: (e, t, a) => {
+      var i = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = void 0);
+      var n = i(a(37780));
+      a(6732), (t.default = n.default);
+    },
+    6732: (e, t, a) => {
+      a.r(t);
+    },
+    8269: (e, t, a) => {
+      var i = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = function () {
+          const e = (0, l.useDispatch)(),
+            t = (0, l.useSelector)((e) => e.players.logined);
+          return (0, r.useCallback)(
+            (a) => {
+              if (m.includes(a) && !t)
+                return e((0, o.openErrorModal)(c.i18n["require.login"])), null;
+              const i = (function (e) {
+                if (!e || 0 !== e.indexOf("/")) return null;
+                const t = new URL(`${location.origin}${e}`);
+                if ("/launchgame" !== t.pathname) return null;
+                const a = n.default.parse(t.search.substr(1));
+                return [
+                  "distributorid",
+                  "gameid",
+                  "gameproviderid",
+                  "producttypeid",
+                ].every((e) => !!a[e])
+                  ? a
+                  : null;
+              })(a);
+              if (i) {
+                if (!t)
+                  return (
+                    (window.location.href = `${window.location.origin}${u.paths.LOGIN}`),
+                    null
+                  );
+                s.default.set("launchGameData", i);
+                try {
+                  d.default.launchGame(i);
+                } catch (e) {}
+                return u.paths.LAUNCHGAME;
+              }
+              return a;
+            },
+            [e, t]
+          );
+        });
+      var n = i(a(47186)),
+        r = a(96540),
+        l = a(67467),
+        s = i(a(27179)),
+        o = a(84707),
+        d = i(a(36188)),
+        c = a(51628),
+        u = a(15062);
+      const m = [u.paths.AFFILIATE, u.paths.MISSION, u.paths.FAVORITE_GAMES];
+    },
+    10975: (e, t, a) => {
+      var i = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        Object.defineProperty(t, "default", {
+          enumerable: !0,
+          get: function () {
+            return n.default;
+          },
+        });
+      var n = i(a(96404));
+    },
+    28429: (e, t, a) => {
+      var i = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = void 0);
+      var n = i(a(145));
+      a(95182), (t.default = n.default);
+    },
+    37780: (e, t, a) => {
+      var i = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = void 0);
+      var n = (function (e) {
+          if ("function" == typeof WeakMap) {
+            var t = new WeakMap();
+            new WeakMap();
+          }
+          return (function (e) {
+            if (e && e.__esModule) return e;
+            var a,
+              i,
+              n = {
+                __proto__: null,
+                default: e,
+              };
+            if (null === e || ("object" != typeof e && "function" != typeof e))
+              return n;
+            if ((a = t)) {
+              if (a.has(e)) return a.get(e);
+              a.set(e, n);
+            }
+            for (const t in e)
+              "default" !== t &&
+                {}.hasOwnProperty.call(e, t) &&
+                ((i =
+                  (a = Object.defineProperty) &&
+                  Object.getOwnPropertyDescriptor(e, t)) &&
+                (i.get || i.set)
+                  ? a(n, t, i)
+                  : (n[t] = e[t]));
+            return n;
+          })(e);
+        })(a(96540)),
+        r = (i(a(5556)), i(a(2209)), a(9404)),
+        l = i(a(72524)),
+        s = i(a(83736)),
+        o = i(a(15361)),
+        d = a(85012),
+        c = i(a(3199)),
+        u = i(a(70713)),
+        m = i(a(52622)),
+        f = a(51628),
+        p = i(a(73881)),
+        h = a(74848);
+      const y = {
+          init: !1,
+          offset: 0,
+          isNextPageLoading: !1,
+        },
+        v = (e) => {
+          const {
+              itemData: t,
+              total: a,
+              limit: i,
+              className: r,
+              loadNextPage: m,
+              itemRenderer: f,
+              loadingRenderer: p,
+              emptyRenderer: v,
+              emptyText: b,
+              emptyIcon: g,
+              itemSize: j = 0,
+              isFixedSizeList: x,
+              startToInit: M,
+              ...N
+            } = e,
+            [_, C] = (0, l.default)(y),
+            R = (0, n.useRef)({}),
+            O = a > _.offset + i,
+            P = O ? t.size + 1 : t.size,
+            D = (e) => !O || e < t.size,
+            A = !x && 0 === j.length && 0 !== t.size,
+            T = (e, a) => {
+              !_.isNextPageLoading &&
+                O &&
+                a >= t.size &&
+                i &&
+                C({
+                  isNextPageLoading: !0,
+                  offset: _.offset + i,
+                });
+            },
+            w = x ? d.FixedSizeList : d.VariableSizeList,
+            I = x ? j : (e) => j[e],
+            S = () => {
+              m({
+                offset: 0,
+                limit: i,
+              }).then(() => {
+                C({
+                  init: !0,
+                });
+              });
+            };
+          (0, s.default)(() => {
+            S();
+          }),
+            (0, o.default)(() => {
+              M && (C(y), S());
+            }, [M]),
+            (0, o.default)(() => {
+              _.isNextPageLoading &&
+                m({
+                  offset: _.offset,
+                  limit: i,
+                }).then((e) => {
+                  _.init && e !== a
+                    ? C({
+                        init: !1,
+                        offset: 0,
+                      })
+                    : C({
+                        init: !0,
+                        isNextPageLoading: !1,
+                      });
+                });
+            }, [_.offset]),
+            (0, o.default)(() => {
+              var e;
+              (null == R || null === (e = R.current) || void 0 === e
+                ? void 0
+                : e.resetAfterIndex) && R.current.resetAfterIndex(0);
+            }, [j]);
+          const k = (e) => (D(e.index) ? f(e) : p(e));
+          return !_.init || A
+            ? (0, h.jsx)(u.default, {
+                children: (e) => {
+                  let { height: t, width: a } = e;
+                  return p({
+                    style: {
+                      height: t,
+                      width: a,
+                    },
+                  });
+                },
+              })
+            : (0, h.jsx)(u.default, {
+                children: (e) => {
+                  let { height: a, width: i } = e;
+                  return 0 === P
+                    ? v({
+                        height: a,
+                        width: i,
+                        emptyText: b,
+                        emptyIcon: g,
+                      })
+                    : (0, h.jsx)(c.default, {
+                        ...N,
+                        isItemLoaded: D,
+                        itemCount: P,
+                        loadMoreItems: T,
+                        children: (e) => {
+                          let { onItemsRendered: n, ref: l } = e;
+                          return (0, h.jsx)(w, {
+                            className: r,
+                            itemCount: P,
+                            itemSize: I,
+                            itemData: t,
+                            onItemsRendered: n,
+                            ref: (e) => {
+                              l(e), (R.current = e);
+                            },
+                            width: i,
+                            height: a,
+                            useIsScrolling: !0,
+                            children: k,
+                          });
+                        },
+                      });
+                },
+              });
+        };
+      (v.defaultProps = {
+        total: 0,
+        itemData: (0, r.List)(),
+        itemRenderer: () => {},
+        loadingRenderer: (e) => {
+          let { style: t } = e;
+          return (0, h.jsx)("div", {
+            style: {
+              ...t,
+              display: "flex",
+              alignItems: "center",
+            },
+            children: (0, h.jsx)(m.default, {}),
+          });
+        },
+        emptyRenderer: (e) => {
+          let {
+            width: t,
+            height: a,
+            emptyText: i,
+            emptyIcon: n = p.default,
+          } = e;
+          return (0, h.jsx)("div", {
+            className: "infinite-loader-empty-list",
+            style: {
+              width: t,
+              height: a,
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            },
+            children: (0, h.jsx)("div", {
+              className: "no-data-block",
+              children: i || f.i18n["no.data"],
+            }),
+          });
+        },
+        isFixedSizeList: !0,
+        startToInit: !1,
+      }),
+        (t.default = v);
+    },
+    38839: (e, t, a) => {
+      var i = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = function (e) {
+          let { handleClose: t = () => {} } = e;
+          return (0, d.jsx)("div", {
+            className: "hover-container",
+            children: (0, d.jsxs)("div", {
+              className: "container game-record",
+              children: [
+                (0, d.jsxs)("div", {
+                  className: "header",
+                  children: [
+                    (0, d.jsx)("h2", {
+                      className: "title-center",
+                      children: o.i18n["bet.detail"],
+                    }),
+                    (0, d.jsx)("i", {
+                      className: "mps-close",
+                      onClick: () => t(),
+                    }),
+                  ],
+                }),
+                (0, d.jsx)("div", {
+                  className: "body",
+                  children: (0, d.jsx)(n.default, {}),
+                }),
+              ],
+            }),
+          });
+        }),
+        (t.styles =
+          t.stateRenderer =
+          t.gamenameRenderer =
+          t.formatTimeRenderer =
+            void 0),
+        i(a(96540));
+      var n = i(a(52622)),
+        r = a(93185),
+        l = a(70913),
+        s = a(8087),
+        o = a(51628),
+        d = a(74848);
+      (t.styles = {
+        column: {
+          flex: 1,
+        },
+        textCenter: {
+          textAlign: "center",
+        },
+      }),
+        (t.formatTimeRenderer = (e) => {
+          let { columnData: t } = e;
+          return (0, l.formatDateTime)(t);
+        }),
+        (t.gamenameRenderer = (e) => {
+          let { columnData: t } = e;
+          return (0, r.getName)(t);
+        }),
+        (t.stateRenderer = (e) => {
+          let { columnData: t } = e;
+          return s.gameHistoryStatusEnum[t];
+        });
+    },
+    42383: (e, t, a) => {
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.notiTypeI18n =
+          t.notiTypeEnum =
+          t.notiRewardInfoTypeEnum =
+          t.getRewardInfoType =
+            void 0);
+      var i = a(51628);
+      const n = (t.notiTypeEnum = {
+          all: "all",
+          maintenance: "maintenance",
+          normalMsg: "normalMsg",
+          promos: "promos",
+          personalMsg: "personalMsg",
+          rewardInfo: "rewardInfo",
+        }),
+        r =
+          ((t.notiTypeI18n = {
+            [n.all]: i.i18n.all,
+            [n.maintenance]: i.i18n["maintenance.info"],
+            [n.normalMsg]: i.i18n["notification.center.normal.message"],
+            [n.promos]: i.i18n["notification.center.promos"],
+            [n.personalMsg]: i.i18n["personal.message.list"],
+            [n.rewardInfo]: i.i18n["profile.promo.title"],
+          }),
+          (t.notiRewardInfoTypeEnum = {
+            userPromos: "userPromos",
+            anytimeRebate: "anytimeRebate",
+            all: "all",
+          }));
+      t.getRewardInfoType = (e) =>
+        e.get("promoreqid")
+          ? r.userPromos
+          : e.get("rebateId")
+          ? r.anytimeRebate
+          : "";
+    },
+    45424: (e, t, a) => {
+      var i = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = void 0);
+      var n = a(96540),
+        r = i(a(9404));
+      t.default = (e) => {
+        let {
+          itemHeight: t = 0,
+          itemMargin: a = 0,
+          historyData: i = r.default.List(),
+          setHistoryData: l = () => {},
+        } = e;
+        const [s, o] = (0, n.useState)(() => new Date().getTime());
+        return {
+          onToggleCard: (e, t) => {
+            o(new Date().getTime());
+            const a = i.setIn([e, "isOpen"], t);
+            l({
+              data: a,
+              shouldAddState: !1,
+            });
+          },
+          historyCardHeights: (0, n.useMemo)(
+            () => i.toJS().map((e) => (null != e && e.isOpen ? t + a : t)),
+            [s, i]
+          ),
+        };
+      };
+    },
+    57096: (e, t, a) => {
+      a.r(t);
+    },
+    60210: (e, t, a) => {
+      var i = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = t.Tips = void 0);
+      var n = _(a(96540)),
+        r = i(a(34059)),
+        l = i(a(46942)),
+        s = a(9404),
+        o = i(a(96384)),
+        d = a(67467),
+        c = i(a(72524)),
+        u = i(a(10975)),
+        m = a(42383),
+        f = _(a(95764)),
+        p = a(76066),
+        h = a(53719),
+        y = a(83597),
+        v = a(16510),
+        b = a(70913),
+        g = a(51628),
+        j = a(93185),
+        x = i(a(7541)),
+        M = i(a(70585)),
+        N = a(74848);
+      function _(e, t) {
+        if ("function" == typeof WeakMap)
+          var a = new WeakMap(),
+            i = new WeakMap();
+        return (_ = function (e, t) {
+          if (!t && e && e.__esModule) return e;
+          var n,
+            r,
+            l = {
+              __proto__: null,
+              default: e,
+            };
+          if (null === e || ("object" != typeof e && "function" != typeof e))
+            return l;
+          if ((n = t ? i : a)) {
+            if (n.has(e)) return n.get(e);
+            n.set(e, l);
+          }
+          for (const t in e)
+            "default" !== t &&
+              {}.hasOwnProperty.call(e, t) &&
+              ((r =
+                (n = Object.defineProperty) &&
+                Object.getOwnPropertyDescriptor(e, t)) &&
+              (r.get || r.set)
+                ? n(l, t, r)
+                : (l[t] = e[t]));
+          return l;
+        })(e, t);
+      }
+      const C = {
+        offset: 0,
+        limit: 15,
+      };
+      (t.Tips = () =>
+        (0, N.jsxs)("div", {
+          className: "tips",
+          children: [
+            (0, N.jsx)("i", {
+              className: "icon-info",
+            }),
+            (0, j.i18nVariables)(g.i18n["data.range.tip.by.day"], {
+              day: 3,
+            }),
+          ],
+        })),
+        (t.default = function () {
+          let { defaultSearchData: e = C, historyCardHeightsMethod: t } =
+            arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+          const a = (0, r.default)(),
+            [i, _] = (0, c.default)({
+              searchData: e,
+              total: 0,
+              claimedModalData: {},
+              detailModalData: null,
+            }),
+            R = (0, d.useDispatch)(),
+            [O, P] = (0, M.default)(),
+            D = (0, n.useRef)(0),
+            A = (0, x.default)(h.claimAllPromosAndAnytimeRebate),
+            T = (0, x.default)(f.getUserAnytimeRebateWithDetail),
+            w = (0, x.default)(f.claimAnytimeRebate),
+            I = (0, n.useCallback)(
+              (e) => {
+                const t = e.get("recordDetails", []).map((e) => {
+                  const {
+                    gameProviderId: t,
+                    gameName: i,
+                    validBet: n,
+                    rebateValue: r,
+                  } = e.toJS();
+                  return {
+                    gameProviderName: a(t),
+                    gameName: i[g.currLocale],
+                    validBet: (0, v.formatMoney)(n),
+                    rebateValue: (0, v.formatMoney)(r),
+                  };
+                });
+                _({
+                  detailModalData: t,
+                });
+              },
+              [a, _]
+            ),
+            S = (0, n.useCallback)(
+              (e) => {
+                let {
+                  offset: t,
+                  limit: a,
+                  shouldUpdateSearchData: n = !0,
+                  forceUpdateState: r,
+                } = e;
+                const l = {
+                  ...i.searchData,
+                  offset: t,
+                  limit: a,
+                };
+                return T(l)
+                  .then((e) => {
+                    const { data: t, total: a } = e;
+                    D.current = 0;
+                    const s = t.map((e) => (e.claimed || (D.current += 1), e));
+                    return (
+                      P({
+                        data: s,
+                        offset: l.offset,
+                        limit: l.limit,
+                        forceUpdateState: r,
+                      }),
+                      _({
+                        searchData: n ? l : i.searchData,
+                        total: a,
+                      }),
+                      a
+                    );
+                  })
+                  .catch(() => {
+                    P((0, s.fromJS)({}));
+                  });
+              },
+              [T, P, _, i.searchData]
+            ),
+            k = (0, n.useCallback)(
+              (e) =>
+                A({
+                  type: e,
+                }).then((e) => {
+                  let { claimCount: t } = e;
+                  _({
+                    claimedModalData: {
+                      claimCount: t,
+                    },
+                  }),
+                    R((0, p.resetAnytimeRebateNoti)()),
+                    R((0, p.resetUserPromosNoti)()),
+                    (D.current = 0);
+                  const a = O.map((e) => e.set("claimed", !0));
+                  P({
+                    data: a,
+                    shouldAddState: !1,
+                  });
+                }),
+              [R, A, O, P, _]
+            ),
+            E = (0, n.useCallback)(
+              (e) => {
+                let { rebateId: t, index: a } = e;
+                w(t).then((e) => {
+                  const { bonus: i, waitClaim: n } = e,
+                    r = O.updateIn([a, "claimed"], () => !0);
+                  n || R((0, p.resetAnytimeRebateNoti)()),
+                    R(
+                      (0, h.refreshNotiCenterRewardInfo)(
+                        m.notiRewardInfoTypeEnum.anytimeRebate
+                      )
+                    ),
+                    _({
+                      claimedModalData: {
+                        id: t,
+                        bonus: i,
+                      },
+                    }),
+                    P({
+                      data: r,
+                      shouldAddState: !1,
+                    });
+                });
+              },
+              [w, O, P, _, R]
+            ),
+            L = (0, n.useCallback)(
+              (e, t) =>
+                (0, N.jsxs)("div", {
+                  className: "rebate-content",
+                  children: [
+                    (0, N.jsxs)("div", {
+                      className: "rebate-info",
+                      children: [
+                        (0, N.jsx)("div", {
+                          className: "date",
+                          children: (0, b.formatDateTime)(e.get("createTime")),
+                        }),
+                        e.get("isLimited") &&
+                          (0, N.jsx)("div", {
+                            className: "limit",
+                            children: g.i18n["receive.limit"],
+                          }),
+                        (0, N.jsx)("div", {
+                          className: "amount",
+                          children: (0, N.jsxs)("div", {
+                            className: "label",
+                            children: [
+                              (0, v.formatMoney)(e.get("totalRebateValue")),
+                              (0, N.jsx)("small", {
+                                children: y.defaultCurrencyI18n,
+                              }),
+                            ],
+                          }),
+                        }),
+                        (0, N.jsx)("div", {
+                          className: "title",
+                          children: (0, j.getName)(e.get("name")),
+                        }),
+                      ],
+                    }),
+                    (0, N.jsx)("div", {
+                      className: "rebate-func",
+                      children: (0, N.jsx)(o.default, {
+                        className: (0, l.default)("nrc-button claim-btn", {
+                          disabled: e.get("claimed"),
+                        }),
+                        disabled: e.get("claimed"),
+                        onClick: () => {
+                          E({
+                            rebateId: e.get("rebateId"),
+                            index: t,
+                          });
+                        },
+                        children: e.get("claimed")
+                          ? g.i18n["promo.status.claimed"]
+                          : g.i18n.claim,
+                      }),
+                    }),
+                  ],
+                }),
+              [E]
+            ),
+            U = (0, n.useCallback)(
+              (e) => {
+                let { index: t, data: a, style: i } = e;
+                const n = a.get(t);
+                return (0, N.jsx)("div", {
+                  style: i,
+                  children: (0, N.jsx)(
+                    "div",
+                    {
+                      className: "anytime-rebate-card",
+                      children: (0, N.jsx)(
+                        u.default,
+                        {
+                          content: () => L(n, t),
+                          onClick: () => I(n),
+                        },
+                        t
+                      ),
+                    },
+                    `history-${t}`
+                  ),
+                });
+              },
+              [L, I]
+            ),
+            W = (0, n.useMemo)(() => O.toJS().map(t), [O, t]);
+          return {
+            anytimeRebateState: i,
+            setAnytimeRebateState: _,
+            historyData: O,
+            loadNextPage: S,
+            itemRenderer: U,
+            historyCardHeights: W,
+            hasClaim: !!D.current,
+            onAllClaim: k,
+          };
+        });
+    },
+    60609: (e, t, a) => {
+      var i = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = void 0);
+      var n = (function (e) {
+          if ("function" == typeof WeakMap) {
+            var t = new WeakMap();
+            new WeakMap();
+          }
+          return (function (e) {
+            if (e && e.__esModule) return e;
+            var a,
+              i,
+              n = {
+                __proto__: null,
+                default: e,
+              };
+            if (null === e || ("object" != typeof e && "function" != typeof e))
+              return n;
+            if ((a = t)) {
+              if (a.has(e)) return a.get(e);
+              a.set(e, n);
+            }
+            for (const t in e)
+              "default" !== t &&
+                {}.hasOwnProperty.call(e, t) &&
+                ((i =
+                  (a = Object.defineProperty) &&
+                  Object.getOwnPropertyDescriptor(e, t)) &&
+                (i.get || i.set)
+                  ? a(n, t, i)
+                  : (n[t] = e[t]));
+            return n;
+          })(e);
+        })(a(96540)),
+        r = i(a(7541)),
+        l = i(a(45424)),
+        s = i(a(70585)),
+        o = i(a(46942)),
+        d = a(9404),
+        c = a(67467),
+        u = i(a(72524)),
+        m = i(a(10975)),
+        f = i(a(6503)),
+        p = a(3057),
+        h = a(42383),
+        y = i(a(80309)),
+        v = i(a(2942)),
+        b = a(76066),
+        g = a(53719),
+        j = a(83597),
+        x = a(8087),
+        M = a(70913),
+        N = a(51628),
+        _ = a(93185),
+        C = a(74848);
+      t.default = () => {
+        const e = (0, c.useDispatch)(),
+          t = (0, n.useRef)(0),
+          a = (0, n.useRef)({}),
+          [i, R] = (0, u.default)({
+            searchData: {
+              offset: 0,
+              limit: 15,
+            },
+            total: null,
+            startToInit: !1,
+            claimedModalData: {},
+          }),
+          [O, P] = (0, s.default)(),
+          { onToggleCard: D, historyCardHeights: A } = (0, l.default)({
+            itemHeight: 140,
+            itemMargin: 20,
+            historyData: O,
+            setHistoryData: P,
+          }),
+          T = (0, r.default)(g.claimAllPromosAndAnytimeRebate),
+          w = (0, r.default)(g.getUserPromos),
+          I = (0, r.default)(g.postClaim),
+          S = (0, n.useCallback)(
+            (e) => {
+              let {
+                offset: n,
+                limit: r,
+                shouldUpdateSearchData: l = !0,
+                forceUpdateState: s,
+              } = e;
+              const o = {
+                ...i.searchData,
+                offset: n,
+                limit: r,
+              };
+              return w(o).then((e) => {
+                var n;
+                const r = new Date().getTime(),
+                  d = null == e ? void 0 : e.total;
+                t.current = t.current || 0;
+                const c =
+                  null == e || null === (n = e.data) || void 0 === n
+                    ? void 0
+                    : n.map(
+                        (e) => (
+                          (e.isOpen = !1),
+                          e.derivedstatus !== x.promoStatus.WAITFORCLAIM ||
+                            a.current[e.promoreqid] ||
+                            ((a.current[e.promoreqid] = !0), (t.current += 1)),
+                          e.countdown
+                            ? {
+                                ...e,
+                                expireTime: r + 1e3 * e.countdown,
+                              }
+                            : e
+                        )
+                      );
+                return (
+                  P({
+                    data: c,
+                    offset: o.offset,
+                    limit: o.limit,
+                    forceUpdateState: s,
+                  }),
+                  R({
+                    searchData: l ? o : i.searchData,
+                    total: d,
+                    startToInit: !1,
+                  }),
+                  d
+                );
+              });
+            },
+            [i.searchData, w, P, R]
+          ),
+          k = (e) => {
+            e > -1 &&
+              S({
+                offset: e,
+                limit: 10,
+                shouldUpdateSearchData: !1,
+                forceUpdateState: !0,
+              });
+          },
+          E = (0, n.useCallback)(
+            (a) =>
+              T({
+                type: a,
+              }).then((a) => {
+                let { claimCount: i } = a;
+                R({
+                  claimedModalData: {
+                    claimCount: i,
+                  },
+                }),
+                  (t.current = 0),
+                  e(
+                    (0, g.refreshNotiCenterRewardInfo)(
+                      h.notiRewardInfoTypeEnum.userPromos
+                    )
+                  ),
+                  e((0, b.resetUserPromosNoti)()),
+                  e((0, b.resetAnytimeRebateNoti)()),
+                  O.forEach((e, t) => k(t));
+              }),
+            [e, T, k, O, R]
+          ),
+          L = (a, i) => {
+            const {
+                promoreqid: n,
+                createdat: r,
+                derivedstatus: l,
+                bonus: s,
+                expireTime: d,
+                promotype: c,
+                hideecdisplay: u,
+              } = a.toJS() || {},
+              m =
+                u &&
+                l === x.promoStatus.WAITFORCLAIM &&
+                c === x.promoTypeEnum.MANUAL_BONUS;
+            return (0, C.jsxs)("div", {
+              className: "promo-content",
+              children: [
+                (0, C.jsxs)("div", {
+                  className: "promo-info",
+                  children: [
+                    (0, C.jsxs)("div", {
+                      className: "date",
+                      children: [
+                        (0, C.jsx)("span", {
+                          children: (0, M.formatDateTime)(r),
+                        }),
+                        l === x.promoStatus.WAITFORCLAIM &&
+                          (0, C.jsxs)("span", {
+                            className: "timer",
+                            children: [
+                              (0, C.jsx)("span", {
+                                children: N.i18n["remaining.time"],
+                              }),
+                              (0, C.jsx)(v.default, {
+                                seconds: (d - new Date().getTime()) / 1e3 - 1,
+                                onEnd: () => {
+                                  k(i);
+                                },
+                              }),
+                            ],
+                          }),
+                      ],
+                    }),
+                    !m &&
+                      (0, C.jsxs)("div", {
+                        className: "amount",
+                        children: [
+                          s,
+                          (0, C.jsx)("small", {
+                            children: j.defaultCurrencyI18n,
+                          }),
+                        ],
+                      }),
+                    (0, C.jsx)("div", {
+                      className: "title",
+                      children: (0, _.getPromoHistoryPromoName)(a.toJS()),
+                    }),
+                  ],
+                }),
+                (0, C.jsx)("div", {
+                  className: "promo-func",
+                  children:
+                    l === x.promoStatus.WAITFORCLAIM
+                      ? (0, C.jsx)("button", {
+                          className: "nrc-button claim-btn",
+                          onClick: () => {
+                            ((a) => {
+                              let { promoreqid: i, index: n } = a;
+                              I(i).then((a) => {
+                                t.current -= 1;
+                                const { bonus: r, waitClaim: l } = a;
+                                R({
+                                  claimedModalData: {
+                                    id: i,
+                                    bonus: r,
+                                  },
+                                }),
+                                  k(n),
+                                  e(
+                                    (0, g.refreshNotiCenterRewardInfo)(
+                                      h.notiRewardInfoTypeEnum.userPromos
+                                    )
+                                  ),
+                                  l || e((0, b.resetUserPromosNoti)());
+                              });
+                            })({
+                              promoreqid: n,
+                              index: i,
+                            });
+                          },
+                          children: N.i18n.claim,
+                        })
+                      : (0, C.jsx)("div", {
+                          className: (0, o.default)("status", {
+                            success: [
+                              x.promoStatus.APPROVED,
+                              x.promoStatus.CLAIMED,
+                            ].includes(l),
+                            failed: l === x.promoStatus.REJECT,
+                          }),
+                          children: (0, C.jsx)("button", {
+                            className: "nrc-button claim-btn disabled",
+                            children: x.promoStatus[l],
+                          }),
+                        }),
+                }),
+              ],
+            });
+          };
+        return (0, C.jsxs)("div", {
+          className: "infinite-loader-wrapper",
+          children: [
+            !!t.current &&
+              (0, C.jsx)("div", {
+                className: "claim-all-wrapper",
+                children: (0, C.jsx)("button", {
+                  className: "nrc-button btm-btn claim-all-btn",
+                  onClick: () => E(x.claimTypeEnum.PROMO),
+                  children: N.i18n["notification.center.claim.at.once"],
+                }),
+              }),
+            (0, C.jsx)("div", {
+              className: (0, o.default)("content-block", {
+                "claim-all-padding": t.current,
+              }),
+              children: (0, C.jsx)(f.default, {
+                limit: i.searchData.limit,
+                itemSize: A,
+                threshold: 10,
+                total: i.total,
+                itemData: O,
+                isFixedSizeList: !1,
+                loadNextPage: S,
+                itemRenderer: (e) => {
+                  let { index: t, data: a, style: i } = e;
+                  const n = a.get(t, (0, d.List)()),
+                    r = n.get("promotype"),
+                    l = n.get("promoreqid");
+                  return (0, C.jsx)("div", {
+                    style: i,
+                    children: (0, C.jsx)(
+                      "div",
+                      {
+                        className: "promo-card",
+                        children:
+                          r === x.promoType.MANUALBONUS
+                            ? (0, C.jsx)(m.default, {
+                                onToggleCard: (e) => D(t, e),
+                                isOpen: n.get("isOpen"),
+                                content: () => L(n, t),
+                                detailContent: () =>
+                                  ((e) =>
+                                    (0, C.jsx)("div", {
+                                      children: (0, C.jsx)(y.default, {
+                                        text: e.get("ecremarks"),
+                                        tooltip: !0,
+                                      }),
+                                    }))(n),
+                              })
+                            : L(n, t),
+                      },
+                      `${l}-${t}`
+                    ),
+                  });
+                },
+                startToInit: i.startToInit,
+              }),
+            }),
+            (i.claimedModalData.id || i.claimedModalData.claimCount) &&
+              (0, C.jsx)(p.GiftModal, {
+                onHandleClose: () =>
+                  R({
+                    claimedModalData: {},
+                  }),
+                children: (0, C.jsxs)("div", {
+                  className: "message text-center",
+                  children: [
+                    i.claimedModalData.id &&
+                      (0, C.jsxs)(C.Fragment, {
+                        children: [
+                          N.i18n["promo.claim.success"],
+                          (0, C.jsx)("div", {
+                            children: `${i.claimedModalData.bonus} ${j.defaultCurrencyI18n}`,
+                          }),
+                        ],
+                      }),
+                    i.claimedModalData.claimCount &&
+                      (0, C.jsx)("div", {
+                        children: (0, _.i18nVariables)(
+                          N.i18n["notification.center.claim.success.msg"],
+                          {
+                            count: i.claimedModalData.claimCount,
+                          }
+                        ),
+                      }),
+                  ],
+                }),
+              }),
+          ],
+        });
+      };
+    },
+    60686: (e, t, a) => {
+      var i = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = void 0),
+        i(a(96540));
+      var n = a(67467),
+        r = i(a(72524)),
+        l = i(a(7541)),
+        s = a(53719),
+        o = a(76066),
+        d = a(3057),
+        c = a(93185),
+        u = a(51628),
+        m = a(74848);
+      t.default = (e) => {
+        let { children: t, onRefresh: a } = e;
+        const [i, f] = (0, r.default)({
+            isClaimModalOpen: !1,
+            count: null,
+            data: {},
+          }),
+          p = (0, l.default)(s.claimAllPromosAndAnytimeRebate),
+          h = (0, n.useDispatch)();
+        return (0, m.jsxs)(m.Fragment, {
+          children: [
+            t(() => {
+              p().then((e) => {
+                let { claimCount: t } = e;
+                f({
+                  isClaimModalOpen: !0,
+                  count: t,
+                }),
+                  h((0, o.resetAnytimeRebateNoti)()),
+                  h((0, o.resetUserPromosNoti)());
+              });
+            }),
+            i.isClaimModalOpen &&
+              (0, m.jsx)(d.GiftModal, {
+                onHandleClose: () => {
+                  a(),
+                    f({
+                      isClaimModalOpen: !1,
+                      count: null,
+                    });
+                },
+                children: (0, m.jsx)("div", {
+                  className: "message text-center",
+                  children: (0, m.jsx)("div", {
+                    children: (0, c.i18nVariables)(
+                      u.i18n["notification.center.claim.success.msg"],
+                      {
+                        count: i.count,
+                      }
+                    ),
+                  }),
+                }),
+              }),
+          ],
+        });
+      };
+    },
+    70585: (e, t, a) => {
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = void 0);
+      var i = a(96540),
+        n = a(9404);
+      t.default = () => {
+        const [e, t] = (0, i.useState)((0, n.List)()),
+          a = (0, i.useCallback)(
+            (a) => {
+              let i,
+                {
+                  data: r,
+                  offset: l,
+                  limit: s,
+                  shouldAddState: o = !0,
+                  forceUpdateState: d,
+                } = a;
+              if (
+                (n.List.isList(r)
+                  ? (i = r)
+                  : Array.isArray(r) && (i = (0, n.fromJS)(r)),
+                i)
+              )
+                if ((0 !== l || d) && o) {
+                  let a = e;
+                  for (let e = 0; e < s; e++) {
+                    const t = e + l;
+                    i.has(e) && (a = a.set(t, i.get(e)));
+                  }
+                  t(a);
+                } else t(i);
+            },
+            [e]
+          );
+        return [e, a];
+      };
+    },
+    72140: (e, t, a) => {
+      a.r(t);
+    },
+    80309: (e, t, a) => {
+      var i = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        Object.defineProperty(t, "default", {
+          enumerable: !0,
+          get: function () {
+            return n.default;
+          },
+        });
+      var n = i(a(94320));
+    },
+    81521: (e, t, a) => {
+      a.r(t);
+    },
+    83657: (e, t, a) => {
+      var i = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = void 0);
+      var n = (function (e) {
+          if ("function" == typeof WeakMap) {
+            var t = new WeakMap();
+            new WeakMap();
+          }
+          return (function (e) {
+            if (e && e.__esModule) return e;
+            var a,
+              i,
+              n = {
+                __proto__: null,
+                default: e,
+              };
+            if (null === e || ("object" != typeof e && "function" != typeof e))
+              return n;
+            if ((a = t)) {
+              if (a.has(e)) return a.get(e);
+              a.set(e, n);
+            }
+            for (const t in e)
+              "default" !== t &&
+                {}.hasOwnProperty.call(e, t) &&
+                ((i =
+                  (a = Object.defineProperty) &&
+                  Object.getOwnPropertyDescriptor(e, t)) &&
+                (i.get || i.set)
+                  ? a(n, t, i)
+                  : (n[t] = e[t]));
+            return n;
+          })(e);
+        })(a(96540)),
+        r = a(67467),
+        l = a(51628),
+        s = i(a(96384)),
+        o = i(a(60609)),
+        d = i(a(28429)),
+        c = i(a(60686)),
+        u = a(74848);
+      const m = {
+          PROMO: "PROMO",
+          ANYTIME_REBATE: "ANYTIME_REBATE",
+        },
+        f = {
+          [m.PROMO]: {
+            title: l.i18n["profile.promo.title"],
+            comp: o.default,
+          },
+          [m.ANYTIME_REBATE]: {
+            title: l.i18n["anytime.rebate"],
+            comp: d.default,
+          },
+        };
+      t.default = (e) => {
+        let { onlyShowPromoInfo: t = !1, popup: a = !1 } = e;
+        const [i, l] = (0, n.useState)(Date.now()),
+          d = (0, r.useSelector)(
+            (e) => e.dashboard.ecEnabledAnytimeRebateSettlement
+          ),
+          [p, h] = (0, n.useState)(m.PROMO),
+          y = (0, n.useMemo)(() => f[p].comp, [p]),
+          v = (0, n.useMemo)(
+            () => ({
+              [m.ANYTIME_REBATE]: d,
+            }),
+            [d]
+          ),
+          b = Object.keys(m).filter(
+            (e) =>
+              (!Object.prototype.hasOwnProperty.call(v, e) || v[e]) && e !== p
+          );
+        return (0, u.jsxs)("div", {
+          className: "member-center-promo-history",
+          children: [
+            !t &&
+              (0, u.jsxs)("div", {
+                className: "title-wrapper",
+                children: [
+                  (0, u.jsx)("div", {
+                    className: "title",
+                    children: f[p].title,
+                  }),
+                  (0, u.jsx)("div", {
+                    className: "button-group",
+                    children: b.map((e, t) =>
+                      (0, u.jsx)(
+                        s.default,
+                        {
+                          onClick: () => h(e),
+                          children: f[e].title,
+                        },
+                        t
+                      )
+                    ),
+                  }),
+                ],
+              }),
+            (0, u.jsx)(c.default, {
+              onRefresh: () => {
+                l(Date.now());
+              },
+              children: (e) => {
+                const n = a ? e : void 0;
+                return t
+                  ? (0, u.jsx)(
+                      o.default,
+                      {
+                        claimAtOnce: n,
+                      },
+                      i
+                    )
+                  : (0, u.jsx)(
+                      y,
+                      {
+                        claimAtOnce: n,
+                      },
+                      i
+                    );
+              },
+            }),
+          ],
+        });
+      };
+    },
+    94320: (e, t, a) => {
+      var i = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = void 0);
+      var n = (function (e) {
+          if ("function" == typeof WeakMap) {
+            var t = new WeakMap();
+            new WeakMap();
+          }
+          return (function (e) {
+            if (e && e.__esModule) return e;
+            var a,
+              i,
+              n = {
+                __proto__: null,
+                default: e,
+              };
+            if (null === e || ("object" != typeof e && "function" != typeof e))
+              return n;
+            if ((a = t)) {
+              if (a.has(e)) return a.get(e);
+              a.set(e, n);
+            }
+            for (const t in e)
+              "default" !== t &&
+                {}.hasOwnProperty.call(e, t) &&
+                ((i =
+                  (a = Object.defineProperty) &&
+                  Object.getOwnPropertyDescriptor(e, t)) &&
+                (i.get || i.set)
+                  ? a(n, t, i)
+                  : (n[t] = e[t]));
+            return n;
+          })(e);
+        })(a(96540)),
+        r = i(a(46942)),
+        l = a(38560),
+        s = a(51628);
+      a(72140);
+      var o = a(74848);
+      t.default = (e) => {
+        var t;
+        let { text: a, tooltip: i = !0, isScrolling: d } = e;
+        const c = (0, n.useRef)(),
+          [u, m] = (0, n.useState)(!1),
+          f = () => !!a && m(!u);
+        (0, n.useEffect)(() => {
+          l.isMobile && d && u && m(!1);
+        }, [d]);
+        const p =
+          ((null === (t = c.current) || void 0 === t
+            ? void 0
+            : t.clientWidth) || 400) - 50;
+        return (0, o.jsxs)("div", {
+          ref: c,
+          className: "ec-tooltip-remark-block",
+          onMouseLeave: () => u && m(!1),
+          children: [
+            (0, o.jsx)("div", {
+              style: {
+                maxWidth: p,
+              },
+              className: (0, r.default)("remark-tooltip", {
+                show: u,
+              }),
+              onMouseEnter: () => !u && m(!0),
+              children: a,
+            }),
+            (0, o.jsxs)("div", {
+              className: (0, r.default)("remark-text", {
+                "hide-multiple-lines": i,
+              }),
+              children: [
+                (0, o.jsxs)("span", {
+                  children: [s.i18n.remarks, ": "],
+                }),
+                a,
+              ],
+            }),
+            i &&
+              (0, o.jsx)("div", {
+                className: "more-place",
+                onMouseEnter: () => {
+                  !l.isMobile && f();
+                },
+                onClick: (e) => {
+                  e.stopPropagation(), l.isMobile && f();
+                },
+                children: (0, o.jsx)("div", {
+                  className: "more-circle-btn",
+                }),
+              }),
+          ],
+        });
+      };
+    },
+    95182: (e, t, a) => {
+      a.r(t);
+    },
+    95764: (e, t, a) => {
+      var i = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.getUserAnytimeRebateWithDetail =
+          t.getUserAnytimeRebate =
+          t.claimAnytimeRebate =
+            void 0);
+      var n = i(a(32080)),
+        r = a(68686),
+        l = i(a(86663)),
+        s = (function (e) {
+          if ("function" == typeof WeakMap) {
+            var t = new WeakMap();
+            new WeakMap();
+          }
+          return (function (e) {
+            if (e && e.__esModule) return e;
+            var a,
+              i,
+              n = {
+                __proto__: null,
+                default: e,
+              };
+            if (null === e || ("object" != typeof e && "function" != typeof e))
+              return n;
+            if ((a = t)) {
+              if (a.has(e)) return a.get(e);
+              a.set(e, n);
+            }
+            for (const t in e)
+              "default" !== t &&
+                {}.hasOwnProperty.call(e, t) &&
+                ((i =
+                  (a = Object.defineProperty) &&
+                  Object.getOwnPropertyDescriptor(e, t)) &&
+                (i.get || i.set)
+                  ? a(n, t, i)
+                  : (n[t] = e[t]));
+            return n;
+          })(e);
+        })(a(50974));
+      (t.getUserAnytimeRebate = (e) => {
+        const t = l.default.stringify(e);
+        return (0, n.default)({
+          url: `${r.baseURL}/anytimeRebate/record?${t}`,
+          method: "GET",
+        });
+      }),
+        (t.getUserAnytimeRebateWithDetail = (e) => {
+          const t = l.default.stringify(e);
+          return (0, n.default)({
+            url: `${r.baseURL}/anytimeRebate/record/detail?${t}`,
+            method: "GET",
+          });
+        }),
+        (t.claimAnytimeRebate = (e) => ({
+          types: [
+            s.PUT_CLAIM_ANYTIME_REBATE_REQ,
+            s.PUT_CLAIM_ANYTIME_REBATE_SUCCESS,
+            s.PUT_CLAIM_ANYTIME_REBATE_FAILURE,
+          ],
+          promiseType: "",
+          promises: [
+            () =>
+              (0, n.default)({
+                url: `${r.baseURL}/anytimeRebate/${e}`,
+                method: "PUT",
+              }),
+          ],
+        }));
+    },
+    96404: (e, t, a) => {
+      var i = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = void 0);
+      var n = i(a(96540)),
+        r = i(a(60781)),
+        l = a(51628);
+      a(57096);
+      var s = a(74848);
+      const o = (e) => {
+        let {
+          content: t,
+          detailContent: a,
+          onToggleCard: i,
+          isOpen: n,
+          disableToggle: o,
+          onClick: d,
+        } = e;
+        const [c, u] = (0, r.default)(n),
+          m = (e) => {
+            o || (u(e), i(e));
+          };
+        return (0, s.jsxs)("div", {
+          className: "detail-card",
+          children: [
+            (0, s.jsx)("div", {
+              className: "card-content",
+              children: t(),
+            }),
+            c
+              ? (0, s.jsx)("div", {
+                  className: "card-detail-content " + (o ? "disabled" : ""),
+                  onClick: () => {
+                    m(!1);
+                  },
+                  children: (0, s.jsx)("div", {
+                    className: "detail-item",
+                    children: a(),
+                  }),
+                })
+              : (0, s.jsx)("div", {
+                  className: "card-more-btn",
+                  onClick: () => {
+                    d && d(), i && m(!0);
+                  },
+                  children: l.i18n["more.content"],
+                }),
+          ],
+        });
+      };
+      (o.defaultProps = {
+        content: () => {},
+        detailContent: () => {},
+        onToggleCard: () => {},
+        isOpen: !1,
+        disableToggle: !1,
+      }),
+        (t.default = n.default.memo(o));
+    },
+  },
+]);

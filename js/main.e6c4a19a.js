@@ -6698,7 +6698,53 @@
       }),
         (t.default = void 0);
       var n = a(r(27179));
+      const o = [
+        { pattern: "s2sConfig", file: "data/011-s2sConfig.json" },
+        {
+          pattern: "enabledGameProviders",
+          file: "data/076-enabledGameProviders.json",
+        },
+        { pattern: "players/get", file: "data/077-get.json" },
+        { pattern: "loginSetting", file: "data/081-setting.json" },
+        {
+          pattern: "RegistrationSetting",
+          file: "data/082-setting.json",
+        },
+        { pattern: "getBanners", file: "data/083-ads.json" },
+        { pattern: "getAnnouncement", file: "data/084-announcements.json" },
+        { pattern: "getNews", file: "data/085-announcements.json" },
+        { pattern: "getOrders", file: "data/086-orders.json" },
+        { pattern: "getMoreOrders", file: "data/087-orders.json" },
+        { pattern: "getDisplaySetting", file: "data/088-displaySetting.json" },
+        { pattern: "AnnouncementEnabled", file: "data/089-enabled.json" },
+        { pattern: "getAllGameList", file: "data/092-allGameList.json" },
+        { pattern: "getMaintenanceList", file: "data/093-maintenance.json" },
+        {
+          pattern: "getActiveShortcut",
+          file: "data/094-activeshortcuts.json",
+        },
+        {
+          pattern: "getAffiliateSetting",
+          file: "data/096-referralsetting.json",
+        },
+        { pattern: "getFloatingAds", file: "data/111-floatingads.json" },
+        { pattern: "getAllGameName", file: "data/132-allGameName.json" },
+      ];
+      const _ = (e) => {
+        if (!e) return null;
+        const r = e.toLowerCase();
+        const t = o.find(({ pattern: t }) => r.includes(t.toLowerCase()));
+        return t ? `./${t.file}` : null;
+      };
       t.default = (e) => {
+        e = e || {};
+        const r = _(e.url);
+        if (r) {
+          e.url = r;
+          e.method = "GET";
+          e.setToken = !1;
+          e.type || (e.type = "json");
+        }
         const t = new Promise((t, r) => {
           ((e) => {
             const t = new XMLHttpRequest(),

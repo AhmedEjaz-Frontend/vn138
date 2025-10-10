@@ -1,2 +1,586 @@
 /*! For license information please see 3234.fd364f8c.js.LICENSE.txt */
-(self.webpackChunknogle_react_boilerplate=self.webpackChunknogle_react_boilerplate||[]).push([[3234],{10047:(e,n,t)=>{"use strict";Object.defineProperty(n,"__esModule",{value:!0});var r=t(31635),o=t(96540),i=r.__importDefault(t(59905));n.default=function(e){var n=o.useRef(0),t=o.useState(e),r=t[0],a=t[1],u=o.useCallback(function(e){cancelAnimationFrame(n.current),n.current=requestAnimationFrame(function(){a(e)})},[]);return i.default(function(){cancelAnimationFrame(n.current)}),[r,u]}},11642:(e,n,t)=>{var r;if(t.g.crypto&&crypto.getRandomValues){var o=new Uint8Array(16);r=function(){return crypto.getRandomValues(o),o}}if(!r){var i=new Array(16);r=function(){for(var e,n=0;n<16;n++)3&n||(e=4294967296*Math.random()),i[n]=e>>>((3&n)<<3)&255;return i}}e.exports=r},13876:(e,n,t)=>{"use strict";Object.defineProperty(n,"__esModule",{value:!0});var r=t(96540);n.default=function(){var e=r.useRef(!1),n=r.useCallback(function(){return e.current},[]);return r.useEffect(function(){return e.current=!0,function(){e.current=!1}},[]),n}},16426:e=>{e.exports=function(){var e=document.getSelection();if(!e.rangeCount)return function(){};for(var n=document.activeElement,t=[],r=0;r<e.rangeCount;r++)t.push(e.getRangeAt(r));switch(n.tagName.toUpperCase()){case"INPUT":case"TEXTAREA":n.blur();break;default:n=null}return e.removeAllRanges(),function(){"Caret"===e.type&&e.removeAllRanges(),e.rangeCount||t.forEach(function(n){e.addRange(n)}),n&&n.focus()}}},17965:(e,n,t)=>{"use strict";var r=t(16426),o={"text/plain":"Text","text/html":"Url",default:"Text"};e.exports=function(e,n){var t,i,a,u,l,c,s=!1;n||(n={}),t=n.debug||!1;try{if(a=r(),u=document.createRange(),l=document.getSelection(),(c=document.createElement("span")).textContent=e,c.ariaHidden="true",c.style.all="unset",c.style.position="fixed",c.style.top=0,c.style.clip="rect(0, 0, 0, 0)",c.style.whiteSpace="pre",c.style.webkitUserSelect="text",c.style.MozUserSelect="text",c.style.msUserSelect="text",c.style.userSelect="text",c.addEventListener("copy",function(r){if(r.stopPropagation(),n.format)if(r.preventDefault(),void 0===r.clipboardData){t&&console.warn("unable to use e.clipboardData"),t&&console.warn("trying IE specific stuff"),window.clipboardData.clearData();var i=o[n.format]||o.default;window.clipboardData.setData(i,e)}else r.clipboardData.clearData(),r.clipboardData.setData(n.format,e);n.onCopy&&(r.preventDefault(),n.onCopy(r.clipboardData))}),document.body.appendChild(c),u.selectNodeContents(c),l.addRange(u),!document.execCommand("copy"))throw new Error("copy command was unsuccessful");s=!0}catch(r){t&&console.error("unable to copy using execCommand: ",r),t&&console.warn("trying IE specific stuff");try{window.clipboardData.setData(n.format||"text",e),n.onCopy&&n.onCopy(window.clipboardData),s=!0}catch(r){t&&console.error("unable to copy using clipboardData: ",r),t&&console.error("falling back to prompt"),i=function(e){var n=(/mac os x/i.test(navigator.userAgent)?"⌘":"Ctrl")+"+C";return e.replace(/#{\s*key\s*}/g,n)}("message"in n?n.message:"Copy to clipboard: #{key}, Enter"),window.prompt(i,e)}}finally{l&&("function"==typeof l.removeRange?l.removeRange(u):l.removeAllRanges()),c&&document.body.removeChild(c),a()}return s}},18367:(e,n,t)=>{"use strict";Object.defineProperty(n,"__esModule",{value:!0});var r=t(96540),o=t(66691).isBrowser?r.useLayoutEffect:r.useEffect;n.default=o},33788:(e,n,t)=>{"use strict";Object.defineProperty(n,"__esModule",{value:!0});var r=t(31635),o=t(96540),i=r.__importDefault(t(51916)),a=r.__importDefault(t(18367)),u=t(66691);n.default=function(e,n,t){void 0===t&&(t={});var r=t.video,l=t.onClose,c=void 0===l?u.noop:l,s=o.useState(n),f=s[0],d=s[1];return a.default(function(){if(n&&e.current){var t=function(){(null==r?void 0:r.current)&&u.off(r.current,"webkitendfullscreen",t),c()},o=function(){if(i.default.isEnabled){var e=i.default.isFullscreen;d(e),e||c()}};if(i.default.isEnabled){try{i.default.request(e.current),d(!0)}catch(e){c(e),d(!1)}i.default.on("change",o)}else r&&r.current&&r.current.webkitEnterFullscreen?(r.current.webkitEnterFullscreen(),u.on(r.current,"webkitendfullscreen",t),d(!0)):(c(),d(!1));return function(){if(d(!1),i.default.isEnabled)try{i.default.off("change",o),i.default.exit()}catch(e){}else r&&r.current&&r.current.webkitExitFullscreen&&(u.off(r.current,"webkitendfullscreen",t),r.current.webkitExitFullscreen())}}},[n,r,e]),f}},34364:(e,n,t)=>{"use strict";Object.defineProperty(n,"__esModule",{value:!0});var r=t(31635),o=t(96540),i=r.__importDefault(t(10047)),a=t(66691);n.default=function(e){var n=void 0===e?{}:e,t=n.initialWidth,r=void 0===t?1/0:t,u=n.initialHeight,l=void 0===u?1/0:u,c=n.onChange,s=i.default({width:a.isBrowser?window.innerWidth:r,height:a.isBrowser?window.innerHeight:l}),f=s[0],d=s[1];return o.useEffect(function(){if(a.isBrowser){var e=function(){var e=window.innerWidth,n=window.innerHeight;d({width:e,height:n}),c&&c(e,n)};return a.on(window,"resize",e),function(){a.off(window,"resize",e)}}},[]),f}},51916:e=>{!function(){"use strict";var n="undefined"!=typeof window&&void 0!==window.document?window.document:{},t=e.exports,r=function(){for(var e,t=[["requestFullscreen","exitFullscreen","fullscreenElement","fullscreenEnabled","fullscreenchange","fullscreenerror"],["webkitRequestFullscreen","webkitExitFullscreen","webkitFullscreenElement","webkitFullscreenEnabled","webkitfullscreenchange","webkitfullscreenerror"],["webkitRequestFullScreen","webkitCancelFullScreen","webkitCurrentFullScreenElement","webkitCancelFullScreen","webkitfullscreenchange","webkitfullscreenerror"],["mozRequestFullScreen","mozCancelFullScreen","mozFullScreenElement","mozFullScreenEnabled","mozfullscreenchange","mozfullscreenerror"],["msRequestFullscreen","msExitFullscreen","msFullscreenElement","msFullscreenEnabled","MSFullscreenChange","MSFullscreenError"]],r=0,o=t.length,i={};r<o;r++)if((e=t[r])&&e[1]in n){for(r=0;r<e.length;r++)i[t[0][r]]=e[r];return i}return!1}(),o={change:r.fullscreenchange,error:r.fullscreenerror},i={request:function(e,t){return new Promise(function(o,i){var a=function(){this.off("change",a),o()}.bind(this);this.on("change",a);var u=(e=e||n.documentElement)[r.requestFullscreen](t);u instanceof Promise&&u.then(a).catch(i)}.bind(this))},exit:function(){return new Promise(function(e,t){if(this.isFullscreen){var o=function(){this.off("change",o),e()}.bind(this);this.on("change",o);var i=n[r.exitFullscreen]();i instanceof Promise&&i.then(o).catch(t)}else e()}.bind(this))},toggle:function(e,n){return this.isFullscreen?this.exit():this.request(e,n)},onchange:function(e){this.on("change",e)},onerror:function(e){this.on("error",e)},on:function(e,t){var r=o[e];r&&n.addEventListener(r,t,!1)},off:function(e,t){var r=o[e];r&&n.removeEventListener(r,t,!1)},raw:r};r?(Object.defineProperties(i,{isFullscreen:{get:function(){return Boolean(n[r.fullscreenElement])}},element:{enumerable:!0,get:function(){return n[r.fullscreenElement]}},isEnabled:{enumerable:!0,get:function(){return Boolean(n[r.fullscreenEnabled])}}}),t?e.exports=i:window.screenfull=i):t?e.exports={isEnabled:!1}:window.screenfull={isEnabled:!1}}()},59905:(e,n,t)=>{"use strict";Object.defineProperty(n,"__esModule",{value:!0});var r=t(31635),o=t(96540),i=r.__importDefault(t(62877));n.default=function(e){var n=o.useRef(e);n.current=e,i.default(function(){return function(){return n.current()}})}},66691:(e,n)=>{"use strict";Object.defineProperty(n,"__esModule",{value:!0}),n.isNavigator=n.isBrowser=n.off=n.on=n.noop=void 0,n.noop=function(){},n.on=function(e){for(var n=[],t=1;t<arguments.length;t++)n[t-1]=arguments[t];e&&e.addEventListener&&e.addEventListener.apply(e,n)},n.off=function(e){for(var n=[],t=1;t<arguments.length;t++)n[t-1]=arguments[t];e&&e.removeEventListener&&e.removeEventListener.apply(e,n)},n.isBrowser="undefined"!=typeof window,n.isNavigator="undefined"!=typeof navigator},97771:(e,n,t)=>{for(var r=t(11642),o=[],i={},a=0;a<256;a++)o[a]=(a+256).toString(16).substr(1),i[o[a]]=a;function u(e,n){var t=n||0,r=o;return r[e[t++]]+r[e[t++]]+r[e[t++]]+r[e[t++]]+"-"+r[e[t++]]+r[e[t++]]+"-"+r[e[t++]]+r[e[t++]]+"-"+r[e[t++]]+r[e[t++]]+"-"+r[e[t++]]+r[e[t++]]+r[e[t++]]+r[e[t++]]+r[e[t++]]+r[e[t++]]}var l=r(),c=[1|l[0],l[1],l[2],l[3],l[4],l[5]],s=16383&(l[6]<<8|l[7]),f=0,d=0;function v(e,n,t){var o=n&&t||0;"string"==typeof e&&(n="binary"==e?new Array(16):null,e=null);var i=(e=e||{}).random||(e.rng||r)();if(i[6]=15&i[6]|64,i[8]=63&i[8]|128,n)for(var a=0;a<16;a++)n[o+a]=i[a];return n||u(i)}var p=v;p.v1=function(e,n,t){var r=n&&t||0,o=n||[],i=void 0!==(e=e||{}).clockseq?e.clockseq:s,a=void 0!==e.msecs?e.msecs:(new Date).getTime(),l=void 0!==e.nsecs?e.nsecs:d+1,v=a-f+(l-d)/1e4;if(v<0&&void 0===e.clockseq&&(i=i+1&16383),(v<0||a>f)&&void 0===e.nsecs&&(l=0),l>=1e4)throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");f=a,d=l,s=i;var p=(1e4*(268435455&(a+=122192928e5))+l)%4294967296;o[r++]=p>>>24&255,o[r++]=p>>>16&255,o[r++]=p>>>8&255,o[r++]=255&p;var m=a/4294967296*1e4&268435455;o[r++]=m>>>8&255,o[r++]=255&m,o[r++]=m>>>24&15|16,o[r++]=m>>>16&255,o[r++]=i>>>8|128,o[r++]=255&i;for(var w=e.node||c,b=0;b<6;b++)o[r+b]=w[b];return n||u(o)},p.v4=v,p.parse=function(e,n,t){var r=n&&t||0,o=0;for(n=n||[],e.toLowerCase().replace(/[0-9a-f]{2}/g,function(e){o<16&&(n[r+o++]=i[e])});o<16;)n[r+o++]=0;return n},p.unparse=u,e.exports=p}}]);
+(self.webpackChunknogle_react_boilerplate =
+  self.webpackChunknogle_react_boilerplate || []).push([
+  [3234],
+  {
+    10047: (e, n, t) => {
+      "use strict";
+      Object.defineProperty(n, "__esModule", {
+        value: !0,
+      });
+      var r = t(31635),
+        o = t(96540),
+        i = r.__importDefault(t(59905));
+      n.default = function (e) {
+        var n = o.useRef(0),
+          t = o.useState(e),
+          r = t[0],
+          a = t[1],
+          u = o.useCallback(function (e) {
+            cancelAnimationFrame(n.current),
+              (n.current = requestAnimationFrame(function () {
+                a(e);
+              }));
+          }, []);
+        return (
+          i.default(function () {
+            cancelAnimationFrame(n.current);
+          }),
+          [r, u]
+        );
+      };
+    },
+    11642: (e, n, t) => {
+      var r;
+      if (t.g.crypto && crypto.getRandomValues) {
+        var o = new Uint8Array(16);
+        r = function () {
+          return crypto.getRandomValues(o), o;
+        };
+      }
+      if (!r) {
+        var i = new Array(16);
+        r = function () {
+          for (var e, n = 0; n < 16; n++)
+            3 & n || (e = 4294967296 * Math.random()),
+              (i[n] = (e >>> ((3 & n) << 3)) & 255);
+          return i;
+        };
+      }
+      e.exports = r;
+    },
+    13876: (e, n, t) => {
+      "use strict";
+      Object.defineProperty(n, "__esModule", {
+        value: !0,
+      });
+      var r = t(96540);
+      n.default = function () {
+        var e = r.useRef(!1),
+          n = r.useCallback(function () {
+            return e.current;
+          }, []);
+        return (
+          r.useEffect(function () {
+            return (
+              (e.current = !0),
+              function () {
+                e.current = !1;
+              }
+            );
+          }, []),
+          n
+        );
+      };
+    },
+    16426: (e) => {
+      e.exports = function () {
+        var e = document.getSelection();
+        if (!e.rangeCount) return function () {};
+        for (
+          var n = document.activeElement, t = [], r = 0;
+          r < e.rangeCount;
+          r++
+        )
+          t.push(e.getRangeAt(r));
+        switch (n.tagName.toUpperCase()) {
+          case "INPUT":
+          case "TEXTAREA":
+            n.blur();
+            break;
+          default:
+            n = null;
+        }
+        return (
+          e.removeAllRanges(),
+          function () {
+            "Caret" === e.type && e.removeAllRanges(),
+              e.rangeCount ||
+                t.forEach(function (n) {
+                  e.addRange(n);
+                }),
+              n && n.focus();
+          }
+        );
+      };
+    },
+    17965: (e, n, t) => {
+      "use strict";
+      var r = t(16426),
+        o = {
+          "text/plain": "Text",
+          "text/html": "Url",
+          default: "Text",
+        };
+      e.exports = function (e, n) {
+        var t,
+          i,
+          a,
+          u,
+          l,
+          c,
+          s = !1;
+        n || (n = {}), (t = n.debug || !1);
+        try {
+          if (
+            ((a = r()),
+            (u = document.createRange()),
+            (l = document.getSelection()),
+            ((c = document.createElement("span")).textContent = e),
+            (c.ariaHidden = "true"),
+            (c.style.all = "unset"),
+            (c.style.position = "fixed"),
+            (c.style.top = 0),
+            (c.style.clip = "rect(0, 0, 0, 0)"),
+            (c.style.whiteSpace = "pre"),
+            (c.style.webkitUserSelect = "text"),
+            (c.style.MozUserSelect = "text"),
+            (c.style.msUserSelect = "text"),
+            (c.style.userSelect = "text"),
+            c.addEventListener("copy", function (r) {
+              if ((r.stopPropagation(), n.format))
+                if ((r.preventDefault(), void 0 === r.clipboardData)) {
+                  t && console.warn("unable to use e.clipboardData"),
+                    t && console.warn("trying IE specific stuff"),
+                    window.clipboardData.clearData();
+                  var i = o[n.format] || o.default;
+                  window.clipboardData.setData(i, e);
+                } else
+                  r.clipboardData.clearData(),
+                    r.clipboardData.setData(n.format, e);
+              n.onCopy && (r.preventDefault(), n.onCopy(r.clipboardData));
+            }),
+            document.body.appendChild(c),
+            u.selectNodeContents(c),
+            l.addRange(u),
+            !document.execCommand("copy"))
+          )
+            throw new Error("copy command was unsuccessful");
+          s = !0;
+        } catch (r) {
+          t && console.error("unable to copy using execCommand: ", r),
+            t && console.warn("trying IE specific stuff");
+          try {
+            window.clipboardData.setData(n.format || "text", e),
+              n.onCopy && n.onCopy(window.clipboardData),
+              (s = !0);
+          } catch (r) {
+            t && console.error("unable to copy using clipboardData: ", r),
+              t && console.error("falling back to prompt"),
+              (i = (function (e) {
+                var n =
+                  (/mac os x/i.test(navigator.userAgent) ? "⌘" : "Ctrl") + "+C";
+                return e.replace(/#{\s*key\s*}/g, n);
+              })(
+                "message" in n ? n.message : "Copy to clipboard: #{key}, Enter"
+              )),
+              window.prompt(i, e);
+          }
+        } finally {
+          l &&
+            ("function" == typeof l.removeRange
+              ? l.removeRange(u)
+              : l.removeAllRanges()),
+            c && document.body.removeChild(c),
+            a();
+        }
+        return s;
+      };
+    },
+    18367: (e, n, t) => {
+      "use strict";
+      Object.defineProperty(n, "__esModule", {
+        value: !0,
+      });
+      var r = t(96540),
+        o = t(66691).isBrowser ? r.useLayoutEffect : r.useEffect;
+      n.default = o;
+    },
+    33788: (e, n, t) => {
+      "use strict";
+      Object.defineProperty(n, "__esModule", {
+        value: !0,
+      });
+      var r = t(31635),
+        o = t(96540),
+        i = r.__importDefault(t(51916)),
+        a = r.__importDefault(t(18367)),
+        u = t(66691);
+      n.default = function (e, n, t) {
+        void 0 === t && (t = {});
+        var r = t.video,
+          l = t.onClose,
+          c = void 0 === l ? u.noop : l,
+          s = o.useState(n),
+          f = s[0],
+          d = s[1];
+        return (
+          a.default(
+            function () {
+              if (n && e.current) {
+                var t = function () {
+                    (null == r ? void 0 : r.current) &&
+                      u.off(r.current, "webkitendfullscreen", t),
+                      c();
+                  },
+                  o = function () {
+                    if (i.default.isEnabled) {
+                      var e = i.default.isFullscreen;
+                      d(e), e || c();
+                    }
+                  };
+                if (i.default.isEnabled) {
+                  try {
+                    i.default.request(e.current), d(!0);
+                  } catch (e) {
+                    c(e), d(!1);
+                  }
+                  i.default.on("change", o);
+                } else
+                  r && r.current && r.current.webkitEnterFullscreen
+                    ? (r.current.webkitEnterFullscreen(),
+                      u.on(r.current, "webkitendfullscreen", t),
+                      d(!0))
+                    : (c(), d(!1));
+                return function () {
+                  if ((d(!1), i.default.isEnabled))
+                    try {
+                      i.default.off("change", o), i.default.exit();
+                    } catch (e) {}
+                  else
+                    r &&
+                      r.current &&
+                      r.current.webkitExitFullscreen &&
+                      (u.off(r.current, "webkitendfullscreen", t),
+                      r.current.webkitExitFullscreen());
+                };
+              }
+            },
+            [n, r, e]
+          ),
+          f
+        );
+      };
+    },
+    34364: (e, n, t) => {
+      "use strict";
+      Object.defineProperty(n, "__esModule", {
+        value: !0,
+      });
+      var r = t(31635),
+        o = t(96540),
+        i = r.__importDefault(t(10047)),
+        a = t(66691);
+      n.default = function (e) {
+        var n = void 0 === e ? {} : e,
+          t = n.initialWidth,
+          r = void 0 === t ? 1 / 0 : t,
+          u = n.initialHeight,
+          l = void 0 === u ? 1 / 0 : u,
+          c = n.onChange,
+          s = i.default({
+            width: a.isBrowser ? window.innerWidth : r,
+            height: a.isBrowser ? window.innerHeight : l,
+          }),
+          f = s[0],
+          d = s[1];
+        return (
+          o.useEffect(function () {
+            if (a.isBrowser) {
+              var e = function () {
+                var e = window.innerWidth,
+                  n = window.innerHeight;
+                d({
+                  width: e,
+                  height: n,
+                }),
+                  c && c(e, n);
+              };
+              return (
+                a.on(window, "resize", e),
+                function () {
+                  a.off(window, "resize", e);
+                }
+              );
+            }
+          }, []),
+          f
+        );
+      };
+    },
+    51916: (e) => {
+      !(function () {
+        "use strict";
+        var n =
+            "undefined" != typeof window && void 0 !== window.document
+              ? window.document
+              : {},
+          t = e.exports,
+          r = (function () {
+            for (
+              var e,
+                t = [
+                  [
+                    "requestFullscreen",
+                    "exitFullscreen",
+                    "fullscreenElement",
+                    "fullscreenEnabled",
+                    "fullscreenchange",
+                    "fullscreenerror",
+                  ],
+                  [
+                    "webkitRequestFullscreen",
+                    "webkitExitFullscreen",
+                    "webkitFullscreenElement",
+                    "webkitFullscreenEnabled",
+                    "webkitfullscreenchange",
+                    "webkitfullscreenerror",
+                  ],
+                  [
+                    "webkitRequestFullScreen",
+                    "webkitCancelFullScreen",
+                    "webkitCurrentFullScreenElement",
+                    "webkitCancelFullScreen",
+                    "webkitfullscreenchange",
+                    "webkitfullscreenerror",
+                  ],
+                  [
+                    "mozRequestFullScreen",
+                    "mozCancelFullScreen",
+                    "mozFullScreenElement",
+                    "mozFullScreenEnabled",
+                    "mozfullscreenchange",
+                    "mozfullscreenerror",
+                  ],
+                  [
+                    "msRequestFullscreen",
+                    "msExitFullscreen",
+                    "msFullscreenElement",
+                    "msFullscreenEnabled",
+                    "MSFullscreenChange",
+                    "MSFullscreenError",
+                  ],
+                ],
+                r = 0,
+                o = t.length,
+                i = {};
+              r < o;
+              r++
+            )
+              if ((e = t[r]) && e[1] in n) {
+                for (r = 0; r < e.length; r++) i[t[0][r]] = e[r];
+                return i;
+              }
+            return !1;
+          })(),
+          o = {
+            change: r.fullscreenchange,
+            error: r.fullscreenerror,
+          },
+          i = {
+            request: function (e, t) {
+              return new Promise(
+                function (o, i) {
+                  var a = function () {
+                    this.off("change", a), o();
+                  }.bind(this);
+                  this.on("change", a);
+                  var u = (e = e || n.documentElement)[r.requestFullscreen](t);
+                  u instanceof Promise && u.then(a).catch(i);
+                }.bind(this)
+              );
+            },
+            exit: function () {
+              return new Promise(
+                function (e, t) {
+                  if (this.isFullscreen) {
+                    var o = function () {
+                      this.off("change", o), e();
+                    }.bind(this);
+                    this.on("change", o);
+                    var i = n[r.exitFullscreen]();
+                    i instanceof Promise && i.then(o).catch(t);
+                  } else e();
+                }.bind(this)
+              );
+            },
+            toggle: function (e, n) {
+              return this.isFullscreen ? this.exit() : this.request(e, n);
+            },
+            onchange: function (e) {
+              this.on("change", e);
+            },
+            onerror: function (e) {
+              this.on("error", e);
+            },
+            on: function (e, t) {
+              var r = o[e];
+              r && n.addEventListener(r, t, !1);
+            },
+            off: function (e, t) {
+              var r = o[e];
+              r && n.removeEventListener(r, t, !1);
+            },
+            raw: r,
+          };
+        r
+          ? (Object.defineProperties(i, {
+              isFullscreen: {
+                get: function () {
+                  return Boolean(n[r.fullscreenElement]);
+                },
+              },
+              element: {
+                enumerable: !0,
+                get: function () {
+                  return n[r.fullscreenElement];
+                },
+              },
+              isEnabled: {
+                enumerable: !0,
+                get: function () {
+                  return Boolean(n[r.fullscreenEnabled]);
+                },
+              },
+            }),
+            t ? (e.exports = i) : (window.screenfull = i))
+          : t
+          ? (e.exports = {
+              isEnabled: !1,
+            })
+          : (window.screenfull = {
+              isEnabled: !1,
+            });
+      })();
+    },
+    59905: (e, n, t) => {
+      "use strict";
+      Object.defineProperty(n, "__esModule", {
+        value: !0,
+      });
+      var r = t(31635),
+        o = t(96540),
+        i = r.__importDefault(t(62877));
+      n.default = function (e) {
+        var n = o.useRef(e);
+        (n.current = e),
+          i.default(function () {
+            return function () {
+              return n.current();
+            };
+          });
+      };
+    },
+    66691: (e, n) => {
+      "use strict";
+      Object.defineProperty(n, "__esModule", {
+        value: !0,
+      }),
+        (n.isNavigator = n.isBrowser = n.off = n.on = n.noop = void 0),
+        (n.noop = function () {}),
+        (n.on = function (e) {
+          for (var n = [], t = 1; t < arguments.length; t++)
+            n[t - 1] = arguments[t];
+          e && e.addEventListener && e.addEventListener.apply(e, n);
+        }),
+        (n.off = function (e) {
+          for (var n = [], t = 1; t < arguments.length; t++)
+            n[t - 1] = arguments[t];
+          e && e.removeEventListener && e.removeEventListener.apply(e, n);
+        }),
+        (n.isBrowser = "undefined" != typeof window),
+        (n.isNavigator = "undefined" != typeof navigator);
+    },
+    97771: (e, n, t) => {
+      for (var r = t(11642), o = [], i = {}, a = 0; a < 256; a++)
+        (o[a] = (a + 256).toString(16).substr(1)), (i[o[a]] = a);
+      function u(e, n) {
+        var t = n || 0,
+          r = o;
+        return (
+          r[e[t++]] +
+          r[e[t++]] +
+          r[e[t++]] +
+          r[e[t++]] +
+          "-" +
+          r[e[t++]] +
+          r[e[t++]] +
+          "-" +
+          r[e[t++]] +
+          r[e[t++]] +
+          "-" +
+          r[e[t++]] +
+          r[e[t++]] +
+          "-" +
+          r[e[t++]] +
+          r[e[t++]] +
+          r[e[t++]] +
+          r[e[t++]] +
+          r[e[t++]] +
+          r[e[t++]]
+        );
+      }
+      var l = r(),
+        c = [1 | l[0], l[1], l[2], l[3], l[4], l[5]],
+        s = 16383 & ((l[6] << 8) | l[7]),
+        f = 0,
+        d = 0;
+      function v(e, n, t) {
+        var o = (n && t) || 0;
+        "string" == typeof e &&
+          ((n = "binary" == e ? new Array(16) : null), (e = null));
+        var i = (e = e || {}).random || (e.rng || r)();
+        if (((i[6] = (15 & i[6]) | 64), (i[8] = (63 & i[8]) | 128), n))
+          for (var a = 0; a < 16; a++) n[o + a] = i[a];
+        return n || u(i);
+      }
+      var p = v;
+      (p.v1 = function (e, n, t) {
+        var r = (n && t) || 0,
+          o = n || [],
+          i = void 0 !== (e = e || {}).clockseq ? e.clockseq : s,
+          a = void 0 !== e.msecs ? e.msecs : new Date().getTime(),
+          l = void 0 !== e.nsecs ? e.nsecs : d + 1,
+          v = a - f + (l - d) / 1e4;
+        if (
+          (v < 0 && void 0 === e.clockseq && (i = (i + 1) & 16383),
+          (v < 0 || a > f) && void 0 === e.nsecs && (l = 0),
+          l >= 1e4)
+        )
+          throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
+        (f = a), (d = l), (s = i);
+        var p = (1e4 * (268435455 & (a += 122192928e5)) + l) % 4294967296;
+        (o[r++] = (p >>> 24) & 255),
+          (o[r++] = (p >>> 16) & 255),
+          (o[r++] = (p >>> 8) & 255),
+          (o[r++] = 255 & p);
+        var m = ((a / 4294967296) * 1e4) & 268435455;
+        (o[r++] = (m >>> 8) & 255),
+          (o[r++] = 255 & m),
+          (o[r++] = ((m >>> 24) & 15) | 16),
+          (o[r++] = (m >>> 16) & 255),
+          (o[r++] = (i >>> 8) | 128),
+          (o[r++] = 255 & i);
+        for (var w = e.node || c, b = 0; b < 6; b++) o[r + b] = w[b];
+        return n || u(o);
+      }),
+        (p.v4 = v),
+        (p.parse = function (e, n, t) {
+          var r = (n && t) || 0,
+            o = 0;
+          for (
+            n = n || [],
+              e.toLowerCase().replace(/[0-9a-f]{2}/g, function (e) {
+                o < 16 && (n[r + o++] = i[e]);
+              });
+            o < 16;
+
+          )
+            n[r + o++] = 0;
+          return n;
+        }),
+        (p.unparse = u),
+        (e.exports = p);
+    },
+  },
+]);

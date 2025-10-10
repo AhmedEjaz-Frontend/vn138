@@ -1,1 +1,10 @@
-"use strict";(self.webpackChunknogle_react_boilerplate=self.webpackChunknogle_react_boilerplate||[]).push([[7825],{27825:(e,l,a)=>{a.r(l)}}]);
+"use strict";
+(self.webpackChunknogle_react_boilerplate =
+  self.webpackChunknogle_react_boilerplate || []).push([
+  [7825],
+  {
+    27825: (e, l, a) => {
+      a.r(l);
+    },
+  },
+]);

@@ -1,1 +1,1676 @@
-"use strict";(self.webpackChunknogle_react_boilerplate=self.webpackChunknogle_react_boilerplate||[]).push([[3535],{4993:(e,t,a)=>{a.r(t)},6093:(e,t,a)=>{var n=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var i=n(a(47186)),s=function(e){if("function"==typeof WeakMap){var t=new WeakMap;new WeakMap}return function(e){if(e&&e.__esModule)return e;var a,n,i={__proto__:null,default:e};if(null===e||"object"!=typeof e&&"function"!=typeof e)return i;if(a=t){if(a.has(e))return a.get(e);a.set(e,i)}for(const t in e)"default"!==t&&{}.hasOwnProperty.call(e,t)&&((n=(a=Object.defineProperty)&&Object.getOwnPropertyDescriptor(e,t))&&(n.get||n.set)?a(i,t,n):i[t]=e[t]);return i}(e)}(a(96540)),r=n(a(86663)),o=a(67467),l=a(78106),d=n(a(83736)),c=n(a(27179)),u=a(53719),m=n(a(94188)),g=a(56291),p=a(38560),h=a(8087),f=n(a(15062)),v=a(74848);const{code:j}=m.default.brand,x=["mb099","mb086","mb109","mb104"],y={z01:()=>{const e=(0,o.useSelector)(e=>e.promo.closeAds).getIn([h.floatingAdsTypeMapNameEnum.MOBILE,"top"]),t=(0,o.useDispatch)();return(0,s.useEffect)(()=>{const a=g.ulagentCookie.get();!e&&x.includes(a)&&t(u.closeAdsAction.mobileTopAd())}),null}};let b;t.default=e=>(0,l.withRouter)(t=>{const{location:a,...n}=t,o=(0,s.useMemo)(()=>i.default.parse(a.search.slice(1)),[a.search]);let u=o.af;p.isDesktop&&(u=u||o.affCode||o.affAcc);const m=(0,s.useMemo)(()=>{if(o.path&&(o.agt||o.uagt)){const e=o.path.toUpperCase(),t=b===g.ulagentCookie.get();t||(b=g.ulagentCookie.get());const n=a.pathname===f.default[e];if(!f.default[e]||t||n)return null;const i=c.default.get("pix-s2s"),s=r.default.stringify(i);return(0,v.jsx)(l.Redirect,{to:`${f.default[e]}?${s}`})}if(u)return(0,v.jsx)(l.Redirect,{to:`/signup?affiliate=${u}`})},[a.search,u]);(0,d.default)(()=>{o.agt&&g.agentCookie.set(o.agt),o.uagt&&g.ulagentCookie.set(o.uagt),u&&g.affiliateCookie.set(u)});const h=y[j];return m||(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(e,{...n}),h&&(0,v.jsx)(h,{})]})})},8269:(e,t,a)=>{var n=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.default=function(){const e=(0,r.useDispatch)(),t=(0,r.useSelector)(e=>e.players.logined);return(0,s.useCallback)(a=>{if(m.includes(a)&&!t)return e((0,l.openErrorModal)(c.i18n["require.login"])),null;const n=function(e){if(!e||0!==e.indexOf("/"))return null;const t=new URL(`${location.origin}${e}`);if("/launchgame"!==t.pathname)return null;const a=i.default.parse(t.search.substr(1));return["distributorid","gameid","gameproviderid","producttypeid"].every(e=>!!a[e])?a:null}(a);if(n){if(!t)return window.location.href=`${window.location.origin}${u.paths.LOGIN}`,null;o.default.set("launchGameData",n);try{d.default.launchGame(n)}catch(e){}return u.paths.LAUNCHGAME}return a},[e,t])};var i=n(a(47186)),s=a(96540),r=a(67467),o=n(a(27179)),l=a(84707),d=n(a(36188)),c=a(51628),u=a(15062);const m=[u.paths.AFFILIATE,u.paths.MISSION,u.paths.FAVORITE_GAMES]},8718:(e,t,a)=>{var n=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var i=n(a(99134));a(17617),t.default=i.default},12695:(e,t,a)=>{var n=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.default=function(){const e=(0,s.useSelector)(e=>e.players.registrationSetting);return(0,i.useMemo)(()=>{const t=e.get("playerRegAgent",(0,o.List)())||(0,o.List)();let a=d;if(t.size>0){const e=t.get("isUlAgent"),n=e?t.get("account"):t.get("agentId");return e?l.ulagentCookie.set(n):l.agentCookie.set(n),{isAgentDomain:!0,isUlagent:e,agentId:e?t.get("ulAgentId"):t.get("agentId"),account:e?t.get("account"):"",appURL:a}}return{isAgentDomain:!1,isUlagent:!1,agentId:null,account:"",appURL:a}},[e])};var i=a(96540),s=a(67467),r=n(a(10844)),o=a(9404),l=a(56291);const d=r.default.getIn(["portal","apiServer","appDownloadURL"],"")},14909:(e,t,a)=>{a.r(t)},16601:(e,t,a)=>{a.r(t)},17617:(e,t,a)=>{a.r(t)},22715:(e,t,a)=>{var n=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.clickGameProvider=function(e,t){const{history:a,gameTypeMap:n}=this.props;let i=n.getIn([e]).filter(e=>e.get("gameproviderid")===t);const r=i.size;if(window.isDesktop&&e===s.gameType.EGAME&&r>1)a.push(l.default.EGAME,{activeTabProvider:t});else if(window.isDesktop&&e===s.gameType.CHESS&&r>1)a.push(l.default.CHESS,{activeTabProvider:t});else if(r>0){const t={producttypeid:e,distributorid:i.getIn([0,"distributorid"]),gameid:i.getIn([0,"gameid"]),gameproviderid:i.getIn([0,"gameproviderid"])};c.call(this,t)}},t.default=void 0;var i=n(a(27179)),s=a(8087),r=n(a(36188)),o=a(94187),l=n(a(15062)),d=a(93185);function c(e){const{logined:t,history:a,isSingleWindow:n}=this.props;if(!t){if(window.isDesktop){const{toggleLoginPopup:e}=this.context;e&&e()}else window.isMobile&&(a?a.push(l.default.LOGIN):window.location.href=`${window.location.origin}${l.default.LOGIN}`);return!1}i.default.set("launchGameData",e),(0,o.setIframeStatus)();try{r.default.launchGame(e)}catch(e){}window.isIframe?a.push(l.default.LAUNCHGAME):!1!==n?((0,d.openSingleWindow)("gameWindowInstance",l.default.LAUNCHGAME),window.gameWindowClosed=!1):window.open(l.default.LAUNCHGAME,"_blank")}t.default=c},35372:(e,t,a)=>{Object.defineProperty(t,"__esModule",{value:!0}),t.default=function e(t){var a=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"";if((0,i.default)(t),!(a=String(a)))return e(t,4)||e(t,6);if("4"===a)return!!s.test(t)&&t.split(".").sort(function(e,t){return e-t})[3]<=255;if("6"===a){var n=t.split(":"),o=!1,l=e(n[n.length-1],4),d=l?7:8;if(n.length>d)return!1;if("::"===t)return!0;"::"===t.substr(0,2)?(n.shift(),n.shift(),o=!0):"::"===t.substr(t.length-2)&&(n.pop(),n.pop(),o=!0);for(var c=0;c<n.length;++c)if(""===n[c]&&c>0&&c<n.length-1){if(o)return!1;o=!0}else if(l&&c===n.length-1);else if(!r.test(n[c]))return!1;return o?n.length>=1:n.length===d}return!1};var n,i=(n=a(83399))&&n.__esModule?n:{default:n},s=/^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$/,r=/^[0-9A-F]{1,4}$/i;e.exports=t.default},49202:(e,t,a)=>{var n=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var i=function(e){if("function"==typeof WeakMap){var t=new WeakMap;new WeakMap}return function(e){if(e&&e.__esModule)return e;var a,n,i={__proto__:null,default:e};if(null===e||"object"!=typeof e&&"function"!=typeof e)return i;if(a=t){if(a.has(e))return a.get(e);a.set(e,i)}for(const t in e)"default"!==t&&{}.hasOwnProperty.call(e,t)&&((n=(a=Object.defineProperty)&&Object.getOwnPropertyDescriptor(e,t))&&(n.get||n.set)?a(i,t,n):i[t]=e[t]);return i}(e)}(a(96540)),s=n(a(12695)),r=n(a(15286)),o=a(74848);t.default=e=>{const{size:t=110,tip:a}=e,{appURL:n}=(0,s.default)(),l=e.customURL||n;return l?(0,o.jsxs)(i.Fragment,{children:[(0,o.jsx)("div",{children:(0,o.jsx)(r.default,{value:l})}),(0,o.jsx)("h4",{children:a})]}):""}},53156:(e,t,a)=>{var n=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var i=a(67467),s=a(47459),r=a(78106),o=a(4347),l=a(84465),d=a(53719),c=a(84707),u=n(a(6093));const m=a(88457).A,g=(0,i.connect)(e=>({logined:e.players.logined,player:e.players.player,gameList:e.games.gameList,launchurl:e.games.launchurl,launchurlSuccess:e.games.launchurlSuccess,launchurlFailed:e.games.launchurlFailed,gameTypeMap:e.games.gameTypeMap,saGame:e.games.saGame,news:e.news.news,banners:e.promo.banners,isSingleWindow:e.app.isSingleWindow,bannersDidFetched:e.promo.bannersDidFetched,isLoadingBanners:e.promo.isLoading,gameProviderMap:e.games.gameProviderMap,maintenanceMap:e.games.maintenanceMap,gameTags:e.games.gameTags,myFavoriteGameMap:e.games.myFavoriteGameMap,egameTabMap:e.games.egameTabMap,egameLoading:e.games.egameLoading,internalplayer:e.players.player.internalplayer,floatingAdsSetting:e.promo.floatingAdsSetting,promos:e.promo.promos,staticpagesMap:e.staticpagesettings.staticpagesMap}),e=>(0,s.bindActionCreators)({launchGames:o.launchGames,getAllGameList:o.getAllGameList,getNews:l.getNews,getEgameGames:o.getEgameGames,getGameTags:o.getGameTags,addMyFavoriteGame:o.addMyFavoriteGame,deleteMyFavoriteGame:o.deleteMyFavoriteGame,getMyFavoriteGameList:o.getMyFavoriteGameList,getPromos:d.getPromos,openErrorModal:c.openErrorModal},e))(m);t.default=(0,u.default)((0,r.withRouter)(g))},65147:(e,t,a)=>{var n=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var i=function(e){if("function"==typeof WeakMap){var t=new WeakMap;new WeakMap}return function(e){if(e&&e.__esModule)return e;var a,n,i={__proto__:null,default:e};if(null===e||"object"!=typeof e&&"function"!=typeof e)return i;if(a=t){if(a.has(e))return a.get(e);a.set(e,i)}for(const t in e)"default"!==t&&{}.hasOwnProperty.call(e,t)&&((n=(a=Object.defineProperty)&&Object.getOwnPropertyDescriptor(e,t))&&(n.get||n.set)?a(i,t,n):i[t]=e[t]);return i}(e)}(a(96540)),s=a(28651),r=n(a(94461)),o=a(57761),l=n(a(94188)),d=n(a(8269)),c=a(93185),u=n(a(8718)),m=n(a(46942)),g=a(74848);const p=l.default.portal.apiServer.imageServer;t.default=e=>{let{banners:t,swiperOption:a,...n}=e;const l=(0,s.useHistory)(),h=(0,d.default)(),f=(0,r.default)(),v=t.map(e=>`${p}${e.get("ad")}`).toJS(),j=f(),x=1e3*t.getIn([0,"carouselseconds"],5),y=(0,i.useCallback)((e,t)=>{const a=h(t[e]);a&&((0,o.isURL)(a)||(0,c.isLaunchGameUrl)(a)?window.open(a,"_blank","height=800,width=1350,toolbar=0,location=0,menubar=0,scrollbars=yes"):l.push(t[e]))},[h,l]);return(0,g.jsx)("div",{className:(0,m.default)("banner",{"no-swiper":t.size<=0}),children:t.size>0?(0,g.jsx)(u.default,{imgs:v,onClick:e=>y(e,j),autoplayDuring:x,banner:!0,pagination:!0,navigation:!0,swiperOption:a,...n}):(0,g.jsx)("section",{className:"home-section section-01"})})}},77844:(e,t,a)=>{Object.defineProperty(t,"__esModule",{value:!0}),t.default=function(e,t){if((0,n.default)(e),!e||e.length>=2083||/[\s<>]/.test(e))return!1;if(0===e.indexOf("mailto:"))return!1;t=(0,r.default)(t,l);var a=void 0,o=void 0,c=void 0,m=void 0,g=void 0,p=void 0,h=void 0,f=void 0;if(h=e.split("#"),e=h.shift(),h=e.split("?"),e=h.shift(),(h=e.split("://")).length>1){if(a=h.shift(),t.require_valid_protocol&&-1===t.protocols.indexOf(a))return!1}else{if(t.require_protocol)return!1;t.allow_protocol_relative_urls&&"//"===e.substr(0,2)&&(h[0]=e.substr(2))}if(e=h.join("://"),h=e.split("/"),""===(e=h.shift())&&!t.require_host)return!0;if((h=e.split("@")).length>1&&(o=h.shift()).indexOf(":")>=0&&o.split(":").length>2)return!1;p=f=null;var v=(m=h.join("@")).match(d);return v?(c="",f=v[1],p=v[2]||null):(c=(h=m.split(":")).shift(),h.length&&(p=h.join(":"))),!(null!==p&&(g=parseInt(p,10),!/^[0-9]+$/.test(p)||g<=0||g>65535))&&(!!((0,s.default)(c)||(0,i.default)(c,t)||f&&(0,s.default)(f,6)||"localhost"===c)&&(c=c||f,!(t.host_whitelist&&!u(c,t.host_whitelist))&&(!t.host_blacklist||!u(c,t.host_blacklist))))};var n=o(a(83399)),i=o(a(57658)),s=o(a(35372)),r=o(a(93610));function o(e){return e&&e.__esModule?e:{default:e}}var l={protocols:["http","https","ftp"],require_tld:!0,require_protocol:!1,require_host:!0,require_valid_protocol:!0,allow_underscores:!1,allow_trailing_dot:!1,allow_protocol_relative_urls:!1},d=/^\[([^\]]+)\](?::([0-9]+))?$/;function c(e){return"[object RegExp]"===Object.prototype.toString.call(e)}function u(e,t){for(var a=0;a<t.length;a++){var n=t[a];if(e===n||c(n)&&n.test(e))return!0}return!1}e.exports=t.default},82883:(e,t,a)=>{var n=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.getLeaderListInRange=t.getLeaderList2=t.getLeaderList=void 0;var i=n(a(94188));const s={d02prod:{customizedInitAmounts:[230,142,236,146,241,363,25,192,456,420,152,353,29,213,411]},t98prod:{customizedInitAmounts:[20,34,256,146,92,240,143,192,456,920,1452,2353,3529,32213,403924]},d03prod:{customizedInitAmounts:[20272,3425,2256,1436,7932,2430,1443,1922,4576,9220,1452,2353,3529,3223,40394]},p36prod:{customizedInitAmounts:[50,235,3613,25613,410189,394193,4932,475022,493061,284,482807,481802,90,480042,4031]},e05prod:{customizedInitAmounts:[40373,72040,67792,31400,68713,11877,47748,57194,38435,75050,42593,51303,24396,55988,86510]},g01prod:{customizedInitAmounts:[23,4,1324,67,3,25,86,24,33,12,14205,14,9,258,5]},u21prod:{customizedInitAmounts:[1618,4008,1017,3435,1920,2908,4308,2930,2865,3755,1261,2996,516,2646,3298]},u26prod:{customizedInitAmounts:[2556,3263,3837,2069,259,1148,2628,534,2223,2294,3341,1442,2883,1202,326]},t38prod:{customizedInitAmounts:[1618,4008,1017,3435,1920,2908,4308,2930,2865,3755,1261,2996,516,2646,3298]},d06prod:{customizedInitAmounts:[1618,4008,1017,3435,1920,2908,4308,2930,2865,3755,1261,2996,516,2646,3298]},x06prod:{customizedInitAmounts:[1618,4008,1017,3435,1920,2908,4308,2930,2865,3755,1261,2996,516,2646,3298]},x07prod:{customizedInitAmounts:[70,235,3613,11877,788693,72040,412,2865,3755,1261,11877,516,456,920,481802]},ra2prod:{customizedInitAmounts:[1044748,970250,1760575,1795193,1315227,1751918,717132,680821,682168,726227,888252,571297,1544559,510669,749064]}},r=function(e,t){let a=arguments.length>2&&void 0!==arguments[2]?arguments[2]:1,n=arguments.length>3?arguments[3]:void 0;const r={big:[946161530,933190520,926934520,920223210,910189200,900030300,998061070,995022030,993061070,992023060,982807500,981802510,981048720,980042710,980001530],small:[2461615,2331905,2269345,2202235,2101895,2000305,2980615,2950225,2930615,2920235,2828075,2818025,2810485,2800425,2800015]},o=(new Date).getDay(),l=(new Date).getDate(),d=l%e.length,c=[...e.slice(d),...e.slice(0,d)];return t.map((e,t)=>{var a;const n=null!==(a=s[i.default.brand.code])&&void 0!==a&&a.customizedInitAmounts?Math.floor(Math.random()*e):(o+10)*l;return{userId:c[t],amount:e+n}}).map((e,t)=>{var l;if(null!==(l=s[i.default.brand.code])&&void 0!==l&&l.customizedInitAmounts){var d=Math.floor(Math.random()*e.amount);d=Math.min(d,9999);let t=e.amount+d;return!n||t<=n&&t>=a||(t=Math.floor(Math.random()*(n-a+1))+a),a&&(t=Math.max(t,a)),n&&(t=Math.min(t,n)),{...e,amount:t}}{const a=(new Date).getMinutes(),n=(new Date).getHours(),i=t<5?"small":"big",s=e.amount+r[i][a*(t+1)%15]+(o+3)*(n+5);return{...e,amount:s}}}).sort((e,t)=>t.amount-e.amount)};t.getLeaderList=()=>{var e;const t=(null===(e=s[i.default.brand.code])||void 0===e?void 0:e.customizedInitAmounts)||[2551615330,2550905219,2550345230,2542232179,2541892070,2530303099,2530010730,2529220334,2528610730,2527230692,2526807508,2525025189,2524487210,2523427193,2522015330];return r(["cas******16","anh******ha","ngo*******88","bib*****45","sus*****12","ges******16","kid*****33","des******26","cal*****10","crl******22","geb*****77","pes*****92","que*******88","ale****96","pen*****28"],t)},t.getLeaderList2=()=>{var e;const t=(null===(e=s[i.default.brand.code])||void 0===e?void 0:e.customizedInitAmounts)||[2583455623,2539098490,2732717332,2097130859,2539699901,2100003999,2593111109,2549880159,250908931110,2532453416,2591305209,2590003901,2491849021,2199870345,2203421955];return r(["li******a3","i48******on","kai*******29","sh*******i2","mua*******22","ba*******at","nea*******st","s*******5u","ra*******00","wi*******oy","will*******am","fes*******il","w*******om","z*******si","qu*******en"],t)},t.getLeaderListInRange=(e,t)=>{var a;const n=(null===(a=s[i.default.brand.code])||void 0===a?void 0:a.customizedInitAmounts)||[2551615330,2550905219,2550345230,2542232179,2541892070,2530303099,2530010730,2529220334,2528610730,2527230692,2526807508,2525025189,2524487210,2523427193,2522015330];return r(["cas******16","anh******ha","ngo*******88","bib*****45","sus*****12","ges******16","kid*****33","des******26","cal*****10","crl******22","geb*****77","pes*****92","que*******88","ale****96","pen*****28"],n,e,t)}},88457:(e,t,a)=>{var n=a(24994);t.A=void 0;var i=n(a(43693)),s=M(a(96540)),r=n(a(5556)),o=a(78106),l=a(28651),d=n(a(9404)),c=a(51628),u=n(a(15062)),m=M(a(22715)),g=n(a(65147)),p=n(a(2209)),h=a(93185),f=(n(a(49202)),n(a(94188))),v=a(82883),j=a(16510),x=a(8087),y=n(a(50205)),b=n(a(36243)),w=a(74848);function M(e,t){if("function"==typeof WeakMap)var a=new WeakMap,n=new WeakMap;return(M=function(e,t){if(!t&&e&&e.__esModule)return e;var i,s,r={__proto__:null,default:e};if(null===e||"object"!=typeof e&&"function"!=typeof e)return r;if(i=t?n:a){if(i.has(e))return i.get(e);i.set(e,r)}for(const t in e)"default"!==t&&{}.hasOwnProperty.call(e,t)&&((s=(i=Object.defineProperty)&&Object.getOwnPropertyDescriptor(e,t))&&(s.get||s.set)?i(r,t,s):r[t]=e[t]);return r})(e,t)}a(4993);class N extends s.Component{constructor(e){super(e),(0,i.default)(this,"winnerList",()=>{const e=this.shuffleArray(this.state.leaderList);let t=[];for(var a=0;a<e.length;a++)t.push((0,w.jsxs)("li",{children:[(0,w.jsx)("div",{className:"user",children:e[a].userId}),(0,w.jsxs)("div",{className:"prize",children:[c.i18n["ec52.win"]," ",(0,w.jsx)("b",{children:(0,j.formatMoney)(e[a].amount,"0,0")})]})]},`winner${a}`));return t}),(0,i.default)(this,"launchEgame",e=>{const{logined:t,maintenanceMap:a,internalplayer:n}=this.props,i=e.get("status"),s=e.get("gameid"),r=e.get("gameproviderid"),o=e.get("distributorid"),l=e.get("producttypeid"),d=i===x.gameStatusEnum.comingsoon,c=1===a.getIn(["EGAME",r,"status"])||!!d&&!n,{toggleLoginPopup:u}=this.context;c||(Object.prototype.hasOwnProperty.call(x.egameProviderLinkEnum,s)?t?this.props.history.push(x.egameProviderLinkEnum[s]):u():this.launchGame({producttypeid:l,distributorid:o,gameid:s,gameproviderid:r}))}),(0,i.default)(this,"egameNewRenderer",e=>{const{gameid:t,gameproviderid:a,gamename:n,launchBtnName:i}=this.getEgameInfo(e),s=(new Date).getTime().toString().substring(3,8);return(0,w.jsxs)("div",{className:"new-game",children:[(0,h.renderGameImg)(a,t,"cover-blur"),(0,w.jsx)("div",{className:"game-cover",children:(0,h.renderGameImg)(a,t,"cover")}),(0,w.jsx)("div",{className:"gp",children:(0,w.jsx)("img",{src:`./images/?${s.toString()}`}catch(t){n=e}return n})(n,t)),n)).toJS()}}},97702:(e,t,a)=>{a.r(t)},99134:(e,t,a)=>{var n=a(24994);Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var i=function(e){if("function"==typeof WeakMap){var t=new WeakMap;new WeakMap}return function(e){if(e&&e.__esModule)return e;var a,n,i={__proto__:null,default:e};if(null===e||"object"!=typeof e&&"function"!=typeof e)return i;if(a=t){if(a.has(e))return a.get(e);a.set(e,i)}for(const t in e)"default"!==t&&{}.hasOwnProperty.call(e,t)&&((n=(a=Object.defineProperty)&&Object.getOwnPropertyDescriptor(e,t))&&(n.get||n.set)?a(i,t,n):i[t]=e[t]);return i}(e)}(a(96540)),s=n(a(46942)),r=a(35781),o=a(86830),l=n(a(94188)),d=a(38560);a(97702),a(16601),a(53731),a(14909),a(33439);var c=a(74848);t.default=e=>{let{imgs:t,onClick:a=()=>{},autoplayDuring:n,banner:u=!1,navigation:m=!1,pagination:g,swiperOption:p={},onFirstImgLoad:h}=e;const f=(0,i.useRef)({});return(0,c.jsx)("div",{className:(0,s.default)("carousel-banner-container",{banner:u,desktop:d.isDesktop,"is-single":t.length<2}),children:(0,c.jsx)(o.Swiper,{modules:[r.Navigation,r.Pagination,r.Autoplay],preloadImages:!1,autoplay:n?{delay:n,disableOnInteraction:!1}:void 0,navigation:m,pagination:!!g&&{clickable:!0,...t.length>=5&&{dynamicBullets:!0}},loop:t.length>1,slidesPerView:"auto",...p,onInit:e=>{const{params:t,autoplay:a}=e;h&&t.autoplay.enabled&&a.running&&(f.current={swiper:e,initTime:Date.now()},a.stop())},children:t.map((e,t)=>(0,c.jsx)(o.SwiperSlide,{onClick:()=>a(t),children:(0,c.jsx)("img",{src:e,loading:"lazy",alt:l.default.brand.name,onLoad:t?null:()=>null==h?void 0:h(f)})},t))})})}}}]);
+"use strict";
+(self.webpackChunknogle_react_boilerplate =
+  self.webpackChunknogle_react_boilerplate || []).push([
+  [3535],
+  {
+    4993: (e, t, a) => {
+      a.r(t);
+    },
+    6093: (e, t, a) => {
+      var n = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = void 0);
+      var i = n(a(47186)),
+        s = (function (e) {
+          if ("function" == typeof WeakMap) {
+            var t = new WeakMap();
+            new WeakMap();
+          }
+          return (function (e) {
+            if (e && e.__esModule) return e;
+            var a,
+              n,
+              i = {
+                __proto__: null,
+                default: e,
+              };
+            if (null === e || ("object" != typeof e && "function" != typeof e))
+              return i;
+            if ((a = t)) {
+              if (a.has(e)) return a.get(e);
+              a.set(e, i);
+            }
+            for (const t in e)
+              "default" !== t &&
+                {}.hasOwnProperty.call(e, t) &&
+                ((n =
+                  (a = Object.defineProperty) &&
+                  Object.getOwnPropertyDescriptor(e, t)) &&
+                (n.get || n.set)
+                  ? a(i, t, n)
+                  : (i[t] = e[t]));
+            return i;
+          })(e);
+        })(a(96540)),
+        r = n(a(86663)),
+        o = a(67467),
+        l = a(78106),
+        d = n(a(83736)),
+        c = n(a(27179)),
+        u = a(53719),
+        m = n(a(94188)),
+        g = a(56291),
+        p = a(38560),
+        h = a(8087),
+        f = n(a(15062)),
+        v = a(74848);
+      const { code: j } = m.default.brand,
+        x = ["mb099", "mb086", "mb109", "mb104"],
+        y = {
+          z01: () => {
+            const e = (0, o.useSelector)((e) => e.promo.closeAds).getIn([
+                h.floatingAdsTypeMapNameEnum.MOBILE,
+                "top",
+              ]),
+              t = (0, o.useDispatch)();
+            return (
+              (0, s.useEffect)(() => {
+                const a = g.ulagentCookie.get();
+                !e && x.includes(a) && t(u.closeAdsAction.mobileTopAd());
+              }),
+              null
+            );
+          },
+        };
+      let b;
+      t.default = (e) =>
+        (0, l.withRouter)((t) => {
+          const { location: a, ...n } = t,
+            o = (0, s.useMemo)(
+              () => i.default.parse(a.search.slice(1)),
+              [a.search]
+            );
+          let u = o.af;
+          p.isDesktop && (u = u || o.affCode || o.affAcc);
+          const m = (0, s.useMemo)(() => {
+            if (o.path && (o.agt || o.uagt)) {
+              const e = o.path.toUpperCase(),
+                t = b === g.ulagentCookie.get();
+              t || (b = g.ulagentCookie.get());
+              const n = a.pathname === f.default[e];
+              if (!f.default[e] || t || n) return null;
+              const i = c.default.get("pix-s2s"),
+                s = r.default.stringify(i);
+              return (0, v.jsx)(l.Redirect, {
+                to: `${f.default[e]}?${s}`,
+              });
+            }
+            if (u)
+              return (0, v.jsx)(l.Redirect, {
+                to: `/signup?affiliate=${u}`,
+              });
+          }, [a.search, u]);
+          (0, d.default)(() => {
+            o.agt && g.agentCookie.set(o.agt),
+              o.uagt && g.ulagentCookie.set(o.uagt),
+              u && g.affiliateCookie.set(u);
+          });
+          const h = y[j];
+          return (
+            m ||
+            (0, v.jsxs)(v.Fragment, {
+              children: [
+                (0, v.jsx)(e, {
+                  ...n,
+                }),
+                h && (0, v.jsx)(h, {}),
+              ],
+            })
+          );
+        });
+    },
+    8269: (e, t, a) => {
+      var n = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = function () {
+          const e = (0, r.useDispatch)(),
+            t = (0, r.useSelector)((e) => e.players.logined);
+          return (0, s.useCallback)(
+            (a) => {
+              if (m.includes(a) && !t)
+                return e((0, l.openErrorModal)(c.i18n["require.login"])), null;
+              const n = (function (e) {
+                if (!e || 0 !== e.indexOf("/")) return null;
+                const t = new URL(`${location.origin}${e}`);
+                if ("/launchgame" !== t.pathname) return null;
+                const a = i.default.parse(t.search.substr(1));
+                return [
+                  "distributorid",
+                  "gameid",
+                  "gameproviderid",
+                  "producttypeid",
+                ].every((e) => !!a[e])
+                  ? a
+                  : null;
+              })(a);
+              if (n) {
+                if (!t)
+                  return (
+                    (window.location.href = `${window.location.origin}${u.paths.LOGIN}`),
+                    null
+                  );
+                o.default.set("launchGameData", n);
+                try {
+                  d.default.launchGame(n);
+                } catch (e) {}
+                return u.paths.LAUNCHGAME;
+              }
+              return a;
+            },
+            [e, t]
+          );
+        });
+      var i = n(a(47186)),
+        s = a(96540),
+        r = a(67467),
+        o = n(a(27179)),
+        l = a(84707),
+        d = n(a(36188)),
+        c = a(51628),
+        u = a(15062);
+      const m = [u.paths.AFFILIATE, u.paths.MISSION, u.paths.FAVORITE_GAMES];
+    },
+    8718: (e, t, a) => {
+      var n = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = void 0);
+      var i = n(a(99134));
+      a(17617), (t.default = i.default);
+    },
+    12695: (e, t, a) => {
+      var n = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = function () {
+          const e = (0, s.useSelector)((e) => e.players.registrationSetting);
+          return (0, i.useMemo)(() => {
+            const t = e.get("playerRegAgent", (0, o.List)()) || (0, o.List)();
+            let a = d;
+            if (t.size > 0) {
+              const e = t.get("isUlAgent"),
+                n = e ? t.get("account") : t.get("agentId");
+              return (
+                e ? l.ulagentCookie.set(n) : l.agentCookie.set(n),
+                {
+                  isAgentDomain: !0,
+                  isUlagent: e,
+                  agentId: e ? t.get("ulAgentId") : t.get("agentId"),
+                  account: e ? t.get("account") : "",
+                  appURL: a,
+                }
+              );
+            }
+            return {
+              isAgentDomain: !1,
+              isUlagent: !1,
+              agentId: null,
+              account: "",
+              appURL: a,
+            };
+          }, [e]);
+        });
+      var i = a(96540),
+        s = a(67467),
+        r = n(a(10844)),
+        o = a(9404),
+        l = a(56291);
+      const d = r.default.getIn(["portal", "apiServer", "appDownloadURL"], "");
+    },
+    14909: (e, t, a) => {
+      a.r(t);
+    },
+    16601: (e, t, a) => {
+      a.r(t);
+    },
+    17617: (e, t, a) => {
+      a.r(t);
+    },
+    22715: (e, t, a) => {
+      var n = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.clickGameProvider = function (e, t) {
+          const { history: a, gameTypeMap: n } = this.props;
+          let i = n.getIn([e]).filter((e) => e.get("gameproviderid") === t);
+          const r = i.size;
+          if (window.isDesktop && e === s.gameType.EGAME && r > 1)
+            a.push(l.default.EGAME, {
+              activeTabProvider: t,
+            });
+          else if (window.isDesktop && e === s.gameType.CHESS && r > 1)
+            a.push(l.default.CHESS, {
+              activeTabProvider: t,
+            });
+          else if (r > 0) {
+            const t = {
+              producttypeid: e,
+              distributorid: i.getIn([0, "distributorid"]),
+              gameid: i.getIn([0, "gameid"]),
+              gameproviderid: i.getIn([0, "gameproviderid"]),
+            };
+            c.call(this, t);
+          }
+        }),
+        (t.default = void 0);
+      var i = n(a(27179)),
+        s = a(8087),
+        r = n(a(36188)),
+        o = a(94187),
+        l = n(a(15062)),
+        d = a(93185);
+      function c(e) {
+        const { logined: t, history: a, isSingleWindow: n } = this.props;
+        if (!t) {
+          if (window.isDesktop) {
+            const { toggleLoginPopup: e } = this.context;
+            e && e();
+          } else
+            window.isMobile &&
+              (a
+                ? a.push(l.default.LOGIN)
+                : (window.location.href = `${window.location.origin}${l.default.LOGIN}`));
+          return !1;
+        }
+        i.default.set("launchGameData", e), (0, o.setIframeStatus)();
+        try {
+          r.default.launchGame(e);
+        } catch (e) {}
+        window.isIframe
+          ? a.push(l.default.LAUNCHGAME)
+          : !1 !== n
+          ? ((0, d.openSingleWindow)(
+              "gameWindowInstance",
+              l.default.LAUNCHGAME
+            ),
+            (window.gameWindowClosed = !1))
+          : window.open(l.default.LAUNCHGAME, "_blank");
+      }
+      t.default = c;
+    },
+    35372: (e, t, a) => {
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = function e(t) {
+          var a =
+            arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
+          if (((0, i.default)(t), !(a = String(a)))) return e(t, 4) || e(t, 6);
+          if ("4" === a)
+            return (
+              !!s.test(t) &&
+              t.split(".").sort(function (e, t) {
+                return e - t;
+              })[3] <= 255
+            );
+          if ("6" === a) {
+            var n = t.split(":"),
+              o = !1,
+              l = e(n[n.length - 1], 4),
+              d = l ? 7 : 8;
+            if (n.length > d) return !1;
+            if ("::" === t) return !0;
+            "::" === t.substr(0, 2)
+              ? (n.shift(), n.shift(), (o = !0))
+              : "::" === t.substr(t.length - 2) && (n.pop(), n.pop(), (o = !0));
+            for (var c = 0; c < n.length; ++c)
+              if ("" === n[c] && c > 0 && c < n.length - 1) {
+                if (o) return !1;
+                o = !0;
+              } else if (l && c === n.length - 1);
+              else if (!r.test(n[c])) return !1;
+            return o ? n.length >= 1 : n.length === d;
+          }
+          return !1;
+        });
+      var n,
+        i =
+          (n = a(83399)) && n.__esModule
+            ? n
+            : {
+                default: n,
+              },
+        s = /^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$/,
+        r = /^[0-9A-F]{1,4}$/i;
+      e.exports = t.default;
+    },
+    49202: (e, t, a) => {
+      var n = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = void 0);
+      var i = (function (e) {
+          if ("function" == typeof WeakMap) {
+            var t = new WeakMap();
+            new WeakMap();
+          }
+          return (function (e) {
+            if (e && e.__esModule) return e;
+            var a,
+              n,
+              i = {
+                __proto__: null,
+                default: e,
+              };
+            if (null === e || ("object" != typeof e && "function" != typeof e))
+              return i;
+            if ((a = t)) {
+              if (a.has(e)) return a.get(e);
+              a.set(e, i);
+            }
+            for (const t in e)
+              "default" !== t &&
+                {}.hasOwnProperty.call(e, t) &&
+                ((n =
+                  (a = Object.defineProperty) &&
+                  Object.getOwnPropertyDescriptor(e, t)) &&
+                (n.get || n.set)
+                  ? a(i, t, n)
+                  : (i[t] = e[t]));
+            return i;
+          })(e);
+        })(a(96540)),
+        s = n(a(12695)),
+        r = n(a(15286)),
+        o = a(74848);
+      t.default = (e) => {
+        const { size: t = 110, tip: a } = e,
+          { appURL: n } = (0, s.default)(),
+          l = e.customURL || n;
+        return l
+          ? (0, o.jsxs)(i.Fragment, {
+              children: [
+                (0, o.jsx)("div", {
+                  children: (0, o.jsx)(r.default, {
+                    value: l,
+                  }),
+                }),
+                (0, o.jsx)("h4", {
+                  children: a,
+                }),
+              ],
+            })
+          : "";
+      };
+    },
+    53156: (e, t, a) => {
+      var n = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = void 0);
+      var i = a(67467),
+        s = a(47459),
+        r = a(78106),
+        o = a(4347),
+        l = a(84465),
+        d = a(53719),
+        c = a(84707),
+        u = n(a(6093));
+      const m = a(88457).A,
+        g = (0, i.connect)(
+          (e) => ({
+            logined: e.players.logined,
+            player: e.players.player,
+            gameList: e.games.gameList,
+            launchurl: e.games.launchurl,
+            launchurlSuccess: e.games.launchurlSuccess,
+            launchurlFailed: e.games.launchurlFailed,
+            gameTypeMap: e.games.gameTypeMap,
+            saGame: e.games.saGame,
+            news: e.news.news,
+            banners: e.promo.banners,
+            isSingleWindow: e.app.isSingleWindow,
+            bannersDidFetched: e.promo.bannersDidFetched,
+            isLoadingBanners: e.promo.isLoading,
+            gameProviderMap: e.games.gameProviderMap,
+            maintenanceMap: e.games.maintenanceMap,
+            gameTags: e.games.gameTags,
+            myFavoriteGameMap: e.games.myFavoriteGameMap,
+            egameTabMap: e.games.egameTabMap,
+            egameLoading: e.games.egameLoading,
+            internalplayer: e.players.player.internalplayer,
+            floatingAdsSetting: e.promo.floatingAdsSetting,
+            promos: e.promo.promos,
+            staticpagesMap: e.staticpagesettings.staticpagesMap,
+          }),
+          (e) =>
+            (0, s.bindActionCreators)(
+              {
+                launchGames: o.launchGames,
+                getAllGameList: o.getAllGameList,
+                getNews: l.getNews,
+                getEgameGames: o.getEgameGames,
+                getGameTags: o.getGameTags,
+                addMyFavoriteGame: o.addMyFavoriteGame,
+                deleteMyFavoriteGame: o.deleteMyFavoriteGame,
+                getMyFavoriteGameList: o.getMyFavoriteGameList,
+                getPromos: d.getPromos,
+                openErrorModal: c.openErrorModal,
+              },
+              e
+            )
+        )(m);
+      t.default = (0, u.default)((0, r.withRouter)(g));
+    },
+    65147: (e, t, a) => {
+      var n = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = void 0);
+      var i = (function (e) {
+          if ("function" == typeof WeakMap) {
+            var t = new WeakMap();
+            new WeakMap();
+          }
+          return (function (e) {
+            if (e && e.__esModule) return e;
+            var a,
+              n,
+              i = {
+                __proto__: null,
+                default: e,
+              };
+            if (null === e || ("object" != typeof e && "function" != typeof e))
+              return i;
+            if ((a = t)) {
+              if (a.has(e)) return a.get(e);
+              a.set(e, i);
+            }
+            for (const t in e)
+              "default" !== t &&
+                {}.hasOwnProperty.call(e, t) &&
+                ((n =
+                  (a = Object.defineProperty) &&
+                  Object.getOwnPropertyDescriptor(e, t)) &&
+                (n.get || n.set)
+                  ? a(i, t, n)
+                  : (i[t] = e[t]));
+            return i;
+          })(e);
+        })(a(96540)),
+        s = a(28651),
+        r = n(a(94461)),
+        o = a(57761),
+        l = n(a(94188)),
+        d = n(a(8269)),
+        c = a(93185),
+        u = n(a(8718)),
+        m = n(a(46942)),
+        g = a(74848);
+      const p = l.default.portal.apiServer.imageServer;
+      t.default = (e) => {
+        let { banners: t, swiperOption: a, ...n } = e;
+        const l = (0, s.useHistory)(),
+          h = (0, d.default)(),
+          f = (0, r.default)(),
+          v = t.map((e) => `${p}${e.get("ad")}`).toJS(),
+          j = f(),
+          x = 1e3 * t.getIn([0, "carouselseconds"], 5),
+          y = (0, i.useCallback)(
+            (e, t) => {
+              const a = h(t[e]);
+              a &&
+                ((0, o.isURL)(a) || (0, c.isLaunchGameUrl)(a)
+                  ? window.open(
+                      a,
+                      "_blank",
+                      "height=800,width=1350,toolbar=0,location=0,menubar=0,scrollbars=yes"
+                    )
+                  : l.push(t[e]));
+            },
+            [h, l]
+          );
+        return (0, g.jsx)("div", {
+          className: (0, m.default)("banner", {
+            "no-swiper": t.size <= 0,
+          }),
+          children:
+            t.size > 0
+              ? (0, g.jsx)(u.default, {
+                  imgs: v,
+                  onClick: (e) => y(e, j),
+                  autoplayDuring: x,
+                  banner: !0,
+                  pagination: !0,
+                  navigation: !0,
+                  swiperOption: a,
+                  ...n,
+                })
+              : (0, g.jsx)("section", {
+                  className: "home-section section-01",
+                }),
+        });
+      };
+    },
+    77844: (e, t, a) => {
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = function (e, t) {
+          if (((0, n.default)(e), !e || e.length >= 2083 || /[\s<>]/.test(e)))
+            return !1;
+          if (0 === e.indexOf("mailto:")) return !1;
+          t = (0, r.default)(t, l);
+          var a = void 0,
+            o = void 0,
+            c = void 0,
+            m = void 0,
+            g = void 0,
+            p = void 0,
+            h = void 0,
+            f = void 0;
+          if (
+            ((h = e.split("#")),
+            (e = h.shift()),
+            (h = e.split("?")),
+            (e = h.shift()),
+            (h = e.split("://")).length > 1)
+          ) {
+            if (
+              ((a = h.shift()),
+              t.require_valid_protocol && -1 === t.protocols.indexOf(a))
+            )
+              return !1;
+          } else {
+            if (t.require_protocol) return !1;
+            t.allow_protocol_relative_urls &&
+              "//" === e.substr(0, 2) &&
+              (h[0] = e.substr(2));
+          }
+          if (
+            ((e = h.join("://")),
+            (h = e.split("/")),
+            "" === (e = h.shift()) && !t.require_host)
+          )
+            return !0;
+          if (
+            (h = e.split("@")).length > 1 &&
+            (o = h.shift()).indexOf(":") >= 0 &&
+            o.split(":").length > 2
+          )
+            return !1;
+          p = f = null;
+          var v = (m = h.join("@")).match(d);
+          return (
+            v
+              ? ((c = ""), (f = v[1]), (p = v[2] || null))
+              : ((c = (h = m.split(":")).shift()),
+                h.length && (p = h.join(":"))),
+            !(
+              null !== p &&
+              ((g = parseInt(p, 10)),
+              !/^[0-9]+$/.test(p) || g <= 0 || g > 65535)
+            ) &&
+              !!(
+                (0, s.default)(c) ||
+                (0, i.default)(c, t) ||
+                (f && (0, s.default)(f, 6)) ||
+                "localhost" === c
+              ) &&
+              ((c = c || f),
+              !(t.host_whitelist && !u(c, t.host_whitelist)) &&
+                (!t.host_blacklist || !u(c, t.host_blacklist)))
+          );
+        });
+      var n = o(a(83399)),
+        i = o(a(57658)),
+        s = o(a(35372)),
+        r = o(a(93610));
+      function o(e) {
+        return e && e.__esModule
+          ? e
+          : {
+              default: e,
+            };
+      }
+      var l = {
+          protocols: ["http", "https", "ftp"],
+          require_tld: !0,
+          require_protocol: !1,
+          require_host: !0,
+          require_valid_protocol: !0,
+          allow_underscores: !1,
+          allow_trailing_dot: !1,
+          allow_protocol_relative_urls: !1,
+        },
+        d = /^\[([^\]]+)\](?::([0-9]+))?$/;
+      function c(e) {
+        return "[object RegExp]" === Object.prototype.toString.call(e);
+      }
+      function u(e, t) {
+        for (var a = 0; a < t.length; a++) {
+          var n = t[a];
+          if (e === n || (c(n) && n.test(e))) return !0;
+        }
+        return !1;
+      }
+      e.exports = t.default;
+    },
+    82883: (e, t, a) => {
+      var n = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.getLeaderListInRange = t.getLeaderList2 = t.getLeaderList = void 0);
+      var i = n(a(94188));
+      const s = {
+          d02prod: {
+            customizedInitAmounts: [
+              230, 142, 236, 146, 241, 363, 25, 192, 456, 420, 152, 353, 29,
+              213, 411,
+            ],
+          },
+          t98prod: {
+            customizedInitAmounts: [
+              20, 34, 256, 146, 92, 240, 143, 192, 456, 920, 1452, 2353, 3529,
+              32213, 403924,
+            ],
+          },
+          d03prod: {
+            customizedInitAmounts: [
+              20272, 3425, 2256, 1436, 7932, 2430, 1443, 1922, 4576, 9220, 1452,
+              2353, 3529, 3223, 40394,
+            ],
+          },
+          p36prod: {
+            customizedInitAmounts: [
+              50, 235, 3613, 25613, 410189, 394193, 4932, 475022, 493061, 284,
+              482807, 481802, 90, 480042, 4031,
+            ],
+          },
+          e05prod: {
+            customizedInitAmounts: [
+              40373, 72040, 67792, 31400, 68713, 11877, 47748, 57194, 38435,
+              75050, 42593, 51303, 24396, 55988, 86510,
+            ],
+          },
+          g01prod: {
+            customizedInitAmounts: [
+              23, 4, 1324, 67, 3, 25, 86, 24, 33, 12, 14205, 14, 9, 258, 5,
+            ],
+          },
+          u21prod: {
+            customizedInitAmounts: [
+              1618, 4008, 1017, 3435, 1920, 2908, 4308, 2930, 2865, 3755, 1261,
+              2996, 516, 2646, 3298,
+            ],
+          },
+          u26prod: {
+            customizedInitAmounts: [
+              2556, 3263, 3837, 2069, 259, 1148, 2628, 534, 2223, 2294, 3341,
+              1442, 2883, 1202, 326,
+            ],
+          },
+          t38prod: {
+            customizedInitAmounts: [
+              1618, 4008, 1017, 3435, 1920, 2908, 4308, 2930, 2865, 3755, 1261,
+              2996, 516, 2646, 3298,
+            ],
+          },
+          d06prod: {
+            customizedInitAmounts: [
+              1618, 4008, 1017, 3435, 1920, 2908, 4308, 2930, 2865, 3755, 1261,
+              2996, 516, 2646, 3298,
+            ],
+          },
+          x06prod: {
+            customizedInitAmounts: [
+              1618, 4008, 1017, 3435, 1920, 2908, 4308, 2930, 2865, 3755, 1261,
+              2996, 516, 2646, 3298,
+            ],
+          },
+          x07prod: {
+            customizedInitAmounts: [
+              70, 235, 3613, 11877, 788693, 72040, 412, 2865, 3755, 1261, 11877,
+              516, 456, 920, 481802,
+            ],
+          },
+          ra2prod: {
+            customizedInitAmounts: [
+              1044748, 970250, 1760575, 1795193, 1315227, 1751918, 717132,
+              680821, 682168, 726227, 888252, 571297, 1544559, 510669, 749064,
+            ],
+          },
+        },
+        r = function (e, t) {
+          let a =
+              arguments.length > 2 && void 0 !== arguments[2]
+                ? arguments[2]
+                : 1,
+            n = arguments.length > 3 ? arguments[3] : void 0;
+          const r = {
+              big: [
+                946161530, 933190520, 926934520, 920223210, 910189200,
+                900030300, 998061070, 995022030, 993061070, 992023060,
+                982807500, 981802510, 981048720, 980042710, 980001530,
+              ],
+              small: [
+                2461615, 2331905, 2269345, 2202235, 2101895, 2000305, 2980615,
+                2950225, 2930615, 2920235, 2828075, 2818025, 2810485, 2800425,
+                2800015,
+              ],
+            },
+            o = new Date().getDay(),
+            l = new Date().getDate(),
+            d = l % e.length,
+            c = [...e.slice(d), ...e.slice(0, d)];
+          return t
+            .map((e, t) => {
+              var a;
+              const n =
+                null !== (a = s[i.default.brand.code]) &&
+                void 0 !== a &&
+                a.customizedInitAmounts
+                  ? Math.floor(Math.random() * e)
+                  : (o + 10) * l;
+              return {
+                userId: c[t],
+                amount: e + n,
+              };
+            })
+            .map((e, t) => {
+              var l;
+              if (
+                null !== (l = s[i.default.brand.code]) &&
+                void 0 !== l &&
+                l.customizedInitAmounts
+              ) {
+                var d = Math.floor(Math.random() * e.amount);
+                d = Math.min(d, 9999);
+                let t = e.amount + d;
+                return (
+                  !n ||
+                    (t <= n && t >= a) ||
+                    (t = Math.floor(Math.random() * (n - a + 1)) + a),
+                  a && (t = Math.max(t, a)),
+                  n && (t = Math.min(t, n)),
+                  {
+                    ...e,
+                    amount: t,
+                  }
+                );
+              }
+              {
+                const a = new Date().getMinutes(),
+                  n = new Date().getHours(),
+                  i = t < 5 ? "small" : "big",
+                  s = e.amount + r[i][(a * (t + 1)) % 15] + (o + 3) * (n + 5);
+                return {
+                  ...e,
+                  amount: s,
+                };
+              }
+            })
+            .sort((e, t) => t.amount - e.amount);
+        };
+      (t.getLeaderList = () => {
+        var e;
+        const t = (null === (e = s[i.default.brand.code]) || void 0 === e
+          ? void 0
+          : e.customizedInitAmounts) || [
+          2551615330, 2550905219, 2550345230, 2542232179, 2541892070,
+          2530303099, 2530010730, 2529220334, 2528610730, 2527230692,
+          2526807508, 2525025189, 2524487210, 2523427193, 2522015330,
+        ];
+        return r(
+          [
+            "cas******16",
+            "anh******ha",
+            "ngo*******88",
+            "bib*****45",
+            "sus*****12",
+            "ges******16",
+            "kid*****33",
+            "des******26",
+            "cal*****10",
+            "crl******22",
+            "geb*****77",
+            "pes*****92",
+            "que*******88",
+            "ale****96",
+            "pen*****28",
+          ],
+          t
+        );
+      }),
+        (t.getLeaderList2 = () => {
+          var e;
+          const t = (null === (e = s[i.default.brand.code]) || void 0 === e
+            ? void 0
+            : e.customizedInitAmounts) || [
+            2583455623, 2539098490, 2732717332, 2097130859, 2539699901,
+            2100003999, 2593111109, 2549880159, 250908931110, 2532453416,
+            2591305209, 2590003901, 2491849021, 2199870345, 2203421955,
+          ];
+          return r(
+            [
+              "li******a3",
+              "i48******on",
+              "kai*******29",
+              "sh*******i2",
+              "mua*******22",
+              "ba*******at",
+              "nea*******st",
+              "s*******5u",
+              "ra*******00",
+              "wi*******oy",
+              "will*******am",
+              "fes*******il",
+              "w*******om",
+              "z*******si",
+              "qu*******en",
+            ],
+            t
+          );
+        }),
+        (t.getLeaderListInRange = (e, t) => {
+          var a;
+          const n = (null === (a = s[i.default.brand.code]) || void 0 === a
+            ? void 0
+            : a.customizedInitAmounts) || [
+            2551615330, 2550905219, 2550345230, 2542232179, 2541892070,
+            2530303099, 2530010730, 2529220334, 2528610730, 2527230692,
+            2526807508, 2525025189, 2524487210, 2523427193, 2522015330,
+          ];
+          return r(
+            [
+              "cas******16",
+              "anh******ha",
+              "ngo*******88",
+              "bib*****45",
+              "sus*****12",
+              "ges******16",
+              "kid*****33",
+              "des******26",
+              "cal*****10",
+              "crl******22",
+              "geb*****77",
+              "pes*****92",
+              "que*******88",
+              "ale****96",
+              "pen*****28",
+            ],
+            n,
+            e,
+            t
+          );
+        });
+    },
+    88457: (e, t, a) => {
+      var n = a(24994);
+      t.A = void 0;
+      var i = n(a(43693)),
+        s = M(a(96540)),
+        r = n(a(5556)),
+        o = a(78106),
+        l = a(28651),
+        d = n(a(9404)),
+        c = a(51628),
+        u = n(a(15062)),
+        m = M(a(22715)),
+        g = n(a(65147)),
+        p = n(a(2209)),
+        h = a(93185),
+        f = (n(a(49202)), n(a(94188))),
+        v = a(82883),
+        j = a(16510),
+        x = a(8087),
+        y = n(a(50205)),
+        b = n(a(36243)),
+        w = a(74848);
+      function M(e, t) {
+        if ("function" == typeof WeakMap)
+          var a = new WeakMap(),
+            n = new WeakMap();
+        return (M = function (e, t) {
+          if (!t && e && e.__esModule) return e;
+          var i,
+            s,
+            r = {
+              __proto__: null,
+              default: e,
+            };
+          if (null === e || ("object" != typeof e && "function" != typeof e))
+            return r;
+          if ((i = t ? n : a)) {
+            if (i.has(e)) return i.get(e);
+            i.set(e, r);
+          }
+          for (const t in e)
+            "default" !== t &&
+              {}.hasOwnProperty.call(e, t) &&
+              ((s =
+                (i = Object.defineProperty) &&
+                Object.getOwnPropertyDescriptor(e, t)) &&
+              (s.get || s.set)
+                ? i(r, t, s)
+                : (r[t] = e[t]));
+          return r;
+        })(e, t);
+      }
+      a(4993);
+      class N extends s.Component {
+        constructor(e) {
+          super(e),
+            (0, i.default)(this, "winnerList", () => {
+              const e = this.shuffleArray(this.state.leaderList);
+              let t = [];
+              for (var a = 0; a < e.length; a++)
+                t.push(
+                  (0, w.jsxs)(
+                    "li",
+                    {
+                      children: [
+                        (0, w.jsx)("div", {
+                          className: "user",
+                          children: e[a].userId,
+                        }),
+                        (0, w.jsxs)("div", {
+                          className: "prize",
+                          children: [
+                            c.i18n["ec52.win"],
+                            " ",
+                            (0, w.jsx)("b", {
+                              children: (0, j.formatMoney)(e[a].amount, "0,0"),
+                            }),
+                          ],
+                        }),
+                      ],
+                    },
+                    `winner${a}`
+                  )
+                );
+              return t;
+            }),
+            (0, i.default)(this, "launchEgame", (e) => {
+              const {
+                  logined: t,
+                  maintenanceMap: a,
+                  internalplayer: n,
+                } = this.props,
+                i = e.get("status"),
+                s = e.get("gameid"),
+                r = e.get("gameproviderid"),
+                o = e.get("distributorid"),
+                l = e.get("producttypeid"),
+                d = i === x.gameStatusEnum.comingsoon,
+                c = 1 === a.getIn(["EGAME", r, "status"]) || (!!d && !n),
+                { toggleLoginPopup: u } = this.context;
+              c ||
+                (Object.prototype.hasOwnProperty.call(
+                  x.egameProviderLinkEnum,
+                  s
+                )
+                  ? t
+                    ? this.props.history.push(x.egameProviderLinkEnum[s])
+                    : u()
+                  : this.launchGame({
+                      producttypeid: l,
+                      distributorid: o,
+                      gameid: s,
+                      gameproviderid: r,
+                    }));
+            }),
+            (0, i.default)(this, "egameNewRenderer", (e) => {
+              const {
+                  gameid: t,
+                  gameproviderid: a,
+                  gamename: n,
+                  launchBtnName: i,
+                } = this.getEgameInfo(e),
+                s = new Date().getTime().toString().substring(3, 8);
+              return (0, w.jsxs)("div", {
+                className: "new-game",
+                children: [
+                  (0, h.renderGameImg)(a, t, "cover-blur"),
+                  (0, w.jsx)("div", {
+                    className: "game-cover",
+                    children: (0, h.renderGameImg)(a, t, "cover"),
+                  }),
+                  (0, w.jsx)("div", {
+                    className: "gp",
+                    children: (0, w.jsx)("img", {
+                      src: `https://img.alltocon.com/img/static/gplogo/egame/light/${a.toLowerCase()}.png`,
+                      alt: a,
+                    }),
+                  }),
+                  (0, w.jsxs)("div", {
+                    className: "game-info",
+                    children: [
+                      (0, w.jsx)("div", {
+                        className: "title",
+                        children: (0, w.jsx)("h3", {
+                          className: "name",
+                          children: n,
+                        }),
+                      }),
+                      (0, w.jsx)("div", {
+                        className: "brand",
+                        children: (0, w.jsx)("ul", {
+                          children: (0, w.jsxs)("li", {
+                            className: "count",
+                            children: [
+                              (0, w.jsx)("span", {
+                                className: "play",
+                                children: "Played",
+                              }),
+                              (0, w.jsx)("span", {
+                                children: s,
+                              }),
+                            ],
+                          }),
+                        }),
+                      }),
+                      (0, w.jsx)("div", {
+                        className: "play-btn",
+                        onClick: () => this.launchEgame(e),
+                        children: i,
+                      }),
+                    ],
+                  }),
+                ],
+              });
+            }),
+            (0, i.default)(this, "egamPopRenderer", (e) =>
+              e.map((e) => {
+                const {
+                  gameid: t,
+                  gameproviderid: a,
+                  gamename: n,
+                  launchBtnName: i,
+                } = this.getEgameInfo(e);
+                return (0, w.jsxs)(
+                  "div",
+                  {
+                    className: "hot-game-item",
+                    children: [
+                      (0, w.jsx)("div", {
+                        className: "game-cover",
+                        children: (0, h.renderGameImg)(a, t, ""),
+                      }),
+                      (0, w.jsx)("div", {
+                        className: "title",
+                        children: n,
+                      }),
+                      (0, w.jsxs)("div", {
+                        className: "play-btn",
+                        onClick: () => this.launchEgame(e),
+                        children: [
+                          (0, w.jsx)("div", {
+                            className: "gp",
+                            children: a,
+                          }),
+                          (0, w.jsx)("span", {
+                            children: i,
+                          }),
+                        ],
+                      }),
+                    ],
+                  },
+                  t
+                );
+              })
+            ),
+            (0, i.default)(this, "getEgameInfo", (e) => {
+              const t = e.get("gameid"),
+                a = e.get("gameproviderid");
+              return {
+                gameid: t,
+                gameproviderid: a,
+                gamename: (0, h.getName)(e.get("gamename")),
+                launchBtnName:
+                  1 === this.props.maintenanceMap.getIn(["EGAME", a, "status"])
+                    ? c.i18n["gmae.maintenance"]
+                    : c.i18n["launch.game"],
+              };
+            }),
+            (this.launchGame = m.default.bind(this)),
+            (this.clickGameProvider = m.clickGameProvider.bind(this)),
+            (this.state = {
+              leaderList: (0, v.getLeaderList)(),
+            });
+        }
+        shuffleArray(e) {
+          for (let t = e.length - 1; t > 0; t--) {
+            const a = Math.floor(Math.random() * (t + 1));
+            [e[t], e[a]] = [e[a], e[t]];
+          }
+          return e;
+        }
+        render() {
+          const {
+            banners: e,
+            isLoadingBanners: t,
+            bannersDidFetched: a,
+            gameTypeMap: n,
+            history: { push: i },
+          } = this.props;
+          if (!a || 0 === n.size) return (0, w.jsx)("div", {});
+          const s = n.get("EGAME"),
+            r =
+              (s.find((e) => e.get("tags") && e.get("tags").includes("new")) ||
+                s.get(0),
+              s.filter((e) => e.get("tags") && e.get("tags").includes("pop")));
+          return (
+            r.size > 1
+              ? d.default.List([]).set(0, r.get(0)).set(1, r.get(1))
+              : d.default.List([]).set(0, s.get(1)).set(1, s.get(2)),
+            (0, w.jsxs)("main", {
+              className: "home-area",
+              children: [
+                (0, w.jsx)(g.default, {
+                  banners: e,
+                  isLoadingBanners: t,
+                }),
+                (0, w.jsxs)("div", {
+                  className: "home-wrap",
+                  children: [
+                    (0, w.jsx)("div", {
+                      className: "home-quick-box-wrap",
+                      children: (0, w.jsx)("div", {
+                        className: "main-wrap",
+                        children: (0, w.jsx)("div", {
+                          className: "home-quick-box",
+                          children: ["SPORTS", "LIVE", "ANIMAL", "EGAME"].map(
+                            (e) => {
+                              const t = e.toLowerCase();
+                              return (0, w.jsxs)(
+                                "div",
+                                {
+                                  className: "home-quick-box-item",
+                                  children: [
+                                    (0, w.jsx)("div", {
+                                      className: `main-pic ${t}`,
+                                      style: {
+                                        backgroundImage: `url(https://img.alltocon.com/img/static/qata88/desktop/type-${t}.png)`,
+                                      },
+                                    }),
+                                    (0, w.jsx)("h2", {
+                                      children: c.i18n[e],
+                                    }),
+                                    (0, w.jsx)("p", {
+                                      children: c.i18n[`winbet.des.${t}`],
+                                    }),
+                                    (0, w.jsx)(l.Link, {
+                                      to: u.default[e],
+                                      children: (0, w.jsx)("span", {
+                                        children: c.i18n["launch.game"],
+                                      }),
+                                    }),
+                                  ],
+                                },
+                                `quick-${t}`
+                              );
+                            }
+                          ),
+                        }),
+                      }),
+                    }),
+                    (0, w.jsx)("div", {
+                      className: "home-egame",
+                      children: (0, w.jsxs)("div", {
+                        className: "main-wrap",
+                        children: [
+                          (0, w.jsxs)("div", {
+                            children: [
+                              (0, w.jsxs)("h3", {
+                                className: "home-egame-title",
+                                children: [
+                                  (0, w.jsx)("img", {
+                                    src: "https://img.alltocon.com/img/static/qata88/desktop/home-egame-title-icon.png",
+                                    role: "presentation",
+                                  }),
+                                  "TRÒ CHƠI MỚI",
+                                ],
+                              }),
+                              (0, w.jsxs)("div", {
+                                className: "egame-item orange",
+                                children: [
+                                  (0, w.jsx)("div", {
+                                    className: "left",
+                                    children: (0, w.jsx)("img", {
+                                      src: "https://img.alltocon.com/img/static/qata88/desktop/home-egame-game1.png",
+                                      role: "presentation",
+                                    }),
+                                  }),
+                                  (0, w.jsxs)("div", {
+                                    className: "right",
+                                    children: [
+                                      (0, w.jsx)("h4", {
+                                        className: "egame-item-title",
+                                        children: "BÓNG RỔ",
+                                      }),
+                                      (0, w.jsx)("span", {
+                                        className: "egame-item-tag",
+                                        children: "Played: 47302",
+                                      }),
+                                    ],
+                                  }),
+                                ],
+                              }),
+                              (0, w.jsxs)("div", {
+                                className: "egame-item purple",
+                                children: [
+                                  (0, w.jsx)("div", {
+                                    className: "left",
+                                    children: (0, w.jsx)("img", {
+                                      src: "https://img.alltocon.com/img/static/qata88/desktop/home-egame-game2.png",
+                                      role: "presentation",
+                                    }),
+                                  }),
+                                  (0, w.jsxs)("div", {
+                                    className: "right",
+                                    children: [
+                                      (0, w.jsx)("h4", {
+                                        className: "egame-item-title",
+                                        children: "ANUBIS MOON",
+                                      }),
+                                      (0, w.jsx)("span", {
+                                        className: "egame-item-tag",
+                                        children: "Played: 47302",
+                                      }),
+                                    ],
+                                  }),
+                                ],
+                              }),
+                            ],
+                          }),
+                          (0, w.jsxs)("div", {
+                            className: "center",
+                            children: [
+                              (0, w.jsx)("img", {
+                                src: "https://img.alltocon.com/img/static/qata88/desktop/home-egame-center-img.png",
+                                role: "presentation",
+                              }),
+                              (0, w.jsx)("h3", {
+                                children: "Trò chơi xèng phổ biến",
+                              }),
+                              (0, w.jsx)("p", {
+                                children:
+                                  "VN138 QATAR luôn cung cấp hàng nghìn máy xèng. Trải nghiệm miễn phí ngay!",
+                              }),
+                            ],
+                          }),
+                          (0, w.jsxs)("div", {
+                            children: [
+                              (0, w.jsxs)("h3", {
+                                className: "home-egame-title",
+                                children: [
+                                  (0, w.jsx)("img", {
+                                    src: "https://img.alltocon.com/img/static/qata88/desktop/home-egame-title-icon.png",
+                                    role: "presentation",
+                                  }),
+                                  "TRÒ CHƠI MỚI",
+                                ],
+                              }),
+                              (0, w.jsxs)("div", {
+                                className: "egame-item orange",
+                                children: [
+                                  (0, w.jsx)("div", {
+                                    className: "left",
+                                    children: (0, w.jsx)("img", {
+                                      src: "https://img.alltocon.com/img/static/qata88/desktop/home-egame-game1.png",
+                                      role: "presentation",
+                                    }),
+                                  }),
+                                  (0, w.jsxs)("div", {
+                                    className: "right",
+                                    children: [
+                                      (0, w.jsx)("h4", {
+                                        className: "egame-item-title",
+                                        children: "BÓNG RỔ",
+                                      }),
+                                      (0, w.jsx)("span", {
+                                        className: "egame-item-tag",
+                                        children: "Played: 47302",
+                                      }),
+                                    ],
+                                  }),
+                                ],
+                              }),
+                              (0, w.jsxs)("div", {
+                                className: "egame-item purple",
+                                children: [
+                                  (0, w.jsx)("div", {
+                                    className: "left",
+                                    children: (0, w.jsx)("img", {
+                                      src: "https://img.alltocon.com/img/static/qata88/desktop/home-egame-game2.png",
+                                      role: "presentation",
+                                    }),
+                                  }),
+                                  (0, w.jsxs)("div", {
+                                    className: "right",
+                                    children: [
+                                      (0, w.jsx)("h4", {
+                                        className: "egame-item-title",
+                                        children: "ANUBIS MOON",
+                                      }),
+                                      (0, w.jsx)("span", {
+                                        className: "egame-item-tag",
+                                        children: "Played: 47302",
+                                      }),
+                                    ],
+                                  }),
+                                ],
+                              }),
+                            ],
+                          }),
+                        ],
+                      }),
+                    }),
+                    (0, w.jsx)("div", {
+                      className: "home-feature",
+                      children: (0, w.jsxs)("div", {
+                        className: "main-wrap",
+                        children: [
+                          (0, w.jsxs)("div", {
+                            className: "feature-item",
+                            children: [
+                              (0, w.jsx)("img", {
+                                src: `https://img.alltocon.com/img/static/desktop/brand/${f.default.brand.code}/logo.png`,
+                                alt: "",
+                              }),
+                              (0, w.jsx)("p", {
+                                children:
+                                  "VN138 là nền tảng giải trí trực tuyến hàng đầu đến từ Qatar với các trò chơi Live Casino & Trực Tiếp Bóng Đá hấp dẫn",
+                              }),
+                            ],
+                          }),
+                          (0, w.jsxs)("div", {
+                            className: "feature-item",
+                            children: [
+                              (0, w.jsx)("img", {
+                                src: "https://img.alltocon.com/img/static/qata88/desktop/home-feature2.png",
+                                alt: "",
+                              }),
+                              (0, w.jsx)("p", {
+                                children:
+                                  "Các loại đặt cược casino đầy đủ nhất Hàng nghìn xèng, Hàng chục nghìn, Casino trực tiếp, Poker, Baccarat, Trò chơi thể thao, Cá cược bóng, Roulette, Bắn cá, Xổ số",
+                              }),
+                            ],
+                          }),
+                          (0, w.jsxs)("div", {
+                            className: "feature-item",
+                            children: [
+                              (0, w.jsx)("img", {
+                                src: "https://img.alltocon.com/img/static/qata88/desktop/home-feature3.png",
+                                alt: "",
+                              }),
+                              (0, w.jsx)("p", {
+                                children:
+                                  "Hỗ trợ hệ điều hành Android, IOS và trên cả PC. Hỗ trợ người chơi rút tiền dễ dàng và nhanh chóng, đảm bảo an toàn và bảo mật tuyệt đối .",
+                              }),
+                            ],
+                          }),
+                          (0, w.jsxs)("div", {
+                            className: "feature-item",
+                            children: [
+                              (0, w.jsx)("img", {
+                                src: "https://img.alltocon.com/img/static/qata88/desktop/home-feature4.png",
+                                alt: "",
+                              }),
+                              (0, w.jsx)("p", {
+                                children:
+                                  "Cung cấp nhiều phần thưởng sòng bạc, đăng ký thành viên mới để nhận tài khoản tín dụng miễn phí, vòng quay, quà tặng sinh nhật thành viên baccarat, v.v.",
+                              }),
+                            ],
+                          }),
+                        ],
+                      }),
+                    }),
+                    (0, w.jsx)("div", {
+                      className: "winners",
+                      children: (0, w.jsx)("div", {
+                        children: (0, w.jsx)("ul", {
+                          children: this.winnerList(),
+                        }),
+                      }),
+                    }),
+                    (0, w.jsx)("div", {
+                      className: "home-link",
+                      children: (0, w.jsxs)("div", {
+                        className: "main-wrap",
+                        children: [
+                          (0, w.jsxs)("div", {
+                            className: "home-link-item",
+                            children: [
+                              (0, w.jsx)("img", {
+                                src: "https://img.alltocon.com/img/static/qata88/desktop/home-link2.png",
+                                alt: "",
+                              }),
+                              (0, w.jsx)("h4", {
+                                children: "COOL-IN LIVE",
+                              }),
+                            ],
+                          }),
+                          (0, w.jsxs)("div", {
+                            className: "home-link-item",
+                            children: [
+                              (0, w.jsx)("img", {
+                                src: "https://img.alltocon.com/img/static/qata88/desktop/home-link3.png",
+                                alt: "",
+                              }),
+                              (0, w.jsx)("h4", {
+                                children: "PHIM ẢNH",
+                              }),
+                            ],
+                          }),
+                          (0, w.jsxs)("div", {
+                            className: "home-link-item",
+                            children: [
+                              (0, w.jsx)("img", {
+                                src: "https://img.alltocon.com/img/static/qata88/desktop/home-link4.png",
+                                alt: "",
+                              }),
+                              (0, w.jsx)("h4", {
+                                children: "HẬU TRƯỜNG HOẠT ĐỘNG",
+                              }),
+                            ],
+                          }),
+                        ],
+                      }),
+                    }),
+                    (0, w.jsx)("div", {
+                      className: "home-rankinglist",
+                      children: (0, w.jsx)("div", {
+                        className: "main-wrap",
+                        children: (0, w.jsx)(b.default, {
+                          children: (0, w.jsx)(y.default, {}),
+                        }),
+                      }),
+                    }),
+                  ],
+                }),
+              ],
+            })
+          );
+        }
+      }
+      (N.proptypes = {
+        logined: r.default.bool,
+        launchGames: r.default.func,
+        gameTypeMap: p.default.map,
+      }),
+        (N.contextTypes = {
+          toggleLoginPopup: r.default.func,
+        }),
+        (t.A = (0, o.withRouter)(N));
+    },
+    94461: (e, t, a) => {
+      var n = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = void 0);
+      var i = n(a(55665));
+      t.default = () => {
+        const {
+          banners: e,
+          player: t,
+          logined: a,
+        } = (0, i.default)((e) => ({
+          banners: e.promo.banners,
+          player: e.players.player,
+          logined: e.players.logined,
+        }));
+        return () => {
+          let n = "";
+          return e
+            .map(
+              (e) => (
+                (n = e.get("adurl")),
+                n &&
+                  a &&
+                  e.get("additionurlparam") &&
+                  (n = ((e, t) => {
+                    let a,
+                      n = "";
+                    try {
+                      var i;
+                      a = new URL(e);
+                      const s = a.searchParams;
+                      s.append("playerName", t.playerid || ""),
+                        s.append(
+                          "vipLevel",
+                          null !== (i = t.newVipLevel) && void 0 !== i ? i : ""
+                        ),
+                        s.append("affName", t.ulagentid || ""),
+                        (n = `${a.origin}/?${s.toString()}`);
+                    } catch (t) {
+                      n = e;
+                    }
+                    return n;
+                  })(n, t)),
+                n
+              )
+            )
+            .toJS();
+        };
+      };
+    },
+    97702: (e, t, a) => {
+      a.r(t);
+    },
+    99134: (e, t, a) => {
+      var n = a(24994);
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      }),
+        (t.default = void 0);
+      var i = (function (e) {
+          if ("function" == typeof WeakMap) {
+            var t = new WeakMap();
+            new WeakMap();
+          }
+          return (function (e) {
+            if (e && e.__esModule) return e;
+            var a,
+              n,
+              i = {
+                __proto__: null,
+                default: e,
+              };
+            if (null === e || ("object" != typeof e && "function" != typeof e))
+              return i;
+            if ((a = t)) {
+              if (a.has(e)) return a.get(e);
+              a.set(e, i);
+            }
+            for (const t in e)
+              "default" !== t &&
+                {}.hasOwnProperty.call(e, t) &&
+                ((n =
+                  (a = Object.defineProperty) &&
+                  Object.getOwnPropertyDescriptor(e, t)) &&
+                (n.get || n.set)
+                  ? a(i, t, n)
+                  : (i[t] = e[t]));
+            return i;
+          })(e);
+        })(a(96540)),
+        s = n(a(46942)),
+        r = a(35781),
+        o = a(86830),
+        l = n(a(94188)),
+        d = a(38560);
+      a(97702), a(16601), a(53731), a(14909), a(33439);
+      var c = a(74848);
+      t.default = (e) => {
+        let {
+          imgs: t,
+          onClick: a = () => {},
+          autoplayDuring: n,
+          banner: u = !1,
+          navigation: m = !1,
+          pagination: g,
+          swiperOption: p = {},
+          onFirstImgLoad: h,
+        } = e;
+        const f = (0, i.useRef)({});
+        return (0, c.jsx)("div", {
+          className: (0, s.default)("carousel-banner-container", {
+            banner: u,
+            desktop: d.isDesktop,
+            "is-single": t.length < 2,
+          }),
+          children: (0, c.jsx)(o.Swiper, {
+            modules: [r.Navigation, r.Pagination, r.Autoplay],
+            preloadImages: !1,
+            autoplay: n
+              ? {
+                  delay: n,
+                  disableOnInteraction: !1,
+                }
+              : void 0,
+            navigation: m,
+            pagination: !!g && {
+              clickable: !0,
+              ...(t.length >= 5 && {
+                dynamicBullets: !0,
+              }),
+            },
+            loop: t.length > 1,
+            slidesPerView: "auto",
+            ...p,
+            onInit: (e) => {
+              const { params: t, autoplay: a } = e;
+              h &&
+                t.autoplay.enabled &&
+                a.running &&
+                ((f.current = {
+                  swiper: e,
+                  initTime: Date.now(),
+                }),
+                a.stop());
+            },
+            children: t.map((e, t) =>
+              (0, c.jsx)(
+                o.SwiperSlide,
+                {
+                  onClick: () => a(t),
+                  children: (0, c.jsx)("img", {
+                    src: e,
+                    loading: "lazy",
+                    alt: l.default.brand.name,
+                    onLoad: t ? null : () => (null == h ? void 0 : h(f)),
+                  }),
+                },
+                t
+              )
+            ),
+          }),
+        });
+      };
+    },
+  },
+]);

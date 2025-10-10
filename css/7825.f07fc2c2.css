@@ -2,11 +2,7 @@
   font-family: iconmps;
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/109-iconmps.9852d3d7.ttf);
-  src: url(../fonts/iconmps.64b7d31f..eot#iefix) format("embedded-opentype"),
-    url(../fonts/fonts/109-iconmps.9852d3d7..ttf) format("truetype"),
-    url(../fonts/iconmps.4f22ced6..woff) format("woff"),
-    url(../fonts/iconmps.662cdb8a..svg#iconmps) format("svg");
+  src: url(../fonts/109-iconmps.9852d3d7.ttf) format("truetype");
 }
 [class*=" d20_"],
 [class*=" mps-"],

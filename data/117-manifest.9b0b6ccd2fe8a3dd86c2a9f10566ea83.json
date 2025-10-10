@@ -1,0 +1,53 @@
+{
+  "icons": [
+    {
+      "src": "/icon_512x512.c9f0d912a6d5ec22529c4e7d1b0300e9.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_384x384.bd1e05b69f37c775dceadbc20defaee9.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.06191da0c81f0cebe44b8583cac9dc61.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_152x152.32bf2f5164f658d2e126dc19ca71bb38.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/121-icon_144x144.7e9f84babc41212dac759de26b5e5c66.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_128x128.1fb19405c01e0ef420edc7bdbeb37887.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_72x72.af076512bccbbdf687d311540438df52.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.538f8bff079153c7f29de5809e95fabe.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "VN138",
+  "short_name": "VN138",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "VN138",
+  "id": "qata88",
+  "theme_color": "#EFEFEF",
+  "background_color": "#ffffff"
+}

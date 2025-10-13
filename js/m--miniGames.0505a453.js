@@ -1,0 +1,568 @@
+"use strict";
+(self.webpackChunknogle_react_boilerplate =
+  self.webpackChunknogle_react_boilerplate || []).push([
+  [4456],
+  {
+    20878: (e, a, t) => {
+      var r = t(24994);
+      Object.defineProperty(a, "__esModule", {
+        value: !0,
+      }),
+        (a.default = void 0);
+      var o = r(t(39394));
+      t(92929), (a.default = o.default);
+    },
+    37245: (e, a, t) => {
+      var r = t(24994);
+      Object.defineProperty(a, "__esModule", {
+        value: !0,
+      }),
+        (a.default = void 0);
+      var o = (function (e) {
+          if ("function" == typeof WeakMap) {
+            var a = new WeakMap();
+            new WeakMap();
+          }
+          return (function (e) {
+            if (e && e.__esModule) return e;
+            var t,
+              r,
+              o = {
+                __proto__: null,
+                default: e,
+              };
+            if (null === e || ("object" != typeof e && "function" != typeof e))
+              return o;
+            if ((t = a)) {
+              if (t.has(e)) return t.get(e);
+              t.set(e, o);
+            }
+            for (const a in e)
+              "default" !== a &&
+                {}.hasOwnProperty.call(e, a) &&
+                ((r =
+                  (t = Object.defineProperty) &&
+                  Object.getOwnPropertyDescriptor(e, a)) &&
+                (r.get || r.set)
+                  ? t(o, a, r)
+                  : (o[a] = e[a]));
+            return o;
+          })(e);
+        })(t(96540)),
+        i = r(t(46942)),
+        n = t(51628),
+        l = r(t(94188)),
+        s = r(t(30907)),
+        u = t(71850),
+        c = t(74848);
+      const { categoriesPage: d, categoriesHomePage: g } =
+        l.default.brand.customMobile;
+      a.default = (e) => {
+        let {
+          gameProviderMap: a,
+          gameQuery: t,
+          changeGameQuery: r,
+          gplogoStyle: m,
+        } = e;
+        const p = (0, o.useRef)(null),
+          { activeTab: f, provider: v } = t,
+          y = l.default.brand.customMobile.gpIconStyle || m || "icon-dark",
+          h = (0, o.useMemo)(() => {
+            let e = a.get(f);
+            return e && e.size > 0 ? e.keySeq().toArray() : null;
+          }, [a, f]);
+        return (
+          (0, o.useEffect)(() => {
+            if ((0, u.getProviderOrGameAutoScrollList)(f) && p.current) {
+              const e = document.querySelector(".app-home").classList,
+                a = u.withHorizontalProvidersTemplate.some((a) => e.contains(a))
+                  ? {
+                      block: "nearest",
+                      inline: "center",
+                    }
+                  : {
+                      block: "center",
+                    };
+              p.current.scrollIntoView(a);
+            }
+          }, [p.current]),
+          h
+            ? (0, c.jsxs)("ul", {
+                className: `game-providers ${f} ${v}`,
+                children: [
+                  (0, c.jsxs)("li", {
+                    className: (0, i.default)("all", {
+                      active: null === v,
+                    }),
+                    onClick: () => {
+                      r(
+                        d
+                          ? {
+                              type: "CATEGORIES",
+                            }
+                          : g
+                          ? {
+                              type: "ROOT",
+                            }
+                          : {
+                              provider: null,
+                              showGameList: !1,
+                            }
+                      );
+                    },
+                    children: [
+                      (0, c.jsx)("div", {}),
+                      (0, c.jsx)("div", {
+                        className: "game-provider-title",
+                        children: n.i18n["all.gameprovider"],
+                      }),
+                    ],
+                  }),
+                  h.map((e) =>
+                    (0, c.jsxs)(
+                      "li",
+                      {
+                        className: (0, i.default)(e, {
+                          active: e === v,
+                        }),
+                        ...(e === v
+                          ? {
+                              ref: p,
+                            }
+                          : {}),
+                        onClick: () => {
+                          var a;
+                          r({
+                            provider: e,
+                            showGameList: !0,
+                          }),
+                            null ===
+                              (a =
+                                document.getElementsByClassName(
+                                  "egame-list"
+                                )[0]) ||
+                              void 0 === a ||
+                              a.scrollTo(0, 0);
+                        },
+                        children: [
+                          (0, c.jsx)("div", {
+                            className: `game-provider-icon ${e}`,
+                            style: {
+                              background: `url(https://img.alltocon.com/img/static/gplogo/${y}/${e.toLowerCase()}.png) 3px center/auto 90% no-repeat`,
+                            },
+                          }),
+                          (0, c.jsx)(s.default, {
+                            provider: e,
+                            children: (e) =>
+                              (0, c.jsx)("div", {
+                                className: "game-provider-title",
+                                children: e,
+                              }),
+                          }),
+                        ],
+                      },
+                      e
+                    )
+                  ),
+                ],
+              })
+            : null
+        );
+      };
+    },
+    39394: (e, a, t) => {
+      var r = t(24994);
+      Object.defineProperty(a, "__esModule", {
+        value: !0,
+      }),
+        (a.default = void 0);
+      var o = (function (e) {
+          if ("function" == typeof WeakMap) {
+            var a = new WeakMap();
+            new WeakMap();
+          }
+          return (function (e) {
+            if (e && e.__esModule) return e;
+            var t,
+              r,
+              o = {
+                __proto__: null,
+                default: e,
+              };
+            if (null === e || ("object" != typeof e && "function" != typeof e))
+              return o;
+            if ((t = a)) {
+              if (t.has(e)) return t.get(e);
+              t.set(e, o);
+            }
+            for (const a in e)
+              "default" !== a &&
+                {}.hasOwnProperty.call(e, a) &&
+                ((r =
+                  (t = Object.defineProperty) &&
+                  Object.getOwnPropertyDescriptor(e, a)) &&
+                (r.get || r.set)
+                  ? t(o, a, r)
+                  : (o[a] = e[a]));
+            return o;
+          })(e);
+        })(t(96540)),
+        i = r(t(46942)),
+        n = r(t(83106)),
+        l = r(t(52006)),
+        s = r(t(37245)),
+        u = r(t(80519)),
+        c = r(t(21856)),
+        d = t(51628),
+        g = r(t(94188)),
+        m = r(t(42795)),
+        p = t(74848);
+      const { code: f } = g.default.brand,
+        v = t(1215).A;
+      a.default = (e) => {
+        let {
+          activeTab: a,
+          providers: t,
+          gpLogoStyle: r,
+          maintenanceMap: g,
+          gameQuery: y,
+          changeGameQuery: h,
+          logined: M,
+          gameTypeMap: j,
+          launchGame: b,
+          gameProviderMap: _,
+          gameTagsMap: w,
+          getGameTags: x,
+          agentDomain: { appURL: L },
+        } = e;
+        (0, o.useEffect)(() => {
+          w || x();
+        }, []);
+        const { gameList: G, gameTags: T } = (0, n.default)(y),
+          { Comp: k } = (0, m.default)(f, a);
+        return (0, p.jsx)("div", {
+          className: (0, i.default)("game-block", {
+            "game-list": y.showGameList,
+          }),
+          children: y.showGameList
+            ? (() => {
+                const { tag: e, gameListStyle: a, provider: t } = y;
+                var o = null;
+                if (r) {
+                  const e = r.split("-");
+                  o = "yabo" === e[1] ? "primary" : e[1];
+                }
+                return (0, p.jsxs)(p.Fragment, {
+                  children: [
+                    (0, p.jsx)(s.default, {
+                      gameProviderMap: _,
+                      gameQuery: y,
+                      changeGameQuery: h,
+                      gplogoStyle: o ? `icon-${o}` : o,
+                    }),
+                    (0, p.jsx)(l.default, {
+                      gameTags: T,
+                      gameQuery: y,
+                      changeGameQuery: h,
+                    }),
+                    (0, p.jsx)(u.default, {
+                      gameQuery: y,
+                      changeGameQuery: h,
+                    }),
+                    (0, p.jsx)(
+                      v,
+                      {
+                        gameList: G,
+                        provider: t,
+                        gameListStyle: a,
+                        maintenanceMap: g,
+                        launchGame: b,
+                        logined: M,
+                        tag: e,
+                        gameTags: T,
+                      },
+                      `${e}_${t}`
+                    ),
+                  ],
+                });
+              })()
+            : (0, p.jsxs)(p.Fragment, {
+                children: [
+                  (0, p.jsx)("div", {
+                    className: "home-cate",
+                    id: null == a ? void 0 : a.toLowerCase(),
+                  }),
+                  (0, p.jsx)("div", {
+                    className: "home-list",
+                    "data-type": d.i18n[a],
+                    children:
+                      t &&
+                      t.map((e) =>
+                        (0, p.jsx)(
+                          c.default,
+                          {
+                            activeTab: a,
+                            provider: e,
+                            gpLogoStyle: r,
+                            gameTypeMap: j,
+                            maintenanceMap: g,
+                            gameProviderMap: _,
+                            launchGame: b,
+                            changeGameQuery: h,
+                          },
+                          `${a}-${e}`
+                        )
+                      ),
+                  }),
+                  (0, p.jsx)(k, {
+                    appURL: L,
+                  }),
+                ],
+              }),
+        });
+      };
+    },
+    52006: (e, a, t) => {
+      var r = t(24994);
+      Object.defineProperty(a, "__esModule", {
+        value: !0,
+      }),
+        (a.default = void 0),
+        (function (e) {
+          if ("function" == typeof WeakMap) {
+            var a = new WeakMap();
+            new WeakMap();
+          }
+          !(function (e) {
+            if (e && e.__esModule) return e;
+            var t,
+              r,
+              o = {
+                __proto__: null,
+                default: e,
+              };
+            if (null === e || ("object" != typeof e && "function" != typeof e))
+              return o;
+            if ((t = a)) {
+              if (t.has(e)) return t.get(e);
+              t.set(e, o);
+            }
+            for (const a in e)
+              "default" !== a &&
+                {}.hasOwnProperty.call(e, a) &&
+                ((r =
+                  (t = Object.defineProperty) &&
+                  Object.getOwnPropertyDescriptor(e, a)) &&
+                (r.get || r.set)
+                  ? t(o, a, r)
+                  : (o[a] = e[a]));
+          })(e);
+        })(t(96540));
+      var o = r(t(46942)),
+        i = t(67467),
+        n = t(93185),
+        l = t(8087),
+        s = r(t(55665)),
+        u = t(51628),
+        c = t(84707),
+        d = t(86830),
+        g = t(35781);
+      t(97702), t(16601);
+      var m = t(74848);
+      a.default = (e) => {
+        let { gameTags: a, gameQuery: t, changeGameQuery: r } = e;
+        const { activeTab: p, tag: f, showGameList: v } = t,
+          y = (0, i.useDispatch)(),
+          h = (0, s.default)((e) => e.players.logined);
+        return null !== f && a
+          ? (0, m.jsx)("div", {
+              className: "sub-menu-box",
+              children: (0, m.jsx)(d.Swiper, {
+                className: "sub-menu",
+                slidesPerView: "auto",
+                modules: [g.Navigation],
+                children: a.map((e) => {
+                  const a = e.get("tagid");
+                  return (0, m.jsx)(
+                    d.SwiperSlide,
+                    {
+                      className: (0, o.default)("sub-menu-item", {
+                        current: a === f,
+                      }),
+                      onClick: () => {
+                        a !== f &&
+                          (h || a !== l.gameTagEnum.FAVORITE
+                            ? r({
+                                tag: a,
+                                showGameList: !0,
+                              })
+                            : y(
+                                (0, c.openErrorModal)(u.i18n["require.login"])
+                              ));
+                      },
+                      children: (0, n.getName)(e.get("tagname")),
+                    },
+                    a
+                  );
+                }),
+              }),
+            })
+          : null;
+      };
+    },
+    80519: (e, a, t) => {
+      var r = t(24994);
+      Object.defineProperty(a, "__esModule", {
+        value: !0,
+      }),
+        (a.default = void 0);
+      var o = (function (e) {
+          if ("function" == typeof WeakMap) {
+            var a = new WeakMap();
+            new WeakMap();
+          }
+          return (function (e) {
+            if (e && e.__esModule) return e;
+            var t,
+              r,
+              o = {
+                __proto__: null,
+                default: e,
+              };
+            if (null === e || ("object" != typeof e && "function" != typeof e))
+              return o;
+            if ((t = a)) {
+              if (t.has(e)) return t.get(e);
+              t.set(e, o);
+            }
+            for (const a in e)
+              "default" !== a &&
+                {}.hasOwnProperty.call(e, a) &&
+                ((r =
+                  (t = Object.defineProperty) &&
+                  Object.getOwnPropertyDescriptor(e, a)) &&
+                (r.get || r.set)
+                  ? t(o, a, r)
+                  : (o[a] = e[a]));
+            return o;
+          })(e);
+        })(t(96540)),
+        i = r(t(46942)),
+        n = t(74848);
+      a.default = (e) => {
+        let { gameQuery: a, changeGameQuery: t } = e;
+        const r = (0, o.useCallback)(
+            (e) => {
+              13 === e.keyCode &&
+                t({
+                  search: e.target.value,
+                  showGameList: !0,
+                });
+            },
+            [t]
+          ),
+          { tag: l, provider: s, activeTab: u, gameListStyle: c } = a;
+        return (0, n.jsxs)("div", {
+          className: "search-bar-box",
+          children: [
+            (0, n.jsx)(
+              "input",
+              {
+                className: "input",
+                onKeyUp: r,
+              },
+              `input-${u}-${l}-${s}`
+            ),
+            (0, n.jsx)("div", {
+              className: (0, i.default)("grids-style", {
+                active: 2 === c,
+              }),
+              onClick: () => {
+                t({
+                  gameListStyle: 2,
+                  showGameList: !0,
+                });
+              },
+              children: (0, n.jsx)("span", {}),
+            }),
+            (0, n.jsx)("div", {
+              className: (0, i.default)("list-style", {
+                active: 1 === c,
+              }),
+              onClick: () => {
+                t({
+                  gameListStyle: 1,
+                  showGameList: !0,
+                });
+              },
+              children: (0, n.jsx)("span", {}),
+            }),
+          ],
+        });
+      };
+    },
+    83106: (e, a, t) => {
+      var r = t(24994);
+      Object.defineProperty(a, "__esModule", {
+        value: !0,
+      }),
+        (a.default = void 0);
+      var o = t(96540),
+        i = r(t(55665)),
+        n = t(9404),
+        l = t(8087),
+        s = t(93185),
+        u = t(39418);
+      a.default = (e) => {
+        const { search: a, tag: t, activeTab: r, provider: c } = e,
+          {
+            gameTypeMap: d,
+            gameTagsMap: g,
+            myFavoriteGameGroupMap: m,
+          } = (0, i.default)((e) => ({
+            gameTypeMap: e.games.gameTypeMap,
+            gameTagsMap: e.games.gameTagsMap,
+            myFavoriteGameGroupMap: e.games.myFavoriteGameGroupMap,
+          })),
+          p = (0, o.useMemo)(
+            () => (g ? (null == g ? void 0 : g.get(r)) : (0, n.List)()),
+            [g]
+          ),
+          f = (0, o.useMemo)(() => {
+            let e =
+              t === l.gameTagEnum.FAVORITE
+                ? m
+                    .get(r, (0, n.List)())
+                    .filter(
+                      (e) => !(0, u.isFavoriteGameProvider)(e.get("gameid"))
+                    )
+                : d.get(r, (0, n.List)());
+            return (
+              c && (e = e.filter((e) => e.get("gameproviderid") === c)),
+              a &&
+                (e = e.filter(
+                  (e) =>
+                    (0, s.getName)(e.get("gamename"))
+                      .toLowerCase()
+                      .indexOf(a.toLowerCase()) > -1
+                )),
+              !!p &&
+                (e = (0, u.getSortedTagGameList)({
+                  gameTags: p,
+                  gameList: e,
+                  tagid: t,
+                })),
+              e
+            );
+          }, [t, m, r, d, c, a, p]);
+        return {
+          gameTags: p,
+          gameList: f,
+        };
+      };
+    },
+    92929: (e, a, t) => {
+      t.r(a);
+    },
+  },
+]);

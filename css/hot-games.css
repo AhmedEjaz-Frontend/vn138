@@ -1,8 +1,14 @@
-.nav-hot_games .hot-games .game-item {
+.home-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 
-.nav-hot_games .hot-games .game-item img.cover {
-  width: 208px;
-  height: 202px;
-  object-fit: contain;
+.home-list .game-item .game-col-cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }

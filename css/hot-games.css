@@ -1,0 +1,8 @@
+.nav-hot_games .hot-games .game-item {
+}
+
+.nav-hot_games .hot-games .game-item img.cover {
+  width: 208px;
+  height: 202px;
+  object-fit: contain;
+}

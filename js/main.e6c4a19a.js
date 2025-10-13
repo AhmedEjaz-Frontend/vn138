@@ -7837,9 +7837,8 @@
           return !n && o
             ? `${l}${o}`
             : m(a) || c.includes(t)
-            ? `https://img.alltocon.com/img/static/desktop/sub-menu/sub-${t.toLocaleLowerCase()}-${r.toLocaleLowerCase()}.png`
-            : `https://img.alltocon.com/img/static/game/${(0,
-              A.getGameIconLocale)(s.currLocale)}/${r}/${
+            ? `../images/sub-menu/sub-${t.toLocaleLowerCase()}-${r.toLocaleLowerCase()}.png`
+            : `../images/game/${(0, A.getGameIconLocale)(s.currLocale)}/${r}/${
                 null == a ? void 0 : a.toLocaleLowerCase()
               }.png`;
         };
@@ -7853,7 +7852,7 @@
         p = (e) => {
           let { producttypeid: t, gameproviderid: r, gameid: a } = e;
           return C(a) || d.includes(t)
-            ? `https://img.alltocon.com/img/static/desktop/sub-menu/sub-${t.toLocaleLowerCase()}-${r.toLocaleLowerCase()}.png`
+            ? `../images/sub-menu/sub-${t.toLocaleLowerCase()}-${r.toLocaleLowerCase()}.png`
             : t === i.gameType.LOTTERY
             ? (0, A.getGameImgPath)(r, a, !1)
             : (0, A.getGameImgPath)(r, a, !0);
@@ -12635,7 +12634,7 @@
               )}&state=${u(a)}&scope=profile%20openid%20email`
           : t === E.thirdPartyTypeEnum.TELEGRAM
           ? ((a.telegramConfig = r),
-            (a.logoPath = `https://img.alltocon.com/img/static/mobile/brand/${o.default.brand.code}/logo.png`),
+            (a.logoPath = `../images/mobile/brand/${o.default.brand.code}/logo.png`),
             (a.styleList = o.default.loginCheckHtml || {}),
             `${A}?state=${JSON.stringify(a)}`)
           : t === E.thirdPartyTypeEnum.ZALO
@@ -15641,7 +15640,7 @@
       const { code, htmlLoading } = _config.default.brand;
       let newWindowObj = (exports.newWindowObj = window.newWindowObj);
       const renderImg = (e, t, r) => {
-        const a = `https://img.alltocon.com/img/static/${e}`;
+        const a = `../images/${e}`;
         return (0, _jsxRuntime.jsx)("img", {
           src: a,
           className: t,
@@ -15662,7 +15661,7 @@
           arguments.length > 2 && void 0 !== arguments[2] && !arguments[2]
             ? `${t}.png`
             : `${null == t ? void 0 : t.toLocaleLowerCase()}.png`;
-        return `https://img.alltocon.com/img/static/game/${getGameIconLocale(
+        return `../images/game/${getGameIconLocale(
           _locale.currLocale
         )}/${e}/${r}`;
       };

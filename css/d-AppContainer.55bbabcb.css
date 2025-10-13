@@ -3109,8 +3109,7 @@ aside {
 }
 
 aside .logo-footer {
-  background: url(https://img.alltocon.com/img/static/desktop/logo-icon.svg) 50%
-    no-repeat;
+  background: url(../images/logo-icon.svg) 50% no-repeat;
   height: 80px;
   margin: 40px auto 0;
   position: relative;
@@ -3165,18 +3164,15 @@ aside .aside-nav li a:hover:after {
 }
 
 aside .aside-nav li.nav-url a {
-  background: url(https://img.alltocon.com/img/static/desktop/nav-url.jpg) 50% /
-    cover no-repeat;
+  background: url(../images/nav-url.jpg) 50% / cover no-repeat;
 }
 
 aside .aside-nav li.nav-help a {
-  background: url(https://img.alltocon.com/img/static/desktop/nav-help.jpg) 50% /
-    cover no-repeat;
+  background: url(../images/nav-help.jpg) 50% / cover no-repeat;
 }
 
 aside .aside-nav li.nav-join a {
-  background: url(https://img.alltocon.com/img/static/desktop/nav-join.jpg) 50% /
-    cover no-repeat;
+  background: url(../images/nav-join.jpg) 50% / cover no-repeat;
 }
 
 .nrc-form-input {
@@ -3408,128 +3404,103 @@ aside .aside-nav li.nav-join a {
 }
 
 .MOMOPAY-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/momo.svg) 50% /
-    auto 22px no-repeat;
+  background: url(../images/momo.svg) 50% / auto 22px no-repeat;
 }
 
 .PROMPTPAY-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/prompt.png) 50% /
-    auto 17px no-repeat;
+  background: url(../images/prompt.png) 50% / auto 17px no-repeat;
 }
 
 .ZALOPAY-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/zalopay.svg) 50% /
-    auto 22px no-repeat;
+  background: url(../images/zalopay.svg) 50% / auto 22px no-repeat;
 }
 
 .VIETTELPAY-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/viettelpay.svg)
-    50% / auto 22px no-repeat;
+  background: url(../images/viettelpay.svg) 50% / auto 22px no-repeat;
 }
 
 .QUICKPASS-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/qpass.png) 50% /
-    auto 22px no-repeat;
+  background: url(../images/qpass.png) 50% / auto 22px no-repeat;
 }
 
 .PAYTM-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/paytm.png) 50% /
-    auto 22px no-repeat;
+  background: url(../images/paytm.png) 50% / auto 22px no-repeat;
 }
 
 .NETELLER-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/neteller.png) 50% /
-    auto 22px no-repeat;
+  background: url(../images/neteller.png) 50% / auto 22px no-repeat;
 }
 
 .SKRILL-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/skrill.png) 50% /
-    auto 22px no-repeat;
+  background: url(../images/skrill.png) 50% / auto 22px no-repeat;
 }
 
 .UPI-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/upi.png) 50% /
-    auto 22px no-repeat;
+  background: url(../images/upi.png) 50% / auto 22px no-repeat;
 }
 
 .GPAY-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/gpay.png) 50% /
-    auto 22px no-repeat;
+  background: url(../images/gpay.png) 50% / auto 22px no-repeat;
 }
 
 .PHONEPE-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/phonepe.png) 50% /
-    auto 22px no-repeat;
+  background: url(../images/phonepe.png) 50% / auto 22px no-repeat;
 }
 
 .BHIM-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/bhim.png) 50% /
-    auto 22px no-repeat;
+  background: url(../images/bhim.png) 50% / auto 22px no-repeat;
 }
 
 .MPURSE-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/mpurse.png) 50% /
-    auto 22px no-repeat;
+  background: url(../images/mpurse.png) 50% / auto 22px no-repeat;
 }
 
 .SCRATCHCARD-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/scratch.png) 50% /
-    auto 22px no-repeat;
+  background: url(../images/scratch.png) 50% / auto 22px no-repeat;
 }
 
 .GCASH-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/gcash.png) 50% /
-    auto 22px no-repeat;
+  background: url(../images/gcash.png) 50% / auto 22px no-repeat;
 }
 
 .TRUEMONEY-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/truemoney.png) 50% /
-    auto 22px no-repeat;
+  background: url(../images/truemoney.png) 50% / auto 22px no-repeat;
 }
 
 .USDT-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/usdt.png) 50% /
-    auto 22px no-repeat;
+  background: url(../images/usdt.png) 50% / auto 22px no-repeat;
 }
 
 .GRABPAY-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/grabpay.png) 50% /
-    auto 22px no-repeat;
+  background: url(../images/grabpay.png) 50% / auto 22px no-repeat;
 }
 
 .PAYMAYA-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/paymaya.png) 50% /
-    auto 22px no-repeat;
+  background: url(../images/paymaya.png) 50% / auto 22px no-repeat;
 }
 
 .REMIT-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/remit.png) 50% /
-    auto 22px no-repeat;
+  background: url(../images/remit.png) 50% / auto 22px no-repeat;
 }
 
 .PAYLORO-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/payloro.png) 50% /
-    auto 22px no-repeat;
+  background: url(../images/payloro.png) 50% / auto 22px no-repeat;
 }
 
 .NAGAD-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/nagad.png) 50% /
-    auto 22px no-repeat;
+  background: url(../images/nagad.png) 50% / auto 22px no-repeat;
 }
 
 .BKASH-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/bkash.png) 50% /
-    auto 22px no-repeat;
+  background: url(../images/bkash.png) 50% / auto 22px no-repeat;
 }
 
 .ROCKET-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/rocket.png) 50% /
-    auto 22px no-repeat;
+  background: url(../images/rocket.png) 50% / auto 22px no-repeat;
 }
 
 .UPAY-channel:before {
-  background: url(https://img.alltocon.com/img/static/payment/upay.png) 50% /
-    auto 22px no-repeat;
+  background: url(../images/upay.png) 50% / auto 22px no-repeat;
 }
 
 .nrc-collapse {
@@ -6952,8 +6923,7 @@ li.rc-time-picker-panel-select-option-disabled:hover {
 }
 
 .banks-block p:after {
-  background: url(https://img.alltocon.com/img/static/desktop/banklist.png)
-    no-repeat;
+  background: url(../images/banklist.png) no-repeat;
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
@@ -7210,8 +7180,7 @@ li.rc-time-picker-panel-select-option-disabled:hover {
 }
 
 .odometer-digit {
-  background: url(https://img.alltocon.com/img/static/desktop/number-board.png)
-    0 0/100% no-repeat;
+  background: url(../images/number-board.png) 0 0/100% no-repeat;
   background-position: 50%;
   background-size: 100% 70%;
   padding: 0 10px;
@@ -7416,22 +7385,22 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
 
 .live-highlight-banner li.maintenance.highlight:after {
   background-color: #0000;
-  background-image: url(https://img.alltocon.com/img/static/desktop/img-maintenance-sc.png);
+  background-image: url(../images/img-maintenance-sc.png);
   background-position: center 30%;
   opacity: 1;
   z-index: 2;
 }
 
 .live-highlight-banner li.maintenance.highlight.en-US:after {
-  background-image: url(https://img.alltocon.com/img/static/desktop/img-maintenance-en.png);
+  background-image: url(../images/img-maintenance-en.png);
 }
 
 .live-highlight-banner li.maintenance.highlight.en-TW:after {
-  background-image: url(https://img.alltocon.com/img/static/desktop/img-maintenance-tc.png);
+  background-image: url(../images/img-maintenance-tc.png);
 }
 
 .live-highlight-banner li.maintenance.highlight.en-CN:after {
-  background-image: url(https://img.alltocon.com/img/static/desktop/img-maintenance-sc.png);
+  background-image: url(../images/img-maintenance-sc.png);
 }
 
 .live-highlight-banner li.maintenance.highlight .maintenance-block {
@@ -8057,7 +8026,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
 }
 
 .react-tel-input .selected-flag .flag {
-  background-image: url(https://img.alltocon.com/img/static/flags/flags.png) !important;
+  background-image: url(../images/flags.png) !important;
   height: 11px;
   position: absolute;
   top: calc(50% - 5px);
@@ -8104,7 +8073,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
 }
 
 .react-tel-input .country-list .flag {
-  background-image: url(https://img.alltocon.com/img/static/flags/flags.png) !important;
+  background-image: url(../images/flags.png) !important;
   display: inline-block;
 }
 
@@ -9678,8 +9647,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
 }
 
 .footer-logo-box > div {
-  background: url(https://img.alltocon.com/img/static/desktop/footer-logos.png)
-    no-repeat;
+  background: url(../images/footer-logos.png) no-repeat;
   height: 50px;
   margin-right: 20px;
 }
@@ -9714,8 +9682,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
 .footer-logo-box > .BACCARAT,
 .footer-logo-box > .MX,
 .footer-logo-box > .SEXYBCRT {
-  background: url(https://img.alltocon.com/img/static/gplogo/live/sexybcrt.png)
-    50%/100% auto no-repeat;
+  background: url(../images/sexybcrt.png) 50%/100% auto no-repeat;
   width: 106px;
 }
 
@@ -9737,8 +9704,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
 
 .footer-logo-box > .GG,
 .footer-logo-box > .GGAMING {
-  background: url(https://img.alltocon.com/img/static/gplogo/mpg/ggaming.png)
-    50%/100% auto no-repeat;
+  background: url(../images/ggaming.png) 50%/100% auto no-repeat;
   width: 80px;
 }
 
@@ -9789,8 +9755,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
 
 .footer-logo-box > .SABA,
 .footer-logo-box > .SABA-SPORTS {
-  background: url(https://img.alltocon.com/img/static/gplogo/sports/saba.png)
-    50%/100% auto no-repeat;
+  background: url(../images/saba.png) 50%/100% auto no-repeat;
   width: 130px;
 }
 
@@ -9892,368 +9857,325 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
 }
 
 .footer-logo-box > .KY {
-  background: url(https://img.alltocon.com/img/static/gplogo/chess/ky.png) 50% /
-    auto 170% no-repeat;
+  background: url(../images/ky.png) 50% / auto 170% no-repeat;
   width: 55px;
 }
 
 .footer-logo-box > .VG {
-  background: url(https://img.alltocon.com/img/static/gplogo/chess/vg.png) 50% /
-    auto 170% no-repeat;
+  background: url(../images/vg.png) 50% / auto 170% no-repeat;
   width: 55px;
 }
 
 .footer-logo-box > .LC {
-  background: url(https://img.alltocon.com/img/static/gplogo/chess/lc.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/lc.png) 50%/100% auto no-repeat;
   width: 75px;
 }
 
 .footer-logo-box > .CARD365,
 .footer-logo-box > .chess365 {
-  background: url(https://img.alltocon.com/img/static/gplogo/chess/365.png) 50% /
-    auto 100% no-repeat;
+  background: url(../images/365.png) 50% / auto 100% no-repeat;
   width: 55px;
 }
 
 .footer-logo-box > .DS {
-  background: url(https://img.alltocon.com/img/static/gplogo/chess/ds.png) 50% /
-    auto 100% no-repeat;
+  background: url(../images/ds.png) 50% / auto 100% no-repeat;
   width: 55px;
 }
 
 .footer-logo-box > .PS {
-  background: url(https://img.alltocon.com/img/static/gplogo/egame/ps.png) 50%/100%
-    no-repeat;
+  background: url(../images/ps.png) 50%/100% no-repeat;
   width: 55px;
 }
 
 .footer-logo-box > .AE_GAMING {
-  background: url(https://img.alltocon.com/img/static/gplogo/egame/ae_gaming.png)
-    50%/100% no-repeat;
+  background: url(../images/ae_gaming.png) 50%/100% no-repeat;
   width: 106px;
 }
 
 .footer-logo-box > .KISS918,
 .footer-logo-box > .s918 {
-  background: url(https://img.alltocon.com/img/static/slotking777/logo-918.png)
-    50% / auto 100% no-repeat;
+  background: url(../images/slotking777/logo-918.png) 50% / auto 100% no-repeat;
   width: 100px;
 }
 
 .footer-logo-box > .AE_C,
 .footer-logo-box > .ae_c {
-  background: url(https://img.alltocon.com/img/static/gplogo/chess/ae_c.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/ae_c.png) 50%/100% auto no-repeat;
   width: 85px;
 }
 
 .footer-logo-box > .IG {
-  background: url(https://img.alltocon.com/img/static/gplogo/lottery/ig.png) 50%/90%
-    no-repeat;
+  background: url(../images/gplogo/lottery/ig.png) 50%/90% no-repeat;
   width: 55px;
 }
 
 .footer-logo-box > .ESPORTSBULL,
 .footer-logo-box > .e-bull {
-  background: url(https://img.alltocon.com/img/static/esports/logo-eb.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/esports/logo-eb.png) 50%/100% auto no-repeat;
   width: 125px;
 }
 
 .footer-logo-box > .AE_ES {
-  background: url(https://img.alltocon.com/img/static/esports/logo-aees.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/esports/logo-aees.png) 50%/100% auto no-repeat;
   width: 150px;
 }
 
 .footer-logo-box > .AE_LOT {
-  background: url(https://img.alltocon.com/img/static/gplogo/lottery/ae_lot.png)
-    50%/100% auto no-repeat;
+  background: url(../images/gplogo/lottery/ae_lot.png) 50%/100% auto no-repeat;
   width: 130px;
 }
 
 .footer-logo-box > .AE_ES2 {
-  background: url(https://img.alltocon.com/img/static/gplogo/esports/ae_es2.png)
-    50%/100% auto no-repeat;
+  background: url(../images/gplogo/esports/ae_es2.png) 50%/100% auto no-repeat;
   width: 130px;
 }
 
 .footer-logo-box > .AWS {
-  background: url(https://img.alltocon.com/img/static/gplogo/egame/aws.png) 50% /
-    auto 100% no-repeat;
+  background: url(../images/aws.png) 50% / auto 100% no-repeat;
   width: 46px;
 }
 
 .footer-logo-box > .GPI {
-  background: url(https://img.alltocon.com/img/static/gplogo/lottery/gpi.png)
-    50%/100% auto no-repeat;
+  background: url(../images/gplogo/lottery/gpi.png) 50%/100% auto no-repeat;
   width: 125px;
 }
 
 .footer-logo-box > .JOKER {
-  background: url(https://img.alltocon.com/img/static/gplogo/egame/joker.png)
-    50%/100% auto no-repeat;
+  background: url(../images/joker.png) 50%/100% auto no-repeat;
   width: 100px;
 }
 
 .footer-logo-box > .JILI {
-  background: url(https://img.alltocon.com/img/static/gplogo/egame/jili.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/jili.png) 50%/100% auto no-repeat;
   width: 70px;
 }
 
 .footer-logo-box > .BO {
-  background: url(https://img.alltocon.com/img/static/gplogo/finance/bo.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/gplogo/finance/bo.png) 50%/100% auto no-repeat;
   width: 50px;
 }
 
 .footer-logo-box > .CROWN,
 .footer-logo-box > .SINGBET,
 .footer-logo-box > .singbet {
-  background: url(https://img.alltocon.com/img/static/gplogo/sports/singbet.png)
-    50%/100% auto no-repeat;
+  background: url(../images/singbet.png) 50%/100% auto no-repeat;
   width: 60px;
 }
 
 .footer-logo-box > .IM {
-  background: url(https://img.alltocon.com/img/static/gplogo/sports/im.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/im.png) 50%/100% auto no-repeat;
   width: 115px;
 }
 
 .footer-logo-box > .JG {
-  background: url(https://img.alltocon.com/img/static/gplogo/live/jg.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/jg.png) 50%/100% auto no-repeat;
   width: 68px;
 }
 
 .footer-logo-box > .SIMPLEPLAY {
-  background: url(https://img.alltocon.com/img/static/gplogo/egame/simpleplay.png)
-    50%/100% auto no-repeat;
+  background: url(../images/simpleplay.png) 50%/100% auto no-repeat;
   width: 48px;
 }
 
 .footer-logo-box > .SEA {
-  background: url(https://img.alltocon.com/img/static/gplogo/egame/sea.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/sea.png) 50%/100% auto no-repeat;
   width: 48px;
 }
 
 .footer-logo-box > .FC {
-  background: url(https://img.alltocon.com/img/static/gplogo/egame/fc.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/fc.png) 50%/100% auto no-repeat;
   width: 48px;
 }
 
 .footer-logo-box > .RICH88 {
-  background: url(https://img.alltocon.com/img/static/gplogo/egame/rich88.png)
-    50%/100% auto no-repeat;
+  background: url(../images/rich88.png) 50%/100% auto no-repeat;
   width: 110px;
 }
 
 .footer-logo-box > .CMDBET {
-  background: url(https://img.alltocon.com/img/static/game/zh-CN/CMDBET/CMDBET.png)
-    50%/100% auto no-repeat;
+  background: url(../images/game/zh-CN/CMDBET/CMDBET.png) 50%/100% auto
+    no-repeat;
   width: 68px;
 }
 
 .footer-logo-box > .WM {
-  background: url(https://img.alltocon.com/img/static/game/zh-CN/WM/wm.png) 50%/90%
-    auto no-repeat;
+  background: url(../images/game/zh-CN/WM/wm.png) 50%/90% auto no-repeat;
   width: 60px;
 }
 
 .footer-logo-box > .EVO {
-  background: url(https://img.alltocon.com/img/static/game/zh-CN/EVO/evo.png)
-    50% / contain no-repeat;
+  background: url(../images/game/zh-CN/EVO/evo.png) 50% / contain no-repeat;
   width: 55px;
 }
 
 .footer-logo-box > .DG {
-  background: url(https://img.alltocon.com/img/static/game/zh-CN/DG/dg.png) 50%/90%
-    auto no-repeat;
+  background: url(../images/game/zh-CN/DG/dg.png) 50%/90% auto no-repeat;
   width: 70px;
 }
 
 .footer-logo-box > .SBOBET {
-  background: url(https://img.alltocon.com/img/static/game/zh-CN/SBOBET/SBOBET.png)
-    50%/100% auto no-repeat;
+  background: url(../images/game/zh-CN/SBOBET/SBOBET.png) 50%/100% auto
+    no-repeat;
   width: 68px;
 }
 
 .footer-logo-box > .TF {
-  background: url(https://img.alltocon.com/img/static/gplogo/esports/tf.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/gplogo/esports/tf.png) 50%/100% auto no-repeat;
   width: 90px;
 }
 
 .footer-logo-box > .S128 {
-  background: url(https://img.alltocon.com/img/static/ec-app/S128.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/ec-app/S128.png) 50%/100% auto no-repeat;
   width: 130px;
 }
 
 .footer-logo-box > .SPR168 {
-  background: url(https://img.alltocon.com/img/static/ec-app/SPR168.png) 100% /
-    auto 110% no-repeat;
+  background: url(../images/ec-app/SPR168.png) 100% / auto 110% no-repeat;
   width: 60px;
 }
 
 .footer-logo-box > .BTI {
-  background: url(https://img.alltocon.com/img/static/ec-app/BTI.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/ec-app/BTI.png) 50%/100% auto no-repeat;
   width: 85px;
 }
 
 .footer-logo-box > .AE_CRICKET {
-  background: url(https://img.alltocon.com/img/static/gplogo/sports/ae_cricket.png)
-    50%/100% auto no-repeat;
+  background: url(../images/ae_cricket.png) 50%/100% auto no-repeat;
   width: 120px;
 }
 
 .footer-logo-box > .KINGMAKER {
-  background: url(https://img.alltocon.com/img/static/gplogo/chess/kingmaker.png)
-    50%/100% auto no-repeat;
+  background: url(../images/kingmaker.png) 50%/100% auto no-repeat;
   width: 120px;
 }
 
 .footer-logo-box > .UFABET {
-  background: url(https://img.alltocon.com/img/static/gplogo/sports/ufabet.png)
-    50%/100% auto no-repeat;
+  background: url(../images/ufabet.png) 50%/100% auto no-repeat;
   width: 110px;
 }
 
 .footer-logo-box > .UFASLOT {
-  background: url(https://img.alltocon.com/img/static/yabo/mobile/gplogo/ufaslot.png)
-    50%/100% auto no-repeat;
+  background: url(../images/yabo/mobile/gplogo/ufaslot.png) 50%/100% auto
+    no-repeat;
   width: 55px;
 }
 
 .footer-logo-box > .YL {
-  background: url(https://img.alltocon.com/img/static/yabo/mobile/gplogo/yl.png)
-    50%/100% auto no-repeat;
+  background: url(../images/yabo/mobile/gplogo/yl.png) 50%/100% auto no-repeat;
   width: 55px;
 }
 
 .footer-logo-box > .PP {
-  background: url(https://img.alltocon.com/img/static/gplogo/egame/pp.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/pp.png) 50%/100% auto no-repeat;
   width: 57px;
 }
 
 .footer-logo-box > .GW {
-  background: url(https://img.alltocon.com/img/static/gplogo/lottery/gw.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/gplogo/lottery/gw.png) 50%/100% auto no-repeat;
   width: 70px;
 }
 
 .footer-logo-box .RCB {
-  background: url(https://img.alltocon.com/img/static/yabo/mobile/gplogo-c2/rcb.png)
-    50%/100% auto no-repeat;
+  background: url(../images/yabo/mobile/gplogo-c2/rcb.png) 50%/100% auto
+    no-repeat;
   width: 70px !important;
 }
 
 .footer-logo-box .AE_PLAY {
-  background: url(https://img.alltocon.com/img/static/yabo/mobile/gplogo-c2/ae_play.png)
-    50%/100% auto no-repeat;
+  background: url(../images/yabo/mobile/gplogo-c2/ae_play.png) 50%/100% auto
+    no-repeat;
   width: 100px !important;
 }
 
 .footer-logo-box .EZUGI {
-  background: url(https://img.alltocon.com/img/static/yabo/mobile/gplogo-c/ezugi.png)
-    50%/100% auto no-repeat;
+  background: url(../images/yabo/mobile/gplogo-c/ezugi.png) 50%/100% auto
+    no-repeat;
   width: 100px !important;
 }
 
 .footer-logo-box .AE_SEVEN {
-  background: url(https://img.alltocon.com/img/static/yabo/mobile/gplogo-c/ae_seven.png)
-    50%/100% auto no-repeat;
+  background: url(../images/yabo/mobile/gplogo-c/ae_seven.png) 50%/100% auto
+    no-repeat;
   width: 100px !important;
 }
 
 .footer-logo-box .KX {
-  background: url(https://img.alltocon.com/img/static/yabo/mobile/gplogo-c/kx.png)
-    50% / contain no-repeat;
+  background: url(../images/yabo/mobile/gplogo-c/kx.png) 50% / contain no-repeat;
   width: 0 !important;
 }
 
 .footer-logo-box .AE_LOTTO {
-  background: url(https://img.alltocon.com/img/static/yabo/mobile/gplogo-c/ae_lotto.png)
-    50%/100% auto no-repeat;
+  background: url(../images/yabo/mobile/gplogo-c/ae_lotto.png) 50%/100% auto
+    no-repeat;
   width: 80px !important;
 }
 
 .footer-logo-box .OG {
-  background: url(https://img.alltocon.com/img/static/yabo/mobile/gplogo-c/og.png)
-    50% / contain no-repeat;
+  background: url(../images/yabo/mobile/gplogo-c/og.png) 50% / contain no-repeat;
   width: 50px !important;
 }
 
 .footer-logo-box .SPADEGAMING {
-  background: url(https://img.alltocon.com/img/static/yabo/mobile/gplogo-c/spadegaming.png)
-    50% / contain no-repeat;
+  background: url(../images/yabo/mobile/gplogo-c/spadegaming.png) 50% / contain
+    no-repeat;
   width: 50px !important;
 }
 
 .footer-logo-box .SKM {
-  background: url(https://img.alltocon.com/img/static/yabo/mobile/gplogo-c/skm.png)
-    50% / contain no-repeat;
+  background: url(../images/yabo/mobile/gplogo-c/skm.png) 50% / contain
+    no-repeat;
   width: 50px !important;
 }
 
 .footer-logo-box .PNG {
-  background: url(https://img.alltocon.com/img/static/yabo/mobile/gplogo-c/png.png)
-    50%/100% auto no-repeat;
+  background: url(../images/yabo/mobile/gplogo-c/png.png) 50%/100% auto
+    no-repeat;
   width: 100px !important;
 }
 
 .footer-logo-box .LUDO {
-  background: url(https://img.alltocon.com/img/static/yabo/mobile/gplogo-c/ludo.png)
-    50%/100% auto no-repeat;
+  background: url(../images/yabo/mobile/gplogo-c/ludo.png) 50%/100% auto
+    no-repeat;
   width: 80px !important;
 }
 
 .footer-logo-box .KA {
-  background: url(https://img.alltocon.com/img/static/yabo/mobile/gplogo-c/ka.png)
-    50% / contain no-repeat;
+  background: url(../images/yabo/mobile/gplogo-c/ka.png) 50% / contain no-repeat;
   width: 50px !important;
 }
 
 .footer-logo-box .GEN {
-  background: url(https://img.alltocon.com/img/static/yabo/mobile/gplogo-c/gen.png)
-    50%/100% auto no-repeat;
+  background: url(../images/yabo/mobile/gplogo-c/gen.png) 50%/100% auto
+    no-repeat;
   width: 80px !important;
 }
 
 .footer-logo-box .AE_SPORTS {
-  background: url(https://img.alltocon.com/img/static/yabo/mobile/gplogo-c/ae_sports.png)
-    50%/100% auto no-repeat;
+  background: url(../images/yabo/mobile/gplogo-c/ae_sports.png) 50%/100% auto
+    no-repeat;
   width: 80px !important;
 }
 
 .footer-logo-box .AEUFA {
-  background: url(https://img.alltocon.com/img/static/yabo/mobile/gplogo-c/aeufa.png)
-    50%/100% auto no-repeat;
+  background: url(../images/yabo/mobile/gplogo-c/aeufa.png) 50%/100% auto
+    no-repeat;
   width: 100px !important;
 }
 
 .footer-logo-box .MUAYSTEP {
-  background: url(https://img.alltocon.com/img/static/yabo/mobile/gplogo-c/muaystep.png)
-    50% / contain no-repeat;
+  background: url(../images/yabo/mobile/gplogo-c/muaystep.png) 50% / contain
+    no-repeat;
   width: 50px !important;
 }
 
 .footer-logo-box .AE_CRIC_EX {
-  background: url(https://img.alltocon.com/img/static/yabo/mobile/gplogo-c/ae_cric_ex.png)
-    50%/100% auto no-repeat;
+  background: url(../images/yabo/mobile/gplogo-c/ae_cric_ex.png) 50%/100% auto
+    no-repeat;
   width: 100px !important;
 }
 
 .footer-logo-box .JM {
-  background: url(https://img.alltocon.com/img/static/yabo/mobile/gplogo-c/jm.png)
-    50% / contain no-repeat;
+  background: url(../images/yabo/mobile/gplogo-c/jm.png) 50% / contain no-repeat;
   width: 50px !important;
 }
 
@@ -10275,8 +10197,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   > * {
-  background: url(https://img.alltocon.com/img/static/desktop/footer-logos.png)
-    no-repeat;
+  background: url(../images/footer-logos.png) no-repeat;
   height: 50px;
 }
 
@@ -10342,8 +10263,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .SEXYBCRT {
-  background: url(https://img.alltocon.com/img/static/gplogo/live/sexybcrt.png)
-    50%/100% auto no-repeat;
+  background: url(../images/sexybcrt.png) 50%/100% auto no-repeat;
   width: 106px !important;
 }
 
@@ -10381,8 +10301,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .GGAMING {
-  background: url(https://img.alltocon.com/img/static/gplogo/mpg/ggaming.png)
-    50%/100% auto no-repeat;
+  background: url(../images/ggaming.png) 50%/100% auto no-repeat;
   width: 80px !important;
 }
 
@@ -10489,8 +10408,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .SABA-SPORTS {
-  background: url(https://img.alltocon.com/img/static/gplogo/sports/saba.png)
-    50%/100% auto no-repeat;
+  background: url(../images/saba.png) 50%/100% auto no-repeat;
   width: 130px !important;
 }
 
@@ -10676,8 +10594,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .KY {
-  background: url(https://img.alltocon.com/img/static/gplogo/chess/ky.png) 50% /
-    auto 170% no-repeat;
+  background: url(../images/ky.png) 50% / auto 170% no-repeat;
   width: 55px !important;
 }
 
@@ -10686,8 +10603,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .VG {
-  background: url(https://img.alltocon.com/img/static/gplogo/chess/vg.png) 50% /
-    auto 170% no-repeat;
+  background: url(../images/vg.png) 50% / auto 170% no-repeat;
   width: 55px !important;
 }
 
@@ -10696,8 +10612,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .LC {
-  background: url(https://img.alltocon.com/img/static/gplogo/chess/lc.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/lc.png) 50%/100% auto no-repeat;
   width: 75px !important;
 }
 
@@ -10711,8 +10626,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .chess365 {
-  background: url(https://img.alltocon.com/img/static/gplogo/chess/365.png) 50% /
-    auto 100% no-repeat;
+  background: url(../images/365.png) 50% / auto 100% no-repeat;
   width: 55px !important;
 }
 
@@ -10721,8 +10635,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .DS {
-  background: url(https://img.alltocon.com/img/static/gplogo/chess/ds.png) 50% /
-    auto 100% no-repeat;
+  background: url(../images/ds.png) 50% / auto 100% no-repeat;
   width: 55px !important;
 }
 
@@ -10731,8 +10644,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .PS {
-  background: url(https://img.alltocon.com/img/static/gplogo/egame/ps.png) 50%/100%
-    no-repeat;
+  background: url(../images/ps.png) 50%/100% no-repeat;
   width: 55px !important;
 }
 
@@ -10746,8 +10658,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .s918 {
-  background: url(https://img.alltocon.com/img/static/slotking777/logo-918.png)
-    50% / auto 100% no-repeat;
+  background: url(../images/slotking777/logo-918.png) 50% / auto 100% no-repeat;
   width: 100px !important;
 }
 
@@ -10761,8 +10672,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .ae_c {
-  background: url(https://img.alltocon.com/img/static/gplogo/chess/ae_c.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/ae_c.png) 50%/100% auto no-repeat;
   width: 85px !important;
 }
 
@@ -10771,8 +10681,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .IG {
-  background: url(https://img.alltocon.com/img/static/gplogo/lottery/ig.png) 50%/90%
-    no-repeat;
+  background: url(../images/gplogo/lottery/ig.png) 50%/90% no-repeat;
   width: 55px !important;
 }
 
@@ -10786,8 +10695,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .e-bull {
-  background: url(https://img.alltocon.com/img/static/esports/logo-eb.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/esports/logo-eb.png) 50%/100% auto no-repeat;
   width: 125px !important;
 }
 
@@ -10796,8 +10704,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .AE_ES {
-  background: url(https://img.alltocon.com/img/static/esports/logo-aees.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/esports/logo-aees.png) 50%/100% auto no-repeat;
   width: 150px !important;
 }
 
@@ -10806,8 +10713,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .AE_LOT {
-  background: url(https://img.alltocon.com/img/static/gplogo/lottery/ae_lot.png)
-    50%/100% auto no-repeat;
+  background: url(../images/gplogo/lottery/ae_lot.png) 50%/100% auto no-repeat;
   width: 150px !important;
 }
 
@@ -10816,8 +10722,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .AE_ES2 {
-  background: url(https://img.alltocon.com/img/static/gplogo/esports/ae_es2.png)
-    50%/100% auto no-repeat;
+  background: url(../images/gplogo/esports/ae_es2.png) 50%/100% auto no-repeat;
   width: 150px !important;
 }
 
@@ -10826,8 +10731,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .AWS {
-  background: url(https://img.alltocon.com/img/static/gplogo/egame/aws.png) 50% /
-    auto 100% no-repeat;
+  background: url(../images/aws.png) 50% / auto 100% no-repeat;
   width: 46px !important;
 }
 
@@ -10836,8 +10740,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .GPI {
-  background: url(https://img.alltocon.com/img/static/gplogo/lottery/gpi.png)
-    50%/100% auto no-repeat;
+  background: url(../images/gplogo/lottery/gpi.png) 50%/100% auto no-repeat;
   width: 125px !important;
 }
 
@@ -10846,8 +10749,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .JOKER {
-  background: url(https://img.alltocon.com/img/static/gplogo/egame/joker.png)
-    50%/100% auto no-repeat;
+  background: url(../images/joker.png) 50%/100% auto no-repeat;
   width: 100px !important;
 }
 
@@ -10856,8 +10758,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .JILI {
-  background: url(https://img.alltocon.com/img/static/gplogo/egame/jili.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/jili.png) 50%/100% auto no-repeat;
   width: 70px !important;
 }
 
@@ -10866,8 +10767,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .BO {
-  background: url(https://img.alltocon.com/img/static/gplogo/finance/bo.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/gplogo/finance/bo.png) 50%/100% auto no-repeat;
   width: 50px !important;
 }
 
@@ -10886,8 +10786,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .singbet {
-  background: url(https://img.alltocon.com/img/static/gplogo/sports/singbet.png)
-    50%/100% auto no-repeat;
+  background: url(../images/singbet.png) 50%/100% auto no-repeat;
   width: 60px !important;
 }
 
@@ -10896,8 +10795,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .IM {
-  background: url(https://img.alltocon.com/img/static/gplogo/sports/im.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/im.png) 50%/100% auto no-repeat;
   width: 115px !important;
 }
 
@@ -10906,8 +10804,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .JG {
-  background: url(https://img.alltocon.com/img/static/gplogo/live/jg.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/jg.png) 50%/100% auto no-repeat;
   width: 68px !important;
 }
 
@@ -10916,8 +10813,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .SIMPLEPLAY {
-  background: url(https://img.alltocon.com/img/static/gplogo/egame/simpleplay.png)
-    50%/100% auto no-repeat;
+  background: url(../images/simpleplay.png) 50%/100% auto no-repeat;
   width: 48px !important;
 }
 
@@ -10926,8 +10822,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .SEA {
-  background: url(https://img.alltocon.com/img/static/gplogo/egame/sea.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/sea.png) 50%/100% auto no-repeat;
   width: 48px !important;
 }
 
@@ -10936,8 +10831,8 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .CMDBET {
-  background: url(https://img.alltocon.com/img/static/game/zh-CN/CMDBET/CMDBET.png)
-    50%/100% auto no-repeat;
+  background: url(../images/game/zh-CN/CMDBET/CMDBET.png) 50%/100% auto
+    no-repeat;
   width: 68px !important;
 }
 
@@ -10946,8 +10841,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .WM {
-  background: url(https://img.alltocon.com/img/static/game/zh-CN/WM/wm.png) 50%/90%
-    auto no-repeat;
+  background: url(../images/game/zh-CN/WM/wm.png) 50%/90% auto no-repeat;
   width: 60px !important;
 }
 
@@ -10956,8 +10850,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .EVO {
-  background: url(https://img.alltocon.com/img/static/game/zh-CN/EVO/evo.png)
-    50% / contain no-repeat;
+  background: url(../images/game/zh-CN/EVO/evo.png) 50% / contain no-repeat;
   width: 55px !important;
 }
 
@@ -10966,8 +10859,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .DG {
-  background: url(https://img.alltocon.com/img/static/game/zh-CN/DG/dg.png) 50%/90%
-    auto no-repeat;
+  background: url(../images/game/zh-CN/DG/dg.png) 50%/90% auto no-repeat;
   width: 70px !important;
 }
 
@@ -10976,8 +10868,8 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .SBOBET {
-  background: url(https://img.alltocon.com/img/static/game/zh-CN/SBOBET/SBOBET.png)
-    50%/100% auto no-repeat;
+  background: url(../images/game/zh-CN/SBOBET/SBOBET.png) 50%/100% auto
+    no-repeat;
   width: 68px !important;
 }
 
@@ -10986,8 +10878,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .TF {
-  background: url(https://img.alltocon.com/img/static/gplogo/esports/tf.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/gplogo/esports/tf.png) 50%/100% auto no-repeat;
   width: 90px !important;
 }
 
@@ -10996,8 +10887,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .S128 {
-  background: url(https://img.alltocon.com/img/static/ec-app/S128.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/ec-app/S128.png) 50%/100% auto no-repeat;
   width: 130px !important;
 }
 
@@ -11006,8 +10896,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .SPR168 {
-  background: url(https://img.alltocon.com/img/static/ec-app/SPR168.png) 100% /
-    auto 110% no-repeat;
+  background: url(../images/ec-app/SPR168.png) 100% / auto 110% no-repeat;
   width: 60px !important;
 }
 
@@ -11016,8 +10905,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .BTI {
-  background: url(https://img.alltocon.com/img/static/ec-app/BTI.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/ec-app/BTI.png) 50%/100% auto no-repeat;
   width: 85px !important;
 }
 
@@ -11026,8 +10914,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .AE_CRICKET {
-  background: url(https://img.alltocon.com/img/static/gplogo/sports/ae_cricket.png)
-    50%/100% auto no-repeat;
+  background: url(../images/ae_cricket.png) 50%/100% auto no-repeat;
   width: 120px !important;
 }
 
@@ -11036,8 +10923,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .KINGMAKER {
-  background: url(https://img.alltocon.com/img/static/gplogo/chess/kingmaker.png)
-    50%/100% auto no-repeat;
+  background: url(../images/kingmaker.png) 50%/100% auto no-repeat;
   width: 120px !important;
 }
 
@@ -11046,8 +10932,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .UFABET {
-  background: url(https://img.alltocon.com/img/static/gplogo/sports/ufabet.png)
-    50%/100% auto no-repeat;
+  background: url(../images/ufabet.png) 50%/100% auto no-repeat;
   width: 110px !important;
 }
 
@@ -11056,8 +10941,8 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .UFASLOT {
-  background: url(https://img.alltocon.com/img/static/yabo/mobile/gplogo/ufaslot.png)
-    50%/100% auto no-repeat;
+  background: url(../images/yabo/mobile/gplogo/ufaslot.png) 50%/100% auto
+    no-repeat;
   width: 110px !important;
 }
 
@@ -11066,8 +10951,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .PP {
-  background: url(https://img.alltocon.com/img/static/gplogo/egame/pp.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/pp.png) 50%/100% auto no-repeat;
   width: 57px !important;
 }
 
@@ -11076,8 +10960,7 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .GW {
-  background: url(https://img.alltocon.com/img/static/gplogo/lottery/gw.png) 50%/100%
-    auto no-repeat;
+  background: url(../images/gplogo/lottery/gw.png) 50%/100% auto no-repeat;
   width: 70px !important;
 }
 
@@ -11086,8 +10969,8 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .RCB {
-  background: url(https://img.alltocon.com/img/static/yabo/mobile/gplogo-c2/rcb.png)
-    50%/100% auto no-repeat;
+  background: url(../images/yabo/mobile/gplogo-c2/rcb.png) 50%/100% auto
+    no-repeat;
   width: 70px !important;
 }
 
@@ -11096,8 +10979,8 @@ header .nav .submenu ul li.maintenance .maintenance-block .time .duration {
   .swiper-wrapper
   .swiper-slide
   .AE_PLAY {
-  background: url(https://img.alltocon.com/img/static/yabo/mobile/gplogo-c2/ae_play.png)
-    50%/100% auto no-repeat;
+  background: url(../images/yabo/mobile/gplogo-c2/ae_play.png) 50%/100% auto
+    no-repeat;
   width: 100px !important;
 }
 
@@ -11560,18 +11443,15 @@ button {
 }
 
 .nrc-tabs.tabs-style-side .nav-style-side .nrc-tabs-tab:nth-of-type(2):after {
-  background: url(https://img.alltocon.com/img/static/desktop/egame-tab-01.png)
-    100% no-repeat;
+  background: url(../images/egame-tab-01.png) 100% no-repeat;
 }
 
 .nrc-tabs.tabs-style-side .nav-style-side .nrc-tabs-tab:nth-of-type(3):after {
-  background: url(https://img.alltocon.com/img/static/desktop/egame-tab-02.png)
-    100% no-repeat;
+  background: url(../images/egame-tab-02.png) 100% no-repeat;
 }
 
 .nrc-tabs.tabs-style-side .nav-style-side .nrc-tabs-tab:nth-of-type(4):after {
-  background: url(https://img.alltocon.com/img/static/desktop/egame-tab-03.png)
-    100% no-repeat;
+  background: url(../images/egame-tab-03.png) 100% no-repeat;
 }
 
 .nrc-tabs.tabs-style-side .nav-style-side .nrc-tabs-tab:first-of-type {
@@ -13264,8 +13144,7 @@ button.swiper-pagination-bullet {
 }
 
 .claimed-modal .icon {
-  background: url(https://img.alltocon.com/img/static/desktop/promotion-sucessful-icon.png)
-    50%/100% no-repeat;
+  background: url(../images/promotion-sucessful-icon.png) 50%/100% no-repeat;
   height: 82px;
   width: 82px;
 }
@@ -13546,8 +13425,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-list .options .option-item .section-block-option.QQ:before {
-  background: url(https://img.alltocon.com/img/static/payment/qq.svg) 50% / auto
-    40px no-repeat;
+  background: url(../images/qq.svg) 50% / auto 40px no-repeat;
   color: #0000;
   content: "";
 }
@@ -13615,8 +13493,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-list .options .option-item .section-block-option.UNIONPAY_SCAN:before {
-  background: url(https://img.alltocon.com/img/static/payment/unionpay.svg) 50%/45px
-    auto no-repeat;
+  background: url(../images/unionpay.svg) 50%/45px auto no-repeat;
   color: #0000;
   content: "";
 }
@@ -13627,8 +13504,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-list .options .option-item .section-block-option.MOMOPAY:before {
-  background: url(https://img.alltocon.com/img/static/payment/momo.svg) 50% /
-    auto 45px no-repeat;
+  background: url(../images/momo.svg) 50% / auto 45px no-repeat;
   color: #0000;
   content: "";
 }
@@ -13639,8 +13515,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-list .options .option-item .section-block-option.PROMPTPAY:before {
-  background: url(https://img.alltocon.com/img/static/payment/prompt.png) 50% /
-    auto 40px no-repeat;
+  background: url(../images/prompt.png) 50% / auto 40px no-repeat;
   color: #0000;
   content: "";
 }
@@ -13651,8 +13526,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-list .options .option-item .section-block-option.PAYTM:before {
-  background: url(https://img.alltocon.com/img/static/payment/paytm.png) 50% /
-    auto 40px no-repeat;
+  background: url(../images/paytm.png) 50% / auto 40px no-repeat;
   color: #0000;
   content: "";
 }
@@ -13663,8 +13537,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-list .options .option-item .section-block-option.NETELLER:before {
-  background: url(https://img.alltocon.com/img/static/payment/neteller.png) 50% /
-    auto 40px no-repeat;
+  background: url(../images/neteller.png) 50% / auto 40px no-repeat;
   color: #0000;
   content: "";
 }
@@ -13675,8 +13548,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-list .options .option-item .section-block-option.SKRILL:before {
-  background: url(https://img.alltocon.com/img/static/payment/skrill.png) 50% /
-    auto 40px no-repeat;
+  background: url(../images/skrill.png) 50% / auto 40px no-repeat;
   color: #0000;
   content: "";
 }
@@ -13687,8 +13559,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-list .options .option-item .section-block-option.UPI:before {
-  background: url(https://img.alltocon.com/img/static/payment/upi.png) 50% /
-    auto 40px no-repeat;
+  background: url(../images/upi.png) 50% / auto 40px no-repeat;
   color: #0000;
   content: "";
 }
@@ -13699,8 +13570,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-list .options .option-item .section-block-option.GPAY:before {
-  background: url(https://img.alltocon.com/img/static/payment/gpay.png) 50% /
-    auto 40px no-repeat;
+  background: url(../images/gpay.png) 50% / auto 40px no-repeat;
   color: #0000;
   content: "";
 }
@@ -13711,8 +13581,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-list .options .option-item .section-block-option.PHONEPE:before {
-  background: url(https://img.alltocon.com/img/static/payment/phonepe.png) 50% /
-    auto 40px no-repeat;
+  background: url(../images/phonepe.png) 50% / auto 40px no-repeat;
   color: #0000;
   content: "";
 }
@@ -13723,8 +13592,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-list .options .option-item .section-block-option.BHIM:before {
-  background: url(https://img.alltocon.com/img/static/payment/bhim.png) 50% /
-    auto 40px no-repeat;
+  background: url(../images/bhim.png) 50% / auto 40px no-repeat;
   color: #0000;
   content: "";
 }
@@ -13735,8 +13603,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-list .options .option-item .section-block-option.ZALOPAY:before {
-  background: url(https://img.alltocon.com/img/static/payment/zalopay.svg) 50% /
-    auto 45px no-repeat;
+  background: url(../images/zalopay.svg) 50% / auto 45px no-repeat;
   color: #0000;
   content: "";
 }
@@ -13747,8 +13614,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-list .options .option-item .section-block-option.QR_BANK:before {
-  background: url(https://img.alltocon.com/img/static/payment/icon-wbscan.svg)
-    50% / auto 45px no-repeat;
+  background: url(../images/icon-wbscan.svg) 50% / auto 45px no-repeat;
   color: #0000;
   content: "";
 }
@@ -13759,8 +13625,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-list .options .option-item .section-block-option.VIETTELPAY:before {
-  background: url(https://img.alltocon.com/img/static/payment/viettelpay.svg)
-    50% / auto 95% no-repeat;
+  background: url(../images/viettelpay.svg) 50% / auto 95% no-repeat;
   color: #0000;
   content: "";
 }
@@ -13771,8 +13636,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-list .options .option-item .section-block-option.MPURSE:before {
-  background: url(https://img.alltocon.com/img/static/payment/mpurse.png) 50% /
-    auto 48px no-repeat;
+  background: url(../images/mpurse.png) 50% / auto 48px no-repeat;
   color: #0000;
   content: "";
 }
@@ -13783,8 +13647,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-list .options .option-item .section-block-option.SCRATCHCARD:before {
-  background: url(https://img.alltocon.com/img/static/payment/scratch.png) 50% /
-    auto 90% no-repeat;
+  background: url(../images/scratch.png) 50% / auto 90% no-repeat;
   color: #0000;
   content: "";
 }
@@ -13804,8 +13667,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-list .options .option-item .section-block-option.baidu:before {
-  background: url(https://img.alltocon.com/img/static/payment/baidu.png) 50%/40px
-    auto no-repeat;
+  background: url(../images/baidu.png) 50%/40px auto no-repeat;
   color: #0000;
   content: "";
 }
@@ -13816,8 +13678,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-list .options .option-item .section-block-option.huabei:before {
-  background: url(https://img.alltocon.com/img/static/payment/huabei.png) 50%/45px
-    auto no-repeat;
+  background: url(../images/huabei.png) 50%/45px auto no-repeat;
   color: #0000;
   content: "";
 }
@@ -13847,8 +13708,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-list .options .option-item .section-block-option.QUICKPASS:before {
-  background: url(https://img.alltocon.com/img/static/payment/qpass.png) 50%/45px
-    auto no-repeat;
+  background: url(../images/qpass.png) 50%/45px auto no-repeat;
   color: #0000;
   content: "";
 }
@@ -13859,8 +13719,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-list .options .option-item .section-block-option.GCASH:before {
-  background: url(https://img.alltocon.com/img/static/payment/gcash.png) 50%/45px
-    auto no-repeat;
+  background: url(../images/gcash.png) 50%/45px auto no-repeat;
   color: #0000;
   content: "";
 }
@@ -13871,87 +13730,76 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-list .options .option-item .section-block-option.TRUEMONEY:before {
-  background: url(https://img.alltocon.com/img/static/payment/truemoney.png) 50%/45px
-    auto no-repeat;
+  background: url(../images/truemoney.png) 50%/45px auto no-repeat;
   color: #0000;
   content: "";
 }
 
 .deposit-list .options .option-item .section-block-option.CRYPTOH5:before {
-  background: url(https://img.alltocon.com/img/static/payment/crypto.png) 50% /
-    auto 36px no-repeat;
+  background: url(../images/crypto.png) 50% / auto 36px no-repeat;
   content: "";
   height: 36px;
   width: 36px;
 }
 
 .deposit-list .options .option-item .section-block-option.USDT:before {
-  background: url(https://img.alltocon.com/img/static/payment/usdt.png) 50% /
-    auto 36px no-repeat;
+  background: url(../images/usdt.png) 50% / auto 36px no-repeat;
   content: "";
   height: 36px;
   width: 36px;
 }
 
 .deposit-list .options .option-item .section-block-option.GRABPAY:before {
-  background: url(https://img.alltocon.com/img/static/payment/grabpay.png) 50% /
-    auto 36px no-repeat;
+  background: url(../images/grabpay.png) 50% / auto 36px no-repeat;
   content: "";
   height: 36px;
   width: 36px;
 }
 
 .deposit-list .options .option-item .section-block-option.PAYMAYA:before {
-  background: url(https://img.alltocon.com/img/static/payment/paymaya.png) 50% /
-    auto 36px no-repeat;
+  background: url(../images/paymaya.png) 50% / auto 36px no-repeat;
   content: "";
   height: 36px;
   width: 36px;
 }
 
 .deposit-list .options .option-item .section-block-option.REMIT:before {
-  background: url(https://img.alltocon.com/img/static/payment/remit.png) 50% /
-    auto 36px no-repeat;
+  background: url(../images/remit.png) 50% / auto 36px no-repeat;
   content: "";
   height: 36px;
   width: 36px;
 }
 
 .deposit-list .options .option-item .section-block-option.PAYLORO:before {
-  background: url(https://img.alltocon.com/img/static/payment/payloro.png) 50% /
-    auto 36px no-repeat;
+  background: url(../images/payloro.png) 50% / auto 36px no-repeat;
   content: "";
   height: 36px;
   width: 36px;
 }
 
 .deposit-list .options .option-item .section-block-option.NAGAD:before {
-  background: url(https://img.alltocon.com/img/static/payment/nagad.png) 50% /
-    auto 36px no-repeat;
+  background: url(../images/nagad.png) 50% / auto 36px no-repeat;
   content: "";
   height: 36px;
   width: 36px;
 }
 
 .deposit-list .options .option-item .section-block-option.BKASH:before {
-  background: url(https://img.alltocon.com/img/static/payment/bkash.png) 50% /
-    auto 36px no-repeat;
+  background: url(../images/bkash.png) 50% / auto 36px no-repeat;
   content: "";
   height: 36px;
   width: 36px;
 }
 
 .deposit-list .options .option-item .section-block-option.ROCKET:before {
-  background: url(https://img.alltocon.com/img/static/payment/rocket.png) 50% /
-    auto 36px no-repeat;
+  background: url(../images/rocket.png) 50% / auto 36px no-repeat;
   content: "";
   height: 36px;
   width: 36px;
 }
 
 .deposit-list .options .option-item .section-block-option.UPAY:before {
-  background: url(https://img.alltocon.com/img/static/payment/upay.png) 50% /
-    auto 36px no-repeat;
+  background: url(../images/upay.png) 50% / auto 36px no-repeat;
   content: "";
   height: 36px;
   width: 36px;
@@ -14661,20 +14509,20 @@ button.swiper-pagination-bullet {
 }
 
 .withdraw-list .boxes > div.promofee h4 {
-  background-image: url(https://img.alltocon.com/img/static/desktop/ic-icon-promofee.png);
+  background-image: url(../images/ic-icon-promofee.png);
 }
 
 .withdraw-list .boxes > div.promofee.has-money h4 {
-  background-image: url(https://img.alltocon.com/img/static/desktop/ic-icon-promofee-gold.png);
+  background-image: url(../images/ic-icon-promofee-gold.png);
   color: #fb2;
 }
 
 .withdraw-list .boxes > div.generalfee h4 {
-  background-image: url(https://img.alltocon.com/img/static/desktop/ic-icon-generalfee.png);
+  background-image: url(../images/ic-icon-generalfee.png);
 }
 
 .withdraw-list .boxes > div.generalfee.has-money h4 {
-  background-image: url(https://img.alltocon.com/img/static/desktop/ic-icon-generalfee-gold.png);
+  background-image: url(../images/ic-icon-generalfee-gold.png);
   color: #fb2;
 }
 
@@ -15942,7 +15790,7 @@ button.swiper-pagination-bullet {
 }
 
 .bet-type-poker {
-  background-image: url(https://img.alltocon.com/img/static/common/poker.png);
+  background-image: url(../images/common/poker.png);
   background-repeat: no-repeat;
   height: 160px;
   width: 120px;
@@ -16017,7 +15865,7 @@ button.swiper-pagination-bullet {
 }
 
 .bet-type-dice {
-  background-image: url(https://img.alltocon.com/img/static/common/dice.png);
+  background-image: url(../images/common/dice.png);
   background-repeat: no-repeat;
   background-size: 300px;
   height: 50px;
@@ -16049,9 +15897,8 @@ button.swiper-pagination-bullet {
 }
 
 .section-promo {
-  background: #0e0f12
-    url(https://img.alltocon.com/img/static/vn/desktop/home-bg.jpg) top/100%
-    auto no-repeat;
+  background: #0e0f12 url(../images/vn/desktop/home-bg.jpg) top/100% auto
+    no-repeat;
   min-height: calc(100vh - 375px);
   padding: 40px 0;
 }
@@ -16600,8 +16447,7 @@ button.swiper-pagination-bullet {
 }
 
 .app:not(.account) .quick-nav .input-wrap.account {
-  background: url(https://img.alltocon.com/img/static/qata88/desktop/icon-id.png)
-    10px / auto 14px no-repeat;
+  background: url(../images/icon-id.png) 10px / auto 14px no-repeat;
 }
 
 .app:not(.account) .quick-nav .input-wrap.account input {
@@ -16609,8 +16455,7 @@ button.swiper-pagination-bullet {
 }
 
 .app:not(.account) .quick-nav .input-wrap.password {
-  background: url(https://img.alltocon.com/img/static/qata88/desktop/icon-password.png)
-    10px / auto 14px no-repeat;
+  background: url(../images/icon-password.png) 10px / auto 14px no-repeat;
 }
 
 .app:not(.account) .quick-nav .input-wrap.password input {
@@ -16625,15 +16470,14 @@ button.swiper-pagination-bullet {
 }
 
 .app:not(.account) .quick-nav .input-wrap.password .visible-toggle {
-  background: url(https://img.alltocon.com/img/static/qata88/desktop/icon-eye.png)
-    50% / contain no-repeat;
+  background: url(../images/icon-eye.png) 50% / contain no-repeat;
 }
 
 .app:not(.account)
   .quick-nav
   .input-wrap.password
   .visible-toggle.mps-unreadable {
-  background-image: url(https://img.alltocon.com/img/static/qata88/desktop/icon-eye-off.png);
+  background-image: url(../images/icon-eye-off.png);
 }
 
 .app:not(.account) .quick-nav .input-wrap.captcha {
@@ -16655,8 +16499,7 @@ button.swiper-pagination-bullet {
 }
 
 .app:not(.account) .quick-nav .input-wrap.captcha i.mps-update {
-  background: url(https://img.alltocon.com/img/static/qata88/desktop/icon-refresh.png)
-    50% / contain no-repeat;
+  background: url(../images/icon-refresh.png) 50% / contain no-repeat;
 }
 
 .app:not(.account) .quick-nav .right .btn-big {
@@ -16728,8 +16571,7 @@ button.swiper-pagination-bullet {
   .logined-nav
   li.login-nav-inbox
   a:before {
-  background: url(https://img.alltocon.com/img/static/qata88/desktop/icon-bell.png)
-    50% / contain no-repeat;
+  background: url(../images/icon-bell.png) 50% / contain no-repeat;
   content: "";
   height: 24px;
   width: 24px;
@@ -16800,8 +16642,7 @@ button.swiper-pagination-bullet {
 }
 
 .app:not(.account) header .nav li[data-content="PAGE_QR"] .nav-item a:before {
-  background: url(https://img.alltocon.com/img/static/qata88/desktop/icon-app.png)
-    50% / contain no-repeat;
+  background: url(../images/icon-app.png) 50% / contain no-repeat;
   content: "";
   display: block !important;
   height: 20px;

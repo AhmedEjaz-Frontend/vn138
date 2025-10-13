@@ -1040,7 +1040,7 @@
                   (0, w.jsx)("div", {
                     className: "gp",
                     children: (0, w.jsx)("img", {
-                      src: `https://img.alltocon.com/img/static/gplogo/egame/light/${a.toLowerCase()}.png`,
+                      src: `../images/light/${a.toLowerCase()}.png`,
                       alt: a,
                     }),
                   }),
@@ -1192,7 +1192,7 @@
                                     (0, w.jsx)("div", {
                                       className: `main-pic ${t}`,
                                       style: {
-                                        backgroundImage: `url(https://img.alltocon.com/img/static/qata88/desktop/type-${t}.png)`,
+                                        backgroundImage: `url(../images/type-${t}.png)`,
                                       },
                                     }),
                                     (0, w.jsx)("h2", {
@@ -1227,7 +1227,7 @@
                                 className: "home-egame-title",
                                 children: [
                                   (0, w.jsx)("img", {
-                                    src: "https://img.alltocon.com/img/static/qata88/desktop/home-egame-title-icon.png",
+                                    src: "../images/home-egame-title-icon.png",
                                     role: "presentation",
                                   }),
                                   "TRÒ CHƠI MỚI",
@@ -1239,7 +1239,7 @@
                                   (0, w.jsx)("div", {
                                     className: "left",
                                     children: (0, w.jsx)("img", {
-                                      src: "https://img.alltocon.com/img/static/qata88/desktop/home-egame-game1.png",
+                                      src: "../images/home-egame-game1.png",
                                       role: "presentation",
                                     }),
                                   }),
@@ -1264,7 +1264,7 @@
                                   (0, w.jsx)("div", {
                                     className: "left",
                                     children: (0, w.jsx)("img", {
-                                      src: "https://img.alltocon.com/img/static/qata88/desktop/home-egame-game2.png",
+                                      src: "../images/home-egame-game2.png",
                                       role: "presentation",
                                     }),
                                   }),
@@ -1289,7 +1289,7 @@
                             className: "center",
                             children: [
                               (0, w.jsx)("img", {
-                                src: "https://img.alltocon.com/img/static/qata88/desktop/home-egame-center-img.png",
+                                src: "../images/home-egame-center-img.png",
                                 role: "presentation",
                               }),
                               (0, w.jsx)("h3", {
@@ -1307,7 +1307,7 @@
                                 className: "home-egame-title",
                                 children: [
                                   (0, w.jsx)("img", {
-                                    src: "https://img.alltocon.com/img/static/qata88/desktop/home-egame-title-icon.png",
+                                    src: "../images/home-egame-title-icon.png",
                                     role: "presentation",
                                   }),
                                   "TRÒ CHƠI MỚI",
@@ -1319,7 +1319,7 @@
                                   (0, w.jsx)("div", {
                                     className: "left",
                                     children: (0, w.jsx)("img", {
-                                      src: "https://img.alltocon.com/img/static/qata88/desktop/home-egame-game1.png",
+                                      src: "../images/home-egame-game1.png",
                                       role: "presentation",
                                     }),
                                   }),
@@ -1344,7 +1344,7 @@
                                   (0, w.jsx)("div", {
                                     className: "left",
                                     children: (0, w.jsx)("img", {
-                                      src: "https://img.alltocon.com/img/static/qata88/desktop/home-egame-game2.png",
+                                      src: "../images/home-egame-game2.png",
                                       role: "presentation",
                                     }),
                                   }),
@@ -1377,7 +1377,7 @@
                             className: "feature-item",
                             children: [
                               (0, w.jsx)("img", {
-                                src: `https://img.alltocon.com/img/static/desktop/brand/${f.default.brand.code}/logo.png`,
+                                src: `../images/brand/${f.default.brand.code}/logo.png`,
                                 alt: "",
                               }),
                               (0, w.jsx)("p", {
@@ -1390,7 +1390,7 @@
                             className: "feature-item",
                             children: [
                               (0, w.jsx)("img", {
-                                src: "https://img.alltocon.com/img/static/qata88/desktop/home-feature2.png",
+                                src: "../images/home-feature2.png",
                                 alt: "",
                               }),
                               (0, w.jsx)("p", {
@@ -1403,7 +1403,7 @@
                             className: "feature-item",
                             children: [
                               (0, w.jsx)("img", {
-                                src: "https://img.alltocon.com/img/static/qata88/desktop/home-feature3.png",
+                                src: "../images/home-feature3.png",
                                 alt: "",
                               }),
                               (0, w.jsx)("p", {
@@ -1416,7 +1416,7 @@
                             className: "feature-item",
                             children: [
                               (0, w.jsx)("img", {
-                                src: "https://img.alltocon.com/img/static/qata88/desktop/home-feature4.png",
+                                src: "../images/home-feature4.png",
                                 alt: "",
                               }),
                               (0, w.jsx)("p", {
@@ -1445,7 +1445,7 @@
                             className: "home-link-item",
                             children: [
                               (0, w.jsx)("img", {
-                                src: "https://img.alltocon.com/img/static/qata88/desktop/home-link2.png",
+                                src: "../images/home-link2.png",
                                 alt: "",
                               }),
                               (0, w.jsx)("h4", {
@@ -1457,7 +1457,7 @@
                             className: "home-link-item",
                             children: [
                               (0, w.jsx)("img", {
-                                src: "https://img.alltocon.com/img/static/qata88/desktop/home-link3.png",
+                                src: "../images/home-link3.png",
                                 alt: "",
                               }),
                               (0, w.jsx)("h4", {
@@ -1469,7 +1469,7 @@
                             className: "home-link-item",
                             children: [
                               (0, w.jsx)("img", {
-                                src: "https://img.alltocon.com/img/static/qata88/desktop/home-link4.png",
+                                src: "../images/home-link4.png",
                                 alt: "",
                               }),
                               (0, w.jsx)("h4", {

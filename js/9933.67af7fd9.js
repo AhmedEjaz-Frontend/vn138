@@ -935,7 +935,7 @@
                 (0, r.jsx)("img", {
                   alt: "close",
                   className: "close-btn",
-                  src: "https://img.alltocon.com/img/static/btn-delete-close.png",
+                  src: "../images/btn-delete-close.png",
                   onClick: () => {
                     this.props.onHandleClose();
                   },
@@ -1172,7 +1172,7 @@
                           },
                           children: (0, g.jsx)("img", {
                             src: a
-                              ? `https://img.alltocon.com/img/static/desktop/sub-menu/sub-${s.toLowerCase()}-${n}.png`
+                              ? `../images/sub-menu/sub-${s.toLowerCase()}-${n}.png`
                               : `${h}${e.get("imageUrl")}`,
                             alt: `banner-${n}`,
                             loading: "lazy",
@@ -1732,7 +1732,7 @@
                         className: "footer-ref-item",
                         children: [
                           (0, g.jsx)("img", {
-                            src: `https://img.alltocon.com/img/static/desktop/brand/${r.default.brand.code}/logo.png`,
+                            src: `../images/brand/${r.default.brand.code}/logo.png`,
                             alt: "",
                             className: "footer-logo",
                           }),
@@ -3537,7 +3537,7 @@
                     className: "logo",
                     onClick: () => e(p.default.ROOT),
                     style: {
-                      backgroundImage: `url(https://img.alltocon.com/img/static/desktop/brand/${y.default.brand.code}/logo.png)`,
+                      backgroundImage: `url(../images/brand/${y.default.brand.code}/logo.png)`,
                     },
                   }),
                   t
@@ -4553,7 +4553,7 @@
                                       this.clickGameProvider(e, t);
                                     },
                                     children: (0, f.jsx)("img", {
-                                      src: `https://img.alltocon.com/img/static/desktop/sub-menu/sub-${r}-${s}.png`,
+                                      src: `../images/sub-menu/sub-${r}-${s}.png`,
                                       alt: `banner-${s}`,
                                     }),
                                   }),
@@ -5584,7 +5584,7 @@
                     className: "provider-swiper-item",
                     children: (0, l.jsx)("img", {
                       alt: `gp-${t}`,
-                      src: `https://img.alltocon.com/img/static/gplogo/${c}/${t.toLowerCase()}.png`,
+                      src: `../images/gplogo/${c}/${t.toLowerCase()}.png`,
                       loading: "lazy",
                     }),
                   },
@@ -6158,7 +6158,7 @@
         p = s(a(60191)),
         m = s(a(6938)),
         f = a(74848);
-      const g = `https://img.alltocon.com/img/static/desktop/brand/${c.default.brand.code}/logo.png`,
+      const g = `../images/brand/${c.default.brand.code}/logo.png`,
         h = c.default.portal.apiServer.imageServer;
       let v = !0,
         y = !1;
@@ -6565,7 +6565,7 @@
                   className: "promo-img",
                   children: (0, m.jsx)("img", {
                     "data-promo-float": "logo",
-                    src: "https://img.alltocon.com/img/static/promo-center/promo-gift-open.png",
+                    src: "../images/promo-center/promo-gift-open.png",
                     alt: "icon",
                   }),
                 }),

@@ -449,8 +449,7 @@
           P = (0, i.useMemo)(
             () =>
               (0, h.jsx)("img", {
-                src:
-                  t || "https://img.alltocon.com/img/static/avatar/userpic.png",
+                src: t || "../images/avatar/userpic.png",
                 alt: "third-party",
               }),
             [t]
@@ -3444,7 +3443,7 @@
                       className: "left",
                       children: (0, h.jsx)("img", {
                         className: "error-fish",
-                        src: "https://img.alltocon.com/img/static/common/not-found-fish.png",
+                        src: "../images/common/not-found-fish.png",
                         alt: "",
                       }),
                     }),
@@ -4762,7 +4761,7 @@
         const n =
           "favicon" === s.default.notification
             ? `/favicons/${s.default.brand.favicon}`
-            : `https://img.alltocon.com/img/static/desktop/brand/${s.default.brand.code}/logo.png`;
+            : `../images/brand/${s.default.brand.code}/logo.png`;
         i.default.create(e, {
           body: t,
           icon: a || n,

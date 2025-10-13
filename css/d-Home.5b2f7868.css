@@ -502,8 +502,7 @@ button.swiper-pagination-bullet {
 }
 
 body {
-  background: #282828
-    url(https://img.alltocon.com/img/static/desktop/temp/home/ec52/bg.png);
+  background: #282828 url(../images/temp/home/ec52/bg.png);
 }
 
 .home-wrap {
@@ -566,43 +565,41 @@ body {
 }
 
 .home-wrap .home-quick-box .home-quick-box-item .main-pic.animal {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec45/home_animal.png)
-    top/100% auto no-repeat;
+  background: url(../images/temp/home/ec45/home_animal.png) top/100% auto
+    no-repeat;
 }
 
 .home-wrap .home-quick-box .home-quick-box-item .main-pic.chess {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec45/home_chess.png)
-    top/100% auto no-repeat;
+  background: url(../images/temp/home/ec45/home_chess.png) top/100% auto
+    no-repeat;
 }
 
 .home-wrap .home-quick-box .home-quick-box-item .main-pic.egame {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec45/home_egame.png)
-    top/100% auto no-repeat;
+  background: url(../images/temp/home/ec45/home_egame.png) top/100% auto
+    no-repeat;
 }
 
 .home-wrap .home-quick-box .home-quick-box-item .main-pic.esports {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec45/home_esports.png)
-    top/100% auto no-repeat;
+  background: url(../images/temp/home/ec45/home_esports.png) top/100% auto
+    no-repeat;
 }
 
 .home-wrap .home-quick-box .home-quick-box-item .main-pic.lottery {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec45/home_lottery.png)
-    top/100% auto no-repeat;
+  background: url(../images/temp/home/ec45/home_lottery.png) top/100% auto
+    no-repeat;
 }
 
 .home-wrap .home-quick-box .home-quick-box-item .main-pic.mpg {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec45/home_mpg.png)
-    top/100% auto no-repeat;
+  background: url(../images/temp/home/ec45/home_mpg.png) top/100% auto no-repeat;
 }
 
 .home-wrap .home-quick-box .home-quick-box-item .main-pic.sports {
-  background: url(https://img.alltocon.com/img/static/vn365/pbg-sports.jpg)
-    top/100% auto no-repeat;
+  background: url(../images/vn365/pbg-sports.jpg) top/100% auto no-repeat;
 }
 
 .home-wrap .home-quick-box .home-quick-box-item .main-pic.live {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec45/home_live.png)
-    top/100% auto no-repeat;
+  background: url(../images/temp/home/ec45/home_live.png) top/100% auto
+    no-repeat;
 }
 
 .home-wrap .home-quick-box .home-quick-box-item a {
@@ -679,13 +676,12 @@ body {
 }
 
 .home-wrap .seo01-container:before {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec52/top-line.png)
-    top/100% 40px no-repeat;
+  background: url(../images/temp/home/ec52/top-line.png) top/100% 40px no-repeat;
 }
 
 .home-wrap .seo01-container:after {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec52/bottom-line.png)
-    bottom/100% 40px no-repeat;
+  background: url(../images/temp/home/ec52/bottom-line.png) bottom/100% 40px
+    no-repeat;
 }
 
 .home-wrap .recom {
@@ -1054,9 +1050,8 @@ body {
 }
 
 .home-wrap .winners {
-  background: #000
-    url(https://img.alltocon.com/img/static/desktop/temp/home/ec52/winlist-bg.png)
-    50% / cover no-repeat;
+  background: #000 url(../images/temp/home/ec52/winlist-bg.png) 50% / cover
+    no-repeat;
   box-shadow: 0 0 10px 0 #00000080;
   height: 80px;
   margin-bottom: 30px;
@@ -1076,8 +1071,8 @@ body {
 .home-wrap .winners ul li {
   align-content: center;
   align-items: center;
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec52/winlist-line.png)
-    0 / auto 100% no-repeat;
+  background: url(../images/temp/home/ec52/winlist-line.png) 0 / auto 100%
+    no-repeat;
   color: #fff;
   display: flex;
   flex: 0 0 180px;

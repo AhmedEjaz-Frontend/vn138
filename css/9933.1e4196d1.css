@@ -1603,14 +1603,12 @@ footer .copy {
 }
 
 .quick-nav .right .simple-logo-wrap .input-wrap.account {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec52/icon-username.png)
-    5px / auto 25px no-repeat;
+  background: url(../images/icon-username.png) 5px / auto 25px no-repeat;
   padding-left: 35px;
 }
 
 .quick-nav .right .simple-logo-wrap .input-wrap.password {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec52/icon-password.png)
-    5px / auto 25px no-repeat;
+  background: url(../images/icon-password.png) 5px / auto 25px no-repeat;
   padding-left: 35px;
 }
 
@@ -1801,8 +1799,7 @@ footer .copy {
 }
 
 .quick-nav .right .header-btn.login {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec52/icon-login.png)
-    10px / auto 20px no-repeat;
+  background: url(../images/icon-login.png) 10px / auto 20px no-repeat;
   box-shadow: inset 0 0 0 2px #fff;
   padding-left: 30px;
 }
@@ -2033,33 +2030,27 @@ header .logo {
 }
 
 .app:not(.account) header .nav .nav-item.egame a {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec52/nav-slotgame.png)
-    5px / auto 30px no-repeat;
+  background: url(../images/nav-slotgame.png) 5px / auto 30px no-repeat;
 }
 
 .app:not(.account) header .nav .nav-item.live a {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec52/nav-livegame.png)
-    5px / auto 30px no-repeat;
+  background: url(../images/nav-livegame.png) 5px / auto 30px no-repeat;
 }
 
 .app:not(.account) header .nav .nav-item.sports a {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec52/nav-sportgame.png)
-    5px / auto 30px no-repeat;
+  background: url(../images/nav-sportgame.png) 5px / auto 30px no-repeat;
 }
 
 .app:not(.account) header .nav .nav-item.mpg a {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec52/nav-fishergame.png)
-    5px / auto 30px no-repeat;
+  background: url(../images/nav-fishergame.png) 5px / auto 30px no-repeat;
 }
 
 .app:not(.account) header .nav .nav-item.chess a {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec52/nav-othergame.png)
-    5px / auto 30px no-repeat;
+  background: url(../images/nav-othergame.png) 5px / auto 30px no-repeat;
 }
 
 .app:not(.account) header .nav .nav-item.promotions a {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec52/nav-promotion.png)
-    5px / auto 30px no-repeat;
+  background: url(../images/nav-promotion.png) 5px / auto 30px no-repeat;
 }
 
 .app:not(.account) header .nav .nav-item.mobile {
@@ -2067,8 +2058,7 @@ header .logo {
 }
 
 .app:not(.account) header .nav .nav-item.mobile a {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec52/nav-app.png)
-    5px / auto 30px no-repeat;
+  background: url(../images/nav-app.png) 5px / auto 30px no-repeat;
   opacity: 1;
 }
 
@@ -2133,33 +2123,27 @@ header .logo {
 }
 
 .app:not(.account) header .nav li[data-content="EGAME"] .nav-item a {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec52/nav-slotgame.png)
-    5px / auto 30px no-repeat;
+  background: url(../images/nav-slotgame.png) 5px / auto 30px no-repeat;
 }
 
 .app:not(.account) header .nav li[data-content="LIVE"] .nav-item a {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec52/nav-livegame.png)
-    5px / auto 30px no-repeat;
+  background: url(../images/nav-livegame.png) 5px / auto 30px no-repeat;
 }
 
 .app:not(.account) header .nav li[data-content="SPORTS"] .nav-item a {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec52/nav-sportgame.png)
-    5px / auto 30px no-repeat;
+  background: url(../images/nav-sportgame.png) 5px / auto 30px no-repeat;
 }
 
 .app:not(.account) header .nav li[data-content="MPG"] .nav-item a {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec52/nav-fishergame.png)
-    5px / auto 30px no-repeat;
+  background: url(../images/nav-fishergame.png) 5px / auto 30px no-repeat;
 }
 
 .app:not(.account) header .nav li[data-content="CHESS"] .nav-item a {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec52/nav-othergame.png)
-    5px / auto 30px no-repeat;
+  background: url(../images/nav-othergame.png) 5px / auto 30px no-repeat;
 }
 
 .app:not(.account) header .nav li[data-content="PROMOTIONS"] .nav-item a {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec52/nav-promotion.png)
-    5px / auto 30px no-repeat;
+  background: url(../images/nav-promotion.png) 5px / auto 30px no-repeat;
 }
 
 .app:not(.account) header .nav li[data-content="PAGE_QR"] .nav-item {
@@ -2167,8 +2151,7 @@ header .logo {
 }
 
 .app:not(.account) header .nav li[data-content="PAGE_QR"] .nav-item a {
-  background: url(https://img.alltocon.com/img/static/desktop/temp/home/ec52/nav-app.png)
-    5px / auto 30px no-repeat;
+  background: url(../images/nav-app.png) 5px / auto 30px no-repeat;
   opacity: 1;
 }
 
@@ -2272,9 +2255,7 @@ div.app.account .app-body {
 }
 
 .banner {
-  background: #f4f6f9
-    url(https://img.alltocon.com/img/static/yama/banner-main.jpg) 50% / cover
-    no-repeat;
+  background: #f4f6f9 url(../images/banner-main.jpg) 50% / cover no-repeat;
   height: 34.375vw;
 }
 

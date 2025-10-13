@@ -401,19 +401,15 @@
         _ = n(76066),
         b = n(74848);
       const h = {
-        default:
-          "https://img.alltocon.com/img/static/common/vip/vippop_default.svga",
-        active:
-          "https://img.alltocon.com/img/static/common/vip/vippop_active.svga",
-        loop: "https://img.alltocon.com/img/static/common/vip/vippop_loop.svga",
+        default: "../images/common/vip/vippop_default.svga",
+        active: "../images/common/vip/vippop_active.svga",
+        loop: "../images/common/vip/vippop_loop.svga",
       };
       t.default = (e) => {
         let { closeUpgradeBounsModal: t } = e;
         const n = (0, a.useDispatch)(),
           o = (0, a.useSelector)((e) => e.players.newVipPrivileges),
-          O = (0, d.default)(
-            "https://img.alltocon.com/img/static/common/vip/vippop_btn.png"
-          ),
+          O = (0, d.default)("../images/common/vip/vippop_btn.png"),
           P = (0, f.default)(v.claimVipPlayerReward),
           R = (0, r.useRef)(null),
           w = (0, r.useRef)(null),

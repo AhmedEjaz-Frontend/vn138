@@ -1709,7 +1709,7 @@
                                 (0, x.jsx)("div", {
                                   className: "gp-logo-wrap",
                                   children: (0, x.jsx)("img", {
-                                    src: `https://img.alltocon.com/img/static/gplogo/v-dark/${e
+                                    src: `../images/gplogo/v-dark/${e
                                       .get("gameProviderId")
                                       .toLowerCase()}.png`,
                                     alt: `gp-${b(e.get("gameProviderId"))}`,

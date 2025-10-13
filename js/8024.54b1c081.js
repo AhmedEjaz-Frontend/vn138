@@ -2974,7 +2974,7 @@
             t = null == e ? void 0 : e.imageurl;
           p =
             (null != e && e.useDefault) || !t
-              ? `https://img.alltocon.com/img/static/red-envelope/redLottery__redBag__${u}.png`
+              ? `../images/red-envelope/redLottery__redBag__${u}.png`
               : `${d}${t}`;
         }
         if (s) {
@@ -2983,8 +2983,8 @@
           f =
             (null != e && e.useDefault) || !t
               ? i.isDesktop
-                ? `https://img.alltocon.com/img/static/red-envelope/banner__img_${u}.png`
-                : `https://img.alltocon.com/img/static/red-envelope/banner__img_${u}--m.png`
+                ? `../images/red-envelope/banner__img_${u}.png`
+                : `../images/red-envelope/banner__img_${u}--m.png`
               : `${d}${t}`;
         }
         return {
@@ -3023,9 +3023,9 @@
           children: _,
           ...E
         } = e;
-        let p = "https://img.alltocon.com/img/static/icon-note.png";
+        let p = "../images/icon-note.png";
         return (
-          s && (p = "https://img.alltocon.com/img/static/success-icon.png"),
+          s && (p = "../images/success-icon.png"),
           (0, n.jsxs)(r.default, {
             className: (0, i.default)("alert-modal", t),
             onClose: a,
@@ -6667,7 +6667,7 @@
               className: "icon text-center",
               children: (0, i.jsx)("img", {
                 alt: "icon",
-                src: "https://img.alltocon.com/img/static/promo-center/promo-gift-open-ani.png",
+                src: "../images/promo-center/promo-gift-open-ani.png",
               }),
             }),
             a,

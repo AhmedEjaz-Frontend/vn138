@@ -99,14 +99,13 @@
 #activity-roulette-wrapper.activity-roulette-wrapper.ae888
   .rouletteMain_box_wrap:before {
   animation: none;
-  background-image: url(https://img.alltocon.com/img/static/ae888/wheel/roulette_frame_m.png);
+  background-image: url(../images/roulette_frame_m.png);
   transform: translateY(0) scale(1.01);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ae888
   .rouletteMain_box_wrap:after {
-  background: url(https://img.alltocon.com/img/static/ae888/wheel/roulette_main.jpg)
-    50% / contain no-repeat !important;
+  background: url(../images/roulette_main.jpg) 50% / contain no-repeat !important;
   content: "";
   display: block;
   height: 1400px;
@@ -258,8 +257,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ae888
   .rouletteMain_winner_wrap:before {
-  background: url(https://img.alltocon.com/img/static/ae888/wheel/roulette_winnerList_t_m.png)
-    top/contain no-repeat !important;
+  background: url(../images/roulette_winnerList_t_m.png) top/contain no-repeat !important;
   padding-bottom: 82%;
   pointer-events: none;
   transform: translate(-50%, -150px);
@@ -303,8 +301,7 @@
   .rouletteMain_winner_wrap
   .winnerList.winnerRecord
   .rouletteMain_winner_head_item:nth-of-type(2) {
-  background: url(https://img.alltocon.com/img/static/ae888/wheel/btn-bg.png)
-    50% / contain no-repeat !important;
+  background: url(../images/btn-bg.png) 50% / contain no-repeat !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ae888
@@ -351,19 +348,16 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ae888
   .rouletteMain_box_logo {
-  content: url(https://img.alltocon.com/img/static/ae888/wheel-logo.png) !important;
+  content: url(../images-logo.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ae888 .rouletteRule {
-  background: #0000
-    url(https://img.alltocon.com/img/static/ae888/wheel/bg-btm.png) center 130%/60%
-    auto no-repeat !important;
+  background: #0000 url(../images/bg-btm.png) center 130%/60% auto no-repeat !important;
   z-index: 2;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ae888 .rouletteRule_title {
-  background: url(https://img.alltocon.com/img/static/ae888/wheel/tit-bg.png)
-    50% / contain no-repeat !important;
+  background: url(../images/tit-bg.png) 50% / contain no-repeat !important;
   display: flex;
   height: 204px;
   justify-content: center;
@@ -386,7 +380,7 @@
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.d06prod {
-  --wheel-border: url(https://img.alltocon.com/img/static/d06prod/desktop/roulette/roulette_frame.png);
+  --wheel-border: url(../images/roulette_frame.png);
   --wheel-light: none;
 }
 
@@ -531,7 +525,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.d06prod
   .rouletteMain_box_btn {
-  background-image: url(https://img.alltocon.com/img/static/d06prod/desktop/roulette/roulette_btn.png) !important;
+  background-image: url(../images/roulette_btn.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.d06prod
@@ -553,14 +547,12 @@
 #activity-roulette-wrapper.activity-roulette-wrapper.d06prod
   .rouletteMain_box_numberTimes {
   animation: unset;
-  background: url(https://img.alltocon.com/img/static/d06prod/desktop/roulette/roulette_numberTimes.png)
-    50% / cover no-repeat !important;
+  background: url(../images/roulette_numberTimes.png) 50% / cover no-repeat !important;
   box-shadow: unset;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.d06prod .roulette {
-  background: url(https://img.alltocon.com/img/static/d06prod/desktop/roulette/roulette_bg.png)
-    50% / cover fixed no-repeat;
+  background: url(../images/roulette_bg.png) 50% / cover fixed no-repeat;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.d06prod .rouletteRule {
@@ -570,34 +562,33 @@
 #activity-roulette-wrapper.activity-roulette-wrapper.d06prod
   .rouletteMain_awards_item
   > div {
-  background-image: url(https://img.alltocon.com/img/static/d06prod/desktop/roulette/rouletteMain_awards_item.png);
+  background-image: url(../images/rouletteMain_awards_item.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.d06prod
   .rouletteMain_winner {
-  background-image: url(https://img.alltocon.com/img/static/d06prod/desktop/roulette/rouletteMain_winnerList.png) !important;
+  background-image: url(../images/rouletteMain_winnerList.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.d06prod
   .rouletteMain_winner
   .rouletteMain_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/d06prod/desktop/roulette/rouletteMain_winnerList_t.png) !important;
+  background-image: url(../images/rouletteMain_winnerList_t.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.d06prod
   .rouletteMain_winner_head_cursor {
-  background-image: url(https://img.alltocon.com/img/static/d06prod/desktop/roulette/rouletteMain_winner_btn.png) !important;
+  background-image: url(../images/rouletteMain_winner_btn.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.d06prod
   .rouletteRule_title {
-  background-image: url(https://img.alltocon.com/img/static/d06prod/desktop/roulette/roulette_rule_title.png) !important;
+  background-image: url(../images/roulette_rule_title.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.d06prod
   .rouletteRule_wrap {
-  background: url(https://img.alltocon.com/img/static/d06prod/desktop/roulette/rouletteRule_wrap_bg.png)
-    50%/100% no-repeat;
+  background: url(../images/rouletteRule_wrap_bg.png) 50%/100% no-repeat;
   border-radius: unset;
   box-shadow: unset;
   padding: 40px 45px 20px;
@@ -605,7 +596,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.example {
   --wheel-text-shadow-color: #d49b5d;
-  --wheel-border: url(https://img.alltocon.com/img/static/new88/roulette/roulette_frame.png);
+  --wheel-border: url(../images/roulette_frame.png);
   --wheel-light: none;
 }
 
@@ -677,7 +668,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.example
   .rouletteMain:after {
-  background-image: url(https://img.alltocon.com/img/static/jun88/wheel/roulette_ball.png) !important;
+  background-image: url(../images/roulette_ball.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.example
@@ -687,17 +678,17 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.example
   .rouletteMain_body:after {
-  background-image: url(https://img.alltocon.com/img/static/jun88/wheel/newyear_bg2.png) !important;
+  background-image: url(../images/newyear_bg2.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.example
   .rouletteMain_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/jun88/wheel/roulette_winnerList_t_m_cat.png) !important;
+  background-image: url(../images/roulette_winnerList_t_m_cat.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.example1 {
   --wheel-text-shadow-color: #d49b5d;
-  --wheel-border: url(https://img.alltocon.com/img/static/roulette/roulette_frame.png);
+  --wheel-border: url(../images/roulette_frame.png);
   --wheel-light: none;
 }
 
@@ -779,7 +770,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.example1
   .rouletteMain:after {
-  background-image: url(https://img.alltocon.com/img/static/roulette/golden/roulette_ball.png) !important;
+  background-image: url(../images/golden/roulette_ball.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.example1
@@ -789,17 +780,17 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.example1
   .rouletteMain_body:after {
-  background-image: url(https://img.alltocon.com/img/static/jun88/wheel/roulette_main.jpg) !important;
+  background-image: url(../images/roulette_main.jpg) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.example1
   .rouletteMain_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/jun88/wheel/roulette_winnerList_t_m_cat.png) !important;
+  background-image: url(../images/roulette_winnerList_t_m_cat.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.example2 {
   --wheel-text-shadow-color: #d49b5d;
-  --wheel-border: url(https://img.alltocon.com/img/static/new88/roulette/roulette_frame.png);
+  --wheel-border: url(../images/roulette_frame.png);
   --wheel-light: none;
 }
 
@@ -881,7 +872,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.example2
   .rouletteMain:after {
-  background-image: url(https://img.alltocon.com/img/static/jun88/wheel/roulette_ball.png) !important;
+  background-image: url(../images/roulette_ball.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.example2
@@ -891,17 +882,17 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.example2
   .rouletteMain_body:after {
-  background-image: url(https://img.alltocon.com/img/static/jun88/wheel/newyear_bg2.png) !important;
+  background-image: url(../images/newyear_bg2.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.example2
   .rouletteMain_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/jun88/wheel/roulette_winnerList_t_m_cat.png) !important;
+  background-image: url(../images/roulette_winnerList_t_m_cat.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.r39bet {
   --wheel-text-shadow-color: #4a2e1a;
-  --wheel-light: url(https://img.alltocon.com/img/static/r39bet/wheel/roulette_neonLight.png);
+  --wheel-light: url(../images/roulette_neonLight.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.r39bet
@@ -998,7 +989,7 @@
 #activity-roulette-wrapper.activity-roulette-wrapper.r39bet
   .rouletteMain_box_numberTimes {
   animation: none;
-  background-image: url(https://img.alltocon.com/img/static/r39bet/wheel/roulette_numberTimes.png);
+  background-image: url(../images/roulette_numberTimes.png);
   box-shadow: 0 0 0 #000;
 }
 
@@ -1012,12 +1003,12 @@
 #activity-roulette-wrapper.activity-roulette-wrapper.r39bet
   .rouletteMain_awards_item
   > div {
-  background-image: url(https://img.alltocon.com/img/static/r39bet/wheel/rouletteMain_awards_item.png);
+  background-image: url(../images/rouletteMain_awards_item.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.r39bet
   .rouletteMain_winner_head_cursor {
-  background-image: url(https://img.alltocon.com/img/static/r39bet/wheel/rouletteMain_winner_btn.png);
+  background-image: url(../images/rouletteMain_winner_btn.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.r39bet
@@ -1029,13 +1020,12 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.r39bet
   .rouletteMain_box_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/r39bet/wheel/roulette_frame.webp);
+  background-image: url(../images/roulette_frame.webp);
   transform: translateY(30px) scale(1.3);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.r39bet .roulette {
-  background: url(https://img.alltocon.com/img/static/r39bet/wheel/roulette_main.jpg)
-    top/cover fixed no-repeat !important;
+  background: url(../images/roulette_main.jpg) top/cover fixed no-repeat !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.r39bet .rouletteMain {
@@ -1045,12 +1035,12 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.r39bet
   .rouletteMain:before {
-  background-image: url(https://img.alltocon.com/img/static/r39bet/wheel/roulette_balloon.png) !important;
+  background-image: url(../images/roulette_balloon.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.r39bet
   .rouletteMain:after {
-  background-image: url(https://img.alltocon.com/img/static/r39bet/wheel/roulette_ball.png) !important;
+  background-image: url(../images/roulette_ball.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.r39bet
@@ -1073,7 +1063,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.r39bet
   .rouletteMain_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/r39bet/wheel/rouletteMain_winnerList_t.webp) !important;
+  background-image: url(../images/rouletteMain_winnerList_t.webp) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.r39bet
@@ -1099,7 +1089,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.r39bet
   .rouletteRule_title {
-  background-image: url(https://img.alltocon.com/img/static/r39bet/wheel/roulette_rule_title.png);
+  background-image: url(../images/roulette_rule_title.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.r39bet .rouletteRule_wrap {
@@ -1108,7 +1098,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t38prod {
   --wheel-text-shadow-color: #d49b5d;
-  --wheel-border: url(https://img.alltocon.com/img/static/t38prod/roulette/roulette_frame.png);
+  --wheel-border: url(../images/roulette_frame.png);
   --wheel-light: none;
 }
 
@@ -1221,7 +1211,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t38prod
   .rouletteMain_box_btn {
-  background-image: url(https://img.alltocon.com/img/static/t38prod/roulette/roulette_btn.png) !important;
+  background-image: url(../images/roulette_btn.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t38prod
@@ -1232,8 +1222,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t38prod
   .rouletteMain_box_numberTimes {
-  background: url(https://img.alltocon.com/img/static/t38prod/roulette/roulette_numberTimes.png)
-    50% / cover no-repeat !important;
+  background: url(../images/roulette_numberTimes.png) 50% / cover no-repeat !important;
   border-radius: 14%/18.75%;
   padding-bottom: 12.4%;
   width: 22%;
@@ -1244,9 +1233,7 @@
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t38prod .roulette {
-  background: #101010
-    url(https://img.alltocon.com/img/static/t38prod/roulette/roulette_bg.jpg)
-    top/cover no-repeat fixed !important;
+  background: #101010 url(../images/roulette_bg.jpg) top/cover no-repeat fixed !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t38prod .rouletteRule {
@@ -1255,12 +1242,12 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t38prod
   .rouletteMain_body:after {
-  background-image: url(https://img.alltocon.com/img/static/jun88/wheel/newyear_bg2.png) !important;
+  background-image: url(../images/newyear_bg2.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t38prod
   .rouletteMain_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/t38prod/roulette/roulette_winnerList_t.png) !important;
+  background-image: url(../images/roulette_winnerList_t.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t38prod
@@ -1270,23 +1257,23 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t38prod
   .rouletteMain_winner {
-  background-image: url(https://img.alltocon.com/img/static/t38prod/roulette/rouletteMain_winnerList.png) !important;
+  background-image: url(../images/rouletteMain_winnerList.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t38prod
   .rouletteMain_awards_item
   > div {
-  background-image: url(https://img.alltocon.com/img/static/t38prod/roulette/rouletteMain_awards_item.png) !important;
+  background-image: url(../images/rouletteMain_awards_item.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t38prod
   .rouletteMain_winner_head_cursor {
-  background-image: url(https://img.alltocon.com/img/static/t38prod/roulette/rouletteMain_winner_btn.png.png) !important;
+  background-image: url(../images/rouletteMain_winner_btn.png.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t38prod
   .rouletteRule_title {
-  background-image: url(https://img.alltocon.com/img/static/t38prod/roulette/roulette_rule_title.png.png) !important;
+  background-image: url(../images/roulette_rule_title.png.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t38prod
@@ -1297,7 +1284,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t98prod {
   --wheel-text-shadow-color: #1c1d1d;
-  --wheel-light: url(https://img.alltocon.com/img/static/t98prod/wheel/roulette_neonLight.png);
+  --wheel-light: url(../images/roulette_neonLight.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t98prod
@@ -1394,7 +1381,7 @@
 #activity-roulette-wrapper.activity-roulette-wrapper.t98prod
   .rouletteMain_box_numberTimes {
   animation: none;
-  background-image: url(https://img.alltocon.com/img/static/t98prod/wheel/roulette_number-times.png);
+  background-image: url(../images/roulette_number-times.png);
   box-shadow: 0 0 0 #000;
   filter: drop-shadow(0 0 10px #efd068);
 }
@@ -1407,19 +1394,19 @@
 #activity-roulette-wrapper.activity-roulette-wrapper.t98prod
   .rouletteMain_awards_item
   > div {
-  background-image: url(https://img.alltocon.com/img/static/t98prod/wheel/rouletteMain_awards_item.png);
+  background-image: url(../images/rouletteMain_awards_item.png);
   color: #111;
   text-shadow: 0 0 0 #fff;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t98prod
   .rouletteMain_winner_head_cursor {
-  background-image: url(https://img.alltocon.com/img/static/t98prod/wheel/rouletteMain_winner_btn.png);
+  background-image: url(../images/rouletteMain_winner_btn.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t98prod
   .rouletteMain_winner {
-  background-image: url(https://img.alltocon.com/img/static/t98prod/wheel/rouletteMain_winnerList.png);
+  background-image: url(../images/rouletteMain_winnerList.png);
   z-index: 2;
 }
 
@@ -1430,13 +1417,12 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t98prod
   .rouletteMain_box_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/t98prod/wheel/roulette_frame.webp);
+  background-image: url(../images/roulette_frame.webp);
   transform: scale(1.3);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t98prod .roulette {
-  background: url(https://img.alltocon.com/img/static/t98prod/wheel/roulette_main.jpg)
-    top/cover fixed no-repeat !important;
+  background: url(../images/roulette_main.jpg) top/cover fixed no-repeat !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t98prod .rouletteMain {
@@ -1446,12 +1432,12 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t98prod
   .rouletteMain:before {
-  background-image: url(https://img.alltocon.com/img/static/t98prod/wheel/roulette_balloon.png) !important;
+  background-image: url(../images/roulette_balloon.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t98prod
   .rouletteMain:after {
-  background-image: url(https://img.alltocon.com/img/static/t98prod/wheel/roulette_ball.png) !important;
+  background-image: url(../images/roulette_ball.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t98prod
@@ -1468,7 +1454,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t98prod
   .rouletteMain_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/t98prod/wheel/rouletteMain_winnerList_t.png) !important;
+  background-image: url(../images/rouletteMain_winnerList_t.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t98prod
@@ -1484,7 +1470,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t98prod
   .rouletteRule_title {
-  background-image: url(https://img.alltocon.com/img/static/t98prod/wheel/roulette_rule_title.png);
+  background-image: url(../images/roulette_rule_title.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.t98prod
@@ -1499,7 +1485,7 @@
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta2prod {
-  --wheel-border: url(https://img.alltocon.com/img/static/ta2prod/desktop/roulette/roulette_frame.webp);
+  --wheel-border: url(../images/roulette_frame.webp);
   --wheel-light: none;
 }
 
@@ -1628,7 +1614,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta2prod
   .rouletteMain_box_btn {
-  background-image: url(https://img.alltocon.com/img/static/ta2prod/desktop/roulette/roulette_btn.png) !important;
+  background-image: url(../images/roulette_btn.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta2prod
@@ -1640,8 +1626,7 @@
 #activity-roulette-wrapper.activity-roulette-wrapper.ta2prod
   .rouletteMain_box_numberTimes {
   animation: unset;
-  background: url(https://img.alltocon.com/img/static/ta2prod/desktop/roulette/roulette_numberTimes.png)
-    50% / cover no-repeat !important;
+  background: url(../images/roulette_numberTimes.png) 50% / cover no-repeat !important;
   box-shadow: unset;
 }
 
@@ -1657,18 +1642,17 @@
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta2prod .roulette {
-  background: url(https://img.alltocon.com/img/static/ta2prod/desktop/roulette/roulette_main.jpg)
-    50% / cover fixed no-repeat;
+  background: url(../images/roulette_main.jpg) 50% / cover fixed no-repeat;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta2prod
   .rouletteMain:before {
-  background-image: url(https://img.alltocon.com/img/static/ta2prod/desktop/roulette/roulette_balloon.png);
+  background-image: url(../images/roulette_balloon.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta2prod
   .rouletteMain:after {
-  background-image: url(https://img.alltocon.com/img/static/ta2prod/desktop/roulette/roulette_ball.png);
+  background-image: url(../images/roulette_ball.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta2prod
@@ -1682,13 +1666,13 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta2prod
   .rouletteMain_winner {
-  background-image: url(https://img.alltocon.com/img/static/ta2prod/desktop/roulette/rouletteMain_winnerList.png) !important;
+  background-image: url(../images/rouletteMain_winnerList.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta2prod
   .rouletteMain_winner
   .rouletteMain_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/ta2prod/desktop/roulette/rouletteMain_winnerList_t.png) !important;
+  background-image: url(../images/rouletteMain_winnerList_t.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta2prod
@@ -1712,23 +1696,22 @@
 #activity-roulette-wrapper.activity-roulette-wrapper.ta2prod
   .rouletteMain_awards_item
   > div {
-  background-image: url(https://img.alltocon.com/img/static/ta2prod/desktop/roulette/rouletteMain_awards_item.png) !important;
+  background-image: url(../images/rouletteMain_awards_item.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta2prod
   .rouletteMain_winner_head_cursor {
-  background-image: url(https://img.alltocon.com/img/static/ta2prod/desktop/roulette/rouletteMain_winner_btn.png) !important;
+  background-image: url(../images/rouletteMain_winner_btn.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta2prod
   .rouletteRule_title {
-  background-image: url(https://img.alltocon.com/img/static/ta2prod/desktop/roulette/roulette_rule_title.png) !important;
+  background-image: url(../images/roulette_rule_title.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta2prod
   .rouletteRule_wrap {
-  background: url(https://img.alltocon.com/img/static/ta2prod/desktop/roulette/rouletteRule_wrap_bg.png)
-    50%/100% no-repeat;
+  background: url(../images/rouletteRule_wrap_bg.png) 50%/100% no-repeat;
   border-radius: unset;
   box-shadow: unset;
   padding: 40px 45px 20px;
@@ -1740,7 +1723,7 @@
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta7prod {
-  --wheel-border: url(https://img.alltocon.com/img/static/ta7prod/desktop/roulette/roulette_frame.webp);
+  --wheel-border: url(../images/roulette_frame.webp);
   --wheel-light: none;
 }
 
@@ -1866,7 +1849,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta7prod
   .rouletteMain_box_btn {
-  background-image: url(https://img.alltocon.com/img/static/ta7prod/desktop/roulette/roulette_btn.png) !important;
+  background-image: url(../images/roulette_btn.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta7prod
@@ -1878,8 +1861,7 @@
 #activity-roulette-wrapper.activity-roulette-wrapper.ta7prod
   .rouletteMain_box_numberTimes {
   animation: unset;
-  background: url(https://img.alltocon.com/img/static/ta7prod/desktop/roulette/roulette_numberTimes.png)
-    50% / cover no-repeat !important;
+  background: url(../images/roulette_numberTimes.png) 50% / cover no-repeat !important;
   box-shadow: unset;
 }
 
@@ -1896,8 +1878,7 @@
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta7prod .roulette {
-  background: url(https://img.alltocon.com/img/static/ta7prod/desktop/roulette/roulette_main.jpg)
-    50% / cover fixed no-repeat;
+  background: url(../images/roulette_main.jpg) 50% / cover fixed no-repeat;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta7prod
@@ -1908,7 +1889,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta7prod
   .rouletteMain:before {
-  background-image: url(https://img.alltocon.com/img/static/ta7prod/desktop/roulette/roulette_balloon.png);
+  background-image: url(../images/roulette_balloon.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta7prod
@@ -1924,8 +1905,7 @@
 #activity-roulette-wrapper.activity-roulette-wrapper.ta7prod
   .rouletteMain_box_wrap:after {
   animation: none;
-  background: url(https://img.alltocon.com/img/static/ta7prod/desktop/roulette/roulette_frame_pin.webp)
-    top/100% auto no-repeat;
+  background: url(../images/roulette_frame_pin.webp) top/100% auto no-repeat;
   transform: translateY(-20px);
 }
 
@@ -1935,13 +1915,13 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta7prod
   .rouletteMain_winner {
-  background-image: url(https://img.alltocon.com/img/static/ta7prod/desktop/roulette/rouletteMain_winnerList.png) !important;
+  background-image: url(../images/rouletteMain_winnerList.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta7prod
   .rouletteMain_winner
   .rouletteMain_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/ta7prod/desktop/roulette/rouletteMain_winnerList_t.png) !important;
+  background-image: url(../images/rouletteMain_winnerList_t.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta7prod
@@ -1965,17 +1945,17 @@
 #activity-roulette-wrapper.activity-roulette-wrapper.ta7prod
   .rouletteMain_awards_item
   > div {
-  background-image: url(https://img.alltocon.com/img/static/ta7prod/desktop/roulette/rouletteMain_awards_item.png) !important;
+  background-image: url(../images/rouletteMain_awards_item.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta7prod
   .rouletteMain_winner_head_cursor {
-  background-image: url(https://img.alltocon.com/img/static/ta7prod/desktop/roulette/rouletteMain_winner_btn.png) !important;
+  background-image: url(../images/rouletteMain_winner_btn.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta7prod
   .rouletteRule_title {
-  background-image: url(https://img.alltocon.com/img/static/ta7prod/desktop/roulette/roulette_rule_title.png) !important;
+  background-image: url(../images/roulette_rule_title.png) !important;
   color: #000;
   text-shadow: 0 0 0 #000;
 }
@@ -1990,7 +1970,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta8prod {
   --wheel-text-shadow-color: #1e04a6;
-  --wheel-light: url(https://img.alltocon.com/img/static/ta8prod/wheel/roulette_neonLight.png);
+  --wheel-light: url(../images/roulette_neonLight.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta8prod
@@ -2086,34 +2066,33 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta8prod
   .rouletteMain_box_numberTimes {
-  background-image: url(https://img.alltocon.com/img/static/ta8prod/wheel/roulette_numberTimes.png);
+  background-image: url(../images/roulette_numberTimes.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta8prod
   .rouletteMain_awards_item
   > div {
-  background-image: url(https://img.alltocon.com/img/static/ta8prod/wheel/rouletteMain_awards_item.png);
+  background-image: url(../images/rouletteMain_awards_item.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta8prod
   .rouletteMain_winner_head_cursor {
-  background-image: url(https://img.alltocon.com/img/static/ta8prod/wheel/rouletteMain_winner_btn.png);
+  background-image: url(../images/rouletteMain_winner_btn.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta8prod
   .rouletteMain_winner {
-  background-image: url(https://img.alltocon.com/img/static/ta8prod/wheel/rouletteMain_winnerList.png);
+  background-image: url(../images/rouletteMain_winnerList.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta8prod
   .rouletteMain_box_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/ta8prod/wheel/roulette_frame.webp);
+  background-image: url(../images/roulette_frame.webp);
   transform: translateY(-3%);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta8prod .roulette {
-  background: url(https://img.alltocon.com/img/static/ta8prod/wheel/roulette_main.jpg)
-    top/cover fixed no-repeat !important;
+  background: url(../images/roulette_main.jpg) top/cover fixed no-repeat !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta8prod .rouletteMain {
@@ -2123,12 +2102,12 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta8prod
   .rouletteMain:before {
-  background-image: url(https://img.alltocon.com/img/static/ta8prod/wheel/roulette_balloon.png) !important;
+  background-image: url(../images/roulette_balloon.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta8prod
   .rouletteMain:after {
-  background-image: url(https://img.alltocon.com/img/static/ta8prod/wheel/roulette_ball.png) !important;
+  background-image: url(../images/roulette_ball.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta8prod
@@ -2145,12 +2124,12 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta8prod
   .rouletteMain_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/ta8prod/wheel/rouletteMain_winnerList_t.webp) !important;
+  background-image: url(../images/rouletteMain_winnerList_t.webp) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta8prod
   .rouletteMain_box_btn {
-  background-image: url(https://img.alltocon.com/img/static/ta8prod/wheel/roulette_btn.png) !important;
+  background-image: url(../images/roulette_btn.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta8prod
@@ -2164,7 +2143,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta8prod
   .rouletteRule_title {
-  background-image: url(https://img.alltocon.com/img/static/ta8prod/wheel/roulette_rule_title.png);
+  background-image: url(../images/roulette_rule_title.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.ta8prod
@@ -2178,7 +2157,7 @@
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tb9prod {
-  --wheel-border: url(https://img.alltocon.com/img/static/tb9prod/desktop/roulette/roulette_frame.webp);
+  --wheel-border: url(../images/roulette_frame.webp);
   --wheel-light: none;
 }
 
@@ -2307,7 +2286,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tb9prod
   .rouletteMain_box_btn {
-  background-image: url(https://img.alltocon.com/img/static/tb9prod/desktop/roulette/roulette_btn.png) !important;
+  background-image: url(../images/roulette_btn.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tb9prod
@@ -2319,8 +2298,7 @@
 #activity-roulette-wrapper.activity-roulette-wrapper.tb9prod
   .rouletteMain_box_numberTimes {
   animation: unset;
-  background: url(https://img.alltocon.com/img/static/tb9prod/desktop/roulette/roulette_numberTimes.png)
-    50% / cover no-repeat !important;
+  background: url(../images/roulette_numberTimes.png) 50% / cover no-repeat !important;
   box-shadow: unset;
 }
 
@@ -2336,18 +2314,17 @@
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tb9prod .roulette {
-  background: url(https://img.alltocon.com/img/static/tb9prod/desktop/roulette/roulette_main.jpg)
-    50% / cover fixed no-repeat;
+  background: url(../images/roulette_main.jpg) 50% / cover fixed no-repeat;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tb9prod
   .rouletteMain:before {
-  background-image: url(https://img.alltocon.com/img/static/tb9prod/desktop/roulette/roulette_balloon.png);
+  background-image: url(../images/roulette_balloon.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tb9prod
   .rouletteMain:after {
-  background-image: url(https://img.alltocon.com/img/static/tb9prod/desktop/roulette/roulette_ball.png);
+  background-image: url(../images/roulette_ball.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tb9prod
@@ -2367,13 +2344,13 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tb9prod
   .rouletteMain_winner {
-  background-image: url(https://img.alltocon.com/img/static/tb9prod/desktop/roulette/rouletteMain_winnerList.png) !important;
+  background-image: url(../images/rouletteMain_winnerList.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tb9prod
   .rouletteMain_winner
   .rouletteMain_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/tb9prod/desktop/roulette/rouletteMain_winnerList_t.png) !important;
+  background-image: url(../images/rouletteMain_winnerList_t.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tb9prod
@@ -2397,23 +2374,22 @@
 #activity-roulette-wrapper.activity-roulette-wrapper.tb9prod
   .rouletteMain_awards_item
   > div {
-  background-image: url(https://img.alltocon.com/img/static/tb9prod/desktop/roulette/rouletteMain_awards_item.png) !important;
+  background-image: url(../images/rouletteMain_awards_item.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tb9prod
   .rouletteMain_winner_head_cursor {
-  background-image: url(https://img.alltocon.com/img/static/tb9prod/desktop/roulette/rouletteMain_winner_btn.png) !important;
+  background-image: url(../images/rouletteMain_winner_btn.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tb9prod
   .rouletteRule_title {
-  background-image: url(https://img.alltocon.com/img/static/tb9prod/desktop/roulette/roulette_rule_title.png) !important;
+  background-image: url(../images/roulette_rule_title.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tb9prod
   .rouletteRule_wrap {
-  background: url(https://img.alltocon.com/img/static/tb9prod/desktop/roulette/rouletteRule_wrap_bg.png)
-    50%/100% no-repeat;
+  background: url(../images/rouletteRule_wrap_bg.png) 50%/100% no-repeat;
   border-radius: unset;
   box-shadow: unset;
   padding: 40px 45px 20px;
@@ -2425,7 +2401,7 @@
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tc7prod {
-  --wheel-border: url(https://img.alltocon.com/img/static/tc7prod/desktop/roulette/roulette_frame.png);
+  --wheel-border: url(../images/roulette_frame.png);
   --wheel-light: none;
 }
 
@@ -2554,7 +2530,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tc7prod
   .rouletteMain_box_btn {
-  background-image: url(https://img.alltocon.com/img/static/tc7prod/desktop/roulette/roulette_btn.png) !important;
+  background-image: url(../images/roulette_btn.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tc7prod
@@ -2566,8 +2542,7 @@
 #activity-roulette-wrapper.activity-roulette-wrapper.tc7prod
   .rouletteMain_box_numberTimes {
   animation: unset;
-  background: url(https://img.alltocon.com/img/static/tc7prod/desktop/roulette/roulette_numberTimes.png)
-    50% / cover no-repeat !important;
+  background: url(../images/roulette_numberTimes.png) 50% / cover no-repeat !important;
   box-shadow: unset;
 }
 
@@ -2583,18 +2558,17 @@
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tc7prod .roulette {
-  background: url(https://img.alltocon.com/img/static/tc7prod/desktop/roulette/roulette_main.jpg)
-    50% / cover fixed no-repeat;
+  background: url(../images/roulette_main.jpg) 50% / cover fixed no-repeat;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tc7prod
   .rouletteMain:before {
-  background-image: url(https://img.alltocon.com/img/static/tc7prod/desktop/roulette/roulette_balloon.png);
+  background-image: url(../images/roulette_balloon.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tc7prod
   .rouletteMain:after {
-  background-image: url(https://img.alltocon.com/img/static/tc7prod/desktop/roulette/roulette_ball.png);
+  background-image: url(../images/roulette_ball.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tc7prod
@@ -2608,13 +2582,13 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tc7prod
   .rouletteMain_winner {
-  background-image: url(https://img.alltocon.com/img/static/tc7prod/desktop/roulette/rouletteMain_winnerList.png) !important;
+  background-image: url(../images/rouletteMain_winnerList.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tc7prod
   .rouletteMain_winner
   .rouletteMain_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/tc7prod/desktop/roulette/rouletteMain_winnerList_t.png) !important;
+  background-image: url(../images/rouletteMain_winnerList_t.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tc7prod
@@ -2638,23 +2612,22 @@
 #activity-roulette-wrapper.activity-roulette-wrapper.tc7prod
   .rouletteMain_awards_item
   > div {
-  background-image: url(https://img.alltocon.com/img/static/tc7prod/desktop/roulette/rouletteMain_awards_item.png) !important;
+  background-image: url(../images/rouletteMain_awards_item.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tc7prod
   .rouletteMain_winner_head_cursor {
-  background-image: url(https://img.alltocon.com/img/static/tc7prod/desktop/roulette/rouletteMain_winner_btn.png) !important;
+  background-image: url(../images/rouletteMain_winner_btn.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tc7prod
   .rouletteRule_title {
-  background-image: url(https://img.alltocon.com/img/static/tc7prod/desktop/roulette/roulette_rule_title.png) !important;
+  background-image: url(../images/roulette_rule_title.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.tc7prod
   .rouletteRule_wrap {
-  background: url(https://img.alltocon.com/img/static/tc7prod/desktop/roulette/rouletteRule_wrap_bg.png)
-    50%/100% no-repeat;
+  background: url(../images/rouletteRule_wrap_bg.png) 50%/100% no-repeat;
   border-radius: unset;
   box-shadow: unset;
   padding: 40px 45px 20px;
@@ -2662,7 +2635,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.u30prod {
   --wheel-text-shadow-color: #d49b5d;
-  --wheel-border: url(https://img.alltocon.com/img/static/u30prod/roulette/roulette_frame.webp);
+  --wheel-border: url(../images/roulette_frame.webp);
   --wheel-light: none;
 }
 
@@ -2776,35 +2749,34 @@
 #activity-roulette-wrapper.activity-roulette-wrapper.u30prod
   .rouletteMain_box_numberTimes {
   animation: none;
-  background-image: url(https://img.alltocon.com/img/static/u30prod/roulette/roulette_numberTimes.png);
+  background-image: url(../images/roulette_numberTimes.png);
   box-shadow: 0 0 0 #000;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.u30prod
   .rouletteMain_awards_item
   > div {
-  background-image: url(https://img.alltocon.com/img/static/u30prod/roulette/roulette_awards_item.png);
+  background-image: url(../images/roulette_awards_item.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.u30prod
   .rouletteMain_winner_head_cursor {
-  background-image: url(https://img.alltocon.com/img/static/u30prod/roulette/rouletteMain_winner_btn.png);
+  background-image: url(../images/rouletteMain_winner_btn.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.u30prod
   .rouletteMain_winner {
-  background-image: url(https://img.alltocon.com/img/static/u30prod/roulette/rouletteMain_winnerList.png);
+  background-image: url(../images/rouletteMain_winnerList.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.u30prod
   .rouletteMain_box_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/u30prod/roulette/roulette_frame.webp);
+  background-image: url(../images/roulette_frame.webp);
   transform: scale(1.2);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.u30prod .roulette {
-  background: url(https://img.alltocon.com/img/static/u30prod/roulette/roulette_bg.jpg)
-    top/cover fixed no-repeat !important;
+  background: url(../images/roulette_bg.jpg) top/cover fixed no-repeat !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.u30prod .rouletteMain {
@@ -2826,12 +2798,12 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.u30prod
   .rouletteMain_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/u30prod/roulette/rouletteMain_winnerList_t.webp) !important;
+  background-image: url(../images/rouletteMain_winnerList_t.webp) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.u30prod
   .rouletteMain_box_btn {
-  background-image: url(https://img.alltocon.com/img/static/u30prod/roulette/roulette_btn.png) !important;
+  background-image: url(../images/roulette_btn.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.u30prod
@@ -2845,7 +2817,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.u30prod
   .rouletteRule_title {
-  background-image: url(https://img.alltocon.com/img/static/u30prod/roulette/roulette_rule_title.png);
+  background-image: url(../images/roulette_rule_title.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.u30prod
@@ -2920,13 +2892,12 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.vh7prod {
   --wheel-text-shadow-color: #c3330d;
-  --wheel-border: url(https://img.alltocon.com/img/static/vh7prod/roulette/roulette_frame.png);
+  --wheel-border: url(../images/roulette_frame.png);
   --wheel-light: none;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.vh7prod > .roulette {
-  background: url(https://img.alltocon.com/img/static/vh7prod/roulette/bg.png)
-    50% / cover fixed no-repeat !important;
+  background: url(../images/bg.png) 50% / cover fixed no-repeat !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.vh7prod
@@ -2953,12 +2924,12 @@
   .rouletteMain:before {
   animation-direction: alternate;
   animation-timing-function: linear;
-  background-image: url(https://img.alltocon.com/img/static/roulette/golden/roulette_balloon.png);
+  background-image: url(../images/golden/roulette_balloon.png);
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.vh7prod
   .rouletteMain:after {
-  background-image: url(https://img.alltocon.com/img/static/roulette/golden/roulette_ball.png) !important;
+  background-image: url(../images/golden/roulette_ball.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.vh7prod .rouletteRule {
@@ -2973,7 +2944,7 @@
 #activity-roulette-wrapper.activity-roulette-wrapper.vh7prod
   .rouletteMain_winner
   .rouletteMain_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/vh7prod/roulette/roulette_winnerList_t_m.png) !important;
+  background-image: url(../images/roulette_winnerList_t_m.png) !important;
 }
 
 @font-face {
@@ -2982,7 +2953,7 @@
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.x07prod {
-  --wheel-border: url(https://img.alltocon.com/img/static/x07prod/desktop/roulette/roulette_frame.png);
+  --wheel-border: url(../images/roulette_frame.png);
   --wheel-light: none;
 }
 
@@ -3113,7 +3084,7 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.x07prod
   .rouletteMain_box_btn {
-  background-image: url(https://img.alltocon.com/img/static/x07prod/desktop/roulette/roulette_btn.png) !important;
+  background-image: url(../images/roulette_btn.png) !important;
   bottom: 11.5%;
   height: 16%;
   width: 16%;
@@ -3128,8 +3099,7 @@
 #activity-roulette-wrapper.activity-roulette-wrapper.x07prod
   .rouletteMain_box_numberTimes {
   animation: unset;
-  background: url(https://img.alltocon.com/img/static/x07prod/desktop/roulette/roulette_numberTimes.png)
-    50% / cover no-repeat !important;
+  background: url(../images/roulette_numberTimes.png) 50% / cover no-repeat !important;
   box-shadow: unset;
 }
 
@@ -3140,8 +3110,7 @@
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.x07prod .roulette {
-  background: url(https://img.alltocon.com/img/static/x07prod/desktop/roulette/roulette_bg.jpg)
-    50% / cover fixed no-repeat;
+  background: url(../images/roulette_bg.jpg) 50% / cover fixed no-repeat;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.x07prod
@@ -3160,14 +3129,13 @@
 
 #activity-roulette-wrapper.activity-roulette-wrapper.x07prod
   .rouletteMain_winner {
-  background: url(https://img.alltocon.com/img/static/x07prod/desktop/roulette/rouletteMain_winnerList.png) -10px/105%
-    102% no-repeat !important;
+  background: url(../images/rouletteMain_winnerList.png) -10px/105% 102% no-repeat !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.x07prod
   .rouletteMain_winner
   .rouletteMain_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/x07prod/desktop/roulette/rouletteMain_winnerList_t.png) !important;
+  background-image: url(../images/rouletteMain_winnerList_t.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.x07prod
@@ -3191,23 +3159,22 @@
 #activity-roulette-wrapper.activity-roulette-wrapper.x07prod
   .rouletteMain_awards_item
   > div {
-  background-image: url(https://img.alltocon.com/img/static/x07prod/desktop/roulette/rouletteMain_awards_item.png) !important;
+  background-image: url(../images/rouletteMain_awards_item.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.x07prod
   .rouletteMain_winner_head_cursor {
-  background-image: url(https://img.alltocon.com/img/static/x07prod/desktop/roulette/rouletteMain_winner_btn.png) !important;
+  background-image: url(../images/rouletteMain_winner_btn.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.x07prod
   .rouletteRule_title {
-  background-image: url(https://img.alltocon.com/img/static/x07prod/desktop/roulette/roulette_rule_title.png) !important;
+  background-image: url(../images/roulette_rule_title.png) !important;
 }
 
 #activity-roulette-wrapper.activity-roulette-wrapper.x07prod
   .rouletteRule_wrap {
-  background: url(https://img.alltocon.com/img/static/x07prod/desktop/roulette/rouletteRule_wrap_bg.png)
-    50%/100% no-repeat;
+  background: url(../images/rouletteRule_wrap_bg.png) 50%/100% no-repeat;
   border-radius: unset;
   box-shadow: unset;
   padding: 40px 45px 20px;
@@ -3300,9 +3267,7 @@
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ae888 .roulette,
 #reg-roulette-modal.reg-roulette-modal.ae888 .roulette {
-  background: #990f0f
-    url(https://img.alltocon.com/img/static/ae888/wheel/roulette_main_m.png)
-    center -25vw/100% auto no-repeat !important;
+  background: #990f0f url(../images/roulette_main_m.png) center -25vw/100% auto no-repeat !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ae888 .roulette_main,
@@ -3314,8 +3279,7 @@
   .roulette_main_wrap:after,
 #reg-roulette-modal.reg-roulette-modal.ae888 .roulette_main_wrap:after {
   animation: none;
-  background: url(https://img.alltocon.com/img/static/ae888/wheel/roulette_frame_m.png)
-    50% / contain no-repeat !important;
+  background: url(../images/roulette_frame_m.png) 50% / contain no-repeat !important;
   transform: translateY(0) scale(1.01);
 }
 
@@ -3553,8 +3517,7 @@
   .roulette_winner_wrap
   .roulette_winner_head.winnerRecord
   .roulette_winner_headItem:nth-of-type(2) {
-  background: url(https://img.alltocon.com/img/static/ae888/wheel/btn-bg.png)
-    50% / contain no-repeat !important;
+  background: url(../images/btn-bg.png) 50% / contain no-repeat !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ae888
@@ -3639,8 +3602,7 @@
 #reg-roulette-modal.reg-roulette-modal.ae888
   .roulette_winner
   .roulette_winner_wrap:before {
-  background: url(https://img.alltocon.com/img/static/ae888/wheel/roulette_winnerList_t_m.png)
-    top/contain no-repeat !important;
+  background: url(../images/roulette_winnerList_t_m.png) top/contain no-repeat !important;
   padding-bottom: 80vw;
   transform: translate(-50%, -40vw);
   width: 80%;
@@ -3670,8 +3632,7 @@
 #reg-roulette-modal.reg-roulette-modal.ae888
   .roulette_rule
   .roulette_rule_title {
-  background: url(https://img.alltocon.com/img/static/ae888/wheel/tit-bg.png)
-    50% / contain no-repeat !important;
+  background: url(../images/tit-bg.png) 50% / contain no-repeat !important;
   display: flex;
   height: 30vw;
   justify-content: center;
@@ -3686,8 +3647,7 @@
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ae888 .roulette_minor,
 #reg-roulette-modal.reg-roulette-modal.ae888 .roulette_minor {
-  background: url(https://img.alltocon.com/img/static/ae888/wheel/bg-btm.png)
-    bottom/100% auto no-repeat !important;
+  background: url(../images/bg-btm.png) bottom/100% auto no-repeat !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ae888
@@ -3699,7 +3659,7 @@
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ae888
   .roulette_main_logo,
 #reg-roulette-modal.reg-roulette-modal.ae888 .roulette_main_logo {
-  content: url(https://img.alltocon.com/img/static/ae888/wheel-logo.png) !important;
+  content: url(../images-logo.png) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ae888 .roulette_nav,
@@ -3722,14 +3682,11 @@
   .roulette_nav
   .roulette_nav_wrap
   .roulette_nav_item {
-  background: url(https://img.alltocon.com/img/static/ae888/wheel/btn-bg.png)
-    50% / contain no-repeat !important;
+  background: url(../images/btn-bg.png) 50% / contain no-repeat !important;
 }
 
 #reg-roulette-modal.reg-roulette-modal.ae888 .portal-modal .modal-content {
-  background: #990f0f
-    url(https://img.alltocon.com/img/static/ae888/wheel/roulette_main_m.png)
-    top/100% auto no-repeat !important;
+  background: #990f0f url(../images/roulette_main_m.png) top/100% auto no-repeat !important;
 }
 
 #reg-roulette-modal.reg-roulette-modal.ae888 .roulette,
@@ -3742,7 +3699,7 @@
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.d06prod,
 #reg-roulette-modal.reg-roulette-modal.d06prod {
-  --wheel-border: url(https://img.alltocon.com/img/static/d06prod/mobile/roulette/roulette_frame_m.png);
+  --wheel-border: url(../images/roulette_frame_m.png);
   --wheel-light: none;
 }
 
@@ -3826,7 +3783,7 @@
   .roulette
   .roulette_main,
 #reg-roulette-modal.reg-roulette-modal.d06prod .roulette .roulette_main {
-  background-image: url(https://img.alltocon.com/img/static/d06prod/desktop/roulette/roulette_bg.png);
+  background-image: url(../images/roulette_bg.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.d06prod
@@ -3997,8 +3954,7 @@
   .roulette
   .roulette_main
   .roulette_main_numberTimes {
-  background: url(https://img.alltocon.com/img/static/d06prod/mobile/roulette/roulette_numberTimes_m.png)
-    50% / cover no-repeat !important;
+  background: url(../images/roulette_numberTimes_m.png) 50% / cover no-repeat !important;
   box-shadow: unset;
 }
 
@@ -4023,7 +3979,7 @@
   .roulette_main
   .roulette_main_wrap
   .roulette_main_btn {
-  background-image: url(https://img.alltocon.com/img/static/d06prod/mobile/roulette/roulette_btn_m.png) !important;
+  background-image: url(../images/roulette_btn_m.png) !important;
   bottom: -30px;
 }
 
@@ -4050,7 +4006,7 @@
 #activity-roulette-wrapper-m.activity-roulette-wrapper.d06prod
   .roulette_winner_wrap:before,
 #reg-roulette-modal.reg-roulette-modal.d06prod .roulette_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/d06prod/mobile/roulette/roulette_winnerList_t_m.png) !important;
+  background-image: url(../images/roulette_winnerList_t_m.png) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.d06prod
@@ -4061,14 +4017,14 @@
   .roulette_awards
   .roulette_awards_item
   > div {
-  background-image: url(https://img.alltocon.com/img/static/d06prod/mobile/roulette/roulette_awards_item_m.png);
+  background-image: url(../images/roulette_awards_item_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.d06prod
   .roulette
   .roulette_winner,
 #reg-roulette-modal.reg-roulette-modal.d06prod .roulette .roulette_winner {
-  background-image: url(https://img.alltocon.com/img/static/d06prod/mobile/roulette/roulette_winnerList_m.png);
+  background-image: url(../images/roulette_winnerList_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.d06prod
@@ -4081,9 +4037,9 @@
   .roulette_winner
   .roulette_winner_head
   .roulette_winner_headCursor {
-  background-image: url(https://img.alltocon.com/img/static/d06prod/mobile/roulette/roulette_winner_btn_lm.png),
-    url(https://img.alltocon.com/img/static/d06prod/mobile/roulette/roulette_winner_btn_cm.png),
-    url(https://img.alltocon.com/img/static/d06prod/mobile/roulette/roulette_winner_btn_rm.png);
+  background-image: url(../images/roulette_winner_btn_lm.png),
+    url(../images/roulette_winner_btn_cm.png),
+    url(../images/roulette_winner_btn_rm.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.d06prod .roulette_rule,
@@ -4098,7 +4054,7 @@
 #reg-roulette-modal.reg-roulette-modal.d06prod
   .roulette_rule
   .roulette_rule_title {
-  background-image: url(https://img.alltocon.com/img/static/d06prod/mobile/roulette/roulette_rule_title_m.png);
+  background-image: url(../images/roulette_rule_title_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.example
@@ -4128,8 +4084,8 @@
 #activity-roulette-wrapper-m.activity-roulette-wrapper.example,
 #reg-roulette-modal.reg-roulette-modal.example {
   --wheel-text-shadow-color: #d49b5d;
-  --wheel-border: url(https://img.alltocon.com/img/static/jun88/wheel/newyear_bg_m.png);
-  --wheel-light: url(https://img.alltocon.com/img/static/new88/roulette/roulette_frame_m.png);
+  --wheel-border: url(../images/newyear_bg_m.png);
+  --wheel-light: url(../images/roulette_frame_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.example
@@ -4206,7 +4162,7 @@
 #activity-roulette-wrapper-m.activity-roulette-wrapper.example
   .roulette_main:after,
 #reg-roulette-modal.reg-roulette-modal.example .roulette_main:after {
-  background-image: url(https://img.alltocon.com/img/static/jun88/wheel/roulette_ball_m.png) !important;
+  background-image: url(../images/roulette_ball_m.png) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.example
@@ -4250,7 +4206,7 @@
 #reg-roulette-modal.reg-roulette-modal.example
   .roulette_main
   .roulette_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/jun88/wheel/roulette_winnerList_t_m_cat.png) !important;
+  background-image: url(../images/roulette_winnerList_t_m_cat.png) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.example
@@ -4306,7 +4262,7 @@
 #reg-roulette-modal.reg-roulette-modal.example
   .roulette_main
   .roulette_main_coinWrap:first-of-type:after {
-  background-image: url(https://img.alltocon.com/img/static/roulette/CNY2023/roulette_coin_1_m.png);
+  background-image: url(../images/CNY2023/roulette_coin_1_m.png);
   left: 83.3%;
   padding-bottom: 12.5333333333%;
   top: 49.6%;
@@ -4329,7 +4285,7 @@
 #reg-roulette-modal.reg-roulette-modal.example
   .roulette_main
   .roulette_main_coinWrap:nth-of-type(2):after {
-  background-image: url(https://img.alltocon.com/img/static/roulette/CNY2023/roulette_coin_2_m.png);
+  background-image: url(../images/CNY2023/roulette_coin_2_m.png);
   left: 4.5%;
   padding-bottom: 6.9333333333%;
   top: 30.5%;
@@ -4352,7 +4308,7 @@
 #reg-roulette-modal.reg-roulette-modal.example
   .roulette_main
   .roulette_main_coinWrap:nth-of-type(3):after {
-  background-image: url(https://img.alltocon.com/img/static/roulette/CNY2023/roulette_coin_3_m.png);
+  background-image: url(../images/CNY2023/roulette_coin_3_m.png);
   left: 77.5%;
   padding-bottom: 17.7333333333%;
   top: 22%;
@@ -4375,7 +4331,7 @@
 #reg-roulette-modal.reg-roulette-modal.example
   .roulette_main
   .roulette_main_coinWrap:nth-of-type(4):after {
-  background-image: url(https://img.alltocon.com/img/static/roulette/CNY2023/roulette_coin_4_m.png);
+  background-image: url(../images/CNY2023/roulette_coin_4_m.png);
   left: 75.5%;
   padding-bottom: 18.1333333333%;
   top: 72.5%;
@@ -4398,7 +4354,7 @@
 #reg-roulette-modal.reg-roulette-modal.example
   .roulette_main
   .roulette_main_coinWrap:nth-of-type(5):after {
-  background-image: url(https://img.alltocon.com/img/static/roulette/CNY2023/roulette_coin_5_m.png);
+  background-image: url(../images/CNY2023/roulette_coin_5_m.png);
   left: 0;
   padding-bottom: 31.4666666667%;
   top: 72.5%;
@@ -4421,7 +4377,7 @@
 #reg-roulette-modal.reg-roulette-modal.example
   .roulette_main
   .roulette_main_coinWrap:nth-of-type(6):after {
-  background-image: url(https://img.alltocon.com/img/static/roulette/CNY2023/roulette_coin_6_m.png);
+  background-image: url(../images/CNY2023/roulette_coin_6_m.png);
   left: 20%;
   padding-bottom: 9.3333333333%;
   top: 5%;
@@ -4455,8 +4411,8 @@
 #activity-roulette-wrapper-m.activity-roulette-wrapper.example1,
 #reg-roulette-modal.reg-roulette-modal.example1 {
   --wheel-text-shadow-color: #d49b5d;
-  --wheel-border: url(https://img.alltocon.com/img/static/jun88/wheel/newyear_bg_m.png);
-  --wheel-light: url(https://img.alltocon.com/img/static/new88/roulette/roulette_frame_m.png);
+  --wheel-border: url(../images/newyear_bg_m.png);
+  --wheel-light: url(../images/roulette_frame_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.example1
@@ -4542,7 +4498,7 @@
 #activity-roulette-wrapper-m.activity-roulette-wrapper.example1
   .roulette_main:after,
 #reg-roulette-modal.reg-roulette-modal.example1 .roulette_main:after {
-  background-image: url(https://img.alltocon.com/img/static/jun88/wheel/roulette_ball_m.png) !important;
+  background-image: url(../images/roulette_ball_m.png) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.example1
@@ -4586,7 +4542,7 @@
 #reg-roulette-modal.reg-roulette-modal.example1
   .roulette_main
   .roulette_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/jun88/wheel/roulette_winnerList_t_m_cat.png) !important;
+  background-image: url(../images/roulette_winnerList_t_m_cat.png) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.example1
@@ -4644,7 +4600,7 @@
 #reg-roulette-modal.reg-roulette-modal.example1
   .roulette_main
   .roulette_main_coinWrap:first-of-type:after {
-  background-image: url(https://img.alltocon.com/img/static/roulette/CNY2023/roulette_coin_1_m.png);
+  background-image: url(../images/CNY2023/roulette_coin_1_m.png);
   left: 83.3%;
   padding-bottom: 12.5333333333%;
   top: 49.6%;
@@ -4667,7 +4623,7 @@
 #reg-roulette-modal.reg-roulette-modal.example1
   .roulette_main
   .roulette_main_coinWrap:nth-of-type(2):after {
-  background-image: url(https://img.alltocon.com/img/static/roulette/CNY2023/roulette_coin_2_m.png);
+  background-image: url(../images/CNY2023/roulette_coin_2_m.png);
   left: 4.5%;
   padding-bottom: 6.9333333333%;
   top: 30.5%;
@@ -4690,7 +4646,7 @@
 #reg-roulette-modal.reg-roulette-modal.example1
   .roulette_main
   .roulette_main_coinWrap:nth-of-type(3):after {
-  background-image: url(https://img.alltocon.com/img/static/roulette/CNY2023/roulette_coin_3_m.png);
+  background-image: url(../images/CNY2023/roulette_coin_3_m.png);
   left: 77.5%;
   padding-bottom: 17.7333333333%;
   top: 22%;
@@ -4713,7 +4669,7 @@
 #reg-roulette-modal.reg-roulette-modal.example1
   .roulette_main
   .roulette_main_coinWrap:nth-of-type(4):after {
-  background-image: url(https://img.alltocon.com/img/static/roulette/CNY2023/roulette_coin_4_m.png);
+  background-image: url(../images/CNY2023/roulette_coin_4_m.png);
   left: 75.5%;
   padding-bottom: 18.1333333333%;
   top: 72.5%;
@@ -4736,7 +4692,7 @@
 #reg-roulette-modal.reg-roulette-modal.example1
   .roulette_main
   .roulette_main_coinWrap:nth-of-type(5):after {
-  background-image: url(https://img.alltocon.com/img/static/roulette/CNY2023/roulette_coin_5_m.png);
+  background-image: url(../images/CNY2023/roulette_coin_5_m.png);
   left: 0;
   padding-bottom: 31.4666666667%;
   top: 72.5%;
@@ -4759,7 +4715,7 @@
 #reg-roulette-modal.reg-roulette-modal.example1
   .roulette_main
   .roulette_main_coinWrap:nth-of-type(6):after {
-  background-image: url(https://img.alltocon.com/img/static/roulette/CNY2023/roulette_coin_6_m.png);
+  background-image: url(../images/CNY2023/roulette_coin_6_m.png);
   left: 20%;
   padding-bottom: 9.3333333333%;
   top: 5%;
@@ -4793,8 +4749,8 @@
 #activity-roulette-wrapper-m.activity-roulette-wrapper.example2,
 #reg-roulette-modal.reg-roulette-modal.example2 {
   --wheel-text-shadow-color: #d49b5d;
-  --wheel-border: url(https://img.alltocon.com/img/static/jun88/wheel/newyear_bg_m.png);
-  --wheel-light: url(https://img.alltocon.com/img/static/roulette/xmas/roulette_frame_m.png);
+  --wheel-border: url(../images/newyear_bg_m.png);
+  --wheel-light: url(../images/xmas/roulette_frame_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.example2
@@ -4886,13 +4842,13 @@
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.example2 .roulette_main,
 #reg-roulette-modal.reg-roulette-modal.example2 .roulette_main {
-  background-image: url(https://img.alltocon.com/img/static/roulette/fifa/roulette_main_m.jpg) !important;
+  background-image: url(../images/fifa/roulette_main_m.jpg) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.example2
   .roulette_main:after,
 #reg-roulette-modal.reg-roulette-modal.example2 .roulette_main:after {
-  background-image: url(https://img.alltocon.com/img/static/roulette/fifa/roulette_ball_m.png) !important;
+  background-image: url(../images/fifa/roulette_ball_m.png) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.example2
@@ -4910,7 +4866,7 @@
 #reg-roulette-modal.reg-roulette-modal.example2
   .roulette_main
   .roulette_main_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/roulette/golden/roulettePopup_box.png) !important;
+  background-image: url(../images/golden/roulettePopup_box.png) !important;
   bottom: -12.5%;
   left: -7.8666666667%;
   padding-bottom: 48%;
@@ -4937,7 +4893,7 @@
 #reg-roulette-modal.reg-roulette-modal.example2
   .roulette_main
   .roulette_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/jun88/wheel/roulette_winnerList_t_m_cat.png) !important;
+  background-image: url(../images/roulette_winnerList_t_m_cat.png) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.example2
@@ -4995,7 +4951,7 @@
 #reg-roulette-modal.reg-roulette-modal.example2
   .roulette_main
   .roulette_main_coinWrap:first-of-type:after {
-  background-image: url(https://img.alltocon.com/img/static/roulette/CNY2023/roulette_coin_1_m.png);
+  background-image: url(../images/CNY2023/roulette_coin_1_m.png);
   left: 83.3%;
   padding-bottom: 12.5333333333%;
   top: 49.6%;
@@ -5018,7 +4974,7 @@
 #reg-roulette-modal.reg-roulette-modal.example2
   .roulette_main
   .roulette_main_coinWrap:nth-of-type(2):after {
-  background-image: url(https://img.alltocon.com/img/static/roulette/CNY2023/roulette_coin_2_m.png);
+  background-image: url(../images/CNY2023/roulette_coin_2_m.png);
   left: 4.5%;
   padding-bottom: 6.9333333333%;
   top: 30.5%;
@@ -5041,7 +4997,7 @@
 #reg-roulette-modal.reg-roulette-modal.example2
   .roulette_main
   .roulette_main_coinWrap:nth-of-type(3):after {
-  background-image: url(https://img.alltocon.com/img/static/roulette/CNY2023/roulette_coin_3_m.png);
+  background-image: url(../images/CNY2023/roulette_coin_3_m.png);
   left: 77.5%;
   padding-bottom: 17.7333333333%;
   top: 22%;
@@ -5064,7 +5020,7 @@
 #reg-roulette-modal.reg-roulette-modal.example2
   .roulette_main
   .roulette_main_coinWrap:nth-of-type(4):after {
-  background-image: url(https://img.alltocon.com/img/static/roulette/CNY2023/roulette_coin_4_m.png);
+  background-image: url(../images/CNY2023/roulette_coin_4_m.png);
   left: 75.5%;
   padding-bottom: 18.1333333333%;
   top: 72.5%;
@@ -5087,7 +5043,7 @@
 #reg-roulette-modal.reg-roulette-modal.example2
   .roulette_main
   .roulette_main_coinWrap:nth-of-type(5):after {
-  background-image: url(https://img.alltocon.com/img/static/roulette/CNY2023/roulette_coin_5_m.png);
+  background-image: url(../images/CNY2023/roulette_coin_5_m.png);
   left: 0;
   padding-bottom: 31.4666666667%;
   top: 72.5%;
@@ -5110,7 +5066,7 @@
 #reg-roulette-modal.reg-roulette-modal.example2
   .roulette_main
   .roulette_main_coinWrap:nth-of-type(6):after {
-  background-image: url(https://img.alltocon.com/img/static/roulette/CNY2023/roulette_coin_6_m.png);
+  background-image: url(../images/CNY2023/roulette_coin_6_m.png);
   left: 20%;
   padding-bottom: 9.3333333333%;
   top: 5%;
@@ -5120,7 +5076,7 @@
 #activity-roulette-wrapper-m.activity-roulette-wrapper.r39bet,
 #reg-roulette-modal.reg-roulette-modal.r39bet {
   --wheel-text-shadow-color: #4a2e1a;
-  --wheel-border: url(https://img.alltocon.com/img/static/r39bet/wheel/roulette_frame.webp);
+  --wheel-border: url(../images/roulette_frame.webp);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.r39bet
@@ -5196,9 +5152,7 @@
 #activity-roulette-wrapper-m.activity-roulette-wrapper.r39bet .roulette_main,
 #reg-roulette-modal.reg-roulette-modal.r39bet .roulette,
 #reg-roulette-modal.reg-roulette-modal.r39bet .roulette_main {
-  background: #000
-    url(https://img.alltocon.com/img/static/r39bet/wheel/roulette_main.jpg)
-    top/auto 50vh no-repeat !important;
+  background: #000 url(../images/roulette_main.jpg) top/auto 50vh no-repeat !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.r39bet
@@ -5272,8 +5226,7 @@
   .roulette_main
   .roulette_main_numberTimes {
   animation: none;
-  background: url(https://img.alltocon.com/img/static/r39bet/wheel/roulette_numberTimes.png)
-    50% / contain no-repeat;
+  background: url(../images/roulette_numberTimes.png) 50% / contain no-repeat;
   box-shadow: 0 0 0 #000;
 }
 
@@ -5282,7 +5235,7 @@
   .roulette_main:before,
 #reg-roulette-modal.reg-roulette-modal.r39bet .roulette:before,
 #reg-roulette-modal.reg-roulette-modal.r39bet .roulette_main:before {
-  background-image: url(https://img.alltocon.com/img/static/r39bet/wheel/roulette_balloon.png);
+  background-image: url(../images/roulette_balloon.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.r39bet .roulette:after,
@@ -5290,7 +5243,7 @@
   .roulette_main:after,
 #reg-roulette-modal.reg-roulette-modal.r39bet .roulette:after,
 #reg-roulette-modal.reg-roulette-modal.r39bet .roulette_main:after {
-  background-image: url(https://img.alltocon.com/img/static/r39bet/wheel/roulette_ball.png);
+  background-image: url(../images/roulette_ball.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.r39bet
@@ -5376,12 +5329,12 @@
 #activity-roulette-wrapper-m.activity-roulette-wrapper.r39bet
   .roulette_winner_wrap:before,
 #reg-roulette-modal.reg-roulette-modal.r39bet .roulette_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/r39bet/wheel/rouletteMain_winnerList_t_m.webp) !important;
+  background-image: url(../images/rouletteMain_winnerList_t_m.webp) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.r39bet .roulette_winner,
 #reg-roulette-modal.reg-roulette-modal.r39bet .roulette_winner {
-  background-image: url(https://img.alltocon.com/img/static/r39bet/wheel/roulette_winnerList_m.png);
+  background-image: url(../images/roulette_winnerList_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.r39bet
@@ -5392,9 +5345,9 @@
   .roulette_winner
   .roulette_winner_head
   .roulette_winner_headCursor {
-  background-image: url(https://img.alltocon.com/img/static/r39bet/wheel/roulette_winner_btn_lm.png),
-    url(https://img.alltocon.com/img/static/r39bet/wheel/roulette_winner_btn_cm.png),
-    url(https://img.alltocon.com/img/static/r39bet/wheel/roulette_winner_btn_rm.png);
+  background-image: url(../images/roulette_winner_btn_lm.png),
+    url(../images/roulette_winner_btn_cm.png),
+    url(../images/roulette_winner_btn_rm.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.r39bet
@@ -5420,7 +5373,7 @@
 #reg-roulette-modal.reg-roulette-modal.r39bet
   .roulette_rule
   .roulette_rule_title {
-  background-image: url(https://img.alltocon.com/img/static/r39bet/wheel/roulette_rule_title.png);
+  background-image: url(../images/roulette_rule_title.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.r39bet
@@ -5433,7 +5386,7 @@
 #activity-roulette-wrapper-m.activity-roulette-wrapper.t38prod,
 #reg-roulette-modal.reg-roulette-modal.t38prod {
   --wheel-text-shadow-color: #d49b5d;
-  --wheel-border: url(https://img.alltocon.com/img/static/t38prod/roulette/roulette_frame_m.png);
+  --wheel-border: url(../images/roulette_frame_m.png);
   --wheel-light: none;
 }
 
@@ -5515,7 +5468,7 @@
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.t38prod .roulette_main,
 #reg-roulette-modal.reg-roulette-modal.t38prod .roulette_main {
-  background-image: url(https://img.alltocon.com/img/static/t38prod/roulette/roulette_bg_m.jpg) !important;
+  background-image: url(../images/roulette_bg_m.jpg) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.t38prod
@@ -5524,8 +5477,7 @@
 #reg-roulette-modal.reg-roulette-modal.t38prod
   .roulette_main
   .roulette_main_numberTimes {
-  background: url(https://img.alltocon.com/img/static/t38prod/roulette/roulette_numberTimes_m.png)
-    50% / cover no-repeat !important;
+  background: url(../images/roulette_numberTimes_m.png) 50% / cover no-repeat !important;
   box-shadow: none;
 }
 
@@ -5537,7 +5489,7 @@
   .roulette_main
   .roulette_main_wrap
   .roulette_main_btn {
-  background-image: url(https://img.alltocon.com/img/static/t38prod/roulette/roulette_btn_m.png) !important;
+  background-image: url(../images/roulette_btn_m.png) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.t38prod
@@ -5665,7 +5617,7 @@
 #activity-roulette-wrapper-m.activity-roulette-wrapper.t38prod
   .roulette_winner_wrap:before,
 #reg-roulette-modal.reg-roulette-modal.t38prod .roulette_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/t38prod/roulette/roulette_winnerList_t_m.png) !important;
+  background-image: url(../images/roulette_winnerList_t_m.png) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.t38prod
@@ -5676,14 +5628,14 @@
   .roulette_awards
   .roulette_awards_item
   > div {
-  background-image: url(https://img.alltocon.com/img/static/t38prod/roulette/roulette_awards_item_m.png);
+  background-image: url(../images/roulette_awards_item_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.t38prod
   .roulette
   .roulette_winner,
 #reg-roulette-modal.reg-roulette-modal.t38prod .roulette .roulette_winner {
-  background-image: url(https://img.alltocon.com/img/static/t38prod/roulette/roulette_winnerList_m.png);
+  background-image: url(../images/roulette_winnerList_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.t38prod
@@ -5696,15 +5648,14 @@
   .roulette_winner
   .roulette_winner_head
   .roulette_winner_headCursor {
-  background-image: url(https://img.alltocon.com/img/static/t38prod/roulette/roulette_winner_btn_lm.png),
-    url(https://img.alltocon.com/img/static/t38prod/roulette/roulette_winner_btn_cm.png),
-    url(https://img.alltocon.com/img/static/t38prod/roulette/roulette_winner_btn_rm.png);
+  background-image: url(../images/roulette_winner_btn_lm.png),
+    url(../images/roulette_winner_btn_cm.png),
+    url(../images/roulette_winner_btn_rm.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.t38prod .roulette_rule,
 #reg-roulette-modal.reg-roulette-modal.t38prod .roulette_rule {
-  background: url(https://img.alltocon.com/img/static/t38prod/roulette/roulette_rule_bg_m.png)
-    50%/100% 100% no-repeat;
+  background: url(../images/roulette_rule_bg_m.png) 50%/100% 100% no-repeat;
   border-radius: unset;
   box-shadow: unset;
 }
@@ -5715,15 +5666,15 @@
 #reg-roulette-modal.reg-roulette-modal.t38prod
   .roulette_rule
   .roulette_rule_title {
-  background-image: url(https://img.alltocon.com/img/static/t38prod/roulette/roulette_rule_title_m.png);
+  background-image: url(../images/roulette_rule_title_m.png);
   font-size: 14px;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.t98prod,
 #reg-roulette-modal.reg-roulette-modal.ta8prod {
   --wheel-text-shadow-color: #1c1d1d;
-  --wheel-border: url(https://img.alltocon.com/img/static/t98prod/wheel/roulette_frame.webp);
-  --wheel-light: url(https://img.alltocon.com/img/static/t98prod/wheel/roulette_neonLight.png);
+  --wheel-border: url(../images/roulette_frame.webp);
+  --wheel-light: url(../images/roulette_neonLight.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.t98prod
@@ -5799,8 +5750,7 @@
 #activity-roulette-wrapper-m.activity-roulette-wrapper.t98prod .roulette_main,
 #reg-roulette-modal.reg-roulette-modal.ta8prod .roulette,
 #reg-roulette-modal.reg-roulette-modal.ta8prod .roulette_main {
-  background: url(https://img.alltocon.com/img/static/t98prod/wheel/roulette_main.jpg)
-    top/100% auto no-repeat !important;
+  background: url(../images/roulette_main.jpg) top/100% auto no-repeat !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.t98prod
@@ -5840,7 +5790,7 @@
   .roulette_main_numberTimes {
   animation: none;
   background-color: #0000;
-  background-image: url(https://img.alltocon.com/img/static/t98prod/wheel/roulette_number-times.png);
+  background-image: url(../images/roulette_number-times.png);
   box-shadow: 0 0 0 #000;
   filter: drop-shadow(0 0 10px #efd068);
 }
@@ -5850,7 +5800,7 @@
   .roulette_main:before,
 #reg-roulette-modal.reg-roulette-modal.ta8prod .roulette:before,
 #reg-roulette-modal.reg-roulette-modal.ta8prod .roulette_main:before {
-  background-image: url(https://img.alltocon.com/img/static/t98prod/wheel/roulette_balloon.png);
+  background-image: url(../images/roulette_balloon.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.t98prod .roulette:after,
@@ -5858,7 +5808,7 @@
   .roulette_main:after,
 #reg-roulette-modal.reg-roulette-modal.ta8prod .roulette:after,
 #reg-roulette-modal.reg-roulette-modal.ta8prod .roulette_main:after {
-  background-image: url(https://img.alltocon.com/img/static/t98prod/wheel/roulette_ball.png);
+  background-image: url(../images/roulette_ball.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.t98prod
@@ -5958,12 +5908,12 @@
 #activity-roulette-wrapper-m.activity-roulette-wrapper.t98prod
   .roulette_winner_wrap:before,
 #reg-roulette-modal.reg-roulette-modal.ta8prod .roulette_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/t98prod/wheel/rouletteMain_winnerList_t.webp) !important;
+  background-image: url(../images/rouletteMain_winnerList_t.webp) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.t98prod .roulette_winner,
 #reg-roulette-modal.reg-roulette-modal.ta8prod .roulette_winner {
-  background-image: url(https://img.alltocon.com/img/static/t98prod/wheel/roulette_winnerList_m.png);
+  background-image: url(../images/roulette_winnerList_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.t98prod
@@ -5974,9 +5924,9 @@
   .roulette_winner
   .roulette_winner_head
   .roulette_winner_headCursor {
-  background-image: url(https://img.alltocon.com/img/static/t98prod/wheel/roulette_winner_btn_lm.png),
-    url(https://img.alltocon.com/img/static/t98prod/wheel/roulette_winner_btn_cm.png),
-    url(https://img.alltocon.com/img/static/t98prod/wheel/roulette_winner_btn_rm.png);
+  background-image: url(../images/roulette_winner_btn_lm.png),
+    url(../images/roulette_winner_btn_cm.png),
+    url(../images/roulette_winner_btn_rm.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.t98prod
@@ -6002,7 +5952,7 @@
 #reg-roulette-modal.reg-roulette-modal.ta8prod
   .roulette_rule
   .roulette_rule_title {
-  background-image: url(https://img.alltocon.com/img/static/t98prod/wheel/roulette_rule_title.png);
+  background-image: url(../images/roulette_rule_title.png);
 }
 
 @font-face {
@@ -6012,7 +5962,7 @@
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta2prod,
 #reg-roulette-modal.reg-roulette-modal.ta2prod {
-  --wheel-border: url(https://img.alltocon.com/img/static/ta2prod/desktop/roulette/roulette_frame.webp);
+  --wheel-border: url(../images/roulette_frame.webp);
   --wheel-light: none;
 }
 
@@ -6089,21 +6039,21 @@
   .roulette
   .roulette_main,
 #reg-roulette-modal.reg-roulette-modal.ta2prod .roulette .roulette_main {
-  background-image: url(https://img.alltocon.com/img/static/ta2prod/desktop/roulette/roulette_main.jpg);
+  background-image: url(../images/roulette_main.jpg);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta2prod
   .roulette
   .roulette_main:before,
 #reg-roulette-modal.reg-roulette-modal.ta2prod .roulette .roulette_main:before {
-  background-image: url(https://img.alltocon.com/img/static/ta2prod/mobile/roulette/roulette_balloon_m.png);
+  background-image: url(../images/roulette_balloon_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta2prod
   .roulette
   .roulette_main:after,
 #reg-roulette-modal.reg-roulette-modal.ta2prod .roulette .roulette_main:after {
-  background-image: url(https://img.alltocon.com/img/static/ta2prod/mobile/roulette/roulette_ball_m.png);
+  background-image: url(../images/roulette_ball_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta2prod
@@ -6239,8 +6189,7 @@
   .roulette
   .roulette_main
   .roulette_main_numberTimes {
-  background: url(https://img.alltocon.com/img/static/ta2prod/mobile/roulette/roulette_numberTimes_m.png)
-    50% / cover no-repeat !important;
+  background: url(../images/roulette_numberTimes_m.png) 50% / cover no-repeat !important;
   box-shadow: unset;
 }
 
@@ -6278,7 +6227,7 @@
   .roulette_main
   .roulette_main_wrap
   .roulette_main_btn {
-  background-image: url(https://img.alltocon.com/img/static/ta2prod/mobile/roulette/roulette_btn_m.png) !important;
+  background-image: url(../images/roulette_btn_m.png) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta2prod
@@ -6309,20 +6258,20 @@
   .roulette_awards
   .roulette_awards_item
   > div {
-  background-image: url(https://img.alltocon.com/img/static/ta2prod/mobile/roulette/roulette_awards_item_m.png);
+  background-image: url(../images/roulette_awards_item_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta2prod
   .roulette_winner_wrap:before,
 #reg-roulette-modal.reg-roulette-modal.ta2prod .roulette_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/ta2prod/mobile/roulette/roulette_winnerList_t_m.png) !important;
+  background-image: url(../images/roulette_winnerList_t_m.png) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta2prod
   .roulette
   .roulette_winner,
 #reg-roulette-modal.reg-roulette-modal.ta2prod .roulette .roulette_winner {
-  background-image: url(https://img.alltocon.com/img/static/ta2prod/mobile/roulette/roulette_winnerList_m.png);
+  background-image: url(../images/roulette_winnerList_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta2prod
@@ -6335,9 +6284,9 @@
   .roulette_winner
   .roulette_winner_head
   .roulette_winner_headCursor {
-  background-image: url(https://img.alltocon.com/img/static/ta2prod/mobile/roulette/roulette_winner_btn_lm.png),
-    url(https://img.alltocon.com/img/static/ta2prod/mobile/roulette/roulette_winner_btn_cm.png),
-    url(https://img.alltocon.com/img/static/ta2prod/mobile/roulette/roulette_winner_btn_rm.png);
+  background-image: url(../images/roulette_winner_btn_lm.png),
+    url(../images/roulette_winner_btn_cm.png),
+    url(../images/roulette_winner_btn_rm.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta2prod
@@ -6391,7 +6340,7 @@
 #reg-roulette-modal.reg-roulette-modal.ta2prod
   .roulette_rule
   .roulette_rule_title {
-  background-image: url(https://img.alltocon.com/img/static/ta2prod/mobile/roulette/roulette_rule_title_m.png);
+  background-image: url(../images/roulette_rule_title_m.png);
 }
 
 @font-face {
@@ -6401,7 +6350,7 @@
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta7prod,
 #reg-roulette-modal.reg-roulette-modal.ta7prod {
-  --wheel-border: url(https://img.alltocon.com/img/static/ta7prod/mobile/roulette/roulette_frame_m.webp);
+  --wheel-border: url(../images/roulette_frame_m.webp);
   --wheel-light: none;
 }
 
@@ -6478,14 +6427,14 @@
   .roulette
   .roulette_main,
 #reg-roulette-modal.reg-roulette-modal.ta7prod .roulette .roulette_main {
-  background-image: url(https://img.alltocon.com/img/static/ta7prod/desktop/roulette/roulette_main.jpg);
+  background-image: url(../images/roulette_main.jpg);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta7prod
   .roulette
   .roulette_main:before,
 #reg-roulette-modal.reg-roulette-modal.ta7prod .roulette .roulette_main:before {
-  background-image: url(https://img.alltocon.com/img/static/ta7prod/mobile/roulette/roulette_balloon_m.png);
+  background-image: url(../images/roulette_balloon_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta7prod
@@ -6628,8 +6577,7 @@
   .roulette
   .roulette_main
   .roulette_main_numberTimes {
-  background: url(https://img.alltocon.com/img/static/ta7prod/mobile/roulette/roulette_numberTimes_m.png)
-    50% / cover no-repeat !important;
+  background: url(../images/roulette_numberTimes_m.png) 50% / cover no-repeat !important;
   box-shadow: unset;
 }
 
@@ -6667,8 +6615,7 @@
   .roulette_main
   .roulette_main_wrap:after {
   animation: none;
-  background: url(https://img.alltocon.com/img/static/ta7prod/desktop/roulette/roulette_frame_pin.webp)
-    top/100% auto no-repeat;
+  background: url(../images/roulette_frame_pin.webp) top/100% auto no-repeat;
   transform: translateY(-20px);
 }
 
@@ -6682,7 +6629,7 @@
   .roulette_main
   .roulette_main_wrap
   .roulette_main_btn {
-  background-image: url(https://img.alltocon.com/img/static/ta7prod/mobile/roulette/roulette_btn_m.png) !important;
+  background-image: url(../images/roulette_btn_m.png) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta7prod
@@ -6713,20 +6660,20 @@
   .roulette_awards
   .roulette_awards_item
   > div {
-  background-image: url(https://img.alltocon.com/img/static/ta7prod/mobile/roulette/roulette_awards_item_m.png);
+  background-image: url(../images/roulette_awards_item_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta7prod
   .roulette_winner_wrap:before,
 #reg-roulette-modal.reg-roulette-modal.ta7prod .roulette_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/ta7prod/mobile/roulette/roulette_winnerList_t_m.png) !important;
+  background-image: url(../images/roulette_winnerList_t_m.png) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta7prod
   .roulette
   .roulette_winner,
 #reg-roulette-modal.reg-roulette-modal.ta7prod .roulette .roulette_winner {
-  background-image: url(https://img.alltocon.com/img/static/ta7prod/mobile/roulette/roulette_winnerList_m.png);
+  background-image: url(../images/roulette_winnerList_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta7prod
@@ -6739,9 +6686,9 @@
   .roulette_winner
   .roulette_winner_head
   .roulette_winner_headCursor {
-  background-image: url(https://img.alltocon.com/img/static/ta7prod/mobile/roulette/roulette_winner_btn_lm.png),
-    url(https://img.alltocon.com/img/static/ta7prod/mobile/roulette/roulette_winner_btn_cm.png),
-    url(https://img.alltocon.com/img/static/ta7prod/mobile/roulette/roulette_winner_btn_rm.png);
+  background-image: url(../images/roulette_winner_btn_lm.png),
+    url(../images/roulette_winner_btn_cm.png),
+    url(../images/roulette_winner_btn_rm.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta7prod
@@ -6794,7 +6741,7 @@
 #reg-roulette-modal.reg-roulette-modal.ta7prod
   .roulette_rule
   .roulette_rule_title {
-  background-image: url(https://img.alltocon.com/img/static/ta7prod/mobile/roulette/roulette_rule_title_m.png);
+  background-image: url(../images/roulette_rule_title_m.png);
   color: #000;
   text-shadow: 0 0 0 #000;
 }
@@ -6802,8 +6749,8 @@
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta8prod,
 #reg-roulette-modal.reg-roulette-modal.ta8prod {
   --wheel-text-shadow-color: #1e04a6;
-  --wheel-border: url(https://img.alltocon.com/img/static/ta8prod/wheel/roulette_frame_m.webp);
-  --wheel-light: url(https://img.alltocon.com/img/static/ta8prod/wheel/roulette_neonLight_m.png);
+  --wheel-border: url(../images/roulette_frame_m.webp);
+  --wheel-light: url(../images/roulette_neonLight_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta8prod
@@ -6879,8 +6826,7 @@
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta8prod .roulette_main,
 #reg-roulette-modal.reg-roulette-modal.ta8prod .roulette,
 #reg-roulette-modal.reg-roulette-modal.ta8prod .roulette_main {
-  background: url(https://img.alltocon.com/img/static/ta8prod/wheel/roulette_main_m.jpg)
-    top/100% auto no-repeat !important;
+  background: url(../images/roulette_main_m.jpg) top/100% auto no-repeat !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta8prod
@@ -6893,7 +6839,7 @@
 #reg-roulette-modal.reg-roulette-modal.ta8prod
   .roulette_main
   .roulette_main_btn {
-  background-image: url(https://img.alltocon.com/img/static/ta8prod/wheel/roulette_btn_m.png);
+  background-image: url(../images/roulette_btn_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta8prod
@@ -6921,7 +6867,7 @@
 #reg-roulette-modal.reg-roulette-modal.ta8prod
   .roulette_main
   .roulette_main_numberTimes {
-  background-image: url(https://img.alltocon.com/img/static/ta8prod/wheel/roulette_numberTimes_m.png);
+  background-image: url(../images/roulette_numberTimes_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta8prod .roulette:before,
@@ -6929,7 +6875,7 @@
   .roulette_main:before,
 #reg-roulette-modal.reg-roulette-modal.ta8prod .roulette:before,
 #reg-roulette-modal.reg-roulette-modal.ta8prod .roulette_main:before {
-  background-image: url(https://img.alltocon.com/img/static/ta8prod/wheel/roulette_balloon_m.png);
+  background-image: url(../images/roulette_balloon_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta8prod .roulette:after,
@@ -6937,7 +6883,7 @@
   .roulette_main:after,
 #reg-roulette-modal.reg-roulette-modal.ta8prod .roulette:after,
 #reg-roulette-modal.reg-roulette-modal.ta8prod .roulette_main:after {
-  background-image: url(https://img.alltocon.com/img/static/ta8prod/wheel/roulette_ball_m.png);
+  background-image: url(../images/roulette_ball_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta8prod
@@ -7004,7 +6950,7 @@
   .roulette_awards
   .roulette_awards_item
   > div {
-  background-image: url(https://img.alltocon.com/img/static/ta8prod/wheel/roulette_awards_item_m.png);
+  background-image: url(../images/roulette_awards_item_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta8prod .roulette_minor,
@@ -7021,12 +6967,12 @@
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta8prod
   .roulette_winner_wrap:before,
 #reg-roulette-modal.reg-roulette-modal.ta8prod .roulette_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/ta8prod/wheel/rouletteMain_winnerList_t_m.webp) !important;
+  background-image: url(../images/rouletteMain_winnerList_t_m.webp) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta8prod .roulette_winner,
 #reg-roulette-modal.reg-roulette-modal.ta8prod .roulette_winner {
-  background-image: url(https://img.alltocon.com/img/static/ta8prod/wheel/roulette_winnerList_m.png);
+  background-image: url(../images/roulette_winnerList_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta8prod
@@ -7037,9 +6983,9 @@
   .roulette_winner
   .roulette_winner_head
   .roulette_winner_headCursor {
-  background-image: url(https://img.alltocon.com/img/static/ta8prod/wheel/roulette_winner_btn_lm.png),
-    url(https://img.alltocon.com/img/static/ta8prod/wheel/roulette_winner_btn_cm.png),
-    url(https://img.alltocon.com/img/static/ta8prod/wheel/roulette_winner_btn_rm.png);
+  background-image: url(../images/roulette_winner_btn_lm.png),
+    url(../images/roulette_winner_btn_cm.png),
+    url(../images/roulette_winner_btn_rm.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.ta8prod .roulette_rule,
@@ -7053,7 +6999,7 @@
 #reg-roulette-modal.reg-roulette-modal.ta8prod
   .roulette_rule
   .roulette_rule_title {
-  background-image: url(https://img.alltocon.com/img/static/ta8prod/wheel/roulette_rule_title_m.png);
+  background-image: url(../images/roulette_rule_title_m.png);
 }
 
 @font-face {
@@ -7063,7 +7009,7 @@
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.tb9prod,
 #reg-roulette-modal.reg-roulette-modal.tb9prod {
-  --wheel-border: url(https://img.alltocon.com/img/static/tb9prod/desktop/roulette/roulette_frame.webp);
+  --wheel-border: url(../images/roulette_frame.webp);
   --wheel-light: none;
 }
 
@@ -7140,21 +7086,21 @@
   .roulette
   .roulette_main,
 #reg-roulette-modal.reg-roulette-modal.tb9prod .roulette .roulette_main {
-  background-image: url(https://img.alltocon.com/img/static/tb9prod/desktop/roulette/roulette_main.jpg);
+  background-image: url(../images/roulette_main.jpg);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.tb9prod
   .roulette
   .roulette_main:before,
 #reg-roulette-modal.reg-roulette-modal.tb9prod .roulette .roulette_main:before {
-  background-image: url(https://img.alltocon.com/img/static/tb9prod/mobile/roulette/roulette_balloon_m.png);
+  background-image: url(../images/roulette_balloon_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.tb9prod
   .roulette
   .roulette_main:after,
 #reg-roulette-modal.reg-roulette-modal.tb9prod .roulette .roulette_main:after {
-  background-image: url(https://img.alltocon.com/img/static/tb9prod/mobile/roulette/roulette_ball_m.png);
+  background-image: url(../images/roulette_ball_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.tb9prod
@@ -7290,8 +7236,7 @@
   .roulette
   .roulette_main
   .roulette_main_numberTimes {
-  background: url(https://img.alltocon.com/img/static/tb9prod/mobile/roulette/roulette_numberTimes_m.png)
-    50% / cover no-repeat !important;
+  background: url(../images/roulette_numberTimes_m.png) 50% / cover no-repeat !important;
   box-shadow: unset;
 }
 
@@ -7329,7 +7274,7 @@
   .roulette_main
   .roulette_main_wrap
   .roulette_main_btn {
-  background-image: url(https://img.alltocon.com/img/static/tb9prod/mobile/roulette/roulette_btn_m.png) !important;
+  background-image: url(../images/roulette_btn_m.png) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.tb9prod
@@ -7360,20 +7305,20 @@
   .roulette_awards
   .roulette_awards_item
   > div {
-  background-image: url(https://img.alltocon.com/img/static/tb9prod/mobile/roulette/roulette_awards_item_m.png);
+  background-image: url(../images/roulette_awards_item_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.tb9prod
   .roulette_winner_wrap:before,
 #reg-roulette-modal.reg-roulette-modal.tb9prod .roulette_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/tb9prod/mobile/roulette/roulette_winnerList_t_m.png) !important;
+  background-image: url(../images/roulette_winnerList_t_m.png) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.tb9prod
   .roulette
   .roulette_winner,
 #reg-roulette-modal.reg-roulette-modal.tb9prod .roulette .roulette_winner {
-  background-image: url(https://img.alltocon.com/img/static/tb9prod/mobile/roulette/roulette_winnerList_m.png);
+  background-image: url(../images/roulette_winnerList_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.tb9prod
@@ -7386,9 +7331,9 @@
   .roulette_winner
   .roulette_winner_head
   .roulette_winner_headCursor {
-  background-image: url(https://img.alltocon.com/img/static/tb9prod/mobile/roulette/roulette_winner_btn_lm.png),
-    url(https://img.alltocon.com/img/static/tb9prod/mobile/roulette/roulette_winner_btn_cm.png),
-    url(https://img.alltocon.com/img/static/tb9prod/mobile/roulette/roulette_winner_btn_rm.png);
+  background-image: url(../images/roulette_winner_btn_lm.png),
+    url(../images/roulette_winner_btn_cm.png),
+    url(../images/roulette_winner_btn_rm.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.tb9prod
@@ -7442,7 +7387,7 @@
 #reg-roulette-modal.reg-roulette-modal.tb9prod
   .roulette_rule
   .roulette_rule_title {
-  background-image: url(https://img.alltocon.com/img/static/tb9prod/mobile/roulette/roulette_rule_title_m.png);
+  background-image: url(../images/roulette_rule_title_m.png);
 }
 
 @font-face {
@@ -7452,7 +7397,7 @@
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.tc7prod,
 #reg-roulette-modal.reg-roulette-modal.tc7prod {
-  --wheel-border: url(https://img.alltocon.com/img/static/tc7prod/mobile/roulette/roulette_frame_m.png);
+  --wheel-border: url(../images/roulette_frame_m.png);
   --wheel-light: none;
 }
 
@@ -7529,21 +7474,21 @@
   .roulette
   .roulette_main,
 #reg-roulette-modal.reg-roulette-modal.tc7prod .roulette .roulette_main {
-  background-image: url(https://img.alltocon.com/img/static/tc7prod/desktop/roulette/roulette_main.jpg);
+  background-image: url(../images/roulette_main.jpg);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.tc7prod
   .roulette
   .roulette_main:before,
 #reg-roulette-modal.reg-roulette-modal.tc7prod .roulette .roulette_main:before {
-  background-image: url(https://img.alltocon.com/img/static/tc7prod/mobile/roulette/roulette_balloon_m.png);
+  background-image: url(../images/roulette_balloon_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.tc7prod
   .roulette
   .roulette_main:after,
 #reg-roulette-modal.reg-roulette-modal.tc7prod .roulette .roulette_main:after {
-  background-image: url(https://img.alltocon.com/img/static/tc7prod/mobile/roulette/roulette_ball_m.png);
+  background-image: url(../images/roulette_ball_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.tc7prod
@@ -7679,8 +7624,7 @@
   .roulette
   .roulette_main
   .roulette_main_numberTimes {
-  background: url(https://img.alltocon.com/img/static/tc7prod/mobile/roulette/roulette_numberTimes_m.png)
-    50% / cover no-repeat !important;
+  background: url(../images/roulette_numberTimes_m.png) 50% / cover no-repeat !important;
   box-shadow: unset;
 }
 
@@ -7718,7 +7662,7 @@
   .roulette_main
   .roulette_main_wrap
   .roulette_main_btn {
-  background-image: url(https://img.alltocon.com/img/static/tc7prod/mobile/roulette/roulette_btn_m.png) !important;
+  background-image: url(../images/roulette_btn_m.png) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.tc7prod
@@ -7749,20 +7693,20 @@
   .roulette_awards
   .roulette_awards_item
   > div {
-  background-image: url(https://img.alltocon.com/img/static/tc7prod/mobile/roulette/roulette_awards_item_m.png);
+  background-image: url(../images/roulette_awards_item_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.tc7prod
   .roulette_winner_wrap:before,
 #reg-roulette-modal.reg-roulette-modal.tc7prod .roulette_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/tc7prod/mobile/roulette/roulette_winnerList_t_m.png) !important;
+  background-image: url(../images/roulette_winnerList_t_m.png) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.tc7prod
   .roulette
   .roulette_winner,
 #reg-roulette-modal.reg-roulette-modal.tc7prod .roulette .roulette_winner {
-  background-image: url(https://img.alltocon.com/img/static/tc7prod/mobile/roulette/roulette_winnerList_m.png);
+  background-image: url(../images/roulette_winnerList_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.tc7prod
@@ -7775,9 +7719,9 @@
   .roulette_winner
   .roulette_winner_head
   .roulette_winner_headCursor {
-  background-image: url(https://img.alltocon.com/img/static/tc7prod/mobile/roulette/roulette_winner_btn_lm.png),
-    url(https://img.alltocon.com/img/static/tc7prod/mobile/roulette/roulette_winner_btn_cm.png),
-    url(https://img.alltocon.com/img/static/tc7prod/mobile/roulette/roulette_winner_btn_rm.png);
+  background-image: url(../images/roulette_winner_btn_lm.png),
+    url(../images/roulette_winner_btn_cm.png),
+    url(../images/roulette_winner_btn_rm.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.tc7prod
@@ -7831,13 +7775,13 @@
 #reg-roulette-modal.reg-roulette-modal.tc7prod
   .roulette_rule
   .roulette_rule_title {
-  background-image: url(https://img.alltocon.com/img/static/tc7prod/mobile/roulette/roulette_rule_title_m.png);
+  background-image: url(../images/roulette_rule_title_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.u30prod,
 #reg-roulette-modal.reg-roulette-modal.u30prod {
   --wheel-text-shadow-color: #d49b5d;
-  --wheel-border: url(https://img.alltocon.com/img/static/u30prod/roulette/roulette_frame.webp);
+  --wheel-border: url(../images/roulette_frame.webp);
   --wheel-light: none;
 }
 
@@ -7914,8 +7858,7 @@
 #activity-roulette-wrapper-m.activity-roulette-wrapper.u30prod .roulette_main,
 #reg-roulette-modal.reg-roulette-modal.u30prod .roulette,
 #reg-roulette-modal.reg-roulette-modal.u30prod .roulette_main {
-  background: url(https://img.alltocon.com/img/static/u30prod/roulette/roulette_main_m.jpg)
-    top/100% auto no-repeat !important;
+  background: url(../images/roulette_main_m.jpg) top/100% auto no-repeat !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.u30prod
@@ -7943,7 +7886,7 @@
 #reg-roulette-modal.reg-roulette-modal.u30prod
   .roulette_main
   .roulette_main_btn {
-  background-image: url(https://img.alltocon.com/img/static/u30prod/roulette/roulette_btn.png);
+  background-image: url(../images/roulette_btn.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.u30prod
@@ -7972,7 +7915,7 @@
   .roulette_main
   .roulette_main_numberTimes {
   background-color: #0000;
-  background-image: url(https://img.alltocon.com/img/static/u30prod/roulette/roulette_numberTimes.png);
+  background-image: url(../images/roulette_numberTimes.png);
   box-shadow: 0 0 0 #000;
 }
 
@@ -8040,7 +7983,7 @@
   .roulette_awards
   .roulette_awards_item
   > div {
-  background-image: url(https://img.alltocon.com/img/static/u30prod/roulette/roulette_awards_item_m.png);
+  background-image: url(../images/roulette_awards_item_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.u30prod .roulette_minor,
@@ -8057,12 +8000,12 @@
 #activity-roulette-wrapper-m.activity-roulette-wrapper.u30prod
   .roulette_winner_wrap:before,
 #reg-roulette-modal.reg-roulette-modal.u30prod .roulette_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/u30prod/roulette/rouletteMain_winnerList_t_m.png) !important;
+  background-image: url(../images/rouletteMain_winnerList_t_m.png) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.u30prod .roulette_winner,
 #reg-roulette-modal.reg-roulette-modal.u30prod .roulette_winner {
-  background-image: url(https://img.alltocon.com/img/static/u30prod/roulette/roulette_winnerList_m.png);
+  background-image: url(../images/roulette_winnerList_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.u30prod
@@ -8073,9 +8016,9 @@
   .roulette_winner
   .roulette_winner_head
   .roulette_winner_headCursor {
-  background-image: url(https://img.alltocon.com/img/static/u30prod/roulette/roulette_winner_btn_lm.png),
-    url(https://img.alltocon.com/img/static/u30prod/roulette/roulette_winner_btn_cm.png),
-    url(https://img.alltocon.com/img/static/u30prod/roulette/roulette_winner_btn_rm.png);
+  background-image: url(../images/roulette_winner_btn_lm.png),
+    url(../images/roulette_winner_btn_cm.png),
+    url(../images/roulette_winner_btn_rm.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.u30prod .roulette_rule,
@@ -8090,7 +8033,7 @@
 #reg-roulette-modal.reg-roulette-modal.u30prod
   .roulette_rule
   .roulette_rule_title {
-  background-image: url(https://img.alltocon.com/img/static/u30prod/roulette/roulette_rule_title.png);
+  background-image: url(../images/roulette_rule_title.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.unc0001
@@ -8164,7 +8107,7 @@
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.vh7prod {
   --wheel-text-shadow-color: #c3330d;
-  --wheel-border: url(https://img.alltocon.com/img/static/vh7prod/roulette/roulette_frame_m.png);
+  --wheel-border: url(../images/roulette_frame_m.png);
   --wheel-light: none;
 }
 
@@ -8185,15 +8128,14 @@
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.vh7prod .roulette {
-  background: url(https://img.alltocon.com/img/static/vh7prod/roulette/bg-m.png)
-    50% / cover fixed no-repeat !important;
+  background: url(../images/bg-m.png) 50% / cover fixed no-repeat !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.vh7prod
   .roulette
   .roulette_winner
   .roulette_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/vh7prod/roulette/roulette_winnerList_t_m.png) !important;
+  background-image: url(../images/roulette_winnerList_t_m.png) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.vh7prod
@@ -8207,13 +8149,13 @@
   .roulette_main:before {
   animation-direction: alternate;
   animation-timing-function: linear;
-  background-image: url(https://img.alltocon.com/img/static/roulette/golden/roulette_balloon_m.png);
+  background-image: url(../images/golden/roulette_balloon_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.vh7prod
   .roulette
   .roulette_main:after {
-  background-image: url(https://img.alltocon.com/img/static/roulette/golden/roulette_ball_m.png) !important;
+  background-image: url(../images/golden/roulette_ball_m.png) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.vh7prod
@@ -8232,7 +8174,7 @@
 
 #root #activity-roulette-wrapper-m.activity-roulette-wrapper.vn0prod,
 #root #reg-roulette-modal.reg-roulette-modal.vn0prod {
-  --wheel-border: url(https://img.alltocon.com/img/static/vn0prod/mobile/roulette/roulette_frame_m.png);
+  --wheel-border: url(../images/roulette_frame_m.png);
   --wheel-light: none;
 }
 
@@ -8347,10 +8289,8 @@
   > .roulette
   > .roulette_wrap
   .roulette {
-  background: url(https://img.alltocon.com/img/static/vn0prod/mobile/roulette/roulette_main_bottom_m.png)
-      bottom/contain no-repeat,
-    url(https://img.alltocon.com/img/static/vn0prod/mobile/roulette/roulette_main_m.png)
-      top/contain no-repeat !important;
+  background: url(../images/roulette_main_bottom_m.png) bottom/contain no-repeat,
+    url(../images/roulette_main_m.png) top/contain no-repeat !important;
   border-radius: 0 0 6vw 6vw;
   height: 100%;
   padding-top: 178%;
@@ -8525,7 +8465,7 @@
   .roulette
   .roulette_main
   .roulette_main_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/tb7prod/wheel/lw-frame.png);
+  background-image: url(../images/lw-frame.png);
 }
 
 #root
@@ -8554,8 +8494,7 @@
   .roulette_main_wrap
   .roulette_main_numberTimes {
   align-items: center;
-  background: url(https://img.alltocon.com/img/static/tb7prod/wheel/lw-rtimes.png)
-    50%/100% 100% no-repeat;
+  background: url(../images/lw-rtimes.png) 50%/100% 100% no-repeat;
   border-radius: 0;
   box-shadow: 0 0 0 #000;
   display: flex;
@@ -8735,8 +8674,7 @@
   .roulette_main
   .roulette_main_btn {
   animation: none;
-  background: url(https://img.alltocon.com/img/static/tb7prod/wheel/lw-btn.png)
-    50% / contain no-repeat;
+  background: url(../images/lw-btn.png) 50% / contain no-repeat;
   box-shadow: 0 0 0 #000;
 }
 
@@ -9152,9 +9090,8 @@
   #activity-roulette-wrapper-m.activity-roulette-wrapper.vn0prod
   .roulette_minor,
 #root #reg-roulette-modal.reg-roulette-modal.vn0prod .roulette_minor {
-  background: #392d23
-    url(https://img.alltocon.com/img/static/vn0prod/mobile/roulette/roulette_wrap_bottom.png)
-    bottom/100% auto no-repeat;
+  background: #392d23 url(../images/roulette_wrap_bottom.png) bottom/100% auto
+    no-repeat;
   padding: 40px 20px 20px;
 }
 
@@ -9182,7 +9119,7 @@
   .roulette_minor
   .roulette_awards_item
   > div {
-  background-image: url(https://img.alltocon.com/img/static/tb7prod/wheel/lw-list.png);
+  background-image: url(../images/lw-list.png);
 }
 
 #root
@@ -9303,7 +9240,7 @@
   .roulette_minor
   .roulette_winner
   .roulette_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/tb7prod/wheel/lw-wint.png);
+  background-image: url(../images/lw-wint.png);
   transform: translate(-50%, -100%);
 }
 
@@ -9476,8 +9413,8 @@
   .roulette_winner_wrap
   .roulette_winner_head.winnerRecord
   .roulette_winner_headItem:nth-of-type(2):after {
-  background: url(https://img.alltocon.com/img/static/vn0prod/mobile/roulette/roulette_winner_list_icon.png)
-    50%/100% 100% no-repeat;
+  background: url(../images/roulette_winner_list_icon.png) 50%/100% 100%
+    no-repeat;
   content: "";
   display: inline-block;
   height: 24px;
@@ -9543,7 +9480,7 @@
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.x07prod,
 #reg-roulette-modal.reg-roulette-modal.x07prod {
-  --wheel-border: url(https://img.alltocon.com/img/static/x07prod/mobile/roulette/roulette_frame_m.png);
+  --wheel-border: url(../images/roulette_frame_m.png);
   --wheel-light: none;
 }
 
@@ -9620,7 +9557,7 @@
   .roulette
   .roulette_main,
 #reg-roulette-modal.reg-roulette-modal.x07prod .roulette .roulette_main {
-  background-image: url(https://img.alltocon.com/img/static/x07prod/mobile/roulette/roulette_bg_m.jpg);
+  background-image: url(../images/roulette_bg_m.jpg);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.x07prod
@@ -9733,8 +9670,7 @@
   .roulette
   .roulette_main
   .roulette_main_numberTimes {
-  background: url(https://img.alltocon.com/img/static/x07prod/mobile/roulette/roulette_numberTimes_m.png)
-    50% / cover no-repeat !important;
+  background: url(../images/roulette_numberTimes_m.png) 50% / cover no-repeat !important;
   box-shadow: unset;
 }
 
@@ -9770,7 +9706,7 @@
   .roulette_main
   .roulette_main_wrap
   .roulette_main_btn {
-  background-image: url(https://img.alltocon.com/img/static/x07prod/mobile/roulette/roulette_btn_m.png) !important;
+  background-image: url(../images/roulette_btn_m.png) !important;
   bottom: 10.5%;
   height: 16%;
   width: 16%;
@@ -9804,20 +9740,20 @@
   .roulette_awards
   .roulette_awards_item
   > div {
-  background-image: url(https://img.alltocon.com/img/static/x07prod/mobile/roulette/roulette_awards_item_m.png);
+  background-image: url(../images/roulette_awards_item_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.x07prod
   .roulette_winner_wrap:before,
 #reg-roulette-modal.reg-roulette-modal.x07prod .roulette_winner_wrap:before {
-  background-image: url(https://img.alltocon.com/img/static/x07prod/mobile/roulette/roulette_winnerList_t_m.png) !important;
+  background-image: url(../images/roulette_winnerList_t_m.png) !important;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.x07prod
   .roulette
   .roulette_winner,
 #reg-roulette-modal.reg-roulette-modal.x07prod .roulette .roulette_winner {
-  background-image: url(https://img.alltocon.com/img/static/x07prod/mobile/roulette/roulette_winnerList_m.png);
+  background-image: url(../images/roulette_winnerList_m.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.x07prod
@@ -9830,9 +9766,9 @@
   .roulette_winner
   .roulette_winner_head
   .roulette_winner_headCursor {
-  background-image: url(https://img.alltocon.com/img/static/x07prod/mobile/roulette/roulette_winner_btn_lm.png),
-    url(https://img.alltocon.com/img/static/x07prod/mobile/roulette/roulette_winner_btn_cm.png),
-    url(https://img.alltocon.com/img/static/x07prod/mobile/roulette/roulette_winner_btn_rm.png);
+  background-image: url(../images/roulette_winner_btn_lm.png),
+    url(../images/roulette_winner_btn_cm.png),
+    url(../images/roulette_winner_btn_rm.png);
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.x07prod
@@ -9874,8 +9810,7 @@
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.x07prod .roulette_rule,
 #reg-roulette-modal.reg-roulette-modal.x07prod .roulette_rule {
-  background: url(https://img.alltocon.com/img/static/x07prod/mobile/roulette/roulette_winnerList_m.png)
-    50%/107% 105% no-repeat;
+  background: url(../images/roulette_winnerList_m.png) 50%/107% 105% no-repeat;
 }
 
 #activity-roulette-wrapper-m.activity-roulette-wrapper.x07prod
@@ -9884,7 +9819,7 @@
 #reg-roulette-modal.reg-roulette-modal.x07prod
   .roulette_rule
   .roulette_rule_title {
-  background-image: url(https://img.alltocon.com/img/static/x07prod/mobile/roulette/roulette_rule_title_m.png);
+  background-image: url(../images/roulette_rule_title_m.png);
   padding: 3px 30px 0;
 }
 

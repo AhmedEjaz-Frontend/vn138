@@ -16,11 +16,7 @@
     <link rel="dns-prefetch" href="https://api.qata88vn.com" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <meta
       name="description"
@@ -384,6 +380,31 @@
     <link rel="stylesheet" type="text/css" href="/css/1248.96a3ccd6.css" />
     <link rel="stylesheet" type="text/css" href="/css/231.5005bb53.css" />
     <link rel="stylesheet" type="text/css" href="/css/m-home.e15f1063.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./alo-clone/config.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Swiper(".carousel-banner-container .swiper", {
+          loop: true,
+          autoplay: { delay: 3000 },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+        new Swiper(".footer-provider .swiper", {
+          slidesPerView: 6,
+          spaceBetween: 20,
+          pagination: { el: ".swiper-pagination", clickable: true },
+        });
+      });
+    </script>
+    <script src="./js/login.js"></script>
   </head>
   <body cz-shortcut-listen="true">
     <div id="root" style="display: block">
@@ -418,7 +439,6 @@
                   <input
                     type="text"
                     class="username-btn"
-                    value="00001111"
                     placeholder="Player ID"
                   />
                 </div>
@@ -426,7 +446,6 @@
                   <input
                     type="password"
                     class="password-btn"
-                    value="Hello@12345"
                     placeholder="Password"
                   /><i class="visible-toggle mps-unreadable"></i
                   ><a
@@ -443,6 +462,18 @@
                 </div>
                 <div class="header-btn signup"><div>Join Now</div></div>
               </div>
+              <div class="account-tool" style="display:none">
+                <ul class="logined-nav">
+                  <li><a>Deposit</a></li>
+                  <li><a>Withdraw</a></li>
+                  <li><a>History</a></li>
+                  <li><a>Statement</a></li>
+                  <li class="login-nav-inbox"><a>Messages (1)</a></li>
+                </ul>
+                <div class="id"></div>
+                <button class="header-btn btn-logout">Logout</button>
+              </div>
+              <div class="wallet" style="display:none">0.00<i class="mps-update"></i></div>
               <div class="lang">
                 <div class="lang-toggle">
                   English<i class="flag-icon flag-icon-us flag-icon-squared"></i

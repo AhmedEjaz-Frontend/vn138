@@ -200,6 +200,14 @@
         background-color: rgba(255, 255, 255, 0.5);
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
       }
+      .account-tool .logined-nav li a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+      .account-tool .logined-nav li a:hover,
+      .account-tool .logined-nav li a:focus-visible {
+        text-decoration: none;
+      }
       .app-failure .cont span.version-hash {
         font-size: 12px;
       }
@@ -480,8 +488,8 @@
     <script src="./js/header-hot-games.js"></script>
     <script src="./js/deposit-user-info.js"></script>
     <script>
-      if (!localStorage.getItem('token')) {
-        window.location.href = './001-index.html';
+      if (!localStorage.getItem("token")) {
+        window.location.href = "./001-index.html";
       }
       if (window.innerWidth <= 768) {
         window.location.href = "./003-index.html";
@@ -1438,7 +1446,7 @@
               <div id="right-drawer-root"></div>
             </div>
           </div>
-          <div class="event-qmenu">
+          <div class="event-qmenu d-none">
             <div class="handle">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 70">
                 <path

@@ -16540,37 +16540,20 @@ button.swiper-pagination-bullet {
   line-height: unset;
 }
 
-.app:not(.account)
-  .quick-nav
-  .right
-  .account-tool
-  .logined-nav
-   {
+.app:not(.account) .quick-nav .right .account-tool .logined-nav {
   position: absolute;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.app:not(.account)
-  .quick-nav
-  .right
-  .account-tool
-  .logined-nav
-  
-  a {
+.app:not(.account) .quick-nav .right .account-tool .logined-nav a {
   align-items: center;
   display: flex;
   gap: 3px;
 }
 
-.app:not(.account)
-  .quick-nav
-  .right
-  .account-tool
-  .logined-nav
-  
-  a:before {
+.app:not(.account) .quick-nav .right .account-tool .logined-nav a:before {
   background: url(../images/icon-bell.png) 50% / contain no-repeat;
   content: "";
   height: 24px;
@@ -17225,3 +17208,6 @@ body {
   font-family: Myriad, Tahoma, Roboto, sans-serif !important;
 }
 
+.d-none {
+  display: none !important;
+}

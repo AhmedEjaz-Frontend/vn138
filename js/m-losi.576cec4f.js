@@ -164,6 +164,7 @@
                   style: a
                     ? {
                         opacity: "0.3",
+                        alignSelf: "center",
                       }
                     : {},
                   onClick: this.onCaptchaReload,

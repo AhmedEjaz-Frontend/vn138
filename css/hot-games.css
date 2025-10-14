@@ -3,7 +3,9 @@
   grid-template-columns: repeat(2, 1fr) !important;
   gap: 10px;
   .game-item,
-  .game-item-hot {
+  .game-item-hot,
+  .SV388,
+  .WALA88 {
     width: 100% !important;
   }
 }
@@ -12,6 +14,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.home-list .SV388 .game-logo,
+.home-list .WALA88 .game-logo {
+  width: 100%;
+  height: 200px;
   background-size: contain !important;
   background-position: center !important;
   background-repeat: no-repeat !important;

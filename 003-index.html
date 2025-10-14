@@ -500,7 +500,7 @@
                 </div>
               </header>
               <section class="home-login" id="home-login">
-                <div class="tools-item">Register</div>
+                <a class="tools-item" href="./register-page-mobile.html">Register</a>
                 <a class="tools-item" href="./login-page-mobile.html">Login</a>
               </section>
               <div class="home-banner-top">
@@ -1476,7 +1476,7 @@
                       data-type="HOT_GAMES"
                       style="display: none"
                     >
-                      <div class="game-item game-item-game SV388 default-col">
+                      <div class="game-item-game SV388 default-col">
                         <div class="game-content">
                           <div
                             class="game-logo"
@@ -1503,7 +1503,7 @@
                         </div>
                         <div class="loading-block"></div>
                       </div>
-                      <div class="game-item game-item-game WALA88 default-col">
+                      <div class="game-item-game WALA88 default-col">
                         <div class="game-content">
                           <div
                             class="game-logo"
@@ -3128,6 +3128,11 @@
     <script src="./js/login.js"></script>
     <script src="./js/config.js"></script>
     <script src="./js/mobile-header.js"></script>
+    <script>
+      if (window.innerWidth > 768) {
+        window.location.href = './001-index.html';
+      }
+    </script>
     <script src="./js/m--animal.dc58cb1e.js"></script>
     <script src="./js/m--chess.1e9b85e7.js"></script>
     <script src="./js/m--egame.39233435.js"></script>

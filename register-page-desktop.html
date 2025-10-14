@@ -42,6 +42,7 @@
       body {
         margin: 0;
         padding: 0;
+        background-color: #fff !important;
       }
       #root {
         display: none;
@@ -409,8 +410,13 @@
     <script src="./js/hot-games.js"></script>
     <script src="./js/header-hot-games.js"></script>
     <script>
+      const token = localStorage.getItem("token");
+      if (token) {
+        window.location.href = "./001-index.html";
+      }
+
       if (window.innerWidth <= 768) {
-        window.location.href = './003-index.html';
+        window.location.href = "./register-page-mobile.html";
       }
     </script>
   </head>
@@ -1271,819 +1277,139 @@
             </ul>
           </div>
         </div>
-        <div class="marquee-container undefined">
-          <div class="marquee-block" style="display: block">
-            <div class="marquee-news">
-              <div class="marquee-wrap news home-page-position">
-                <div class="visible-area">
-                  <div
-                    class="marquee-content scrollLeft"
-                    style="animation-delay: 2s; animation-duration: 22.07s"
-                  >
-                    <span class="marquee-item" data-nosnippet="true">
-                      VN138 QATAR - NHÀ CÁI XANH CHÍN, NẠP-RÚT NHANH CHÓNG, BẢO
-                      MẬT, NHIỀU ƯU ĐÃI HẤP DẪN, UY TÍN SỐ 1 TOÀN CHÂU Á!
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <span class="news-title"><i class="mps-news"></i></span>
-            </div>
-          </div>
-        </div>
         <div class="app-body">
-          <main class="home-area">
-            <div class="banner">
-              <div class="carousel-banner-container banner desktop">
-                <div
-                  class="swiper swiper-initialized swiper-horizontal swiper-pointer-events"
-                >
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
-                  <div
-                    class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-bullets-dynamic"
-                    style="width: 80px"
-                  >
-                    <span
-                      class="swiper-pagination-bullet"
-                      style="left: -16px"
-                    ></span
-                    ><span
-                      class="swiper-pagination-bullet swiper-pagination-bullet-active-prev-prev"
-                      style="left: -16px"
-                    ></span
-                    ><span
-                      class="swiper-pagination-bullet swiper-pagination-bullet-active-prev"
-                      style="left: -16px"
-                    ></span
-                    ><span
-                      class="swiper-pagination-bullet swiper-pagination-bullet-active swiper-pagination-bullet-active-main"
-                      style="left: -16px"
-                    ></span
-                    ><span
-                      class="swiper-pagination-bullet swiper-pagination-bullet-active-next"
-                      style="left: -16px"
-                    ></span
-                    ><span
-                      class="swiper-pagination-bullet swiper-pagination-bullet-active-next-next"
-                      style="left: -16px"
-                    ></span
-                    ><span
-                      class="swiper-pagination-bullet"
-                      style="left: -16px"
-                    ></span
-                    ><span
-                      class="swiper-pagination-bullet"
-                      style="left: -16px"
-                    ></span>
+          <div class="main-wrap signup">
+            <div class="white-container">
+              <form
+                class="nrc-form nrc-form-block"
+                data-gtm-form-interact-id="0"
+              >
+                <section class="section-block">
+                  <div class="header">
+                    <div class="titles"><h3>Register Account</h3></div>
                   </div>
-                  <div
-                    class="swiper-wrapper"
-                    style="
-                      transition-duration: 0ms;
-                      transform: translate3d(-13200px, 0px, 0px);
-                    "
-                  >
-                    <div
-                      class="swiper-slide swiper-slide-duplicate"
-                      data-swiper-slide-index="0"
-                    >
-                      <img
-                        src="./images/526b7508-1e78-4368-b69a-38105c922395.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                    <div
-                      class="swiper-slide swiper-slide-duplicate"
-                      data-swiper-slide-index="1"
-                    >
-                      <img
-                        src="./images/3a0b70dd-8b07-487a-85f2-7d3dfa8a8a88.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                    <div
-                      class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
-                      data-swiper-slide-index="2"
-                    >
-                      <img
-                        src="./images/9ccc2ffa-6c7e-4af4-a820-0e32b8281d12.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                    <div
-                      class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
-                      data-swiper-slide-index="3"
-                    >
-                      <img
-                        src="./images/feeb387a-0af8-4656-892d-f8b0d76e1703.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                    <div
-                      class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
-                      data-swiper-slide-index="4"
-                    >
-                      <img
-                        src="./images/4efd7ea1-db58-44c4-880e-f66ca9164ba0.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                    <div
-                      class="swiper-slide swiper-slide-duplicate"
-                      data-swiper-slide-index="5"
-                    >
-                      <img
-                        src="./images/e8bd1012-2821-4b9c-8b89-fb9f743cb179.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                    <div
-                      class="swiper-slide swiper-slide-duplicate"
-                      data-swiper-slide-index="6"
-                    >
-                      <img
-                        src="./images/dac8ebec-6657-4a00-abca-008bd6dc7d62.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                    <div
-                      class="swiper-slide swiper-slide-duplicate"
-                      data-swiper-slide-index="7"
-                    >
-                      <img
-                        src="./images/621016d0-c352-4897-9571-147f6b9ee127.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                    <div class="swiper-slide" data-swiper-slide-index="0">
-                      <img
-                        src="./images/526b7508-1e78-4368-b69a-38105c922395.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                    <div class="swiper-slide" data-swiper-slide-index="1">
-                      <img
-                        src="./images/3a0b70dd-8b07-487a-85f2-7d3dfa8a8a88.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                    <div
-                      class="swiper-slide swiper-slide-prev"
-                      data-swiper-slide-index="2"
-                    >
-                      <img
-                        src="./images/9ccc2ffa-6c7e-4af4-a820-0e32b8281d12.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                    <div
-                      class="swiper-slide swiper-slide-active"
-                      data-swiper-slide-index="3"
-                    >
-                      <img
-                        src="./images/feeb387a-0af8-4656-892d-f8b0d76e1703.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                    <div
-                      class="swiper-slide swiper-slide-next"
-                      data-swiper-slide-index="4"
-                    >
-                      <img
-                        src="./images/4efd7ea1-db58-44c4-880e-f66ca9164ba0.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                    <div class="swiper-slide" data-swiper-slide-index="5">
-                      <img
-                        src="./images/e8bd1012-2821-4b9c-8b89-fb9f743cb179.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                    <div class="swiper-slide" data-swiper-slide-index="6">
-                      <img
-                        src="./images/dac8ebec-6657-4a00-abca-008bd6dc7d62.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                    <div class="swiper-slide" data-swiper-slide-index="7">
-                      <img
-                        src="./images/621016d0-c352-4897-9571-147f6b9ee127.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                    <div
-                      class="swiper-slide swiper-slide-duplicate"
-                      data-swiper-slide-index="0"
-                    >
-                      <img
-                        src="./images/526b7508-1e78-4368-b69a-38105c922395.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                    <div
-                      class="swiper-slide swiper-slide-duplicate"
-                      data-swiper-slide-index="1"
-                    >
-                      <img
-                        src="./images/3a0b70dd-8b07-487a-85f2-7d3dfa8a8a88.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                    <div
-                      class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
-                      data-swiper-slide-index="2"
-                    >
-                      <img
-                        src="./images/9ccc2ffa-6c7e-4af4-a820-0e32b8281d12.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                    <div
-                      class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
-                      data-swiper-slide-index="3"
-                    >
-                      <img
-                        src="./images/feeb387a-0af8-4656-892d-f8b0d76e1703.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                    <div
-                      class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
-                      data-swiper-slide-index="4"
-                    >
-                      <img
-                        src="./images/4efd7ea1-db58-44c4-880e-f66ca9164ba0.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                    <div
-                      class="swiper-slide swiper-slide-duplicate"
-                      data-swiper-slide-index="5"
-                    >
-                      <img
-                        src="./images/e8bd1012-2821-4b9c-8b89-fb9f743cb179.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                    <div
-                      class="swiper-slide swiper-slide-duplicate"
-                      data-swiper-slide-index="6"
-                    >
-                      <img
-                        src="./images/dac8ebec-6657-4a00-abca-008bd6dc7d62.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                    <div
-                      class="swiper-slide swiper-slide-duplicate"
-                      data-swiper-slide-index="7"
-                    >
-                      <img
-                        src="./images/621016d0-c352-4897-9571-147f6b9ee127.jpg"
-                        loading="lazy"
-                        alt="VN138"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="home-wrap">
-              <div class="home-quick-box-wrap">
-                <div class="main-wrap">
-                  <div class="home-quick-box">
-                    <div class="home-quick-box-item">
-                      <div
-                        class="main-pic sports"
-                        style="
-                          background-image: url('./images/type-sports.png');
-                        "
-                      ></div>
-                      <h2>Sports</h2>
-                      <p>Participate in worldwide events to have more fun!</p>
-                      <a href="/gamelobby/sports"><span>Play Now</span></a>
-                    </div>
-                    <div class="home-quick-box-item">
-                      <div
-                        class="main-pic live"
-                        style="background-image: url('./images/type-live.png')"
-                      ></div>
-                      <h2>Live</h2>
-                      <p>
-                        Interact with dealers, it feels just like land base
-                        casino!
-                      </p>
-                      <a href="/gamelobby/live"><span>Play Now</span></a>
-                    </div>
-                    <div class="home-quick-box-item">
-                      <div
-                        class="main-pic animal"
-                        style="
-                          background-image: url('./images/type-animal.png');
-                        "
-                      ></div>
-                      <h2>Animal</h2>
-                      <p>
-                        Exciting cockfights and horse races give you a different
-                        experience in betting!
-                      </p>
-                      <a href="/gamelobby/animal"><span>Play Now</span></a>
-                    </div>
-                    <div class="home-quick-box-item">
-                      <div
-                        class="main-pic egame"
-                        style="background-image: url('./images/type-egame.png')"
-                      ></div>
-                      <h2>E-Games</h2>
-                      <p>This is the right place to play against people.</p>
-                      <a href="/gamelobby/egame"><span>Play Now</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="home-egame">
-                <div class="main-wrap">
-                  <div>
-                    <h3 class="home-egame-title">
-                      <img
-                        src="./images/home-egame-title-icon.png"
-                        role="presentation"
-                      />TRÒ CHƠI MỚI
-                    </h3>
-                    <div class="egame-item orange">
-                      <div class="left">
-                        <img
-                          src="./images/home-egame-game1.png"
-                          role="presentation"
-                        />
+                  <div class="container">
+                    <div data-form="playerid" class="nrc-form-item prefix">
+                      <div class="nrc-form-label">
+                        <label for="playerid" class="form-require"
+                          >Player ID</label
+                        >
                       </div>
-                      <div class="right">
-                        <h4 class="egame-item-title">BÓNG RỔ</h4>
-                        <span class="egame-item-tag">Played: 47302</span>
+                      <div class="nrc-form-input nrc-u-1-1">
+                        <input
+                          type="text"
+                          placeholder="Player ID"
+                          id="playerid"
+                          class="invalid"
+                          maxlength="13"
+                          value="00001111"
+                          data-gtm-form-interact-field-id="0"
+                        /><small class="invalid-msg"
+                          >This Player ID is taken</small
+                        >
                       </div>
                     </div>
-                    <div class="egame-item purple">
-                      <div class="left">
-                        <img
-                          src="./images/home-egame-game2.png"
-                          role="presentation"
-                        />
+                    <div data-form="password" class="nrc-form-item">
+                      <div class="nrc-form-label">
+                        <label for="password" class="form-require"
+                          >Password</label
+                        >
                       </div>
-                      <div class="right">
-                        <h4 class="egame-item-title">ANUBIS MOON</h4>
-                        <span class="egame-item-tag">Played: 47302</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="center">
-                    <img
-                      src="./images/home-egame-center-img.png"
-                      role="presentation"
-                    />
-                    <h3>Trò chơi xèng phổ biến</h3>
-                    <p>
-                      VN138 QATAR luôn cung cấp hàng nghìn máy xèng. Trải nghiệm
-                      miễn phí ngay!
-                    </p>
-                  </div>
-                  <div>
-                    <h3 class="home-egame-title">
-                      <img
-                        src="./images/home-egame-title-icon.png"
-                        role="presentation"
-                      />TRÒ CHƠI MỚI
-                    </h3>
-                    <div class="egame-item orange">
-                      <div class="left">
-                        <img
-                          src="./images/home-egame-game1.png"
-                          role="presentation"
-                        />
-                      </div>
-                      <div class="right">
-                        <h4 class="egame-item-title">BÓNG RỔ</h4>
-                        <span class="egame-item-tag">Played: 47302</span>
+                      <div class="nrc-form-input nrc-u-1-1 nrc-form-password">
+                        <div>
+                          <input
+                            autocomplete="new-password"
+                            placeholder="Password"
+                            type="password"
+                            id="password"
+                            class=""
+                            maxlength="20"
+                            value=""
+                            data-gtm-form-interact-field-id="1"
+                          /><i class="mps-unreadable"></i>
+                        </div>
+                        <small class="info-msg"
+                          >Password must be 8~20 alphanumeric(Can contain
+                          special characters)</small
+                        >
                       </div>
                     </div>
-                    <div class="egame-item purple">
-                      <div class="left">
-                        <img
-                          src="./images/home-egame-game2.png"
-                          role="presentation"
-                        />
+                    <div data-form="mobile" class="nrc-form-item">
+                      <div class="nrc-form-label">
+                        <label for="mobile" class="form-require"
+                          >Contact Number</label
+                        >
                       </div>
-                      <div class="right">
-                        <h4 class="egame-item-title">ANUBIS MOON</h4>
-                        <span class="egame-item-tag">Played: 47302</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="home-feature">
-                <div class="main-wrap">
-                  <div class="feature-item">
-                    <img src="./images/logo.png" alt="" />
-                    <p>
-                      VN138 là nền tảng giải trí trực tuyến hàng đầu đến từ
-                      Qatar với các trò chơi Live Casino &amp; Trực Tiếp Bóng Đá
-                      hấp dẫn
-                    </p>
-                  </div>
-                  <div class="feature-item">
-                    <img src="./images/home-feature2.png" alt="" />
-                    <p>
-                      Các loại đặt cược casino đầy đủ nhất Hàng nghìn xèng, Hàng
-                      chục nghìn, Casino trực tiếp, Poker, Baccarat, Trò chơi
-                      thể thao, Cá cược bóng, Roulette, Bắn cá, Xổ số
-                    </p>
-                  </div>
-                  <div class="feature-item">
-                    <img src="./images/home-feature3.png" alt="" />
-                    <p>
-                      Hỗ trợ hệ điều hành Android, IOS và trên cả PC. Hỗ trợ
-                      người chơi rút tiền dễ dàng và nhanh chóng, đảm bảo an
-                      toàn và bảo mật tuyệt đối .
-                    </p>
-                  </div>
-                  <div class="feature-item">
-                    <img src="./images/home-feature4.png" alt="" />
-                    <p>
-                      Cung cấp nhiều phần thưởng sòng bạc, đăng ký thành viên
-                      mới để nhận tài khoản tín dụng miễn phí, vòng quay, quà
-                      tặng sinh nhật thành viên baccarat, v.v.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="winners">
-                <div>
-                  <ul>
-                    <li>
-                      <div class="user">ges******16</div>
-                      <div class="prize">Win <b>3,426,838,126</b></div>
-                    </li>
-                    <li>
-                      <div class="user">que*******88</div>
-                      <div class="prize">Win <b>2,552,807,163</b></div>
-                    </li>
-                    <li>
-                      <div class="user">bib*****45</div>
-                      <div class="prize">Win <b>3,474,772,578</b></div>
-                    </li>
-                    <li>
-                      <div class="user">crl******22</div>
-                      <div class="prize">Win <b>3,468,177,178</b></div>
-                    </li>
-                    <li>
-                      <div class="user">pes*****92</div>
-                      <div class="prize">Win <b>2,552,905,842</b></div>
-                    </li>
-                    <li>
-                      <div class="user">sus*****12</div>
-                      <div class="prize">Win <b>3,510,038,510</b></div>
-                    </li>
-                    <li>
-                      <div class="user">geb*****77</div>
-                      <div class="prize">Win <b>2,554,443,723</b></div>
-                    </li>
-                    <li>
-                      <div class="user">cas******16</div>
-                      <div class="prize">Win <b>3,476,464,947</b></div>
-                    </li>
-                    <li>
-                      <div class="user">ale****96</div>
-                      <div class="prize">Win <b>2,545,060,572</b></div>
-                    </li>
-                    <li>
-                      <div class="user">cal*****10</div>
-                      <div class="prize">Win <b>3,423,457,811</b></div>
-                    </li>
-                    <li>
-                      <div class="user">des******26</div>
-                      <div class="prize">Win <b>3,507,295,028</b></div>
-                    </li>
-                    <li>
-                      <div class="user">ngo*******88</div>
-                      <div class="prize">Win <b>3,429,250,952</b></div>
-                    </li>
-                    <li>
-                      <div class="user">anh******ha</div>
-                      <div class="prize">Win <b>3,512,818,548</b></div>
-                    </li>
-                    <li>
-                      <div class="user">kid*****33</div>
-                      <div class="prize">Win <b>3,471,187,037</b></div>
-                    </li>
-                    <li>
-                      <div class="user">pen*****28</div>
-                      <div class="prize">Win <b>2,543,892,693</b></div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="home-link">
-                <div class="main-wrap">
-                  <div class="home-link-item">
-                    <img src="./images/home-link2.png" alt="" />
-                    <h4>COOL-IN LIVE</h4>
-                  </div>
-                  <div class="home-link-item">
-                    <img src="./images/home-link3.png" alt="" />
-                    <h4>PHIM ẢNH</h4>
-                  </div>
-                  <div class="home-link-item">
-                    <img src="./images/home-link4.png" alt="" />
-                    <h4>HẬU TRƯỜNG HOẠT ĐỘNG</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="home-rankinglist">
-                <div class="main-wrap">
-                  <div class="latest-bet-race">
-                    <div class="nrc-tabs">
-                      <div class="nrc-tabs-nav">
-                        <span class="nrc-tabs-tab active">Latest bets</span
-                        ><span class="nrc-tabs-tab">High rollers</span>
-                      </div>
-                      <div class="nrc-tab-pane">
-                        <div class="winner-table latestBetList">
-                          <table class="winner-list">
-                            <thead>
-                              <tr>
-                                <th class="gp-td">Provider</th>
-                                <th>Game Name</th>
-                                <th>Player ID</th>
-                                <th>Valid Bet</th>
-                                <th>Game Win/Loss</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr class="winner-item">
-                                <td data-gameproviderid="RSG" class="gp-td">
-                                  <div class="gp-logo-wrap">
-                                    <img
-                                      src="./images/rsg.png"
-                                      alt="gp-RSG"
-                                      class="gp-logo"
-                                    />
-                                  </div>
-                                  <div class="winner-item-gp">RSG</div>
-                                </td>
-                                <td>Ocean Emperor</td>
-                                <td class="item-name">
-                                  <div class="item-user">
-                                    <i class="mps-user-full"></i>
-                                    <div>qt**********</div>
-                                  </div>
-                                </td>
-                                <td>3.00</td>
-                                <td class="win">5.00</td>
-                              </tr>
-                              <tr class="winner-item">
-                                <td data-gameproviderid="PG" class="gp-td">
-                                  <div class="gp-logo-wrap">
-                                    <img
-                                      src="./images/pg.png"
-                                      alt="gp-PG"
-                                      class="gp-logo"
-                                    />
-                                  </div>
-                                  <div class="winner-item-gp">PG</div>
-                                </td>
-                                <td>Wild Bounty Showdown</td>
-                                <td class="item-name">
-                                  <div class="item-user">
-                                    <i class="mps-user-full"></i>
-                                    <div>da*******</div>
-                                  </div>
-                                </td>
-                                <td>0.80</td>
-                                <td class="loss">-0.76</td>
-                              </tr>
-                              <tr class="winner-item">
-                                <td data-gameproviderid="SABA" class="gp-td">
-                                  <div class="gp-logo-wrap">
-                                    <img
-                                      src="./images/saba.png"
-                                      alt="gp-SABA"
-                                      class="gp-logo"
-                                    />
-                                  </div>
-                                  <div class="winner-item-gp">SABA</div>
-                                </td>
-                                <td>SABA Promotion</td>
-                                <td class="item-name">
-                                  <div class="item-user">
-                                    <i class="mps-user-full"></i>
-                                    <div>vq*******</div>
-                                  </div>
-                                </td>
-                                <td>40.00</td>
-                                <td class="win">109.00</td>
-                              </tr>
-                              <tr class="winner-item">
-                                <td data-gameproviderid="BBIN" class="gp-td">
-                                  <div class="gp-logo-wrap">
-                                    <img
-                                      src="./images/bbin.png"
-                                      alt="gp-BBIN"
-                                      class="gp-logo"
-                                    />
-                                  </div>
-                                  <div class="winner-item-gp">BBIN</div>
-                                </td>
-                                <td>Blockchain Se Die</td>
-                                <td class="item-name">
-                                  <div class="item-user">
-                                    <i class="mps-user-full"></i>
-                                    <div>99**********</div>
-                                  </div>
-                                </td>
-                                <td>939.00</td>
-                                <td class="win">2,699.00</td>
-                              </tr>
-                              <tr class="winner-item">
-                                <td data-gameproviderid="CQ9" class="gp-td">
-                                  <div class="gp-logo-wrap">
-                                    <img
-                                      src="./images/cq9.png"
-                                      alt="gp-CQ9"
-                                      class="gp-logo"
-                                    />
-                                  </div>
-                                  <div class="winner-item-gp">CQ9</div>
-                                </td>
-                                <td>CHICAGO Ⅱ</td>
-                                <td class="item-name">
-                                  <div class="item-user">
-                                    <i class="mps-user-full"></i>
-                                    <div>58*********</div>
-                                  </div>
-                                </td>
-                                <td>216.00</td>
-                                <td class="win">260.00</td>
-                              </tr>
-                              <tr class="winner-item">
-                                <td data-gameproviderid="SBOBET" class="gp-td">
-                                  <div class="gp-logo-wrap">
-                                    <img
-                                      src="./images/sbobet.png"
-                                      alt="gp-SBOBET"
-                                      class="gp-logo"
-                                    />
-                                  </div>
-                                  <div class="winner-item-gp">SBOBET</div>
-                                </td>
-                                <td>SBOBET(Virtual)</td>
-                                <td class="item-name">
-                                  <div class="item-user">
-                                    <i class="mps-user-full"></i>
-                                    <div>r0********</div>
-                                  </div>
-                                </td>
-                                <td>10.00</td>
-                                <td class="win">4.00</td>
-                              </tr>
-                              <tr class="winner-item">
-                                <td data-gameproviderid="SBOBET" class="gp-td">
-                                  <div class="gp-logo-wrap">
-                                    <img
-                                      src="./images/sbobet.png"
-                                      alt="gp-SBOBET"
-                                      class="gp-logo"
-                                    />
-                                  </div>
-                                  <div class="winner-item-gp">SBOBET</div>
-                                </td>
-                                <td>SBOBET(Virtual)</td>
-                                <td class="item-name">
-                                  <div class="item-user">
-                                    <i class="mps-user-full"></i>
-                                    <div>va******</div>
-                                  </div>
-                                </td>
-                                <td>10,848.00</td>
-                                <td class="win">30,976.00</td>
-                              </tr>
-                              <tr class="winner-item">
-                                <td data-gameproviderid="PG" class="gp-td">
-                                  <div class="gp-logo-wrap">
-                                    <img
-                                      src="./images/pg.png"
-                                      alt="gp-PG"
-                                      class="gp-logo"
-                                    />
-                                  </div>
-                                  <div class="winner-item-gp">PG</div>
-                                </td>
-                                <td>Mahjong Ways 2</td>
-                                <td class="item-name">
-                                  <div class="item-user">
-                                    <i class="mps-user-full"></i>
-                                    <div>ba*****</div>
-                                  </div>
-                                </td>
-                                <td>3.20</td>
-                                <td class="win">8.32</td>
-                              </tr>
-                              <tr class="winner-item">
-                                <td data-gameproviderid="PG" class="gp-td">
-                                  <div class="gp-logo-wrap">
-                                    <img
-                                      src="./images/pg.png"
-                                      alt="gp-PG"
-                                      class="gp-logo"
-                                    />
-                                  </div>
-                                  <div class="winner-item-gp">PG</div>
-                                </td>
-                                <td>Wild Bandito</td>
-                                <td class="item-name">
-                                  <div class="item-user">
-                                    <i class="mps-user-full"></i>
-                                    <div>mi*********</div>
-                                  </div>
-                                </td>
-                                <td>2.00</td>
-                                <td class="loss">-2.00</td>
-                              </tr>
-                              <tr class="winner-item">
-                                <td data-gameproviderid="OD_COCK" class="gp-td">
-                                  <div class="gp-logo-wrap">
-                                    <img
-                                      src="./images/od_cock.png"
-                                      alt="gp-OD COCK"
-                                      class="gp-logo"
-                                    />
-                                  </div>
-                                  <div class="winner-item-gp">OD COCK</div>
-                                </td>
-                                <td>Cock fighting</td>
-                                <td class="item-name">
-                                  <div class="item-user">
-                                    <i class="mps-user-full"></i>
-                                    <div>8m********</div>
-                                  </div>
-                                </td>
-                                <td>18.00</td>
-                                <td class="win">14.00</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <div class="show-more-btn">
-                            <button title="" class="nrc-button" type="button">
-                              Show more<i class="mps-arrow-down"></i>
+                      <div class="nrc-form-input nrc-u-1-1">
+                        <div
+                          class="react-tel-input"
+                          data-test-id="src_reacttelephoneinput_test_id_4"
+                        >
+                          <div
+                            class="flag-dropdown"
+                            data-test-id="src_reacttelephoneinput_test_id_6"
+                          >
+                            <button
+                              class="selected-flag"
+                              title="Vietnam (Việt Nam): + 84"
+                              data-test-id="src_reacttelephoneinput_test_id_7"
+                              type="button"
+                            >
+                              <div
+                                class="flag vn"
+                                data-test-id="src_reacttelephoneinput_test_id_8"
+                                style="
+                                  background-image: url('/static/media/flags.5bc53ca7..png');
+                                "
+                              >
+                                <div
+                                  class="arrow"
+                                  data-test-id="src_reacttelephoneinput_test_id_9"
+                                ></div>
+                              </div>
                             </button>
                           </div>
+                          <input
+                            type="tel"
+                            class="form-control"
+                            autocomplete="tel"
+                            placeholder="+86 12-34567"
+                            data-test-id="src_reacttelephoneinput_test_id_5"
+                            value="+84"
+                          />
                         </div>
+                        <small class="info-msg"></small
+                        ><input type="hidden" class="nrc-invisible" />
                       </div>
                     </div>
+                    <br />
                   </div>
+                </section>
+                <div class="btn-group">
+                  <button
+                    title=""
+                    class="nrc-button grey btn-reset"
+                    type="button"
+                    style="padding: 0px; width: 150px"
+                  >
+                    Reset</button
+                  ><button
+                    title=""
+                    class="nrc-button btn-submit"
+                    type="button"
+                    style="padding: 0px; width: 150px"
+                  >
+                    Join Now</button
+                  ><button
+                    title=""
+                    class="nrc-button grey to-login-btn"
+                    type="button"
+                    style="padding: 0px; width: 150px; display: none"
+                  >
+                    Login
+                  </button>
                 </div>
-              </div>
-            </div>
-          </main>
-          <div class="event-qmenu">
-            <div class="handle">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 70">
-                <path
-                  d="M0,1.3l0,67.4c0.5-1.3,1.2-2.6,1.9-3.8c2-3.3,4.2-5.7,8.4-9.6l1.5-1.4C19.3,47,22,42.8,22,35s-2.7-12-10.2-18.9c-0.2-0.2-1.2-1.1-1.5-1.4c-4.2-3.9-6.5-6.3-8.4-9.6C1.2,3.9,0.5,2.6,0,1.3L0,1.3z"
-                ></path>
-              </svg>
-            </div>
-            <div class="cont">
-              <div class="event-item">
-                <img src="./images/mission.png" alt="event-mission" />
-              </div>
-              <div class="event-item">
-                <img src="./images/event_vip.png" alt="event-vip" />
-              </div>
+              </form>
             </div>
           </div>
         </div>

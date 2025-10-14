@@ -2849,23 +2849,39 @@
           </div>
           <div class="bottom-nav bottom-nav-template-col2">
             <ul>
-              <li class="nav-home">
+              <li
+                class="nav-home current"
+                onclick="window.location.href='./003-index.html'"
+                style="cursor: pointer"
+              >
                 <i class="d20_account_home"></i>
                 <h3>Home</h3>
               </li>
-              <li class="nav-deposit">
+              <li
+                class="nav-deposit"
+                onclick="window.location.href='./deposit-mobile.html'"
+                style="cursor: pointer"
+              >
                 <i class="d20_account_deposit2"></i>
                 <h3>Deposit</h3>
               </li>
-              <li class="nav-withdrawal">
+              <li class="nav-withdrawal" style="cursor: pointer">
                 <i class="d20_account_withdrawal1"></i>
                 <h3>Withdrawal</h3>
               </li>
-              <li class="nav-cs">
+              <li
+                class="nav-cs"
+                onclick="window.open('https://direct.lc.chat/16777530/', '_blank')"
+                style="cursor: pointer"
+              >
                 <i class="d20_contact_cs"></i>
                 <h3>Contact</h3>
               </li>
-              <li class="nav-account">
+              <li
+                class="nav-account"
+                onclick="window.location.href='./mobile-menu.html'"
+                style="cursor: pointer"
+              >
                 <i class="d20_account_account"></i>
                 <h3>Account</h3>
               </li>
@@ -3140,6 +3156,13 @@
       if (window.innerWidth > 768) {
         window.location.href = "./001-index.html";
       }
+
+      window.addEventListener('balanceUpdated', function() {
+        const user = JSON.parse(localStorage.getItem('user'));
+        if (user) {
+          document.getElementById('user-balance').textContent = parseFloat(user.balance).toFixed(2);
+        }
+      });
     </script>
     <script src="./js/m--animal.dc58cb1e.js"></script>
     <script src="./js/m--chess.1e9b85e7.js"></script>

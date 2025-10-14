@@ -2680,3 +2680,241 @@ html[lang="pt"] .m-member-center-main .mc-navbar-wrapper .navbar .title {
 .deposit-countdown.desktop .deposit-countdown-timer > p {
   font-size: 32px;
 }
+
+.detail-card {
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  line-height: 1;
+  overflow: hidden;
+}
+
+.detail-card .card-content {
+  background: #fafafc;
+  padding: 15px;
+}
+
+.detail-card .card-more-btn {
+  background-color: #e1e1e1;
+  color: #838383;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px 15px;
+  text-align: center;
+}
+
+.detail-card .card-detail-content {
+  background: #fafafc;
+  border-top: 1px solid #e9e9e9;
+  cursor: pointer;
+  padding: 5px 20px;
+}
+
+.detail-card .card-detail-content.disabled {
+  cursor: default;
+}
+
+.spin {
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-name: spin;
+  animation-timing-function: linear;
+  display: inline-block;
+}
+
+.easein-leave.easein-leave-active {
+  transition: opacity 0.3s ease-in;
+}
+
+.easein-appear {
+  opacity: 0.01;
+}
+
+.easein-appear.easein-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.easein-enter {
+  opacity: 0.01;
+}
+
+.easein-enter.easein-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.easein-leave {
+  opacity: 1;
+}
+
+.easein-leave.easein-leave-active {
+  opacity: 0.01;
+  transition: opacity 0.5s ease-in;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.m-withdrawal-audit > .content-block {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 45px);
+  padding: 20px;
+}
+
+.m-withdrawal-audit .navbar .countdown-value {
+  color: #e94951;
+  font-size: 14px;
+}
+
+.m-withdrawal-audit .navbar .mps-update {
+  color: #f9bb22;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.m-withdrawal-audit .navbar .mps-update.disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+.m-withdrawal-audit .content-block {
+  display: block;
+  min-height: calc(100vh - 96px);
+}
+
+.m-withdrawal-audit .setting-btn {
+  align-items: center;
+  background: #f9bb22;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  font-size: 12px;
+  font-weight: 500;
+  height: 36px;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.m-withdrawal-audit .content-block > .data {
+  padding-bottom: 80px;
+}
+
+.m-withdrawal-audit .content-block > .data .detail-card {
+  background-color: #fafafc;
+  border: 1px solid #ececec;
+  margin-bottom: 10px;
+}
+
+.m-withdrawal-audit .content-block > .data .detail-card .card-content {
+  background-color: #fafafc;
+}
+
+.m-withdrawal-audit .content-block > .data .status-remove .row,
+.m-withdrawal-audit .content-block > .data .status-remove .row > div {
+  color: #aaa;
+}
+
+.m-withdrawal-audit .content-block > .data .row {
+  align-items: center;
+  color: #545658;
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.m-withdrawal-audit .content-block > .data .row .time {
+  color: #939698;
+}
+
+.m-withdrawal-audit .content-block > .data .row .status {
+  background-color: #e7e7e7;
+  border-radius: 2px;
+  color: #939698;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 10px;
+  white-space: nowrap;
+}
+
+.m-withdrawal-audit .content-block > .data .row .status.remove {
+  background: #939698;
+  color: #fff;
+}
+
+.m-withdrawal-audit .content-block > .data .row .status.success {
+  background: #9ac143;
+  color: #fff;
+}
+
+.m-withdrawal-audit .content-block > .data .row .status.failed {
+  background: #e94951;
+  color: #fff;
+}
+
+.m-withdrawal-audit .content-block > .data .row .promotype {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.m-withdrawal-audit .content-block > .data .row .label {
+  color: #939698;
+}
+
+.m-withdrawal-audit .content-block > .data .row .value {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.mobile-withdraw-balance {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  margin: 12px 0;
+}
+
+.m-withdrawal-audit .countdown-reload {
+  cursor: pointer;
+}
+
+.m-withdrawal-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.45);
+  color: #ffffff;
+  font-size: 14px;
+  z-index: 15;
+}
+
+.m-withdrawal-overlay .spinner {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.25);
+  border-top-color: #ffffff;
+  animation: m-withdrawal-spin 0.9s linear infinite;
+}
+
+@keyframes m-withdrawal-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

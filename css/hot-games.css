@@ -1,10 +1,22 @@
 .home-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr) !important;
   gap: 10px;
+  .game-item,
+  .game-item-hot {
+    width: 100% !important;
+  }
 }
 
 .home-list .game-item .game-col-cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.home-list .game-item-hot .game-col-cover {
   display: flex;
   align-items: center;
   justify-content: center;

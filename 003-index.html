@@ -456,7 +456,7 @@
                     height="30"
                   />
                 </div>
-                <div class="tools">
+                <div class="tools" id="tools-logged-out">
                   <div class="country-select">
                     <div class="country-select-toggle">
                       <div
@@ -474,10 +474,34 @@
                       alt="icon_msg_center"
                   /></a>
                 </div>
+                <div class="tools" id="tools-logged-in" style="display: none">
+                  <div class="tools-item header-account">
+                    <span id="user-balance">0.00</span>
+                    <div class="user-avatar"></div>
+                  </div>
+                  <div class="country-select">
+                    <div class="country-select-toggle">
+                      <div
+                        class="flag-icon flag-icon-squared flag-icon-us"
+                      ></div>
+                    </div>
+                    <select aria-label="country-select">
+                      <option value="vi-VN">Tiếng Việt</option>
+                      <option value="en-US">English</option>
+                    </select>
+                  </div>
+                  <a class="tools-item" href="/inbox">
+                    <img
+                      src="./images/icon_msg_center.png"
+                      alt="icon_msg_center"
+                    />
+                    <div class="unreadBadge">1</div>
+                  </a>
+                </div>
               </header>
-              <section class="home-login">
+              <section class="home-login" id="home-login">
                 <div class="tools-item">Register</div>
-                <div class="tools-item">Login</div>
+                <a class="tools-item" href="./login-page-mobile.html">Login</a>
               </section>
               <div class="home-banner-top">
                 <div class="carousel-banner-container banner">
@@ -861,7 +885,7 @@
                             class="game-col-cover"
                             style="
                               visibility: visible;
-                              background-image: url('./alo-clone/images/live-arena.webp');
+                              background-image: url('./images/sub-live-via_casino.png');
                             "
                           ></div>
                         </div>
@@ -876,6 +900,119 @@
                             VIA_CASINO
                           </h3>
                           <div class="pd-name" data-type="LIVE">VIA_CASINO</div>
+                          <button>Start</button>
+                        </div>
+                        <div class="favorite-game-icon-wrapper">
+                          <div class="fav-btn"></div>
+                        </div>
+                        <div class="loading-block"></div>
+                      </div>
+                      <div
+                        data-id="LIVE-WM"
+                        data-type="LIVE"
+                        data-gp="wm"
+                        class="game-item WM default-col"
+                      >
+                        <div class="game-content">
+                          <div
+                            class="game-logo"
+                            style="background-image: url('./images/wm.png')"
+                          ></div>
+                          <div
+                            class="game-col-cover"
+                            style="
+                              visibility: visible;
+                              background-image: url('./images/sub-live-wm.png');
+                            "
+                          ></div>
+                        </div>
+                        <div class="game-info">
+                          <h3
+                            gp="WM"
+                            style="
+                              background-image: url('./images/wm.png');
+                              visibility: visible;
+                            "
+                          >
+                            WM
+                          </h3>
+                          <div class="pd-name" data-type="LIVE">WM</div>
+                          <button>Start</button>
+                        </div>
+                        <div class="favorite-game-icon-wrapper">
+                          <div class="fav-btn"></div>
+                        </div>
+                        <div class="loading-block"></div>
+                      </div>
+                      <div
+                        data-id="LIVE-DB_LIVE"
+                        data-type="LIVE"
+                        data-gp="db_live"
+                        class="game-item DB_LIVE default-col"
+                      >
+                        <div class="game-content">
+                          <div
+                            class="game-logo"
+                            style="
+                              background-image: url('./images/db_live.png');
+                            "
+                          ></div>
+                          <div
+                            class="game-col-cover"
+                            style="
+                              visibility: visible;
+                              background-image: url('./images/sub-live-db_live.png');
+                            "
+                          ></div>
+                        </div>
+                        <div class="game-info">
+                          <h3
+                            gp="DB_LIVE"
+                            style="
+                              background-image: url('./images/db_live.png');
+                              visibility: visible;
+                            "
+                          >
+                            DB LIVE
+                          </h3>
+                          <div class="pd-name" data-type="LIVE">DB LIVE</div>
+                          <button>Start</button>
+                        </div>
+                        <div class="favorite-game-icon-wrapper">
+                          <div class="fav-btn"></div>
+                        </div>
+                        <div class="loading-block"></div>
+                      </div>
+                      <div
+                        data-id="LIVE-AG"
+                        data-type="LIVE"
+                        data-gp="ag"
+                        class="game-item AG default-col"
+                      >
+                        <div class="game-content">
+                          <div
+                            class="game-logo"
+                            style="background-image: url('./images/ag.png')"
+                          ></div>
+                          <div
+                            class="game-col-cover"
+                            style="
+                              visibility: visible;
+                              background-image: url('./images/sub-live-ag.png');
+                            "
+                          ></div>
+                        </div>
+                        <div class="game-info">
+                          <h3
+                            gp="AG"
+                            style="
+                              background-image: url('./images/ag.png');
+                              visibility: visible;
+                            "
+                          >
+                            PlayAce
+                          </h3>
+                          <div class="pd-name" data-type="LIVE">PlayAce</div>
                           <button>Start</button>
                         </div>
                         <div class="favorite-game-icon-wrapper">
@@ -900,7 +1037,7 @@
                             class="game-col-cover"
                             style="
                               visibility: visible;
-                              background-image: url('./alo-clone/images/wala-img.png');
+                              background-image: url('./images/sub-live-sexybcrt.png');
                             "
                           ></div>
                         </div>
@@ -937,7 +1074,7 @@
                             class="game-col-cover"
                             style="
                               visibility: visible;
-                              background-image: url('./images/live_dg.png');
+                              background-image: url('./images/sub-live-dg.png');
                             "
                           ></div>
                         </div>
@@ -960,80 +1097,6 @@
                         <div class="loading-block"></div>
                       </div>
                       <div
-                        data-id="LIVE-WM"
-                        data-type="LIVE"
-                        data-gp="wm"
-                        class="game-item WM default-col"
-                      >
-                        <div class="game-content">
-                          <div
-                            class="game-logo"
-                            style="background-image: url('./images/wm.png')"
-                          ></div>
-                          <div
-                            class="game-col-cover"
-                            style="
-                              visibility: visible;
-                              background-image: url('./images/live_wm.png');
-                            "
-                          ></div>
-                        </div>
-                        <div class="game-info">
-                          <h3
-                            gp="WM"
-                            style="
-                              background-image: url('./images/wm.png');
-                              visibility: visible;
-                            "
-                          >
-                            WM
-                          </h3>
-                          <div class="pd-name" data-type="LIVE">WM</div>
-                          <button>Start</button>
-                        </div>
-                        <div class="favorite-game-icon-wrapper">
-                          <div class="fav-btn"></div>
-                        </div>
-                        <div class="loading-block"></div>
-                      </div>
-                      <div
-                        data-id="LIVE-AG"
-                        data-type="LIVE"
-                        data-gp="ag"
-                        class="game-item AG default-col"
-                      >
-                        <div class="game-content">
-                          <div
-                            class="game-logo"
-                            style="background-image: url('./images/ag.png')"
-                          ></div>
-                          <div
-                            class="game-col-cover"
-                            style="
-                              visibility: visible;
-                              background-image: url('./images/live_ag.png');
-                            "
-                          ></div>
-                        </div>
-                        <div class="game-info">
-                          <h3
-                            gp="AG"
-                            style="
-                              background-image: url('./images/ag.png');
-                              visibility: visible;
-                            "
-                          >
-                            AG
-                          </h3>
-                          <div class="pd-name" data-type="LIVE">PlayAce</div>
-                          <button>Start</button>
-                        </div>
-                        <div class="favorite-game-icon-wrapper">
-                          <div class="fav-btn"></div>
-                        </div>
-                        <div class="loading-block"></div>
-                      </div>
-                      <div
                         data-id="LIVE-ALLBET"
                         data-type="LIVE"
                         data-gp="allbet"
@@ -1048,7 +1111,7 @@
                             class="game-col-cover"
                             style="
                               visibility: visible;
-                              background-image: url('./images/live_allbet.png');
+                              background-image: url('./images/sub-live-allbet.png');
                             "
                           ></div>
                         </div>
@@ -1077,32 +1140,29 @@
                         class="game-item BBIN default-col"
                       >
                         <div class="game-content">
-                          <div class="game-logo" style="background-image: url('./images/bbin.png')"></div>
-                          <div class="game-col-cover" style="visibility: visible; background-image: url('./images/live_bbin.png')"></div>
+                          <div
+                            class="game-logo"
+                            style="background-image: url('./images/bbin.png')"
+                          ></div>
+                          <div
+                            class="game-col-cover"
+                            style="
+                              visibility: visible;
+                              background-image: url('./images/sub-live-bbin.png');
+                            "
+                          ></div>
                         </div>
                         <div class="game-info">
-                          <h3 gp="BBIN" style="background-image: url('./images/bbin.png'); visibility: visible;">BBIN</h3>
+                          <h3
+                            gp="BBIN"
+                            style="
+                              background-image: url('./images/bbin.png');
+                              visibility: visible;
+                            "
+                          >
+                            BBIN
+                          </h3>
                           <div class="pd-name" data-type="LIVE">BBIN</div>
-                          <button>Start</button>
-                        </div>
-                        <div class="favorite-game-icon-wrapper">
-                          <div class="fav-btn"></div>
-                        </div>
-                        <div class="loading-block"></div>
-                      </div>
-                      <div
-                        data-id="LIVE-DB_LIVE"
-                        data-type="LIVE"
-                        data-gp="db_live"
-                        class="game-item DB_LIVE default-col"
-                      >
-                        <div class="game-content">
-                          <div class="game-logo" style="background-image: url('./images/db_live.png')"></div>
-                          <div class="game-col-cover" style="visibility: visible; background-image: url('./images/live_db_live.png')"></div>
-                        </div>
-                        <div class="game-info">
-                          <h3 gp="DB_LIVE" style="background-image: url('./images/db_live.png'); visibility: visible;">DB LIVE</h3>
-                          <div class="pd-name" data-type="LIVE">DB LIVE</div>
                           <button>Start</button>
                         </div>
                         <div class="favorite-game-icon-wrapper">
@@ -1117,11 +1177,28 @@
                         class="game-item EBET default-col"
                       >
                         <div class="game-content">
-                          <div class="game-logo" style="background-image: url('./images/ebet.png')"></div>
-                          <div class="game-col-cover" style="visibility: visible; background-image: url('./images/live_ebet.png')"></div>
+                          <div
+                            class="game-logo"
+                            style="background-image: url('./images/ebet.png')"
+                          ></div>
+                          <div
+                            class="game-col-cover"
+                            style="
+                              visibility: visible;
+                              background-image: url('./images/sub-live-ebet.png');
+                            "
+                          ></div>
                         </div>
                         <div class="game-info">
-                          <h3 gp="EBET" style="background-image: url('./images/ebet.png'); visibility: visible;">WE2</h3>
+                          <h3
+                            gp="EBET"
+                            style="
+                              background-image: url('./images/ebet.png');
+                              visibility: visible;
+                            "
+                          >
+                            WE2
+                          </h3>
                           <div class="pd-name" data-type="LIVE">WE2</div>
                           <button>Start</button>
                         </div>
@@ -1137,11 +1214,28 @@
                         class="game-item EVO default-col"
                       >
                         <div class="game-content">
-                          <div class="game-logo" style="background-image: url('./images/evo.png')"></div>
-                          <div class="game-col-cover" style="visibility: visible; background-image: url('./images/live_evo.png')"></div>
+                          <div
+                            class="game-logo"
+                            style="background-image: url('./images/evo.png')"
+                          ></div>
+                          <div
+                            class="game-col-cover"
+                            style="
+                              visibility: visible;
+                              background-image: url('./images/sub-live-evo.png');
+                            "
+                          ></div>
                         </div>
                         <div class="game-info">
-                          <h3 gp="EVO" style="background-image: url('./images/evo.png'); visibility: visible;">EVO</h3>
+                          <h3
+                            gp="EVO"
+                            style="
+                              background-image: url('./images/evo.png');
+                              visibility: visible;
+                            "
+                          >
+                            EVO
+                          </h3>
                           <div class="pd-name" data-type="LIVE">EVO</div>
                           <button>Start</button>
                         </div>
@@ -1151,41 +1245,34 @@
                         <div class="loading-block"></div>
                       </div>
                       <div
-                        data-id="LIVE-EZUGI"
-                        data-type="LIVE"
-                        data-gp="ezugi"
-                        class="game-item EZUGI maintenance is-disabled"
-                      >
-                        <div class="maintenance-block en-US">
-                          <div class="time">
-                            2025-07-19 00:46:39 ~ To be notified
-                          </div>
-                          <div class="message">【EZUGI】</div>
-                        </div>
-                        <div class="favorite-game-icon-wrapper"></div>
-                        <div class="loading-block"></div>
-                        <div class="loading-skeleton-wrapper">
-                          <span aria-live="polite" aria-busy="true"
-                            ><span
-                              class="react-loading-skeleton loading-skeleton"
-                              style="--base-color: transparent"
-                              >‌</span
-                            ><br
-                          /></span>
-                        </div>
-                      </div>
-                      <div
                         data-id="LIVE-MG"
                         data-type="LIVE"
                         data-gp="mg"
                         class="game-item MG default-col"
                       >
                         <div class="game-content">
-                          <div class="game-logo" style="background-image: url('./images/mg.png')"></div>
-                          <div class="game-col-cover" style="visibility: visible; background-image: url('./images/live_mg.png')"></div>
+                          <div
+                            class="game-logo"
+                            style="background-image: url('./images/mg.png')"
+                          ></div>
+                          <div
+                            class="game-col-cover"
+                            style="
+                              visibility: visible;
+                              background-image: url('./images/sub-live-mg.png');
+                            "
+                          ></div>
                         </div>
                         <div class="game-info">
-                          <h3 gp="MG" style="background-image: url('./images/mg.png'); visibility: visible;">MG</h3>
+                          <h3
+                            gp="MG"
+                            style="
+                              background-image: url('./images/mg.png');
+                              visibility: visible;
+                            "
+                          >
+                            MG
+                          </h3>
                           <div class="pd-name" data-type="LIVE">MG</div>
                           <button>Start</button>
                         </div>
@@ -1201,11 +1288,30 @@
                         class="game-item MOTIVATION default-col"
                       >
                         <div class="game-content">
-                          <div class="game-logo" style="background-image: url('./images/motivation.png')"></div>
-                          <div class="game-col-cover" style="visibility: visible; background-image: url('./images/live_motivation.png')"></div>
+                          <div
+                            class="game-logo"
+                            style="
+                              background-image: url('./images/motivation.png');
+                            "
+                          ></div>
+                          <div
+                            class="game-col-cover"
+                            style="
+                              visibility: visible;
+                              background-image: url('./images/sub-live-motivation.png');
+                            "
+                          ></div>
                         </div>
                         <div class="game-info">
-                          <h3 gp="MOTIVATION" style="background-image: url('./images/motivation.png'); visibility: visible;">MOTIVATION</h3>
+                          <h3
+                            gp="MOTIVATION"
+                            style="
+                              background-image: url('./images/motivation.png');
+                              visibility: visible;
+                            "
+                          >
+                            MOTIVATION
+                          </h3>
                           <div class="pd-name" data-type="LIVE">MOTIVATION</div>
                           <button>Start</button>
                         </div>
@@ -1221,11 +1327,28 @@
                         class="game-item ONLIVE default-col"
                       >
                         <div class="game-content">
-                          <div class="game-logo" style="background-image: url('./images/onlive.png')"></div>
-                          <div class="game-col-cover" style="visibility: visible; background-image: url('./images/live_onlive.png')"></div>
+                          <div
+                            class="game-logo"
+                            style="background-image: url('./images/onlive.png')"
+                          ></div>
+                          <div
+                            class="game-col-cover"
+                            style="
+                              visibility: visible;
+                              background-image: url('./images/sub-live-onlive.png');
+                            "
+                          ></div>
                         </div>
                         <div class="game-info">
-                          <h3 gp="ONLIVE" style="background-image: url('./images/onlive.png'); visibility: visible;">ONLIVE</h3>
+                          <h3
+                            gp="ONLIVE"
+                            style="
+                              background-image: url('./images/onlive.png');
+                              visibility: visible;
+                            "
+                          >
+                            ONLIVE
+                          </h3>
                           <div class="pd-name" data-type="LIVE">ONLIVE</div>
                           <button>Start</button>
                         </div>
@@ -1241,11 +1364,28 @@
                         class="game-item PP default-col"
                       >
                         <div class="game-content">
-                          <div class="game-logo" style="background-image: url('./images/pp.png')"></div>
-                          <div class="game-col-cover" style="visibility: visible; background-image: url('./images/live_pp.png')"></div>
+                          <div
+                            class="game-logo"
+                            style="background-image: url('./images/pp.png')"
+                          ></div>
+                          <div
+                            class="game-col-cover"
+                            style="
+                              visibility: visible;
+                              background-image: url('./images/sub-live-pp.png');
+                            "
+                          ></div>
                         </div>
                         <div class="game-info">
-                          <h3 gp="PP" style="background-image: url('./images/pp.png'); visibility: visible;">PP</h3>
+                          <h3
+                            gp="PP"
+                            style="
+                              background-image: url('./images/pp.png');
+                              visibility: visible;
+                            "
+                          >
+                            PP
+                          </h3>
                           <div class="pd-name" data-type="LIVE">PP</div>
                           <button>Start</button>
                         </div>
@@ -1261,11 +1401,28 @@
                         class="game-item PT default-col"
                       >
                         <div class="game-content">
-                          <div class="game-logo" style="background-image: url('./images/pt.png')"></div>
-                          <div class="game-col-cover" style="visibility: visible; background-image: url('./images/live_pt.png')"></div>
+                          <div
+                            class="game-logo"
+                            style="background-image: url('./images/pt.png')"
+                          ></div>
+                          <div
+                            class="game-col-cover"
+                            style="
+                              visibility: visible;
+                              background-image: url('./images/sub-live-pt.png');
+                            "
+                          ></div>
                         </div>
                         <div class="game-info">
-                          <h3 gp="PT" style="background-image: url('./images/pt.png'); visibility: visible;">PT</h3>
+                          <h3
+                            gp="PT"
+                            style="
+                              background-image: url('./images/pt.png');
+                              visibility: visible;
+                            "
+                          >
+                            PT
+                          </h3>
                           <div class="pd-name" data-type="LIVE">PT</div>
                           <button>Start</button>
                         </div>
@@ -1281,11 +1438,30 @@
                         class="game-item WG_LIVE default-col"
                       >
                         <div class="game-content">
-                          <div class="game-logo" style="background-image: url('./images/wg_live.png')"></div>
-                          <div class="game-col-cover" style="visibility: visible; background-image: url('./images/live_wg_live.png')"></div>
+                          <div
+                            class="game-logo"
+                            style="
+                              background-image: url('./images/wg_live.png');
+                            "
+                          ></div>
+                          <div
+                            class="game-col-cover"
+                            style="
+                              visibility: visible;
+                              background-image: url('./images/sub-live-wg_live.png');
+                            "
+                          ></div>
                         </div>
                         <div class="game-info">
-                          <h3 gp="WG_LIVE" style="background-image: url('./images/wg_live.png'); visibility: visible;">WG_LIVE</h3>
+                          <h3
+                            gp="WG_LIVE"
+                            style="
+                              background-image: url('./images/wg_live.png');
+                              visibility: visible;
+                            "
+                          >
+                            WG_LIVE
+                          </h3>
                           <div class="pd-name" data-type="LIVE">WG_LIVE</div>
                           <button>Start</button>
                         </div>
@@ -1300,83 +1476,60 @@
                       data-type="HOT_GAMES"
                       style="display: none"
                     >
-                      <div
-                        data-id="HOT-VIA_CASINO"
-                        data-type="HOT_GAMES"
-                        data-gp="via_casino"
-                        class="game-item VIA_CASINO default-col"
-                      >
-                        <div class="game-content">
+                      <div class="game-item SV388 default-col">
+                        <div
+                          class="game-content"
+                          onclick="handleLiveArena('SV388', 21)"
+                        >
                           <div
                             class="game-logo"
                             style="
-                              background-image: url('./images/via_casino.png');
-                            "
-                          ></div>
-                          <div
-                            class="game-col-cover"
-                            style="
-                              visibility: visible;
-                              background-image: url('./alo-clone/images/live-arena.webp');
+                              background-image: url('./images/live-arena.webp');
                             "
                           ></div>
                         </div>
-                        <div class="game-info">
+                        <!-- <div class="game-info">
                           <h3
-                            gp="VIA_CASINO"
+                            gp="SV388"
                             style="
-                              background-image: url('./images/via_casino.png');
+                              background-image: url('./alo-clone/images/live-arena.webp');
                               visibility: visible;
                             "
                           >
-                            VIA_CASINO
+                            SV388
                           </h3>
-                          <div class="pd-name" data-type="HOT_GAMES">
-                            VIA_CASINO
-                          </div>
+                          <div class="pd-name" data-type="HOT_GAMES">SV388</div>
                           <button>Start</button>
-                        </div>
+                        </div> -->
                         <div class="favorite-game-icon-wrapper">
                           <div class="fav-btn"></div>
                         </div>
                         <div class="loading-block"></div>
                       </div>
-                      <div
-                        data-id="HOT-SEXYBCRT"
-                        data-type="HOT_GAMES"
-                        data-gp="sexybcrt"
-                        class="game-item SEXYBCRT default-col"
-                      >
+                      <div class="game-item WALA88 default-col">
                         <div class="game-content">
                           <div
                             class="game-logo"
                             style="
-                              background-image: url('./images/sexybcrt.png');
-                            "
-                          ></div>
-                          <div
-                            class="game-col-cover"
-                            style="
-                              visibility: visible;
-                              background-image: url('./alo-clone/images/wala-img.png');
+                              background-image: url('./images/wala-img.png');
                             "
                           ></div>
                         </div>
-                        <div class="game-info">
+                        <!-- <div class="game-info">
                           <h3
-                            gp="SEXYBCRT"
+                            gp="WALA88"
                             style="
-                              background-image: url('./images/sexybcrt.png');
+                              background-image: url('./alo-clone/images/wala-img.png');
                               visibility: visible;
                             "
                           >
-                            SEXYBCRT
+                            WALA88
                           </h3>
                           <div class="pd-name" data-type="HOT_GAMES">
-                            SEXYBCRT
+                            WALA88
                           </div>
                           <button>Start</button>
-                        </div>
+                        </div> -->
                         <div class="favorite-game-icon-wrapper">
                           <div class="fav-btn"></div>
                         </div>
@@ -2919,6 +3072,8 @@
     <!-- <script src="./js/i18n-vi-VN.6eda0174.js"></script> -->
     <script src="./js/js.js"></script>
     <script src="./js/login.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/mobile-header.js"></script>
     <script src="./js/m--animal.dc58cb1e.js"></script>
     <script src="./js/m--chess.1e9b85e7.js"></script>
     <script src="./js/m--egame.39233435.js"></script>

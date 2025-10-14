@@ -15,8 +15,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const category = this.getAttribute("data-code");
       categories.forEach((cat) => {
-        cat.style.display = cat.getAttribute("data-type") === category ? "block" : "none";
+        cat.style.display =
+          cat.getAttribute("data-type") === category ? "grid" : "none";
       });
     });
   });
+
+  // Set initial display on page load
+  const activeTab = document.querySelector(".nav-anchor.active");
+  if (activeTab) {
+    const initialCategory = activeTab.getAttribute("data-code");
+    categories.forEach((cat) => {
+      cat.style.display = cat.getAttribute("data-type") === initialCategory ? "grid" : "none";
+    });
+  }
 });

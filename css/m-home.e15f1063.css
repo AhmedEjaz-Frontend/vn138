@@ -549,8 +549,7 @@ label {
 }
 
 .secure-code i {
-  background: no-repeat
-    url(https://img.alltocon.com/img/static/ic-autorenew.png);
+  background: no-repeat url(../images/ic-autorenew.png);
   display: block;
   height: 25px;
   width: 25px;
@@ -711,19 +710,19 @@ label {
 }
 
 .highlight-banner.hl-sb {
-  background-image: url(https://img.alltocon.com/img/static/desktop/live-screen/hl-sb.jpg);
+  background-image: url(../images/desktop/live-screen/hl-sb.jpg);
 }
 
 .highlight-banner.hl-sb:before {
-  background-image: url(https://img.alltocon.com/img/static/desktop/live-screen/hl-sb-tit.png);
+  background-image: url(../images/desktop/live-screen/hl-sb-tit.png);
 }
 
 .highlight-banner.hl-venus {
-  background-image: url(https://img.alltocon.com/img/static/desktop/live-screen/hl-venus.jpg);
+  background-image: url(../images/desktop/live-screen/hl-venus.jpg);
 }
 
 .highlight-banner.hl-venus:before {
-  background-image: url(https://img.alltocon.com/img/static/desktop/live-screen/hl-venus-tit.png);
+  background-image: url(../images/desktop/live-screen/hl-venus-tit.png);
 }
 
 .highlight-banner:before {
@@ -1274,7 +1273,7 @@ input[type="checkbox"]:checked + label:after {
 }
 
 .react-tel-input .selected-flag .flag {
-  background-image: url(https://img.alltocon.com/img/static/flags/flags.png) !important;
+  background-image: url(../images/flags/flags.png) !important;
   height: 11px;
   margin-top: 0;
   position: absolute;
@@ -1323,7 +1322,7 @@ input[type="checkbox"]:checked + label:after {
 }
 
 .react-tel-input .country-list .flag {
-  background-image: url(https://img.alltocon.com/img/static/flags/flags.png) !important;
+  background-image: url(../images/flags/flags.png) !important;
   display: inline-block;
   height: 11px;
   width: 16px;
@@ -2157,8 +2156,7 @@ input[type="date"] {
 }
 
 .nrc-form-input.nrc-file label .icon-delete {
-  background: 50% no-repeat
-    url(https://img.alltocon.com/img/static/ic-cancel.svg);
+  background: 50% no-repeat url(../images/ic-cancel.svg);
   display: block;
   height: 30px;
   position: absolute;
@@ -6583,7 +6581,7 @@ button.swiper-pagination-bullet {
 }
 
 .bank-card-item.disable .icon-check {
-  background: url(https://img.alltocon.com/img/static/icon-check-y-off-s.png);
+  background: url(../images/icon-check-y-off-s.png);
 }
 
 .bank-card-item.add-new {
@@ -7444,8 +7442,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-options .option-item .option-item-cont.QQ:before {
-  background: url(https://img.alltocon.com/img/static/payment/qq.svg) 50% / auto
-    40px no-repeat;
+  background: url(../images/payment/qq.svg) 50% / auto 40px no-repeat;
   color: #201c2a;
   content: "";
   height: 40px;
@@ -7453,8 +7450,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-options .option-item .option-item-cont.MOMOPAY:before {
-  background: url(https://img.alltocon.com/img/static/payment/momo.svg) 50% /
-    auto 40px no-repeat;
+  background: url(../images/payment/momo.svg) 50% / auto 40px no-repeat;
   color: #b30f73;
   content: "";
   height: 40px;
@@ -7462,8 +7458,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-options .option-item .option-item-cont.PROMPTPAY:before {
-  background: url(https://img.alltocon.com/img/static/payment/prompt.png) 50% /
-    auto 30px no-repeat;
+  background: url(../images/payment/prompt.png) 50% / auto 30px no-repeat;
   color: #1aa797;
   content: "";
   height: 40px;
@@ -7471,8 +7466,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-options .option-item .option-item-cont.ZALOPAY:before {
-  background: url(https://img.alltocon.com/img/static/payment/zalopay.svg) 50% /
-    auto 40px no-repeat;
+  background: url(../images/payment/zalopay.svg) 50% / auto 40px no-repeat;
   color: #118acb;
   content: "";
   height: 40px;
@@ -7480,8 +7474,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-options .option-item .option-item-cont.QR_BANK:before {
-  background: url(https://img.alltocon.com/img/static/payment/icon-wbscan.svg)
-    50% / auto 40px no-repeat;
+  background: url(../images/payment/icon-wbscan.svg) 50% / auto 40px no-repeat;
   color: #118acb;
   content: "";
   height: 40px;
@@ -7489,8 +7482,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-options .option-item .option-item-cont.VIETTELPAY:before {
-  background: url(https://img.alltocon.com/img/static/payment/viettelpay.svg)
-    50% / auto 40px no-repeat;
+  background: url(../images/payment/viettelpay.svg) 50% / auto 40px no-repeat;
   color: #0e8682;
   content: "";
   height: 40px;
@@ -7528,8 +7520,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-options .option-item .option-item-cont.UNIONPAY_SCAN:before {
-  background: url(https://img.alltocon.com/img/static/payment/unionpay.svg) 50%/50px
-    auto no-repeat;
+  background: url(../images/payment/unionpay.svg) 50%/50px auto no-repeat;
   color: #183074;
   content: "";
   height: 40px;
@@ -7542,8 +7533,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-options .option-item .option-item-cont.baidu:before {
-  background: url(https://img.alltocon.com/img/static/payment/baidu.png) 50%/40px
-    auto no-repeat;
+  background: url(../images/payment/baidu.png) 50%/40px auto no-repeat;
   color: #c90302;
   content: "";
   height: 40px;
@@ -7551,8 +7541,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-options .option-item .option-item-cont.huabei:before {
-  background: url(https://img.alltocon.com/img/static/payment/huabei.png) 50%/45px
-    auto no-repeat;
+  background: url(../images/payment/huabei.png) 50%/45px auto no-repeat;
   color: #009bdf;
   content: "";
   height: 40px;
@@ -7570,8 +7559,7 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-options .option-item .option-item-cont.QUICKPASS:before {
-  background: url(https://img.alltocon.com/img/static/payment/qpass.png) 50%/45px
-    auto no-repeat;
+  background: url(../images/payment/qpass.png) 50%/45px auto no-repeat;
   color: #f7261e;
   content: "";
   height: 40px;
@@ -7579,72 +7567,63 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-options .option-item .option-item-cont.PAYTM:before {
-  background: url(https://img.alltocon.com/img/static/payment/paytm.png) 50% /
-    auto 40px no-repeat;
+  background: url(../images/payment/paytm.png) 50% / auto 40px no-repeat;
   color: #1b386c;
   color: #0000;
   content: "";
 }
 
 .deposit-options .option-item .option-item-cont.NETELLER:before {
-  background: url(https://img.alltocon.com/img/static/payment/neteller.png) 50% /
-    auto 40px no-repeat;
+  background: url(../images/payment/neteller.png) 50% / auto 40px no-repeat;
   color: #88b801;
   color: #0000;
   content: "";
 }
 
 .deposit-options .option-item .option-item-cont.SCRATCHCARD:before {
-  background: url(https://img.alltocon.com/img/static/payment/scratch.png) 50% /
-    auto 48px no-repeat;
+  background: url(../images/payment/scratch.png) 50% / auto 48px no-repeat;
   color: #ff570d;
   color: #0000;
   content: "";
 }
 
 .deposit-options .option-item .option-item-cont.MPURSE:before {
-  background: url(https://img.alltocon.com/img/static/payment/mpurse.png) 50% /
-    auto 48px no-repeat;
+  background: url(../images/payment/mpurse.png) 50% / auto 48px no-repeat;
   color: #118613;
   color: #0000;
   content: "";
 }
 
 .deposit-options .option-item .option-item-cont.SKRILL:before {
-  background: url(https://img.alltocon.com/img/static/payment/skrill.png) 50% /
-    auto 40px no-repeat;
+  background: url(../images/payment/skrill.png) 50% / auto 40px no-repeat;
   color: #7f2371;
   color: #0000;
   content: "";
 }
 
 .deposit-options .option-item .option-item-cont.UPI:before {
-  background: url(https://img.alltocon.com/img/static/payment/upi.png) 50% /
-    auto 40px no-repeat;
+  background: url(../images/payment/upi.png) 50% / auto 40px no-repeat;
   color: #eb7207;
   color: #0000;
   content: "";
 }
 
 .deposit-options .option-item .option-item-cont.BHIM:before {
-  background: url(https://img.alltocon.com/img/static/payment/bhim.png) 50% /
-    auto 40px no-repeat;
+  background: url(../images/payment/bhim.png) 50% / auto 40px no-repeat;
   color: #eb7207;
   color: #0000;
   content: "";
 }
 
 .deposit-options .option-item .option-item-cont.GPAY:before {
-  background: url(https://img.alltocon.com/img/static/payment/gpay.png) 50% /
-    auto 40px no-repeat;
+  background: url(../images/payment/gpay.png) 50% / auto 40px no-repeat;
   color: #ea4335;
   color: #0000;
   content: "";
 }
 
 .deposit-options .option-item .option-item-cont.PHONEPE:before {
-  background: url(https://img.alltocon.com/img/static/payment/phonepe.png) 50% /
-    auto 40px no-repeat;
+  background: url(../images/payment/phonepe.png) 50% / auto 40px no-repeat;
   color: #6739b7;
   color: #0000;
   content: "";
@@ -7656,95 +7635,83 @@ button.swiper-pagination-bullet {
 }
 
 .deposit-options .option-item .option-item-cont.GCASH:before {
-  background: url(https://img.alltocon.com/img/static/payment/gcash.png) 50%/40px
-    auto no-repeat;
+  background: url(../images/payment/gcash.png) 50%/40px auto no-repeat;
   color: #0000;
   content: "";
 }
 
 .deposit-options .option-item .option-item-cont.TRUEMONEY:before {
-  background: url(https://img.alltocon.com/img/static/payment/truemoney.png) 50%/40px
-    auto no-repeat;
+  background: url(../images/payment/truemoney.png) 50%/40px auto no-repeat;
   color: #ed1c24;
   color: #0000;
   content: "";
 }
 
 .deposit-options .option-item .option-item-cont.CRYPTOH5:before {
-  background: url(https://img.alltocon.com/img/static/payment/crypto.png) 50% /
-    auto 36px no-repeat;
+  background: url(../images/payment/crypto.png) 50% / auto 36px no-repeat;
   content: "";
   height: 36px;
   width: 36px;
 }
 
 .deposit-options .option-item .option-item-cont.USDT:before {
-  background: url(https://img.alltocon.com/img/static/payment/usdt.png) 50% /
-    auto 36px no-repeat;
+  background: url(../images/payment/usdt.png) 50% / auto 36px no-repeat;
   content: "";
   height: 36px;
   width: 36px;
 }
 
 .deposit-options .option-item .option-item-cont.GRABPAY:before {
-  background: url(https://img.alltocon.com/img/static/payment/grabpay.png) 50% /
-    auto 36px no-repeat;
+  background: url(../images/payment/grabpay.png) 50% / auto 36px no-repeat;
   content: "";
   height: 36px;
   width: 36px;
 }
 
 .deposit-options .option-item .option-item-cont.PAYMAYA:before {
-  background: url(https://img.alltocon.com/img/static/payment/paymaya.png) 50% /
-    auto 36px no-repeat;
+  background: url(../images/payment/paymaya.png) 50% / auto 36px no-repeat;
   content: "";
   height: 36px;
   width: 36px;
 }
 
 .deposit-options .option-item .option-item-cont.REMIT:before {
-  background: url(https://img.alltocon.com/img/static/payment/remit.png) 50% /
-    auto 36px no-repeat;
+  background: url(../images/payment/remit.png) 50% / auto 36px no-repeat;
   content: "";
   height: 36px;
   width: 36px;
 }
 
 .deposit-options .option-item .option-item-cont.PAYLORO:before {
-  background: url(https://img.alltocon.com/img/static/payment/payloro.png) 50% /
-    auto 36px no-repeat;
+  background: url(../images/payment/payloro.png) 50% / auto 36px no-repeat;
   content: "";
   height: 36px;
   width: 36px;
 }
 
 .deposit-options .option-item .option-item-cont.NAGAD:before {
-  background: url(https://img.alltocon.com/img/static/payment/nagad.png) 50% /
-    auto 36px no-repeat;
+  background: url(../images/payment/nagad.png) 50% / auto 36px no-repeat;
   content: "";
   height: 36px;
   width: 36px;
 }
 
 .deposit-options .option-item .option-item-cont.BKASH:before {
-  background: url(https://img.alltocon.com/img/static/payment/bkash.png) 50% /
-    auto 36px no-repeat;
+  background: url(../images/payment/bkash.png) 50% / auto 36px no-repeat;
   content: "";
   height: 36px;
   width: 36px;
 }
 
 .deposit-options .option-item .option-item-cont.ROCKET:before {
-  background: url(https://img.alltocon.com/img/static/payment/rocket.png) 50% /
-    auto 36px no-repeat;
+  background: url(../images/payment/rocket.png) 50% / auto 36px no-repeat;
   content: "";
   height: 36px;
   width: 36px;
 }
 
 .deposit-options .option-item .option-item-cont.UPAY:before {
-  background: url(https://img.alltocon.com/img/static/payment/upay.png) 50% /
-    auto 36px no-repeat;
+  background: url(../images/payment/upay.png) 50% / auto 36px no-repeat;
   content: "";
   height: 36px;
   width: 36px;
@@ -8276,7 +8243,7 @@ button.swiper-pagination-bullet {
 }
 
 .bet-type-poker {
-  background-image: url(https://img.alltocon.com/img/static/common/poker.png);
+  background-image: url(../images/common/poker.png);
   background-repeat: no-repeat;
   height: 160px;
   width: 120px;
@@ -8351,7 +8318,7 @@ button.swiper-pagination-bullet {
 }
 
 .bet-type-dice {
-  background-image: url(https://img.alltocon.com/img/static/common/dice.png);
+  background-image: url(../images/common/dice.png);
   background-repeat: no-repeat;
   background-size: 300px;
   height: 50px;
@@ -8383,7 +8350,7 @@ button.swiper-pagination-bullet {
 }
 
 .m-poker {
-  background-image: url(https://img.alltocon.com/img/static/common/m-poker.png);
+  background-image: url(../images/common/m-poker.png);
   background-repeat: no-repeat;
   height: 40px;
   width: 30px;
@@ -8808,8 +8775,8 @@ button.swiper-pagination-bullet {
 }
 
 .claimed-modal .icon {
-  background: url(https://img.alltocon.com/img/static/mobile/promotion-sucessful-icon.png)
-    50%/100% no-repeat;
+  background: url(../images/mobile/promotion-sucessful-icon.png) 50%/100%
+    no-repeat;
   height: 82px;
   width: 82px;
 }
@@ -13177,8 +13144,7 @@ body {
 }
 
 .app .app-home .home-banner-top {
-  background: #fff url(https://img.alltocon.com/img/static/loading-ani.svg) 50%/20%
-    no-repeat;
+  background: #fff url(../images/loading-ani.svg) 50%/20% no-repeat;
   height: 34.375vw;
   min-height: 110px;
   z-index: 3;
@@ -13218,9 +13184,8 @@ body {
 
 .app .app-home .home-news .news-title {
   align-items: center;
-  background: #fff
-    url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/lobby_speaker.png)
-    50%/65% no-repeat;
+  background: #fff url(../images/mobile/temp/app/h5app22/lobby_speaker.png) 50%/65%
+    no-repeat;
   display: flex;
   height: 25px;
   justify-content: center;
@@ -13317,23 +13282,23 @@ body {
 }
 
 .app .app-home .wallet-item .wallet-func .wallet-func-item.affiliate h3:before {
-  background: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_tab_sponsorship_sel.png)
+  background: url(../images/mobile/temp/app/h5app22/icon_tab_sponsorship_sel.png)
     50% / cover no-repeat;
 }
 
 .app .app-home .wallet-item .wallet-func .wallet-func-item.vip h3:before {
-  background: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_wallet_vip.png)
-    50% / cover no-repeat;
+  background: url(../images/mobile/temp/app/h5app22/icon_wallet_vip.png) 50% /
+    cover no-repeat;
 }
 
 .app .app-home .wallet-item .wallet-func .wallet-func-item.mobile h3:before {
-  background: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_mobile_download.png)
+  background: url(../images/mobile/temp/app/h5app22/icon_mobile_download.png)
     50% / cover no-repeat;
 }
 
 .app .app-home .wallet-item .wallet-func .wallet-func-item.deposit h3:before {
-  background: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_wallet_deposit.png)
-    50% / cover no-repeat;
+  background: url(../images/mobile/temp/app/h5app22/icon_wallet_deposit.png) 50% /
+    cover no-repeat;
 }
 
 .app
@@ -13342,7 +13307,7 @@ body {
   .wallet-func
   .wallet-func-item.withdrawal
   h3:before {
-  background: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_wallet_withdraw.png)
+  background: url(../images/mobile/temp/app/h5app22/icon_wallet_withdraw.png)
     50% / cover no-repeat;
 }
 
@@ -13388,57 +13353,57 @@ body {
 }
 
 .app .app-home .home-quick-item:before {
-  background-image: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_link.png);
+  background-image: url(../images/mobile/temp/app/h5app22/icon_link.png);
 }
 
 .app .app-home .home-quick-item[data-code="LIVE"]:before {
-  background-image: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_live.png);
+  background-image: url(../images/mobile/temp/app/h5app22/icon_live.png);
 }
 
 .app .app-home .home-quick-item[data-code="SPORTS"]:before {
-  background-image: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_sports.png);
+  background-image: url(../images/mobile/temp/app/h5app22/icon_sports.png);
 }
 
 .app .app-home .home-quick-item[data-code="LOTTERY"]:before {
-  background-image: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_lottery.png);
+  background-image: url(../images/mobile/temp/app/h5app22/icon_lottery.png);
 }
 
 .app .app-home .home-quick-item[data-code="EGAME"]:before {
-  background-image: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_egame.png);
+  background-image: url(../images/mobile/temp/app/h5app22/icon_egame.png);
 }
 
 .app .app-home .home-quick-item[data-code="ESPORTS"]:before {
-  background-image: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_esports.png);
+  background-image: url(../images/mobile/temp/app/h5app22/icon_esports.png);
 }
 
 .app .app-home .home-quick-item[data-code="CHESS"]:before {
-  background-image: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_chess.png);
+  background-image: url(../images/mobile/temp/app/h5app22/icon_chess.png);
 }
 
 .app .app-home .home-quick-item[data-code="ANIMAL"]:before {
-  background-image: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_animal.png);
+  background-image: url(../images/mobile/temp/app/h5app22/icon_animal.png);
 }
 
 .app .app-home .home-quick-item[data-code="MPG"]:before {
-  background-image: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_mpg.png);
+  background-image: url(../images/mobile/temp/app/h5app22/icon_mpg.png);
 }
 
 .app .app-home .home-quick-item[data-code="MINI_GAME"]:before {
-  background-image: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_minigame.png);
+  background-image: url(../images/mobile/temp/app/h5app22/icon_minigame.png);
 }
 
 .app .app-home .home-quick-item[data-code^="HOT_GAMES"]:before,
 .app .app-home .home-quick-item[data-code^="HOT_GAMES_2"]:before,
 .app .app-home .home-quick-item[data-code^="HOT_GAMES_3"]:before {
-  background-image: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_hot.png);
+  background-image: url(../images/mobile/temp/app/h5app22/icon_hot.png);
 }
 
 .app .app-home .home-quick-item[data-code="PROMOTIONS"]:before {
-  background-image: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_discount.png);
+  background-image: url(../images/mobile/temp/app/h5app22/icon_discount.png);
 }
 
 .app .app-home .home-quick-item[data-code="PAGE_QR"]:before {
-  background-image: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_app.png);
+  background-image: url(../images/mobile/temp/app/h5app22/icon_app.png);
 }
 
 .app .app-home .home-quick-item[data-code="FAVORITE_GAMES"]:before {
@@ -13477,45 +13442,45 @@ body {
 }
 
 .app .app-home .home-quick-item.active[data-code="LIVE"]:after {
-  background-image: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_live_on.png);
+  background-image: url(../images/mobile/temp/app/h5app22/icon_live_on.png);
 }
 
 .app .app-home .home-quick-item.active[data-code="SPORTS"]:after {
-  background-image: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_sports_on.png);
+  background-image: url(../images/mobile/temp/app/h5app22/icon_sports_on.png);
 }
 
 .app .app-home .home-quick-item.active[data-code="LOTTERY"]:after {
-  background-image: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_lottery_on.png);
+  background-image: url(../images/mobile/temp/app/h5app22/icon_lottery_on.png);
 }
 
 .app .app-home .home-quick-item.active[data-code="EGAME"]:after {
-  background-image: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_egame_on.png);
+  background-image: url(../images/mobile/temp/app/h5app22/icon_egame_on.png);
 }
 
 .app .app-home .home-quick-item.active[data-code="ESPORTS"]:after {
-  background-image: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_esports_on.png);
+  background-image: url(../images/mobile/temp/app/h5app22/icon_esports_on.png);
 }
 
 .app .app-home .home-quick-item.active[data-code="CHESS"]:after {
-  background-image: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_chess_on.png);
+  background-image: url(../images/mobile/temp/app/h5app22/icon_chess_on.png);
 }
 
 .app .app-home .home-quick-item.active[data-code="ANIMAL"]:after {
-  background-image: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_animal_on.png);
+  background-image: url(../images/mobile/temp/app/h5app22/icon_animal_on.png);
 }
 
 .app .app-home .home-quick-item.active[data-code="MPG"]:after {
-  background-image: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_mpg_on.png);
+  background-image: url(../images/mobile/temp/app/h5app22/icon_mpg_on.png);
 }
 
 .app .app-home .home-quick-item.active[data-code="MINI_GAME"]:after {
-  background-image: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_minigame_on.png);
+  background-image: url(../images/mobile/temp/app/h5app22/icon_minigame_on.png);
 }
 
 .app .app-home .home-quick-item.active[data-code="HOT_GAMES"]:after,
 .app .app-home .home-quick-item.active[data-code="HOT_GAMES_2"]:after,
 .app .app-home .home-quick-item.active[data-code="HOT_GAMES_3"]:after {
-  background-image: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/icon_hot_on.png) !important;
+  background-image: url(../images/mobile/temp/app/h5app22/icon_hot_on.png) !important;
 }
 
 .app .app-home .home-quick-item.active h3 {
@@ -13666,8 +13631,7 @@ body {
 }
 
 .landscape-notification p {
-  background: top url(https://img.alltocon.com/img/static/rotation.png)
-    no-repeat;
+  background: top url(../images/rotation.png) no-repeat;
   background-size: 100px;
   color: #fff;
   height: 25px;
@@ -14517,8 +14481,7 @@ body {
 .app.login .hover-container:not(.mission-calendar):not(.custom-temp),
 .app.signup .hover-container:not(.mission-calendar):not(.custom-temp) {
   align-items: center;
-  background: url(https://img.alltocon.com/img/static/vipvnd/via-bg.jpg)
-    bottom/cover no-repeat fixed;
+  background: url(../images/via-bg.jpg) bottom/cover no-repeat fixed;
   display: flex;
   height: auto;
   justify-content: center;

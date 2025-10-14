@@ -403,8 +403,7 @@
 .app-home.lottery.template-col1 .game-block .home-list .game-item,
 .app-home.lottery.template-col1-full .game-block .home-list .game-item,
 .app-home.lottery.template-col1-gpk .game-block .home-list .game-item {
-  background: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app22/box_bg_large_short.png)
-    0 0 / cover no-repeat;
+  background: url(../images/box_bg_large_short.png) 0 0 / cover no-repeat;
   border-radius: 8px;
   box-shadow: 0 1px 5px #41465c33;
   margin-bottom: 10px;

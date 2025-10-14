@@ -220,7 +220,7 @@
 }
 
 .homepage .homepage-type-live .home-game-list .home-game-item:before {
-  background: url(https://img.alltocon.com/img/static/mobile/temp/app/h5app58/home-live-bg.jpg);
+  background: url(../images/home-live-bg.jpg);
   content: "";
   display: block;
   float: left;

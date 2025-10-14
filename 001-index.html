@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="./css/d-AppContainer.55bbabcb.css" />
     <link rel="stylesheet" href="./css/d-Game.8c1935e2.css" />
     <link rel="stylesheet" href="./css/d-Home.5b2f7868.css" />
-    <link rel="stylesheet" href="./css/m-home.e15f1063.css" />
+    <!-- <link rel="stylesheet" href="./css/m-home.e15f1063.css" /> -->
     <link rel="stylesheet" href="./css/hot-games.css" />
     <style>
       body {
@@ -390,7 +390,7 @@
     ></script>
     <link rel="stylesheet" type="text/css" href="/css/1248.96a3ccd6.css" />
     <link rel="stylesheet" type="text/css" href="/css/231.5005bb53.css" />
-    <link rel="stylesheet" type="text/css" href="/css/m-home.e15f1063.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="/css/m-home.e15f1063.css" /> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/config.js"></script>
     <script>
@@ -420,7 +420,7 @@
     <script src="./js/header-hot-games.js"></script>
     <script>
       if (window.innerWidth <= 768) {
-        window.location.href = './003-index.html';
+        window.location.href = "./003-index.html";
       }
     </script>
   </head>
@@ -447,10 +447,11 @@
         </div>
         <div class="quick-nav">
           <div class="main-header">
-            <div
+            <a
               class="logo"
+              href="./001-index.html"
               style="background-image: url('./images/logo.png')"
-            ></div>
+            ></a>
             <div class="right">
               <div class="simple-logo-wrap">
                 <div class="input-wrap account">
@@ -478,7 +479,12 @@
                     <div>Login</div>
                   </div>
                 </div>
-                <div class="header-btn signup" onclick="window.location.href='register-page-desktop.html'"><div>Join Now</div></div>
+                <div
+                  class="header-btn signup"
+                  onclick="window.location.href='register-page-desktop.html'"
+                >
+                  <div>Join Now</div>
+                </div>
               </div>
               <div class="account-tool" style="display: none">
                 <ul class="logined-nav">
@@ -1283,7 +1289,10 @@
         </div>
         <div class="marquee-container undefined">
           <div class="marquee-block" style="display: block">
-            <div class="marquee-news">
+            <div
+              class="marquee-news"
+              style="background-color: #1c1c1c !important"
+            >
               <div class="marquee-wrap news home-page-position">
                 <div class="visible-area">
                   <div

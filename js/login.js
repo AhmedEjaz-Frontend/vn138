@@ -16,14 +16,36 @@ window.fetch = async (...args) => {
   return response;
 };
 
+// Show/hide loading screen
+function showLoading() {
+  let loader = document.getElementById('api-loading-screen');
+  if (!loader) {
+    loader = document.createElement('div');
+    loader.id = 'api-loading-screen';
+    loader.className = 'app-loading';
+    loader.innerHTML = `<div class="main-cont"><div class="brand"><div class="brand-img-wrapper"><img src="./images/logo.png" alt="qata88" class="logo"/></div><h2 class="loading-msg"><span>JOIN VN138</span></h2></div><div class="loading-cont"><img src="./images/loading-ani.svg" alt="loading..." class="loading-icon"/>Loading</div></div>`;
+    document.body.appendChild(loader);
+  }
+  loader.style.display = 'flex';
+}
+
+function hideLoading() {
+  const loader = document.getElementById('api-loading-screen');
+  if (loader) loader.style.display = 'none';
+}
+
 // APIUser function
 async function APIUser() {
   const API_BASE_URL = await fetchBaseURL();
+  showLoading();
   try {
     const res = await fetch(`${API_BASE_URL}/api/user`, {
       headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
     });
-    if (!res || res.status !== 200) return null;
+    if (!res || res.status !== 200) {
+      hideLoading();
+      return null;
+    }
 
     const data = await res.json();
     const user = data.user || data;
@@ -32,8 +54,10 @@ async function APIUser() {
     localStorage.setItem("user", JSON.stringify(user));
     if (balance !== null) localStorage.setItem("balance", String(balance));
 
+    hideLoading();
     return user;
   } catch (e) {
+    hideLoading();
     return null;
   }
 }
@@ -63,6 +87,7 @@ async function logout() {
       return;
     }
 
+    showLoading();
     try {
       const response = await fetch(`${API_BASE_URL}/api/login_user`, {
         method: "POST",
@@ -96,9 +121,11 @@ async function logout() {
           if (i === 2 || i === 3) li.style.display = "none";
         });
       } else {
+        hideLoading();
         alert(data.message || "Login failed");
       }
     } catch (error) {
+      hideLoading();
       alert("Login error. Please try again.");
     }
   }

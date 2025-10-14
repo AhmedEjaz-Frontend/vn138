@@ -1,0 +1,1968 @@
+.mc-select-field {
+  position: relative;
+}
+
+.mc-select-menu {
+  background-color: #fff;
+  border-radius: 5px;
+  left: -1px;
+  max-height: 0;
+  overflow: auto;
+  position: absolute;
+  transition: max-height 0.2s ease-out;
+  width: calc(100% + 2px);
+  z-index: 5;
+}
+
+.mc-select-menu > ul {
+  height: auto !important;
+}
+
+.mc-select-menu.open {
+  border: 1px solid var(--platform-color-highlight);
+  box-shadow: 0 2px 4px 0 #00000026;
+}
+
+.mc-select-menu .portal-select-list {
+  margin: -10px 0 0;
+}
+
+.mc-select-menu .portal-select-option {
+  cursor: pointer;
+  padding: 10px 16px;
+}
+
+.mc-select-menu .portal-select-option.actived,
+.mc-select-menu .portal-select-option:hover {
+  background-color: var(--platform-color-highlight);
+  color: #f5f5f5;
+}
+
+.nrc-formik-form-item {
+  margin: 8px 0;
+}
+
+.nrc-formik-form-item * {
+  box-sizing: border-box;
+}
+
+.nrc-formik-form-item .nrc-formik-form-item-content {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.nrc-formik-form-item.error .nrc-formik-form-item-content {
+  background-color: #fff3f3;
+  border: 2px solid #e94951;
+  color: #e94951;
+}
+
+.nrc-formik-form-item .nrc-formik-form-item-label {
+  color: #aaa;
+  display: block;
+  font-size: 16px;
+  padding: 18px 15px;
+  position: relative;
+  transition: 0.2s;
+}
+
+.nrc-formik-form-item .nrc-formik-form-item-label.toggle:after {
+  border-color: #0000 #535353 #535353 #0000;
+  border-style: solid;
+  border-width: 4px;
+  bottom: 0;
+  content: "";
+  height: 0;
+  margin: auto;
+  position: absolute;
+  right: 18px;
+  top: 3px;
+  transform: rotate(45deg);
+  width: 0;
+}
+
+.nrc-formik-form-item .nrc-formik-form-item-label.toggle.open:after {
+  top: -3px;
+  transform: rotate(-135deg);
+}
+
+.nrc-formik-form-item small {
+  color: #535353;
+  display: block;
+  font-size: 11px;
+  margin: 3px 0;
+}
+
+.nrc-formik-form-item small .mps-info {
+  margin-right: 5px;
+}
+
+.nrc-formik-form-item small.error {
+  color: red;
+}
+
+.nrc-formik-native-select {
+  line-height: 1.8;
+  position: relative;
+}
+
+.nrc-formik-native-select label {
+  color: #4d4d4d;
+  font-size: 15px;
+  left: 15px;
+  pointer-events: none;
+  position: absolute;
+  top: 18px;
+  transition: 0.2s;
+}
+
+.nrc-formik-native-select .select-box.concerned {
+  color: #333;
+}
+
+.nrc-formik-native-select .select-box.concerned ~ label {
+  color: #939698;
+  font-size: 11px;
+  top: 8px;
+}
+
+.nrc-formik-native-select .formik-native-select {
+  background-color: #0000;
+  border: none;
+  height: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+.nrc-formik-native-select .formik-native-select select {
+  border: none;
+  color: #333;
+  font-size: 16px;
+  height: 50px;
+  padding: 23px 15px 7px;
+  position: relative;
+  width: 100%;
+}
+
+.nrc-formik-native-select .formik-native-select select:focus {
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 #f9bb22;
+  outline: 1px solid #f9bb22;
+}
+
+.nrc-formik-native-select .info-msg {
+  display: none;
+}
+
+.nrc-formik-native-select .input-tools-select {
+  border-top: 1px solid #e7e7e7;
+  padding: 10px 15px;
+}
+
+.mc-collection-accordion-field.deposit-one-page .mc-collection-accordion-label {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-accordion-label
+  label {
+  color: #545658;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mc-collection-accordion-field.deposit-one-page .mc-collection-opt-wrapper {
+  max-height: unset;
+  overflow: unset;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-opt-wrapper
+  .payment-channel {
+  color: #545658;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px;
+  text-align: center;
+}
+
+.mc-collection-accordion-field.deposit-one-page .mc-collection-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.mc-collection-accordion-field.deposit-one-page .mc-collection-option {
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  display: flex;
+  margin: 3px;
+  padding: 10px 5px;
+  position: relative;
+  width: calc(50% - 8px);
+}
+
+.mc-collection-accordion-field.deposit-one-page .mc-collection-option.active {
+  border-color: #f8721b;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-option.active
+  .mc-collection-information
+  .mc-collection-name {
+  color: #f8721b;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-option
+  .small-icon {
+  right: -1px;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-input-field-block {
+  background: #fff;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information
+  figure {
+  height: 36px;
+  margin: 0;
+  width: 36px;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information
+  figure
+  svg
+  g {
+  fill: #545658;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information
+  img {
+  max-height: 100%;
+  width: 100%;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information
+  .mc-collection-content {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information
+  .mc-collection-content
+  .mps-icon {
+  color: #545658;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information
+  .mc-collection-content
+  .mps-icon.opened {
+  transform: rotate(180deg);
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information
+  .mc-collection-basic {
+  flex-grow: 1;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information
+  .mc-collection-fee {
+  text-align: right;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information
+  .mc-collection-fee
+  div.mc-collection-description {
+  margin-bottom: 5px;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information
+  .mc-collection-name {
+  color: #545658;
+  font-size: 12px;
+  font-weight: 500;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 4px;
+  word-break: break-word;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information
+  .mc-collection-description {
+  color: #939698;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-accordion {
+  margin-top: 20px;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-accordion
+  .mc-collection-accordion-title {
+  color: #545658;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-accordion
+  .nrc-button {
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-cont
+  li.mc-collection-option {
+  background: #0000;
+  border: 0 solid #fff;
+  display: none;
+  padding: 0;
+  width: 100%;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-cont
+  li.mc-collection-option
+  .deposit-note {
+  display: flex;
+  font-size: 11px;
+  justify-content: space-between;
+  line-height: 1.4;
+  margin: 0 auto 5px;
+  width: 95%;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-cont
+  li.mc-collection-option
+  .small-icon {
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-cont
+  li.mc-collection-option.actived {
+  display: block;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-cont
+  li.mc-collection-option
+  .mc-collection-accordion {
+  margin-top: 0;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-cont
+  li.mc-collection-option
+  .mc-collection-accordion
+  .one-page-fixbtn {
+  background-color: #fff;
+  bottom: 0;
+  box-shadow: 0 -3px 3px #6663;
+  height: calc(64px + env(safe-area-inset-bottom));
+  left: 0;
+  padding: 10px;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+
+.mc-collection-accordion-field.deposit-one-page
+  .mc-collection-cont
+  li.mc-collection-option
+  .mc-collection-accordion
+  .one-page-fixbtn
+  .nrc-button {
+  margin-top: 0;
+}
+
+.mc-collection-accordion-field.deposit-one-page .mc-deposit-promo-opt-form {
+  border: 0 solid #fff;
+}
+
+.deposit-note-navbar .navbar .right i {
+  font-size: 36px;
+}
+
+.deposit-note-navbar .deposit-tutorial {
+  padding-top: 16px;
+  position: absolute;
+  right: 8px;
+}
+
+.deposit-note-navbar .deposit-tutorial-modal .deposit-tutorial-content {
+  align-items: center;
+  color: #4a4f5a;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
+.deposit-note-navbar
+  .deposit-tutorial-modal
+  .deposit-tutorial-content
+  input
+  + label {
+  margin-right: 8px;
+}
+
+.member-center-carousel-ads {
+  padding: 5px 15px 10px;
+}
+
+.member-center-carousel-ads .ads-block {
+  height: 100%;
+  max-height: 1000px;
+  overflow: scroll;
+  padding-top: 15px;
+}
+
+.member-center-carousel-ads .promo-ads-banner {
+  height: 100%;
+}
+
+.member-center-carousel-ads .promo-ads-banner .nrc-carousel {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.member-center-carousel-ads
+  .promo-ads-banner
+  .nrc-carousel
+  .carousel-indicators
+  li {
+  background-color: #939698;
+}
+
+.mc-deposit-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mc-deposit-header .nrc-button {
+  border-radius: 5px;
+  font-size: 14px;
+  height: 32px;
+  margin: 0;
+}
+
+.mc-deposit-header .nrc-button.actived {
+  border-color: #f9bb22;
+  color: #f9bb22;
+}
+
+.mc-deposit {
+  min-height: 100vh;
+}
+
+.mc-deposit form {
+  padding: 5px 15px 10px;
+}
+
+.mc-deposit .m-member-center-drawer.in > .draw-content {
+  height: 75vh;
+}
+
+.mc-deposit .m-member-center-drawer.in:before {
+  z-index: 10;
+}
+
+.mc-deposit.summary {
+  background-color: #f9f9f9;
+}
+
+.mc-deposit.summary .mc-deposit-summary,
+.mc-deposit.summary .mc-thirdparty-payment {
+  color: #a0a3a5;
+  padding: 10px;
+}
+
+.mc-deposit.summary .mc-deposit-summary .mc-deposit-summary-title,
+.mc-deposit.summary .mc-thirdparty-payment .mc-deposit-summary-title {
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+}
+
+.mc-deposit.summary .mc-deposit-summary .mc-summary-description,
+.mc-deposit.summary .mc-thirdparty-payment .mc-summary-description {
+  color: #939698;
+  line-height: 18px;
+}
+
+.mc-deposit.summary .mc-deposit-summary .mc-deposit-summary-content,
+.mc-deposit.summary .mc-thirdparty-payment .mc-deposit-summary-content {
+  background-color: #fff;
+}
+
+.mc-deposit.summary .mc-deposit-summary .mc-deposit-summary-content .data-box,
+.mc-deposit.summary
+  .mc-thirdparty-payment
+  .mc-deposit-summary-content
+  .data-box {
+  color: #545658;
+  padding: 15px 0 15px 15px;
+}
+
+.mc-deposit.summary
+  .mc-deposit-summary
+  .mc-deposit-summary-content
+  .data-box:not(:last-child),
+.mc-deposit.summary
+  .mc-thirdparty-payment
+  .mc-deposit-summary-content
+  .data-box:not(:last-child) {
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.mc-deposit.summary
+  .mc-deposit-summary
+  .mc-deposit-summary-content
+  .data-box.image
+  .value,
+.mc-deposit.summary
+  .mc-thirdparty-payment
+  .mc-deposit-summary-content
+  .data-box.image
+  .value {
+  text-align: center;
+}
+
+.mc-deposit.summary
+  .mc-deposit-summary
+  .mc-deposit-summary-content
+  .data-box
+  .label,
+.mc-deposit.summary
+  .mc-thirdparty-payment
+  .mc-deposit-summary-content
+  .data-box
+  .label {
+  color: #545658;
+  font-size: 10px;
+  margin-bottom: 5px;
+  opacity: 0.6;
+}
+
+.mc-deposit.summary
+  .mc-deposit-summary
+  .mc-deposit-summary-content
+  .data-box
+  .value,
+.mc-deposit.summary
+  .mc-thirdparty-payment
+  .mc-deposit-summary-content
+  .data-box
+  .value {
+  font-size: 14px;
+  line-height: 1.29;
+  min-height: 18px;
+  word-break: break-word;
+}
+
+.mc-deposit.summary
+  .mc-deposit-summary
+  .mc-deposit-summary-content
+  .data-box
+  .value.highlight,
+.mc-deposit.summary
+  .mc-thirdparty-payment
+  .mc-deposit-summary-content
+  .data-box
+  .value.highlight {
+  color: #f9bb22;
+}
+
+.mc-deposit.summary .mc-deposit-summary .mc-success,
+.mc-deposit.summary .mc-thirdparty-payment .mc-success {
+  align-items: center;
+  color: #9ac143;
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.mc-deposit .mc-thirdparty-payment > .deposit-countdown,
+.mc-deposit .mc-thirdparty-payment > p {
+  margin: 0 0 10px;
+}
+
+.mc-deposit .mc-deposit-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -5px 0 10px -5px;
+  padding: 10px 10px 0;
+}
+
+.mc-deposit .mc-deposit-section .nrc-button {
+  background-color: #fff;
+  border: 1px solid #e9e9e9;
+  border-radius: 5px;
+  color: #545658;
+  flex: 0 calc(50% - 5px);
+  font-size: 14px;
+  margin: 5px 0 0 5px;
+  min-height: 32px;
+}
+
+.mc-deposit .mc-deposit-section .nrc-button.actived {
+  border-color: #f9bb22;
+  color: #f9bb22;
+}
+
+.mc-deposit .mc-deposit-section .nrc-button.full-width {
+  flex: 0 calc(100% - 10px);
+}
+
+.mc-deposit .mc-detail-block {
+  margin-bottom: 24px;
+}
+
+.mc-deposit .mc-detail-block:last-of-type {
+  margin: 0;
+}
+
+.mc-deposit .mc-detail-block .mc-detail-block-label {
+  color: #545658;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.mc-deposit .mc-detail-block .mc-detail-block-content {
+  color: #545658;
+  margin-top: 10px;
+}
+
+.mc-deposit .mc-btn-wrapper {
+  display: flex;
+  margin-top: 24px;
+}
+
+.mc-deposit .mc-btn-wrapper .nrc-button {
+  border-radius: 5px;
+  flex: 1 1 100%;
+  height: 42px;
+  margin-left: 12px;
+}
+
+.mc-deposit .mc-btn-wrapper .nrc-button:first-of-type {
+  margin: 0;
+}
+
+.mc-deposit .mc-reminder {
+  color: #e94951;
+  font-size: 12px;
+  margin-top: 5px;
+  word-break: break-all;
+}
+
+.mc-deposit .nrc-formik-native-select .nrc-formik-form-item-content {
+  background-color: #fbfbfb;
+  border: 1px solid #e9e9e9;
+  border-radius: 5px;
+}
+
+.mc-deposit
+  .nrc-formik-native-select
+  .nrc-formik-form-item-content
+  .formik-native-select
+  select {
+  color: #545658;
+  font-size: 14px;
+}
+
+.mc-deposit
+  .nrc-formik-native-select
+  .nrc-formik-form-item-content
+  .formik-native-select
+  option {
+  background-color: #fbfbfb;
+}
+
+.mc-deposit
+  .nrc-formik-native-select
+  .nrc-formik-form-item-content
+  .formik-native-select:before {
+  border-top: 5px solid #f9bb22;
+  right: 20px;
+}
+
+.mc-deposit .nrc-formik-date-input .nrc-formik-form-item-content,
+.mc-deposit .nrc-formik-time-input .nrc-formik-form-item-content {
+  background-color: #fbfbfb;
+  border: 1px solid #e9e9e9;
+  border-radius: 5px;
+}
+
+.mc-deposit .nrc-formik-date-input .nrc-formik-form-item-content input,
+.mc-deposit .nrc-formik-time-input .nrc-formik-form-item-content input {
+  border-radius: 5px;
+}
+
+.mc-deposit .deposit-note-navbar .right .deposit-list-link {
+  display: none;
+}
+
+.thirdparty-icon {
+  height: 36px;
+  position: relative;
+  width: 36px;
+}
+
+.thirdparty-icon:before {
+  font-family: iconmps !important;
+  font-size: 35px;
+  height: 100%;
+  left: 0;
+  line-height: 36px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.thirdparty-icon.WEIXIN:before {
+  color: #00b049;
+  content: "";
+}
+
+.thirdparty-icon.ALIPAY:before {
+  color: #00a8f1;
+  content: "";
+}
+
+.thirdparty-icon.DEBIT_CARD:before {
+  color: #2867aa;
+  content: "";
+}
+
+.thirdparty-icon.COMPANY_DEPOSIT:before {
+  color: #ec7d00;
+  content: "";
+}
+
+.thirdparty-icon.QQ:before {
+  background: url(../images/qq.svg) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.JDPAY:before {
+  color: #222;
+  content: "";
+}
+
+.thirdparty-icon.UNIONPAY_SCAN:before {
+  background: url(../images/unionpay.svg) 50% / contain no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.EXPRESSPAY:before {
+  color: #eb5e1d;
+  content: "";
+}
+
+.thirdparty-icon.YIYOU:before {
+  color: #f60;
+  content: "";
+}
+
+.thirdparty-icon.CRYPTO:before {
+  color: #f90;
+  content: "";
+}
+
+.thirdparty-icon.MOMOPAY:before {
+  background: url(../images/momo.svg) 50% no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.ZALOPAY:before {
+  background: url(../images/zalopay.svg) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.VIETTELPAY:before {
+  background: url(../images/viettelpay.svg) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.QUICKPASS:before {
+  background: url(../images/qpass.png) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.QR_BANK:before {
+  background: url(../images/icon-wbscan.svg) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.ONLINE_BANKING:before {
+  color: #21d1a2;
+  content: "";
+}
+
+.thirdparty-icon.PROMPTPAY:before {
+  background: url(../images/prompt.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.SKRILL:before {
+  background: url(../images/skrill.png) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.NETELLER:before {
+  background: url(../images/neteller.png) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.PAYTM:before {
+  background: url(../images/paytm.png) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.UPI:before {
+  background: url(../images/upi.png) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.BHIM:before {
+  background: url(../images/bhim.png) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.GPAY:before {
+  background: url(../images/gpay.png) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.PHONEPE:before {
+  background: url(../images/phonepe.png) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.MPURSE:before {
+  background: url(../images/mpurse.png) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.SCRATCHCARD:before {
+  background: url(../images/scratch.png) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.GCASH:before {
+  background: url(../images/gcash.png) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.TRUEMONEY:before {
+  background: url(../images/truemoney.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.USDT:before {
+  background: url(../images/usdt.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.GRABPAY:before {
+  background: url(../images/grabpay.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.PAYMAYA:before {
+  background: url(../images/paymaya.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.REMIT:before {
+  background: url(../images/remit.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.PAYLORO:before {
+  background: url(../images/payloro.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.NAGAD:before {
+  background: url(../images/nagad.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.BKASH:before {
+  background: url(../images/bkash.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.ROCKET:before {
+  background: url(../images/rocket.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.UPAY:before {
+  background: url(../images/upay.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.thirdparty-icon.CORPORATE_CRYPTO:before {
+  background: url(../images/corporate-crypto.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.date-time-input-section {
+  display: flex;
+  gap: 8px;
+}
+
+.date-time-input-section .nrc-formik-date-input,
+.date-time-input-section .nrc-formik-time-input {
+  line-height: 1.8;
+  position: relative;
+  width: 50%;
+}
+
+.date-time-input-section .nrc-formik-date-input .nrc-formik-form-item-content,
+.date-time-input-section .nrc-formik-time-input .nrc-formik-form-item-content {
+  background-color: #fbfbfb;
+  border: 1px solid #e9e9e9;
+  border-radius: 5px;
+}
+
+.date-time-input-section
+  .nrc-formik-date-input.error
+  .nrc-formik-form-item-content,
+.date-time-input-section
+  .nrc-formik-time-input.error
+  .nrc-formik-form-item-content {
+  background-color: #fff3f3;
+  border: 1px solid #e94951;
+  color: #e94951;
+}
+
+.date-time-input-section .nrc-formik-date-input input,
+.date-time-input-section .nrc-formik-time-input input {
+  background-color: #0000;
+  border: none;
+  box-sizing: border-box;
+  color: #333;
+  font-size: 16px;
+  height: 50px;
+  padding: 23px 3px 7px 15px;
+}
+
+.date-time-input-section .nrc-formik-date-input input[type="date"],
+.date-time-input-section .nrc-formik-date-input input[type="time"],
+.date-time-input-section .nrc-formik-time-input input[type="date"],
+.date-time-input-section .nrc-formik-time-input input[type="time"] {
+  -webkit-appearance: none;
+  appearance: none;
+  color: #545658;
+  width: 100%;
+}
+
+.date-time-input-section
+  .nrc-formik-date-input
+  input[type="date"]::-webkit-calendar-picker-indicator,
+.date-time-input-section
+  .nrc-formik-date-input
+  input[type="time"]::-webkit-calendar-picker-indicator,
+.date-time-input-section
+  .nrc-formik-time-input
+  input[type="date"]::-webkit-calendar-picker-indicator,
+.date-time-input-section
+  .nrc-formik-time-input
+  input[type="time"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.date-time-input-section .nrc-formik-date-input input[type="date"]:after,
+.date-time-input-section .nrc-formik-date-input input[type="time"]:after,
+.date-time-input-section .nrc-formik-time-input input[type="date"]:after,
+.date-time-input-section .nrc-formik-time-input input[type="time"]:after {
+  color: #f9bb22;
+  content: "";
+  font-family: iconmps;
+  font-size: 18px;
+  position: absolute;
+  right: 16px;
+  top: 35%;
+}
+
+.date-time-input-section .nrc-formik-date-input label,
+.date-time-input-section .nrc-formik-time-input label {
+  color: #4d4d4d;
+  color: #939698;
+  font-size: 15px;
+  font-size: 11px;
+  left: 15px;
+  padding: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 8px;
+}
+
+.m-drawer-collection-list .title {
+  color: #545658;
+  margin: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.m-drawer-collection-list .mc-collection-field {
+  padding: 0 20px 10px;
+}
+
+.m-drawer-collection-list .mc-collection-field li {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #545658;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 0;
+  padding: 15px;
+  position: relative;
+  width: 100%;
+}
+
+.m-drawer-collection-list .mc-collection-field li.actived,
+.m-drawer-collection-list .mc-collection-field li:hover {
+  box-shadow: 0 0 10px 0 #f9bb22;
+}
+
+.m-drawer-collection-list .mc-collection-field .mc-collection-name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 4px;
+}
+
+.m-drawer-collection-list .mc-collection-field .mc-collection-info {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 4px;
+  word-break: break-all;
+}
+
+.m-drawer-collection-list .mc-collection-field .mc-collection-limit-amount {
+  color: #939698;
+  font-size: 12px;
+}
+
+.m-drawer-collection-list .mc-collection-field .mc-collection-qrcode {
+  flex: 90px 0 0;
+  height: 90px;
+  width: 90px;
+}
+
+.m-drawer-collection-list .mc-collection-field .mc-collection-qrcode > img {
+  height: 100%;
+  width: 100%;
+}
+
+.mc-convert-amount-field-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.mc-convert-amount-field-wrapper .mc-convert-input-amount-field {
+  border-top: 1px solid #e9e9e9;
+  margin-top: 54px;
+  padding: 5px 15px 0;
+}
+
+.mc-convert-amount-field-wrapper
+  .mc-convert-input-amount-field
+  .mc-input-convert-amount {
+  color: var(--platform-color-highlight);
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.mc-convert-amount-field-wrapper
+  .mc-convert-input-amount-field
+  .mc-input-convert-tips {
+  color: var(--platform-color-highlight);
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.mc-convert-amount-field-wrapper
+  .mc-convert-input-amount-field
+  .mc-input-convert-rule {
+  color: #a0a3a5;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-accordion-label {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-accordion-label
+  label {
+  color: #545658;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-opt-wrapper {
+  max-height: unset;
+  overflow: unset;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-opt-wrapper
+  .payment-channel {
+  color: #545658;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px;
+  text-align: center;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page .mc-collection-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page .mc-collection-option {
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  display: flex;
+  margin: 3px;
+  padding: 10px 5px;
+  position: relative;
+  width: calc(50% - 8px);
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-option.active {
+  border-color: #f8721b;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-option.active
+  .mc-collection-information
+  .mc-collection-name {
+  color: #f8721b;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-option
+  .small-icon {
+  right: -1px;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-input-field-block {
+  background: #fff;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information
+  figure {
+  height: 36px;
+  margin: 0;
+  width: 36px;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information
+  figure
+  svg
+  g {
+  fill: #545658;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information
+  img {
+  max-height: 100%;
+  width: 100%;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information
+  .mc-collection-content {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information
+  .mc-collection-content
+  .mps-icon {
+  color: #545658;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information
+  .mc-collection-content
+  .mps-icon.opened {
+  transform: rotate(180deg);
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information
+  .mc-collection-basic {
+  flex-grow: 1;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information
+  .mc-collection-fee {
+  text-align: right;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information
+  .mc-collection-fee
+  div.mc-collection-description {
+  margin-bottom: 5px;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information
+  .mc-collection-name {
+  color: #545658;
+  font-size: 12px;
+  font-weight: 500;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 4px;
+  word-break: break-word;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-information
+  .mc-collection-description {
+  color: #939698;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-accordion {
+  margin-top: 20px;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-accordion
+  .mc-collection-accordion-title {
+  color: #545658;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-option
+  .mc-collection-accordion
+  .nrc-button {
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-cont
+  li.mc-collection-option {
+  background: #0000;
+  border: 0 solid #fff;
+  display: none;
+  padding: 0;
+  width: 100%;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-cont
+  li.mc-collection-option
+  .deposit-note {
+  display: flex;
+  font-size: 11px;
+  justify-content: space-between;
+  line-height: 1.4;
+  margin: 0 auto 5px;
+  width: 95%;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-cont
+  li.mc-collection-option
+  .small-icon {
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-cont
+  li.mc-collection-option.actived {
+  display: block;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-cont
+  li.mc-collection-option
+  .mc-collection-accordion {
+  margin-top: 0;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-cont
+  li.mc-collection-option
+  .mc-collection-accordion
+  .one-page-fixbtn {
+  background-color: #fff;
+  bottom: 0;
+  box-shadow: 0 -3px 3px #6663;
+  height: calc(64px + env(safe-area-inset-bottom));
+  left: 0;
+  padding: 10px;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-collection-cont
+  li.mc-collection-option
+  .mc-collection-accordion
+  .one-page-fixbtn
+  .nrc-button {
+  margin-top: 0;
+}
+
+.mc-corporate-crypto-accordion-field.deposit-one-page
+  .mc-deposit-promo-opt-form {
+  border: 0 solid #fff;
+}
+
+.app.deposit .bottom-nav {
+  z-index: auto;
+}
+
+.deposit-payments-one-page {
+  overflow-x: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+.deposit-payments-one-page .mc-btn-wrapper {
+  background-color: #fff;
+  bottom: 0;
+  box-shadow: 0 -3px 3px #6663;
+  height: calc(64px + env(safe-area-inset-bottom));
+  left: 0;
+  padding: 10px;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+
+.deposit-payments-one-page .mc-deposit {
+  padding-bottom: calc(80px + env(safe-area-inset-bottom));
+}
+
+.deposit-payments-one-page form {
+  padding: 5px 10px 10px;
+}
+
+.deposit-payments-one-page .info-block {
+  background-color: #fbfbfb;
+  border-bottom-left-radius: 110px 45px;
+  border-bottom-right-radius: 110px 45px;
+  width: 100%;
+}
+
+.deposit-payments-one-page .info-block .content {
+  background: linear-gradient(135deg, #f9bb22, #f9bb22 45%, #fac440 0, #f9bb22);
+  padding: 10px 15px 10px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.deposit-payments-one-page .info-block .content .row {
+  color: #fff;
+  display: flex;
+}
+
+.deposit-payments-one-page .info-block .content .row:first-child {
+  justify-content: space-between;
+}
+
+.deposit-payments-one-page .info-block .content .row:nth-child(2) {
+  justify-content: flex-end;
+}
+
+.deposit-payments-one-page .info-block .content .row .account {
+  align-items: center;
+  background-color: #e2a306;
+  border-radius: 0 100px 100px 0;
+  display: flex;
+  height: 30px;
+  padding: 3px 15px;
+}
+
+.deposit-payments-one-page .info-block .content .row .account,
+.deposit-payments-one-page .info-block .content .row .balance-label {
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+}
+
+.deposit-payments-one-page .info-block .content .row .account i,
+.deposit-payments-one-page .info-block .content .row .balance-label i {
+  font-size: 22px;
+  margin-right: 3px;
+}
+
+.deposit-payments-one-page .info-block .content .row .balance-value {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.deposit-payments-one-page .deposit-list-one-page {
+  display: flex;
+  overflow: auto;
+  padding: 0 10px;
+  position: relative;
+}
+
+.deposit-payments-one-page .deposit-list-one-page .deposit-list-item {
+  align-items: center;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 85px;
+  justify-content: center;
+  margin: 10px 0 5px;
+  position: relative;
+}
+
+.deposit-payments-one-page .deposit-list-one-page .deposit-list-item.active {
+  border-color: #f8721b;
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item
+  .small-icon {
+  right: -4px;
+  top: -4px;
+}
+
+.deposit-payments-one-page .deposit-list-one-page .deposit-list-item h3 {
+  color: #545658;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+  word-break: break-all;
+}
+
+.deposit-payments-one-page .deposit-list-one-page .deposit-list-item:before {
+  font-family: iconmps !important;
+  font-size: 32px;
+  height: 34px;
+  text-align: center;
+  width: 40px;
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.WEIXIN:before {
+  color: #00b049;
+  content: "";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.ALIPAY:before {
+  color: #00a8f1;
+  content: "";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.DEBIT_CARD:before {
+  color: #2867aa;
+  content: "";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.COMPANY_DEPOSIT:before {
+  color: #ec7d00;
+  content: "";
+}
+
+.deposit-payments-one-page .deposit-list-one-page .deposit-list-item.QQ:before {
+  background: url(../images/qq.svg) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.JDPAY:before {
+  color: #222;
+  content: "";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.UNIONPAY_SCAN:before {
+  background: url(../images/unionpay.svg) 50% / contain no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.EXPRESSPAY:before {
+  color: #eb5e1d;
+  content: "";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.YIYOU:before {
+  color: #f60;
+  content: "";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.CRYPTO:before {
+  color: #f90;
+  content: "";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.MOMOPAY:before {
+  background: url(../images/momo.svg) 50% no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.ZALOPAY:before {
+  background: url(../images/zalopay.svg) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.VIETTELPAY:before {
+  background: url(../images/viettelpay.svg) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.QUICKPASS:before {
+  background: url(../images/qpass.png) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.QR_BANK:before {
+  background: url(../images/icon-wbscan.svg) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.ONLINE_BANKING:before {
+  color: #21d1a2;
+  content: "";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.PROMPTPAY:before {
+  background: url(../images/prompt.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.SKRILL:before {
+  background: url(../images/skrill.png) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.NETELLER:before {
+  background: url(../images/neteller.png) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.PAYTM:before {
+  background: url(../images/paytm.png) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.UPI:before {
+  background: url(../images/upi.png) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.BHIM:before {
+  background: url(../images/bhim.png) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.GPAY:before {
+  background: url(../images/gpay.png) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.PHONEPE:before {
+  background: url(../images/phonepe.png) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.MPURSE:before {
+  background: url(../images/mpurse.png) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.SCRATCHCARD:before {
+  background: url(../images/scratch.png) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.GCASH:before {
+  background: url(../images/gcash.png) 50% / auto 36px no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.TRUEMONEY:before {
+  background: url(../images/truemoney.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.USDT:before {
+  background: url(../images/usdt.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.GRABPAY:before {
+  background: url(../images/grabpay.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.PAYMAYA:before {
+  background: url(../images/paymaya.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.REMIT:before {
+  background: url(../images/remit.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.PAYLORO:before {
+  background: url(../images/payloro.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.NAGAD:before {
+  background: url(../images/nagad.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.BKASH:before {
+  background: url(../images/bkash.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.ROCKET:before {
+  background: url(../images/rocket.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.UPAY:before {
+  background: url(../images/upay.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item.CORPORATE_CRYPTO:before {
+  background: url(../images/corporate-crypto.png) 50% / contain no-repeat;
+  content: " ";
+}
+
+.deposit-payments-one-page .deposit-list-one-page.non-slide {
+  flex-wrap: wrap;
+  overflow: unset;
+}
+
+.deposit-payments-one-page .deposit-list-one-page.non-slide .deposit-list-item {
+  box-sizing: border-box;
+  flex: 0 0 24%;
+  height: auto;
+  justify-content: flex-start;
+  margin-right: 1.3%;
+  padding: 5px;
+  width: 24%;
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page.non-slide
+  .deposit-list-item:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+.deposit-payments-one-page
+  .deposit-list-one-page.non-slide
+  .deposit-list-item:before {
+  margin: 15px auto 3px;
+}
+
+.deposit-payments-one-page .deposit-list-one-page small {
+  align-items: center;
+  color: #939698;
+  display: none;
+  font-size: 11px;
+  font-weight: 300;
+  justify-content: center;
+  line-height: 1.4;
+  padding-top: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.deposit-payments-one-page .deposit-list-one-page small.active {
+  display: flex;
+}
+
+.deposit-payments-one-page .block-title {
+  height: inherit;
+  padding: 16px 0 0 8px;
+}
+
+.deposit-payments-one-page .block-title .deposit-methods {
+  color: #545658;
+  font-weight: 500;
+}
+
+.deposit-payments-one-page .mc-deposit .deposit-note-navbar .navbar .title {
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.deposit-payments-one-page .mc-deposit .deposit-note-navbar .navbar .right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.deposit-payments-one-page
+  .mc-deposit
+  .deposit-note-navbar
+  .navbar
+  .right
+  .deposit-list-link {
+  display: block;
+}
+
+.deposit-payments-one-page
+  .mc-deposit
+  .deposit-note-navbar
+  .navbar
+  .right
+  > div {
+  line-height: 30px;
+}
+
+.deposit-payments-one-page .mc-deposit .deposit-note-navbar .nav-place {
+  display: none;
+}
+
+.deposit-payments-one-page
+  .mc-collection-option
+  .mc-collection-information
+  figure {
+  align-items: center;
+  display: flex;
+  flex: 0 0 30px;
+  gap: 5px;
+  width: 30px !important;
+}
+
+.deposit-payments-one-page
+  .mc-collection-option
+  .mc-collection-information
+  figure:empty {
+  display: none;
+}
+
+.deposit-payments-one-page
+  .mc-collection-option
+  .mc-collection-information
+  figure
+  > img,
+.deposit-payments-one-page
+  .mc-collection-option
+  .mc-collection-information
+  figure
+  > svg {
+  width: 25px !important;
+}
+
+.deposit-payments-one-page .mc-collection-option .mc-collection-name {
+  font-size: 10px !important;
+  text-align: left;
+}
+
+html[lang="en"]
+  .deposit-payments-one-page
+  .deposit-list-one-page
+  .deposit-list-item
+  h3 {
+  word-break: normal;
+}

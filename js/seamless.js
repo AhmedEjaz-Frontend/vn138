@@ -29,6 +29,7 @@ async function refreshBalance() {
     const data = await res.json();
     const user = data.user || data;
     const balance = data.balance ?? user.balance ?? user.wallet_balance ?? null;
+    localStorage.setItem("user", JSON.stringify(user));
     if (balance !== null) localStorage.setItem("balance", String(balance));
     return balance;
   } catch (e) {

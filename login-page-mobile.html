@@ -521,7 +521,7 @@
             <div class="container">
               <div class="container-inner">
                 <div class="text-right">
-                  <img alt="close" src="./images/ic-cancel.svg" />
+                  <img alt="close" src="./images/ic-cancel.svg" onclick="window.location.href='003-index.html'" style="cursor: pointer;" />
                 </div>
                 <h2 class="title-center">Login</h2>
                 <div style="margin-bottom: 10px">
@@ -893,6 +893,8 @@
     <script>
       if (localStorage.getItem('token')) {
         window.location.href = './003-index.html';
+      } else if (window.innerWidth > 768) {
+        window.location.href = '001-index.html';
       }
     </script>
     <script src="./js/m--animal.dc58cb1e.js"></script>

@@ -415,6 +415,7 @@
     <link rel="stylesheet" type="text/css" href="/css/m-home.e15f1063.css" />
     <link rel="stylesheet" type="text/css" href="./css/hot-games.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/seamless.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         new Swiper(".carousel-banner-container .swiper", {
@@ -477,6 +478,11 @@
                 <div class="tools" id="tools-logged-in" style="display: none">
                   <div class="tools-item header-account">
                     <span id="user-balance">0.00</span>
+                    <i
+                      class="mps-update"
+                      onclick="handleReloadBalance()"
+                      style="cursor: pointer; align-self: center"
+                    ></i>
                     <div class="user-avatar"></div>
                   </div>
                   <div class="country-select">
@@ -500,7 +506,9 @@
                 </div>
               </header>
               <section class="home-login" id="home-login">
-                <a class="tools-item" href="./register-page-mobile.html">Register</a>
+                <a class="tools-item" href="./register-page-mobile.html"
+                  >Register</a
+                >
                 <a class="tools-item" href="./login-page-mobile.html">Login</a>
               </section>
               <div class="home-banner-top">
@@ -3130,7 +3138,7 @@
     <script src="./js/mobile-header.js"></script>
     <script>
       if (window.innerWidth > 768) {
-        window.location.href = './001-index.html';
+        window.location.href = "./001-index.html";
       }
     </script>
     <script src="./js/m--animal.dc58cb1e.js"></script>

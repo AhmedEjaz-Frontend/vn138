@@ -16545,7 +16545,7 @@ button.swiper-pagination-bullet {
   .right
   .account-tool
   .logined-nav
-  li.login-nav-inbox {
+   {
   position: absolute;
   right: 10px;
   top: 50%;
@@ -16557,7 +16557,7 @@ button.swiper-pagination-bullet {
   .right
   .account-tool
   .logined-nav
-  li.login-nav-inbox
+  
   a {
   align-items: center;
   display: flex;
@@ -16569,7 +16569,7 @@ button.swiper-pagination-bullet {
   .right
   .account-tool
   .logined-nav
-  li.login-nav-inbox
+  
   a:before {
   background: url(../images/icon-bell.png) 50% / contain no-repeat;
   content: "";
@@ -17224,3 +17224,4 @@ button.swiper-pagination-bullet {
 body {
   font-family: Myriad, Tahoma, Roboto, sans-serif !important;
 }
+

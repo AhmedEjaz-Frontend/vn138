@@ -91,7 +91,7 @@ async function logout() {
           userData?.name || fallback?.name;
         document.querySelector(".wallet").innerHTML = `${
           userData?.balance || fallback?.balance || "0.00"
-        }<i class="mps-update"></i>`;
+        }<i class="mps-update" onclick="handleReloadBalance()" style="cursor: pointer; align-self: center;"></i>`;
         document.querySelectorAll(".logined-nav li").forEach((li, i) => {
           if (i === 2 || i === 3) li.style.display = "none";
         });
@@ -125,7 +125,7 @@ async function logout() {
       userData?.name || fallback?.name;
     document.querySelector(".wallet").innerHTML = `${
       userData?.balance || fallback?.balance || "0.00"
-    }<i class="mps-update"></i>`;
+    }<i class="mps-update" onclick="handleReloadBalance()" style="cursor: pointer; align-self: center;"></i>`;
     document.querySelectorAll(".logined-nav li").forEach((li, i) => {
       if (i === 2 || i === 3) li.style.display = "none";
     });

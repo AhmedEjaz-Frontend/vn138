@@ -3575,7 +3575,7 @@
                                     }),
                                   }),
                                   (0, b.jsx)("li", {
-                                    className: "login-nav-inbox",
+                                    className: "login-nav-inbox-removed",
                                     children: (0, b.jsxs)("a", {
                                       onClick: () => e(p.default.INBOX),
                                       children: [
@@ -7089,3 +7089,4 @@
     },
   },
 ]);
+

@@ -38,6 +38,15 @@
     <link rel="stylesheet" href="./css/d-Home.5b2f7868.css" />
     <link rel="stylesheet" href="./css/d-mc-def.df045b63.css" />
     <link rel="stylesheet" href="./css/d-Deposit.950c7919.css" />
+    <link rel="stylesheet" href="./css/1359.1adfaaa0.css" />
+    <link
+      rel="stylesheet"
+      href="./css/d-MemberCenterWithdrawalMain.69e056fb.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/d-MemberCenterWithdrawalAudit.a86a709a.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -379,10 +388,33 @@
       .member-center-menu .nav-block .item {
         text-decoration: none;
         color: inherit;
+        display: flex;
+        align-items: center;
+        gap: 8px;
       }
       .member-center-menu .nav-block .item:hover,
       .member-center-menu .nav-block .item:focus-visible {
         text-decoration: none;
+      }
+      .countdown-reload {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .countdown-reload .countdown-value {
+        font-weight: 600;
+        color: #1f2937;
+      }
+      .countdown-reload .reload-button {
+        background: none;
+        border: none;
+        padding: 4px;
+        cursor: pointer;
+        color: inherit;
+      }
+      .countdown-reload .reload-button.is-disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
       }
       input:-webkit-autofill,
       input:-webkit-autofill:hover,
@@ -479,6 +511,8 @@
     <script src="./js/hot-games.js"></script>
     <script src="./js/header-hot-games.js"></script>
     <script src="./js/deposit-user-info.js"></script>
+    <script src="./js/withdraw-page.js"></script>
+    <script src="./js/seamless.js"></script>
     <script>
       if (window.innerWidth <= 768) {
         window.location.href = "./003-index.html";
@@ -549,16 +583,17 @@
               </div>
               <div class="account-tool" style="display: none">
                 <ul class="logined-nav">
-                  <li><a>Deposit</a></li> 
+                  <li><a>Deposit</a></li>
                   <li><a>Withdraw</a></li>
                   <li><a>History</a></li>
                   <li><a>Statement</a></li>
+                  
                 </ul>
                 <div class="id"></div>
                 <button class="header-btn btn-logout">Logout</button>
               </div>
               <div class="wallet" style="display: none">
-                0.00<i class="mps-update" style="align-self: center"></i>
+                0.00<i class="mps-update" onclick="handleReloadBalance()" style="align-self: center; cursor: pointer;"></i>
               </div>
               <div class="lang">
                 <div class="lang-toggle">
@@ -1351,7 +1386,6 @@
           <div class="member-center-main">
             <div class="member-center-menu default">
               <div class="info-block">
-                <!-- <div class="player-name">Player</div> -->
                 <div class="playerid">ID: --</div>
               </div>
               <div class="balance-info">
@@ -1359,71 +1393,166 @@
                 <div class="balance">0.00</div>
               </div>
               <div class="nav-block">
-                <a class="item active" href="./deposit-page-desktop.html">
+                <a class="item" href="./deposit-page-desktop.html">
                   <i class="kicon-deposit"></i>
                   <div class="label">Deposit</div>
                 </a>
-                <a class="item" href="./withdraw-page-desktop.html">
+                <a class="item active" href="./withdraw-page-desktop.html">
                   <i class="kicon-withdrawal"></i>
                   <div class="label">Withdraw</div>
                 </a>
               </div>
             </div>
-            <div class="member-center-content" data-path="/deposit">
-              <div class="block deposit-payments">
-                <div class="mc-deposit-header">
-                  <div class="title">Deposit Type</div>
-                </div>
-                <div class="scroll-wrapper">
-                  <div class="deposit-list">
-                    <div
-                      class="deposit-list-item QR_BANK"
-                      onclick="window.location.href='deposit-page-desktop-select-bank.html'"
-                      style="cursor: pointer"
-                    >
-                      <h3>QR Banking</h3>
-                      <small>QR Banking</small>
-                    </div>
-                    <div
-                      class="deposit-list-item REMIT"
-                      onclick="window.location.href='deposit-page-desktop-select-bank.html'"
-                      style="cursor: pointer"
-                    >
-                      <h3>REMIT</h3>
-                      <small>REMIT</small>
-                    </div>
-                    <div
-                      class="deposit-list-item MOMOPAY"
-                      onclick="window.location.href='deposit-page-desktop-select-bank.html'"
-                      style="cursor: pointer"
-                    >
-                      <h3>MOMOPAY</h3>
-                      <small>MOMOPAY</small>
-                    </div>
-                    <div
-                      class="deposit-list-item DEBIT_CARD"
-                      onclick="window.location.href='deposit-page-desktop-select-bank.html'"
-                      style="cursor: pointer"
-                    >
-                      <h3>3rd Party Gateway</h3>
-                      <small>3rd Party Gateway</small>
+            <div class="member-center-content" data-path="/withdraw/audit">
+              <div class="full-block member-center-withdrawal-list audit-page">
+                <div class="title">
+                  Withdrawal Conditions
+                  <div class="right-block">
+                    <div class="countdown-reload">
+                      <span id="withdrawCountdown" class="countdown-value"
+                        >Ready</span
+                      >
+                      <button
+                        type="button"
+                        id="withdrawReloadButton"
+                        class="reload-button"
+                        onclick="handleReloadBalance()"
+                        aria-label="Reload balance"
+                      >
+                        <i class="d20_small_autorenew"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="block member-center-promo">
-                <div class="promo-ads-title">
-                  <div class="title">Promotion</div>
-                </div>
-                <div class="ads-block">
-                  <div class="no-data">
-                    <img
-                      src="./images/promo-no-data.2d341236..svg"
-                      alt="no-data"
-                    />
-                    <div class="no-data-text">No Information</div>
+                <div class="nrc-sizer">
+                  <div>
+                    <div
+                      class="nrc-table table_821b8bb4-248a-4b2b-84f2-64ab520b2633"
+                    >
+                      <div class="column-filters-container"></div>
+                      <div class="table-viewport">
+                        <div class="table-header">
+                          <div></div>
+                          <div
+                            class="header-viewport"
+                            style="width: 932px; min-width: 932px"
+                          >
+                            <div class="nrc-table-header" style="left: 0px">
+                              <div
+                                class="nrc-table-header-column center"
+                                style="
+                                  width: 246px;
+                                  min-width: 246px;
+                                  max-width: 246px;
+                                "
+                              >
+                                <div class="label" style="min-height: 50px">
+                                  <span>Period</span>
+                                </div>
+                              </div>
+                              <div
+                                class="nrc-table-header-column center"
+                                style="
+                                  width: 186px;
+                                  min-width: 186px;
+                                  max-width: 186px;
+                                "
+                              >
+                                <div class="label" style="min-height: 50px">
+                                  <span>Audit type</span>
+                                </div>
+                              </div>
+                              <div
+                                class="nrc-table-header-column center"
+                                style="
+                                  width: 100px;
+                                  min-width: 100px;
+                                  max-width: 100px;
+                                "
+                              >
+                                <div class="label" style="min-height: 50px">
+                                  <span>Deposit</span>
+                                </div>
+                              </div>
+                              <div
+                                class="nrc-table-header-column center"
+                                style="
+                                  width: 100px;
+                                  min-width: 100px;
+                                  max-width: 100px;
+                                "
+                              >
+                                <div class="label" style="min-height: 50px">
+                                  <span>Bonus</span>
+                                </div>
+                              </div>
+                              <div
+                                class="nrc-table-header-column center"
+                                style="
+                                  width: 100px;
+                                  min-width: 100px;
+                                  max-width: 100px;
+                                "
+                              >
+                                <div class="label" style="min-height: 50px">
+                                  <span>Valid Bets</span>
+                                </div>
+                              </div>
+                              <div
+                                class="nrc-table-header-column center"
+                                style="
+                                  width: 120px;
+                                  min-width: 120px;
+                                  max-width: 120px;
+                                "
+                              >
+                                <div class="label" style="min-height: 50px">
+                                  <span>Valid Bets Cond.</span>
+                                </div>
+                              </div>
+                              <div
+                                class="nrc-table-header-column center"
+                                style="
+                                  width: 80px;
+                                  min-width: 80px;
+                                  max-width: 80px;
+                                "
+                              >
+                                <div class="label" style="min-height: 50px">
+                                  <span>Status</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div></div>
+                        </div>
+                        <div class="table-body" style="max-height: 260px">
+                          <div
+                            class="body-viewport-wrapper"
+                            style="
+                              overflow-y: auto;
+                              max-height: 260px;
+                              width: 932px;
+                              min-width: 932px;
+                            "
+                          >
+                            <div
+                              class="nrc-table-row no-data"
+                              style="width: 932px; height: 35px"
+                            >
+                              <div>No Information</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div></div>
+                        <div></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <button title="" class="nrc-button to-withdrawal" type="button">
+                  Withdraw
+                </button>
               </div>
               <div id="right-drawer-root"></div>
             </div>
@@ -1438,10 +1567,16 @@
             </div>
             <div class="cont">
               <div class="event-item">
-                <img src="./images/mission.png" alt="event-mission" />
+                <img
+                  src="https://img.alltocon.com/img/static/common/vip/icon/mission.png"
+                  alt="event-mission"
+                />
               </div>
               <div class="event-item">
-                <img src="./images/event_vip.png" alt="event-vip" />
+                <img
+                  src="https://img.alltocon.com/img/static/event/event_vip.png"
+                  alt="event-vip"
+                />
               </div>
             </div>
           </div>

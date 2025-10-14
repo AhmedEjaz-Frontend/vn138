@@ -377,6 +377,14 @@
           transform: rotate(360deg);
         }
       }
+      .member-center-menu .nav-block .item {
+        text-decoration: none;
+        color: inherit;
+      }
+      .member-center-menu .nav-block .item:hover,
+      .member-center-menu .nav-block .item:focus-visible {
+        text-decoration: none;
+      }
       input:-webkit-autofill,
       input:-webkit-autofill:hover,
       input:-webkit-autofill:focus,
@@ -471,6 +479,8 @@
     <script src="./js/login.js"></script>
     <script src="./js/hot-games.js"></script>
     <script src="./js/header-hot-games.js"></script>
+    <script src="./js/deposit-qr.js"></script>
+    <script src="./js/deposit-user-info.js"></script>
     <script>
       if (window.innerWidth <= 768) {
         window.location.href = "./003-index.html";
@@ -1343,55 +1353,23 @@
         <div class="app-body">
           <div class="member-center-main">
             <div class="member-center-menu default">
-              <div class="info-block"><div class="playerid">00001111</div></div>
+              <div class="info-block">
+                <div class="player-name">Player</div>
+                <div class="playerid">ID: --</div>
+              </div>
               <div class="balance-info">
                 <div class="currency">VND(k)</div>
                 <div class="balance">0.00</div>
               </div>
               <div class="nav-block">
-                <div class="item">
-                  <i class="kicon-account"></i>
-                  <div class="label">My Account</div>
-                </div>
-                <div class="item">
-                  <i class="d20_account_vip"></i>
-                  <div class="label">VIP</div>
-                </div>
-                <div class="item active">
+                <a class="item active" href="./deposit-page-desktop.html">
                   <i class="kicon-deposit"></i>
                   <div class="label">Deposit</div>
-                </div>
-                <div class="item">
+                </a>
+                <a class="item" href="./withdraw-page-desktop.html">
                   <i class="kicon-withdrawal"></i>
                   <div class="label">Withdraw</div>
-                </div>
-                <div class="item">
-                  <i class="d20_account_recommand"></i>
-                  <div class="label">Promote distribution</div>
-                </div>
-                <div class="item">
-                  <i class="d20_account_gift"></i>
-                  <div class="label">Promo Center</div>
-                </div>
-                <div class="item">
-                  <span class="msg-notification"></span
-                  ><i class="kicon-mission"></i>
-                  <div class="label">Mission Diary</div>
-                </div>
-                <div class="item">
-                  <i class="kicon-game-history"></i>
-                  <div class="label">History</div>
-                </div>
-                <div class="item">
-                  <i class="kicon-fin-history"></i>
-                  <div class="label">Statement</div>
-                </div>
-                <div class="line"></div>
-                <div class="item">
-                  <span class="msg-notification"></span
-                  ><i class="kicon-inbox"></i>
-                  <div class="label">Messages</div>
-                </div>
+                </a>
               </div>
             </div>
             <div
@@ -1400,7 +1378,7 @@
             >
               <div class="block">
                 <div class="title-wrapper">
-                  <div class="left"><i class="mps-back"></i></div>
+                  <div class="left" onclick="window.location.href='deposit-page-desktop.html'" style="cursor: pointer;"><i class="mps-back"></i></div>
                   <div class="title">QR Banking</div>
                   <div class="right"></div>
                 </div>
@@ -1476,7 +1454,7 @@
                                         class="mc-quick-button-block mc-quick-button-block-amount"
                                       >
                                         <button class="mc-quick-input-button">
-                                          100<span
+                                          150<span
                                             class="quick-btn-bonus"
                                           ></span></button
                                         ><button class="mc-quick-input-button">
@@ -1576,7 +1554,12 @@
                                   <small class="info-msg"></small>
                                 </div>
                               </div>
-                              <button title="" class="nrc-button" type="button">
+                              <button
+                                title=""
+                                class="nrc-button"
+                                type="button"
+                                id="generateQrButton"
+                              >
                                 Generate QR Code
                               </button>
                             </div>

@@ -555,12 +555,16 @@
         <div class="app-body nav-bar">
           <div class="m-member-center-main">
             <div class="m-member-center-account">
-              <div class="info-block">
+              <div class="info-block" id="logged-in-block">
                 <div class="top">
                   <div class="player">
                     Hello, <span id="menu-username">00001111</span>
                   </div>
-                  <div class="right-block"><span>Logout</span></div>
+                  <div class="right-block">
+                    <span onclick="handleLogout()" style="cursor: pointer"
+                      >Logout</span
+                    >
+                  </div>
                 </div>
                 <div class="center">
                   <div class="currency">VND(k)</div>
@@ -570,6 +574,27 @@
                       class="btn-update d20_small_autorenew"
                       onclick="handleReloadBalance()"
                     ></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="info-block"
+                id="logged-out-block"
+                style="display: none"
+              >
+                <div class="top">
+                  <div>
+                    Hello, please
+                    <span
+                      onclick="window.location.href='login-page-mobile.html'"
+                      style="cursor: pointer; color: white"
+                      >Login</span
+                    ><span> / </span
+                    ><span
+                      onclick="window.location.href='register-page-mobile.html'"
+                      style="cursor: pointer; color: white"
+                      >Register</span
+                    >
                   </div>
                 </div>
               </div>
@@ -666,7 +691,7 @@
           <ul>
             <li
               class="nav-home"
-              onclick="window.location.href='./003-index.html'"
+              onclick="window.location.href='./index.html'"
               style="cursor: pointer"
             >
               <i class="d20_account_home"></i>
@@ -1047,13 +1072,31 @@
         window.location.href = "./001-index.html";
       }
 
-      const user = JSON.parse(localStorage.getItem("user"));
-      if (user) {
-        document.getElementById("menu-username").textContent = user.name;
-        document.getElementById("menu-balance").textContent = parseFloat(
-          user.balance
-        ).toFixed(2);
+      function updateUIBasedOnLoginState() {
+        const user = JSON.parse(localStorage.getItem("user"));
+        const loggedInBlock = document.getElementById("logged-in-block");
+        const loggedOutBlock = document.getElementById("logged-out-block");
+
+        if (user) {
+          loggedInBlock.style.display = "block";
+          loggedOutBlock.style.display = "none";
+          document.getElementById("menu-username").textContent = user.name;
+          document.getElementById("menu-balance").textContent = parseFloat(
+            user.balance
+          ).toFixed(2);
+        } else {
+          loggedInBlock.style.display = "none";
+          loggedOutBlock.style.display = "block";
+        }
       }
+
+      function handleLogout() {
+        localStorage.removeItem("user");
+        localStorage.removeItem("token");
+        updateUIBasedOnLoginState();
+      }
+
+      updateUIBasedOnLoginState();
 
       function updateMenuBalance() {
         const user = JSON.parse(localStorage.getItem("user"));

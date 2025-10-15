@@ -549,6 +549,11 @@
     />
   </head>
   <body cz-shortcut-listen="true">
+    <script>
+      if (!localStorage.getItem("user")) {
+        window.location.href = "index.html";
+      }
+    </script>
     <div id="root" style="display: block">
       <div class="app account logined">
         <div style="display: none"></div>
@@ -557,7 +562,12 @@
             <div class="m-withdrawal-audit">
               <div class="mc-navbar-wrapper">
                 <div class="navbar">
-                  <div class="left"><i class="d20_system_back"></i></div>
+                  <div
+                    class="left"
+                    onclick="window.location.href='/index.html'"
+                  >
+                    <i class="d20_system_back"></i>
+                  </div>
                   <div class="title">Withdrawal Conditions</div>
                   <div class="right">
                     <div class="countdown-reload">
@@ -744,6 +754,12 @@
         >LiveChat</a
       ></noscript
     >
+    <script>
+      const token = localStorage.getItem("token");
+      if (token) {
+        window.location.href = "index.html";
+      }
+    </script>
     <script src="./js/m--animal.dc58cb1e.js"></script>
     <script src="./js/m--chess.1e9b85e7.js"></script>
     <script src="./js/m--egame.39233435.js"></script>

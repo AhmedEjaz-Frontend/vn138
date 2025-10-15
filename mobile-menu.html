@@ -557,14 +557,19 @@
             <div class="m-member-center-account">
               <div class="info-block">
                 <div class="top">
-                  <div class="player">Hello, <span id="menu-username">00001111</span></div>
+                  <div class="player">
+                    Hello, <span id="menu-username">00001111</span>
+                  </div>
                   <div class="right-block"><span>Logout</span></div>
                 </div>
                 <div class="center">
                   <div class="currency">VND(k)</div>
                   <div class="balance">
                     <span id="menu-balance">0.00</span>
-                    <div class="btn-update d20_small_autorenew" onclick="handleReloadBalance()"></div>
+                    <div
+                      class="btn-update d20_small_autorenew"
+                      onclick="handleReloadBalance()"
+                    ></div>
                   </div>
                 </div>
               </div>
@@ -577,7 +582,12 @@
                 >
                   <div class="icon"><i class="kicon-deposit"></i></div>
                   <span>Deposit</span></button
-                ><button title="" class="nrc-button action-btn" type="button">
+                ><button
+                  title=""
+                  onclick="window.location.href='./withdraw-mobile.html'"
+                  class="nrc-button action-btn"
+                  type="button"
+                >
                   <div class="icon"><i class="kicon-withdrawal"></i></div>
                   <span>Withdrawal</span>
                 </button>
@@ -1037,20 +1047,24 @@
         window.location.href = "./001-index.html";
       }
 
-      const user = JSON.parse(localStorage.getItem('user'));
+      const user = JSON.parse(localStorage.getItem("user"));
       if (user) {
-        document.getElementById('menu-username').textContent = user.name;
-        document.getElementById('menu-balance').textContent = parseFloat(user.balance).toFixed(2);
+        document.getElementById("menu-username").textContent = user.name;
+        document.getElementById("menu-balance").textContent = parseFloat(
+          user.balance
+        ).toFixed(2);
       }
 
       function updateMenuBalance() {
-        const user = JSON.parse(localStorage.getItem('user'));
+        const user = JSON.parse(localStorage.getItem("user"));
         if (user) {
-          document.getElementById('menu-balance').textContent = parseFloat(user.balance).toFixed(2);
+          document.getElementById("menu-balance").textContent = parseFloat(
+            user.balance
+          ).toFixed(2);
         }
       }
 
-      window.addEventListener('balanceUpdated', updateMenuBalance);
+      window.addEventListener("balanceUpdated", updateMenuBalance);
 
       function isMobileViewport() {
         return window.innerWidth <= 768;

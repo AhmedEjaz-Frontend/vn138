@@ -14,7 +14,7 @@ function initializeGameCards() {
   desktopCategories.forEach((category) => {
     const nav = document.querySelector(category);
     if (!nav) return;
-    const cards = nav.querySelectorAll(".submenu li a");
+    const cards = nav.querySelectorAll(".submenu li .run_game");
     cards.forEach((card) => {
       const randomId =
         GAME_ID_POOL[Math.floor(Math.random() * GAME_ID_POOL.length)];

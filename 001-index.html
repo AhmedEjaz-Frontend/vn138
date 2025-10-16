@@ -551,7 +551,7 @@
                 <div class="nav-item hot_games">
                   <a class=""><h3>Hot</h3></a>
                 </div>
-                <div class="submenu">
+                <div class="submenu submenu1">
                   <ul class="hot-games">
                     <li
                       class="game-item"
@@ -559,7 +559,7 @@
                     >
                       <a
                         ><img
-                          src="./alo-clone/images/live-arena.webp"
+                          src="./images/daga.webp"
                           class="cover"
                           alt="SV388"
                       /></a>
@@ -573,7 +573,7 @@
                     >
                       <a
                         ><img
-                          src="./alo-clone/images/wala-img.png"
+                          src="./images/wala-img.png"
                           class="cover"
                           alt="Wala88"
                       /></a>
@@ -588,10 +588,11 @@
                 <div class="nav-item live">
                   <a class=""><h3>Live</h3></a>
                 </div>
-                <div class="submenu">
+                <div class="submenu submenu1">
                   <ul>
-                    <li data-provider="via_casino" class="en-US">
-                      <a data-provider="VIA_CASINO"
+                    <li data-provider="via_casino" class="en-US"
+                     onclick="handleLiveArena('Game', 8)">
+                      <a data-provider="VIA_CASINO" 
                         ><img
                           src="./images/sub-live-via_casino.png"
                           alt="banner-via_casino"
@@ -602,7 +603,7 @@
                       </div>
                     </li>
                     <li data-provider="wm" class="en-US">
-                      <a data-provider="WM"
+                      <a data-provider="WM" class="run_game"
                         ><img
                           src="./images/sub-live-wm.png"
                           alt="banner-wm"
@@ -612,8 +613,9 @@
                         <button class="add-fav">My Favorite</button>
                       </div>
                     </li>
-                    <li data-provider="db_live" class="en-US">
-                      <a data-provider="DB LIVE"
+                    <li data-provider="db_live" class="en-US"
+                      onclick="handleLiveArena('Game', 3)">
+                      <a data-provider="DB LIVE" 
                         ><img
                           src="./images/sub-live-db_live.png"
                           alt="banner-db_live"
@@ -624,7 +626,7 @@
                       </div>
                     </li>
                     <li data-provider="ag" class="en-US">
-                      <a data-provider="PlayAce"
+                      <a data-provider="PlayAce" class="run_game"
                         ><img
                           src="./images/sub-live-ag.png"
                           alt="banner-ag"
@@ -634,8 +636,9 @@
                         <button class="add-fav">My Favorite</button>
                       </div>
                     </li>
-                    <li data-provider="sexybcrt" class="en-US">
-                      <a data-provider="SEXYBCRT"
+                    <li data-provider="sexybcrt" class="en-US"
+                      onclick="handleLiveArena('Game', 4)">
+                      <a data-provider="SEXYBCRT" 
                         ><img
                           src="./images/sub-live-sexybcrt.png"
                           alt="banner-sexybcrt"
@@ -646,7 +649,7 @@
                       </div>
                     </li>
                     <li data-provider="dg" class="en-US">
-                      <a data-provider="DG"
+                      <a data-provider="DG" class="run_game"
                         ><img
                           src="./images/sub-live-dg.png"
                           alt="banner-dg"
@@ -657,7 +660,7 @@
                       </div>
                     </li>
                     <li data-provider="allbet" class="en-US">
-                      <a data-provider="ALLBET"
+                      <a data-provider="ALLBET" class="run_game"
                         ><img
                           src="./images/sub-live-allbet.png"
                           alt="banner-allbet"
@@ -668,7 +671,7 @@
                       </div>
                     </li>
                     <li data-provider="bbin" class="en-US">
-                      <a data-provider="BBIN"
+                      <a data-provider="BBIN" class="run_game"
                         ><img
                           src="./images/sub-live-bbin.png"
                           alt="banner-bbin"
@@ -679,7 +682,7 @@
                       </div>
                     </li>
                     <li data-provider="ebet" class="en-US">
-                      <a data-provider="WE2"
+                      <a data-provider="WE2" class="run_game"
                         ><img
                           src="./images/sub-live-ebet.png"
                           alt="banner-ebet"
@@ -690,7 +693,7 @@
                       </div>
                     </li>
                     <li data-provider="evo" class="en-US">
-                      <a data-provider="EVO"
+                      <a data-provider="EVO" class="run_game"
                         ><img
                           src="./images/sub-live-evo.png"
                           alt="banner-evo"
@@ -701,7 +704,7 @@
                       </div>
                     </li>
                     <li data-provider="mg" class="en-US">
-                      <a data-provider="MG"
+                      <a data-provider="MG" class="run_game"
                         ><img
                           src="./images/sub-live-mg.png"
                           alt="banner-mg"
@@ -712,7 +715,7 @@
                       </div>
                     </li>
                     <li data-provider="motivation" class="en-US">
-                      <a data-provider="MOTIVATION"
+                      <a data-provider="MOTIVATION" class="run_game"
                         ><img
                           src="./images/sub-live-motivation.png"
                           alt="banner-motivation"
@@ -723,7 +726,7 @@
                       </div>
                     </li>
                     <li data-provider="onlive" class="en-US">
-                      <a data-provider="ONLIVE"
+                      <a data-provider="ONLIVE" class="run_game"
                         ><img
                           src="./images/sub-live-onlive.png"
                           alt="banner-onlive"
@@ -734,7 +737,7 @@
                       </div>
                     </li>
                     <li data-provider="pp" class="en-US">
-                      <a data-provider="PP"
+                      <a data-provider="PP" class="run_game"
                         ><img
                           src="./images/sub-live-pp.png"
                           alt="banner-pp"
@@ -745,7 +748,7 @@
                       </div>
                     </li>
                     <li data-provider="pt" class="en-US">
-                      <a data-provider="PT"
+                      <a data-provider="PT" class="run_game"
                         ><img
                           src="./images/sub-live-pt.png"
                           alt="banner-pt"
@@ -756,7 +759,7 @@
                       </div>
                     </li>
                     <li data-provider="wg_live" class="en-US">
-                      <a data-provider="WG_LIVE"
+                      <a data-provider="WG_LIVE" class="run_game"
                         ><img
                           src="./images/sub-live-wg_live.png"
                           alt="banner-wg_live"
@@ -773,9 +776,10 @@
                 <div class="nav-item sports">
                   <a class=""><h3>Sports</h3></a>
                 </div>
-                <div class="submenu">
+                <div class="submenu submenu1">
                   <ul>
-                    <li data-provider="saba" class="en-US">
+                    <li data-provider="saba" class="en-US"
+                      onclick="handleLiveArena('Game', 15)">
                       <a data-provider="SABA"
                         ><img
                           src="./images/sub-sports-saba.png"
@@ -787,7 +791,7 @@
                       </div>
                     </li>
                     <li data-provider="sbobet" class="en-US">
-                      <a data-provider="SBOBET"
+                      <a data-provider="SBOBET" class="run_game"
                         ><img
                           src="./images/sub-sports-sbobet.png"
                           alt="banner-sbobet"
@@ -798,7 +802,7 @@
                       </div>
                     </li>
                     <li data-provider="cmdbet" class="en-US">
-                      <a data-provider="CMDBET"
+                      <a data-provider="CMDBET" class="run_game"
                         ><img
                           src="./images/sub-sports-cmdbet.png"
                           alt="banner-cmdbet"
@@ -809,7 +813,7 @@
                       </div>
                     </li>
                     <li data-provider="bti" class="en-US">
-                      <a data-provider="BTI"
+                      <a data-provider="BTI" class="run_game"
                         ><img
                           src="./images/sub-sports-bti.png"
                           alt="banner-bti"
@@ -820,7 +824,7 @@
                       </div>
                     </li>
                     <li data-provider="panda_sports" class="en-US">
-                      <a data-provider="PANDA SPORTS"
+                      <a data-provider="PANDA SPORTS" class="run_game"
                         ><img
                           src="./images/sub-sports-panda_sports.png"
                           alt="banner-panda_sports"
@@ -831,7 +835,7 @@
                       </div>
                     </li>
                     <li data-provider="im_sports" class="en-US">
-                      <a data-provider="IM_SPORTS"
+                      <a data-provider="IM_SPORTS" class="run_game"
                         ><img
                           src="./images/sub-sports-im_sports.png"
                           alt="banner-im_sports"
@@ -842,7 +846,7 @@
                       </div>
                     </li>
                     <li data-provider="ugaming" class="en-US">
-                      <a data-provider="UG"
+                      <a data-provider="UG" class="run_game"
                         ><img
                           src="./images/sub-sports-ugaming.png"
                           alt="banner-ugaming"
@@ -853,7 +857,7 @@
                       </div>
                     </li>
                     <li data-provider="lucky_sports" class="en-US">
-                      <a data-provider="LUCKY_SPORTS"
+                      <a data-provider="LUCKY_SPORTS" class="run_game"
                         ><img
                           src="./images/sub-sports-lucky_sports.png"
                           alt="banner-lucky_sports"
@@ -864,7 +868,7 @@
                       </div>
                     </li>
                     <li data-provider="pinnacle" class="en-US">
-                      <a data-provider="AP Sports"
+                      <a data-provider="AP Sports" class="run_game"
                         ><img
                           src="./images/sub-sports-pinnacle.png"
                           alt="banner-pinnacle"
@@ -875,7 +879,7 @@
                       </div>
                     </li>
                     <li data-provider="three_sing" class="en-US">
-                      <a data-provider="THREE_SING"
+                      <a data-provider="THREE_SING" class="run_game"
                         ><img
                           src="./images/sub-sports-three_sing.png"
                           alt="banner-three_sing"
@@ -886,7 +890,7 @@
                       </div>
                     </li>
                     <li data-provider="afb_sports" class="en-US">
-                      <a data-provider="AFB_SPORTS"
+                      <a data-provider="AFB_SPORTS" class="run_game"
                         ><img
                           src="./images/sub-sports-afb_sports.png"
                           alt="banner-afb_sports"
@@ -897,7 +901,7 @@
                       </div>
                     </li>
                     <li data-provider="wg_sports" class="en-US">
-                      <a data-provider="WG_SPORTS"
+                      <a data-provider="WG_SPORTS" class="run_game"
                         ><img
                           src="./images/sub-sports-wg_sports.png"
                           alt="banner-wg_sports"
@@ -914,10 +918,10 @@
                 <div class="nav-item animal">
                   <a class=""><h3>Animal</h3></a>
                 </div>
-                <div class="submenu">
+                <div class="submenu submenu1">
                   <ul>
                     <li data-provider="ga28" class="en-US">
-                      <a data-provider="GA28"
+                      <a data-provider="GA28" class="run_game"
                         ><img
                           src="./images/sub-animal-ga28.png"
                           alt="banner-ga28"
@@ -928,7 +932,7 @@
                       </div>
                     </li>
                     <li data-provider="od_cock" class="en-US">
-                      <a data-provider="OD COCK"
+                      <a data-provider="OD COCK" class="run_game"
                         ><img
                           src="./images/sub-animal-od_cock.png"
                           alt="banner-od_cock"
@@ -939,7 +943,7 @@
                       </div>
                     </li>
                     <li data-provider="rcb" class="en-US">
-                      <a data-provider="RCB"
+                      <a data-provider="RCB" class="run_game"
                         ><img
                           src="./images/sub-animal-rcb.png"
                           alt="banner-rcb"
@@ -950,7 +954,7 @@
                       </div>
                     </li>
                     <li data-provider="wcc" class="en-US">
-                      <a data-provider="AOG"
+                      <a data-provider="AOG" class="run_game"
                         ><img
                           src="./images/sub-animal-wcc.png"
                           alt="banner-wcc"
@@ -967,10 +971,10 @@
                 <div class="nav-item chess">
                   <a class=""><h3>Chess</h3></a>
                 </div>
-                <div class="submenu">
+                <div class="submenu submenu1">
                   <ul>
                     <li data-provider="evoplay" class="en-US">
-                      <a data-provider="EVOPLAY"
+                      <a data-provider="EVOPLAY" class="run_game"
                         ><img
                           src="./images/sub-chess-evoplay.png"
                           alt="banner-evoplay"
@@ -981,7 +985,7 @@
                       </div>
                     </li>
                     <li data-provider="lc" class="en-US">
-                      <a data-provider="LC"
+                      <a data-provider="LC" class="run_game"
                         ><img
                           src="./images/sub-chess-lc.png"
                           alt="banner-lc"
@@ -991,7 +995,8 @@
                         <button class="add-fav">My Favorite</button>
                       </div>
                     </li>
-                    <li data-provider="rich88" class="en-US">
+                    <li data-provider="rich88" class="en-US"
+                      onclick="handleLiveArena('Game', 18)">
                       <a data-provider="RICH88"
                         ><img
                           src="./images/sub-chess-rich88.png"
@@ -1002,7 +1007,8 @@
                         <button class="add-fav">My Favorite</button>
                       </div>
                     </li>
-                    <li data-provider="kingmaker" class="en-US">
+                    <li data-provider="kingmaker" class="en-US"
+                      onclick="handleLiveArena('Game', 6)">
                       <a data-provider="KINGMIDAS"
                         ><img
                           src="./images/sub-chess-kingmaker.png"
@@ -1014,7 +1020,7 @@
                       </div>
                     </li>
                     <li data-provider="bbin2" class="en-US">
-                      <a data-provider="BBIN2"
+                      <a data-provider="BBIN2" class="run_game"
                         ><img
                           src="./images/sub-chess-bbin2.png"
                           alt="banner-bbin2"
@@ -1025,7 +1031,7 @@
                       </div>
                     </li>
                     <li data-provider="btgaming" class="en-US">
-                      <a data-provider="BTGAMING"
+                      <a data-provider="BTGAMING" class="run_game"
                         ><img
                           src="./images/sub-chess-btgaming.png"
                           alt="banner-btgaming"
@@ -1036,7 +1042,7 @@
                       </div>
                     </li>
                     <li data-provider="card365" class="en-US">
-                      <a data-provider="CARD365"
+                      <a data-provider="CARD365" class="run_game"
                         ><img
                           src="./images/sub-chess-card365.png"
                           alt="banner-card365"
@@ -1047,7 +1053,7 @@
                       </div>
                     </li>
                     <li data-provider="cq9" class="en-US">
-                      <a data-provider="CQ9"
+                      <a data-provider="CQ9" class="run_game"
                         ><img
                           src="./images/sub-chess-cq9.png"
                           alt="banner-cq9"
@@ -1058,7 +1064,7 @@
                       </div>
                     </li>
                     <li data-provider="eazy_gaming" class="en-US">
-                      <a data-provider="EAZY_GAMING"
+                      <a data-provider="EAZY_GAMING" class="run_game"
                         ><img
                           src="./images/sub-chess-eazy_gaming.png"
                           alt="banner-eazy_gaming"
@@ -1069,7 +1075,7 @@
                       </div>
                     </li>
                     <li data-provider="jdb" class="en-US">
-                      <a data-provider="JDB"
+                      <a data-provider="JDB" class="run_game"
                         ><img
                           src="./images/sub-chess-jdb.png"
                           alt="banner-jdb"
@@ -1080,7 +1086,7 @@
                       </div>
                     </li>
                     <li data-provider="jili" class="en-US">
-                      <a data-provider="JILI"
+                      <a data-provider="JILI" class="run_game"
                         ><img
                           src="./images/sub-chess-jili.png"
                           alt="banner-jili"
@@ -1091,7 +1097,7 @@
                       </div>
                     </li>
                     <li data-provider="mg" class="en-US">
-                      <a data-provider="MG"
+                      <a data-provider="MG" class="run_game"
                         ><img
                           src="./images/sub-chess-mg.png"
                           alt="banner-mg"
@@ -1102,7 +1108,7 @@
                       </div>
                     </li>
                     <li data-provider="pt" class="en-US">
-                      <a data-provider="PT"
+                      <a data-provider="PT" class="run_game"
                         ><img
                           src="./images/sub-chess-pt.png"
                           alt="banner-pt"
@@ -1113,7 +1119,7 @@
                       </div>
                     </li>
                     <li data-provider="rg" class="en-US">
-                      <a data-provider="RG"
+                      <a data-provider="RG" class="run_game"
                         ><img
                           src="./images/sub-chess-rg.png"
                           alt="banner-rg"
@@ -1130,10 +1136,10 @@
                 <div class="nav-item egame">
                   <a class=""><h3>E-Games</h3></a>
                 </div>
-                <div class="submenu">
+                <div class="submenu submenu1">
                   <ul>
                     <li data-provider="evoplay" class="en-US">
-                      <a data-provider="EVOPLAY"
+                      <a data-provider="EVOPLAY" class="run_game"
                         ><img
                           src="./images/sub-egame-evoplay.png"
                           alt="banner-evoplay"
@@ -1144,7 +1150,7 @@
                       </div>
                     </li>
                     <li data-provider="mg" class="en-US">
-                      <a data-provider="MG"
+                      <a data-provider="MG" class="run_game"
                         ><img
                           src="./images/sub-egame-mg.png"
                           alt="banner-mg"
@@ -1155,7 +1161,7 @@
                       </div>
                     </li>
                     <li data-provider="cq9" class="en-US">
-                      <a data-provider="CQ9"
+                      <a data-provider="CQ9" class="run_game"
                         ><img
                           src="./images/sub-egame-cq9.png"
                           alt="banner-cq9"
@@ -1172,10 +1178,10 @@
                 <div class="nav-item mpg">
                   <a class=""><h3>Fishing</h3></a>
                 </div>
-                <div class="submenu">
+                <div class="submenu submenu1">
                   <ul>
                     <li data-provider="splus" class="en-US">
-                      <a data-provider="SPLUS"
+                      <a data-provider="SPLUS" class="run_game"
                         ><img
                           src="./images/sub-mpg-splus.png"
                           alt="banner-splus"
@@ -1186,7 +1192,7 @@
                       </div>
                     </li>
                     <li data-provider="jdb" class="en-US">
-                      <a data-provider="JDB"
+                      <a data-provider="JDB" class="run_game"
                         ><img
                           src="./images/sub-mpg-jdb.png"
                           alt="banner-jdb"
@@ -1197,7 +1203,7 @@
                       </div>
                     </li>
                     <li data-provider="cq9" class="en-US">
-                      <a data-provider="CQ9"
+                      <a data-provider="CQ9" class="run_game"
                         ><img
                           src="./images/sub-mpg-cq9.png"
                           alt="banner-cq9"
@@ -1218,10 +1224,10 @@
                 <div class="nav-item esports">
                   <a class=""><h3>E-Sports</h3></a>
                 </div>
-                <div class="submenu">
+                <div class="submenu submenu1">
                   <ul>
                     <li data-provider="tf" class="en-US">
-                      <a data-provider="TF"
+                      <a data-provider="TF" class="run_game"
                         ><img
                           src="./images/sub-esports-tf.png"
                           alt="banner-tf"
@@ -1232,7 +1238,7 @@
                       </div>
                     </li>
                     <li data-provider="db_esports" class="en-US">
-                      <a data-provider="DB ESPORTS"
+                      <a data-provider="DB ESPORTS" class="run_game"
                         ><img
                           src="./images/sub-esports-db_esports.png"
                           alt="banner-db_esports"
@@ -1243,7 +1249,7 @@
                       </div>
                     </li>
                     <li data-provider="motivation" class="en-US">
-                      <a data-provider="MOTIVATION"
+                      <a data-provider="MOTIVATION" class="run_game"
                         ><img
                           src="./images/sub-esports-motivation.png"
                           alt="banner-motivation"
@@ -1254,7 +1260,7 @@
                       </div>
                     </li>
                     <li data-provider="saba" class="en-US">
-                      <a data-provider="SABA"
+                      <a data-provider="SABA" class="run_game"
                         ><img
                           src="./images/sub-esports-saba.png"
                           alt="banner-saba"
@@ -2151,7 +2157,7 @@
                       <div class="nav-item live">
                         <a><h3>Live</h3></a>
                       </div>
-                      <div class="submenu">
+                      <div class="submenu submenu1">
                         <ul>
                           <li data-provider="via_casino" class="en-US">
                             <a
@@ -2284,7 +2290,7 @@
                       <div class="nav-item sports">
                         <a><h3>Sports</h3></a>
                       </div>
-                      <div class="submenu">
+                      <div class="submenu submenu1">
                         <ul>
                           <li data-provider="saba" class="en-US">
                             <a
@@ -2377,7 +2383,7 @@
                       <div class="nav-item animal">
                         <a><h3>Animal</h3></a>
                       </div>
-                      <div class="submenu">
+                      <div class="submenu submenu1">
                         <ul>
                           <li data-provider="ga28" class="en-US">
                             <a
@@ -2414,7 +2420,7 @@
                       <div class="nav-item chess">
                         <a><h3>Chess</h3></a>
                       </div>
-                      <div class="submenu">
+                      <div class="submenu submenu1">
                         <ul>
                           <li data-provider="evoplay" class="en-US">
                             <a
@@ -2521,7 +2527,7 @@
                       <div class="nav-item egame">
                         <a><h3>E-Games</h3></a>
                       </div>
-                      <div class="submenu">
+                      <div class="submenu submenu1">
                         <ul>
                           <li data-provider="splus" class="en-US">
                             <a
@@ -2845,7 +2851,7 @@
                       <div class="nav-item mpg">
                         <a><h3>Fishing</h3></a>
                       </div>
-                      <div class="submenu">
+                      <div class="submenu submenu1">
                         <ul>
                           <li data-provider="splus" class="en-US">
                             <a
@@ -2987,7 +2993,7 @@
                       <div class="nav-item esports">
                         <a><h3>E-Sports</h3></a>
                       </div>
-                      <div class="submenu">
+                      <div class="submenu submenu1">
                         <ul>
                           <li data-provider="tf" class="en-US">
                             <a
@@ -3024,7 +3030,7 @@
                       <div class="nav-item lottery">
                         <a><h3>Lottery</h3></a>
                       </div>
-                      <div class="submenu">
+                      <div class="submenu submenu1">
                         <ul>
                           <li data-provider="bbin" class="en-US">
                             <a
